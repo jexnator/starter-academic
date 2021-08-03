@@ -20,40 +20,31 @@ twitter: ''
 
 # Contact (edit or remove options as required)
 
-email: test@example.org
-phone: 888 888 88 88
+email: xavier.jeiziner@amanox.ch
+phone: +41 79 898 25 84
 address:
-  street: 450 Serra Mall
-  city: Stanford
-  region: CA
-  postcode: '94305'
-  country: United States
-  country_code: US
+  street: Dammweg 9
+  city: Bern
+  region: BE
+  postcode: '3013'
+  country: Switzerland
+  country_code: CH
 coordinates:
-  latitude: '37.4275'
-  longitude: '-122.1697'
-directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
+  latitude: '46.95639'
+  longitude: '7.44676'
+directions: Enter the Building and take the stairs to the Office on Floor 3
 office_hours:
-  - 'Monday 10:00 to 13:00'
-  - 'Wednesday 09:00 to 10:00'
-appointment_url: 'https://calendly.com'
+  - 'Monday - Friday 09:00 to 17:00'
+appointment_url: 'https://calendly.com/xavier-jeiziner'
 contact_links:
-  - icon: twitter
+  - icon: linkedin
     icon_pack: fab
     name: DM Me
-    link: 'https://twitter.com/Twitter'
-  - icon: skype
+    link: 'https://bit.ly/3CeujKz'
+  - icon: github
     icon_pack: fab
-    name: Skype Me
-    link: 'skype:echo123?call'
-  - icon: keybase
-    icon_pack: fab
-    name: Chat on Keybase
-    link: 'https://keybase.io/'
-  - icon: comments
-    icon_pack: fas
-    name: Discuss on Forum
-    link: 'https://discourse.gohugo.io'
+    name: DM Me
+    link: 'https://github.com/JEX-98'
 
 # Site header
 
@@ -69,16 +60,23 @@ main_menu:
 # Localization
 
 date_format: 'Jan 2, 2006'
-time_format: '3:04 PM'
-address_format: en-us
+time_format: '15:04 CET'
+address_format: de
 
 # Site features
 
 highlight: true
 highlight_languages:
   - r
+  - bash
+  - shell
+  - powershell
+  - markdown
+  - css
+  - javascript
+  - yaml
 math: false
-diagram: false
+diagram: true
 privacy_pack: false
 edit_page:
   repo_url: ''
@@ -93,8 +91,8 @@ show_related:
   page: false
   post: true
   project: true
-  publication: true
-  event: true
+  publication: false
+  event: false
 reading_time: true
 section_pager: false
 docs_section_pager: true
@@ -108,7 +106,7 @@ copyright_license:
 abstract_length: 135
 plugins_js: []
 avatar:
-  gravatar: false
+  gravatar: true
   shape: circle
 publications:
   date_format: January 2006
