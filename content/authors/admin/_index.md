@@ -1,77 +1,44 @@
 ---
 # Display name
-title: Nelson Bighetti
+title: Xavier Jeiziner
 
 # Is this the primary user of the site?
 superuser: true
 
-# Role/position/tagline
-role: Professor of Artificial Intelligence
-
-# Organizations/Affiliations to show in About widget
-organizations:
-- name: Stanford University
-  url: https://www.stanford.edu/
-
-# Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
-
-# Interests to show in About widget
+---
+role: PiBS-Student Amanox Solutions / FFHS
+avatar_filename: https://en.gravatar.com/emails?auto-applied=1
+bio:
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
-
-# Education to show in About widget
+  - Cloud Solutions
+  - CNC-Programming
+social:
+  - icon: envelope
+    icon_pack: fas
+    link: /#contact
+  - icon: github
+    icon_pack: fab
+    link: https://github.com/JEX-98
+  - icon: linkedin
+    icon_pack: fab
+    link: https://bit.ly/3CeujKz
+organizations:
+  - name: Amanox Solutions AG
+    url: https://www.amanox.ch
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
-
-# Social/Academic Networking
-# For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
-#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
-#   form "mailto:your-email@example.com" or "/#contact" for contact widget.
-social:
-- icon: envelope
-  icon_pack: fas
-  link: '/#contact'
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: graduation-cap  # Alternatively, use `google-scholar` icon from `ai` icon pack
-  icon_pack: fas
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
-- icon: github
-  icon_pack: fab
-  link: https://github.com/gcushen
-- icon: linkedin
-  icon_pack: fab
-  link: https://www.linkedin.com/
-
-# Link to a PDF of your resume/CV.
-# To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.toml`, 
-# and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: uploads/resume.pdf
-
-# Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ""
-
-# Highlight the author in author lists? (true/false)
+    - course: Berufsmatura
+      institution: Wirtschafts- und Kaderschule Bern (WKS)
+      year: ""
+    - course: Polymechaniker in EFZ
+      institution: Jabil Circuit, Inc. / Berufsfachschule Oberwallis
+      year: ""
+superuser: true
 highlight_name: false
+title: Xavier Jeiziner
+email: "xavier.jeiziner@amanox.ch"
 ---
+Xavier Jeiziner is a Computer Science Student in his first year at Amanox Solutions in Switzerland. He studies according to a study method called practice-integrated bachelor's degree, which is carried out at Amanox for the first time. The main goal of this new concept is to combine the learned theory from school (FFHS) with the practice at the work in a 40/60% ratio. He would like to bring in his skills in the Public Cloud Team.
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
-
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+In his free time, he like to be in the Swiss mountains for a hike or a bike tour. Occasionally he also like to stay on a slack- or a Highline.
