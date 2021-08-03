@@ -35,15 +35,14 @@ coordinates:
 directions: Enter the Building and take the stairs to the Office on Floor 3
 office_hours:
   - 'Monday - Friday 09:00 to 17:00'
-appointment_url: 'https://calendly.com/xavier-jeiziner'
 contact_links:
   - icon: linkedin
     icon_pack: fab
-    name: DM Me
+    name: Linked-In
     link: 'https://bit.ly/3CeujKz'
   - icon: github
     icon_pack: fab
-    name: DM Me
+    name: GitHub
     link: 'https://github.com/JEX-98'
 
 # Site header
