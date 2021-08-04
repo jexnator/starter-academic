@@ -9,6 +9,7 @@ avatar_filename: https://s.gravatar.com/avatar/cdb1b7c60b4585a3a91ce9f583b2af45?
 bio:
 interests:
   - Cloud Solutions
+  - Computer Science
   - CNC-Programming
 social:
   - icon: envelope
@@ -25,18 +26,21 @@ organizations:
     url: https://www.amanox.ch
 education:
   courses:
-    - course: technische Berufsmatura
+      - course: BSc in Computer Science
+      institution: Fernfachhochschule Schweiz (FFHS)
+      year: "2021 - 2025"
+    - course: Professional baccalaureate
       institution: Wirtschafts- und Kaderschule Bern (WKS)
-      year: ""
-    - course: Polymechaniker in EFZ
+      year: "2020 - 2021"
+    - course: Apprenticeship as a Polymechanic
       institution: Jabil Circuit, Inc. / Berufsfachschule Oberwallis
-      year: ""
+      year: "2014 - 2018"
 superuser: true
 highlight_name: false
 title: Xavier Jeiziner
 email: "xavier.jeiziner@amanox.ch"
 ---
-Xavier Jeiziner is a Computer Science Student in his first year at Amanox Solutions in Switzerland. He studies according to a study method called practice-integrated bachelor's degree, which is carried out at Amanox for the first time. The main goal of this new concept is to combine the learned theory from the university of applied sciences (FFHS) with the practice at the work in a 40/60% ratio. He would like to bring in his skills in the Public Cloud Team.
+Xavier Jeiziner is a Computer Science Student in his first year at Amanox Solutions in Switzerland. He studies according to a study method called practice-integrated bachelor's degree, which is carried out at Amanox for the first time. The main goal of this new concept is to combine the learned theory from the distance learning university (FFHS) with the practice at the work in a 40/60% ratio. He would like to bring in his skills in the Public Cloud Team.
 
 
 In his free time, he like to be in the Swiss mountains for a hike or a bike tour. Occasionally he also like to stay on a Slack- or a Highline.
