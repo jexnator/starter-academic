@@ -4,8 +4,6 @@ title: Xavier Jeiziner
 
 # Is this the primary user of the site?
 superuser: true
-
----
 role: PiBS-Student Amanox Solutions / FFHS
 avatar_filename: https://en.gravatar.com/emails?auto-applied=1
 bio:

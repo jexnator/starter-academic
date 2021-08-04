@@ -9,7 +9,7 @@ cascade:
     render: never
     list: always
 role: PiBS-Student Amanox Solutions / FFHS
-avatar_filename: https://en.gravatar.com/emails?auto-applied=1
+avatar_filename: https://s.gravatar.com/avatar/cdb1b7c60b4585a3a91ce9f583b2af45?s=80
 bio:
 interests:
   - Cloud Solutions
