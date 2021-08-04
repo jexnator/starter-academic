@@ -50,6 +50,14 @@
     box-shadow: 5px 5px 10px var(--dark);
 }
 
+.skill-per {
+    height: 14px;
+    background: var(--primary);
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+}
+
 
 @keyframes fillBars {
     from {
