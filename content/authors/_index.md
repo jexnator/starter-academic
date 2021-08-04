@@ -1,13 +1,5 @@
 ---
 cms_exclude: true
-
-# To publish author profile pages, remove all of the `_build` and `cascade` settings below.
-_build:
-  render: never
-cascade:
-  _build:
-    render: never
-    list: always
 role: PiBS-Student Amanox Solutions / FFHS
 avatar_filename: https://s.gravatar.com/avatar/cdb1b7c60b4585a3a91ce9f583b2af45?s=80
 bio:
