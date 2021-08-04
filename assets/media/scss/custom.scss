@@ -1,4 +1,4 @@
-:root{
+:root {
     --blue: #007bff;
     --indigo: #6610f2;
     --purple: #6f42c1;
@@ -25,38 +25,40 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-  
-  .skills{
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+        "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+}
+
+.skills {
     width: 100%;
     max-width: 600px;
     padding: 0 20px;
-  }
-  
-  .skill-name{
+}
+
+.skill-name {
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
     margin: 20px 0;
-  }
-  
-  .skill-bar{
+}
+
+.skill-bar {
     height: 14px;
     background: var(--light);
     border-radius: 3px;
     box-shadow: 5px 5px 10px var(--dark);
-  }
-  
-  .skill-per{
+}
+
+.skill-per {
     height: 14px;
     background: var(--primary);
     border-radius: 3px;
     position: relative;
     animation: fillBars 2.5s 1;
-  }
-  
-  .skill-per::before{
+}
+
+.skill-per::before {
     content: attr(per);
     position: absolute;
     padding: 4px 6px;
@@ -67,9 +69,9 @@
     right: 0;
     transform: translateX(50%);
     color: var(--light);
-  }
-  
-  .skill-per::after{
+}
+
+.skill-per::after {
     content: "";
     position: absolute;
     width: 10px;
@@ -79,14 +81,13 @@
     right: 0;
     transform: translateX(50%) rotate(45deg);
     border-radius: 2px;
-  }
-  
-  
-  @keyframes fillBars{
-    from{
-      width: 0;
+}
+
+@keyframes fillBars {
+    from {
+        width: 0;
     }
-    to{
-      width: 100%;
+    to {
+        width: 100%;
     }
-  }
+}
