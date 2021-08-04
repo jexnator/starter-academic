@@ -50,38 +50,6 @@
     box-shadow: 5px 5px 10px var(--dark);
 }
 
-.skill-per {
-    height: 14px;
-    background: var(--primary);
-    border-radius: 3px;
-    position: relative;
-    animation: fillBars 2.5s 1;
-}
-
-.skill-per::before {
-    content: attr(per);
-    position: absolute;
-    padding: 4px 6px;
-    background: var(--dark);
-    border-radius: 4px;
-    font-size: 12px;
-    top: -35px;
-    right: 0;
-    transform: translateX(50%);
-    color: var(--light);
-}
-
-.skill-per::after {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: var(dark);
-    top: -20px;
-    right: 0;
-    transform: translateX(50%) rotate(45deg);
-    border-radius: 2px;
-}
 
 @keyframes fillBars {
     from {
