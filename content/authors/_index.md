@@ -21,7 +21,7 @@ organizations:
     url: https://www.amanox.ch
 education:
   courses:
-    - course: Berufsmatura
+    - course: technische Berufsmatura
       institution: Wirtschafts- und Kaderschule Bern (WKS)
       year: 2020 - 2021
     - course: Polymechaniker in EFZ
