@@ -8,7 +8,6 @@ cascade:
   _build:
     render: never
     list: always
----
 role: PiBS-Student Amanox Solutions / FFHS
 avatar_filename: https://en.gravatar.com/emails?auto-applied=1
 bio:
@@ -32,10 +31,10 @@ education:
   courses:
     - course: Berufsmatura
       institution: Wirtschafts- und Kaderschule Bern (WKS)
-      year: ""
+      year: 2020 - 2021
     - course: Polymechaniker in EFZ
       institution: Jabil Circuit, Inc. / Berufsfachschule Oberwallis
-      year: ""
+      year: 2014 - 2018
 superuser: true
 highlight_name: false
 title: Xavier Jeiziner
