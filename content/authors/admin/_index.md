@@ -29,7 +29,7 @@ education:
     - course: BSc in Computer Science
       institution: Fernfachhochschule Schweiz (FFHS)
       year: "2021 - 2025"
-    - course: Professional baccalaureate
+    - course: Professional Baccalaureate
       institution: Wirtschafts- und Kaderschule Bern (WKS)
       year: "2020 - 2021"
     - course: Apprenticeship as a Polymechanic
