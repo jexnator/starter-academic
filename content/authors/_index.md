@@ -35,4 +35,4 @@ email: "xavier.jeiziner@amanox.ch"
 Xavier Jeiziner is a Computer Science Student in his first year at Amanox Solutions in Switzerland. He studies according to a study method called practice-integrated bachelor's degree, which is carried out at Amanox for the first time. The main goal of this new concept is to combine the learned theory from school (FFHS) with the practice at the work in a 40/60% ratio. He would like to bring in his skills in the Public Cloud Team.
 
 
-In his free time, he like to be in the Swiss mountains for a hike or a bike tour. Occasionally he also like to stay on a slack- or a Highline.
+In his free time, he like to be in the Swiss mountains for a hike or a bike tour. Occasionally he also like to stay on a Slack- or a Highline.
