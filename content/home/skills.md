@@ -12,7 +12,6 @@ weight: 30
 title: Skills
 subtitle:
 
----
 <div class="skills">
 
   <div class="skill">
@@ -51,3 +50,4 @@ subtitle:
   </div>
 
 </div>
+---
