@@ -39,7 +39,7 @@ experience:
   - title: 'CNC-Programmer'
     company: 'Jabil Circuit, Inc.'
     company_url: 'https://www.jabil.com'
-    company_logo: icon
+    company_logo: jabil-logo
     location: 'Raron'
     date_start: '2018-08-01'
     date_end: '2021-07-31'
