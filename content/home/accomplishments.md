@@ -23,30 +23,23 @@ date_format: Jan 2006
 #   Leave other parameters empty if not required.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
-- certificate_url: https://www.coursera.org
+- certificate_url: https://www.youracclaim.com/badges/9803141f-9ad2-4334-99a6-8ffe2cf1d631/linked_in_profile
   date_end: ""
-  date_start: "2021-01-25"
+  date_start: "2019-08-25"
   description: ""
-  organization: Coursera
-  organization_url: https://www.coursera.org
-  title: Neural Networks and Deep Learning
+  organization: Nutanix
+  organization_url: https://www.nutanix.com
+  title: 'Nutanix Certified Systems Engineer: Level 1'
   url: ""
-- certificate_url: https://www.edx.org
+- certificate_url: https://www.youracclaim.com/badges/9f2b6590-c170-4e8b-98be-b81991587b13/linked_in_profile
   date_end: ""
-  date_start: "2021-01-01"
-  description: Formulated informed blockchain models, hypotheses, and use cases.
-  organization: edX
-  organization_url: https://www.edx.org
-  title: Blockchain Fundamentals
-  url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-- certificate_url: https://www.datacamp.com
-  date_end: "2020-12-21"
-  date_start: "2020-07-01"
+  date_start: "2019-08-25"
   description: ""
-  organization: DataCamp
-  organization_url: https://www.datacamp.com
-  title: 'Object-Oriented Programming in R'
+  organization: Nutanix
+  organization_url: https://www.nutanix.com
+  title: 'Nutanix Certified Systems Engineer: Level 2'
   url: ""
+
 
 design:
   columns: '2' 
