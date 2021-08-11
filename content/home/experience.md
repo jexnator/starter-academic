@@ -68,3 +68,4 @@ experience:
         * Monitoring of the running production
         * Maintenance and commissioning of equipment
         * Quality control of the manufactured parts
+---
