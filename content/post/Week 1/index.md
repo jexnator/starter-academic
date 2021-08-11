@@ -27,5 +27,14 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
-Test
+I welcome you to my first post on my Netlify blog page.
 
+Last week Yonea Koch and me boarded into the Amanox airplane. Our goal is to fly high up into the clouds, were we would get our skills to cope with everyday life and to achieve the knowhow to past our Bachelors degree in Computer Science. I would like to thank Amanox Solutions for the employment. I am excited about and looking forward to all the experience and insights that we will see in the next 4 years of our apprentisage.
+
+Our first day of work, was the 02/08/2021. We met us at 10:00 AM in the meeting room, where we get started. After a short round of presentations about our self and the coaches, they introduced us about the upcoming modules and the associated responsible persons. A few moments later we got our notebooks and some useful gifts.
+The next step was to configurate and prepare our notebooks. Fabian Brunner gave us the advices, which software we need for our daily business and how we can download these with Powershell and chocolatey. By the way he teached us about the difference between the CLI (command line interface) and the GUI (gratical user interface).
+
+The rest of the week we worked on our trainee diary. We had to set up our own webpage on netlify with a manual that Fabian wrote for us. At the beginnig it was a little bit tricky, but after a few hours of working on the webpage, it went always better.
+
+This was my first blog. I hope you enjoyed it and I will get back to you next week.
+Cheers
