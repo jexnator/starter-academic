@@ -33,7 +33,7 @@ item:
   url: ""
 - certificate_url: ""
   date_end: ""
-  date_start: "2021-05-22"
+  date_start: "2021-02-22"
   description: ""
   organization: Delf/Dalf Switzerland
   organization_url: https://www.delfdalf.ch/
