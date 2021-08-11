@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "First Week at Amanox"
+title: "First Week at Amanox Solutions"
 subtitle: ""
 summary: "Trainee diary"
 authors: [Xavier Jeiziner]
