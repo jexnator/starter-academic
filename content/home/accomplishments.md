@@ -25,19 +25,19 @@ date_format: Jan 2006
 item:
 - certificate_url: ""
   date_end: ""
-  date_start: "2021-03-20"
-  description: ""
-  organization: Cambridge Exams
-  organization_url: https://www.cambridgeenglish.org/
-  title: 'Cambridge B1 Certificate'
-  url: ""
-- certificate_url: ""
-  date_end: ""
   date_start: "2021-05-22"
   description: ""
   organization: Delf/Dalf Switzerland
   organization_url: https://www.delfdalf.ch/
-  title: 'Delf B1 Certificate'
+  title: 'Delf B1 French Certificate'
+  url: ""
+  - certificate_url: ""
+  date_end: ""
+  date_start: "2021-03-20"
+  description: ""
+  organization: Cambridge Exams
+  organization_url: https://www.cambridgeenglish.org/
+  title: 'Cambridge B1 English Certificate'
   url: ""
 
 
