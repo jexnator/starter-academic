@@ -1,13 +1,13 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "MyFirstBlog"
+title: "First Week at Amanox"
 subtitle: ""
-summary: ""
-authors: []
-tags: []
-categories: []
-date: 2021-08-11T15:24:31+02:00
+summary: "Trainee diary"
+authors: [Xavier Jeiziner]
+tags: [PiBS]
+categories: [Welcome]
+date: 2021-08-11
 lastmod: 2021-08-11T15:24:31+02:00
 featured: false
 draft: false
@@ -16,8 +16,8 @@ draft: false
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: ""
-  focal_point: ""
+  caption: Photo by Erwan Hesry on Unsplash
+  focal_point: Top
   preview_only: false
 
 # Projects (optional).
@@ -27,3 +27,5 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
+Test
+
