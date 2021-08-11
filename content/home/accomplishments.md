@@ -23,21 +23,21 @@ date_format: Jan 2006
 #   Leave other parameters empty if not required.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
-- certificate_url: https://www.youracclaim.com/badges/9803141f-9ad2-4334-99a6-8ffe2cf1d631/linked_in_profile
+- certificate_url: ""
   date_end: ""
-  date_start: "2019-08-25"
+  date_start: "2021-03-20"
   description: ""
-  organization: Nutanix
-  organization_url: https://www.nutanix.com
-  title: 'Nutanix Certified Systems Engineer: Level 1'
+  organization: Cambridge Exams
+  organization_url: https://www.cambridgeenglish.org/
+  title: 'Cambridge B1 Certificate'
   url: ""
-- certificate_url: https://www.youracclaim.com/badges/9f2b6590-c170-4e8b-98be-b81991587b13/linked_in_profile
+- certificate_url: ""
   date_end: ""
-  date_start: "2019-08-25"
+  date_start: "2021-05-22"
   description: ""
-  organization: Nutanix
-  organization_url: https://www.nutanix.com
-  title: 'Nutanix Certified Systems Engineer: Level 2'
+  organization: Delf/Dalf Switzerland
+  organization_url: https://www.delfdalf.ch/
+  title: 'Delf B1 Certificate'
   url: ""
 
 
