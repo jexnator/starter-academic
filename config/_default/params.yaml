@@ -22,8 +22,8 @@ twitter: ''
 
 email: xavier.jeiziner@amanox.ch
 phone: +41 31 320 10 80
-address: Amanox Solutions
-  street: Dammweg 9
+address:
+  street:  Dammweg 9
   city: Bern
   region: BE
   postcode: '3013'
