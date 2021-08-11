@@ -10,7 +10,7 @@ external_link: ""
 
 image:
   caption: Photo by Wade Austin Santaniello on Unsplash
-  focal_point: Smart
+  focal_point: center
 
 links:
 - icon: Linkedin
