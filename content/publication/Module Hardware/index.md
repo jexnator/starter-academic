@@ -108,35 +108,35 @@ slides: ""
 
 <b>Advanced questions:</b>
 
-<I>How fast (in GHz) is the CPU you are using right now?</I>
+{{< hl >}}<I>How fast (in GHz) is the CPU you are using right now?</I>{{< /hl >}}
 
     ➡️Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz - 2.30 GHz
 
-<I>What chipset is on the motherboard? Could there be more options?</I>
+{{< hl >}}<I>What chipset is on the motherboard? Could there be more options?</I>{{< /hl >}}
 
     ➡️64-bit operating system, x64-based processor.
 
     ➡️ x32 / x64 / x86
 
-<I>How many gigabytes of RAM are in the PC you’re using?</I>
+{{< hl >}}<I>How many gigabytes of RAM are in the PC you’re using?</I>{{< /hl >}}
 
     ➡️16.0 GB (15.8 GB usable)
 
-<I>What is/are the storage medium/media in your PC?</I>
+{{< hl >}}<I>What is/are the storage medium/media in your PC?</I>{{< /hl >}}
 
     ➡️500GB SSD
 
-<I>Where is the PSU in your PC? What about a laptop?</I>
+{{< hl >}}<I>Where is the PSU in your PC? What about a laptop?</I>{{< /hl >}}
 
     ➡️Inside the PC
 
     ➡️External Adapter
 
-<I>Do you have a GPU?</I>
+{{< hl >}}<I>Do you have a GPU?</I>{{< /hl >}}
 
     ➡️IGPU in the CPU; Intel HD Graphics 620 (GT2)
 
-<I>How does the cooling work in your device? What about a smartphone?</I>
+{{< hl >}}<I>How does the cooling work in your device? What about a smartphone?</I>{{< /hl >}}
 
     ➡️My notebook is cooled from below by two fans
 
