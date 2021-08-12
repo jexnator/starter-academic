@@ -115,6 +115,7 @@ slides: ""
 <I>What chipset is on the motherboard? Could there be more options?</I>
 
 ➡️64-bit operating system, x64-based processor.
+
 ➡️ x32 / x64 / x86
 
 <I>How many gigabytes of RAM are in the PC you’re using?</I>
@@ -128,6 +129,7 @@ slides: ""
 <I>Where is the PSU in your PC? What about a laptop?</I>
 
 ➡️Inside the PC
+
 ➡️External Adapter
 
 <I>Do you have a GPU?</I>
@@ -137,6 +139,7 @@ slides: ""
 <I>How does the cooling work in your device? What about a smartphone?</I>
 
 ➡️My notebook is cooled from below by two fans
+
 ➡️Smartphones in general; Heatpipe, which transmits the heat to the outside
 
 ---
