@@ -22,11 +22,6 @@ slides:
 
 ## Features
 
-- Efficiently write slides in Markdown
-- 3-in-1: Create, Present, and Publish your slides
-- Supports speaker notes
-- Mobile friendly slides
-
 ![Test](icon.png "Test Caption")
 
 ---
@@ -131,8 +126,6 @@ Press the `S` key to view the speaker notes!
 - solarized: Cream-colored background, dark green text, blue links
 
 ---
-
-{{< slide background-image="/media/boards.jpg" >}}
 
 ## Custom Slide
 
