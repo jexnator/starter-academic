@@ -72,8 +72,7 @@ projects: []
 slides: ""
 ---
 {{% callout note %}}
-  1. 
- <b> In the following part i would like to present you the different components, which are inside of a PC, server or a notebook.</b>
+  1. <b> In the following part i would like to present you the different components, which are inside of a PC, server or a notebook.</b>
 {{% /callout %}}
 
 <b>Computer case:</b> Inside of the computer case you will find all following components of a Computer. The main idea is to protect the interior. It also contributes to a visual aspect of the computer.
@@ -109,8 +108,7 @@ slides: ""
 ![Cooling unit](cooling-unit.jpg "<b>Cooling unit</b> (Unsplash: Barez Omer)")
 
 {{% callout note %}}
-  2. 
-  <b>Advanced questions about my notebook (ThinkPad X1):</b>
+  2. <b>Advanced questions about my notebook (ThinkPad X1):</b>
 {{% /callout %}}
 
 {{< hl >}}How fast (in GHz) is the CPU you are using right now?{{< /hl >}}<br>
