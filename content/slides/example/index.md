@@ -23,6 +23,10 @@ slides:
 ## Features
 
 ![Test](icon.png "Test Caption")
+image:
+  caption: Photo by Erwan Hesry on Unsplash
+  focal_point: Top
+  preview_only: false
 
 ---
 
