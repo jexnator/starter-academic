@@ -108,7 +108,7 @@ slides: ""
 ![Cooling unit](cooling-unit.jpg "<b>Cooling unit</b> (Unsplash: Barez Omer)")
 
 {{% callout note %}}
-  2. <b>Advanced questions:</b>
+  2. <b>Advanced questions about my notebook:</b>
 {{% /callout %}}
 
 {{< hl >}}How fast (in GHz) is the CPU you are using right now?{{< /hl >}}<br>
