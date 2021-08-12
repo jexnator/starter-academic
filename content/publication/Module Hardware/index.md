@@ -109,9 +109,9 @@ slides: ""
 **<b>Advanced questions:</b>**
 
 {{< hl >}}How fast (in GHz) is the CPU you are using right now?{{< /hl >}}
-
-
+{{% callout note %}}
 ➡️Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz - 2.30 GHz
+{{% /callout %}}
 
 {{< hl >}}What chipset is on the motherboard? Could there be more options?{{< /hl >}}
 
