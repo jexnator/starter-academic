@@ -135,5 +135,13 @@ slides: ""
 ➡️My notebook is cooled from below by two fans<br>
 ➡️Smartphones in general; Heatpipe, which transmits the heat to the outside
 <p></p>
+<p></p>
+<p></p>
+<p></p>
 
-https://www.digitec.ch/de/shopList/show/ABB019BA20D90765AFCEC16A2800DF8C
+{{% callout note %}}
+  3. <b> This are the parts that i would buy, if i need a new PC.</b>
+{{% /callout %}}
+
+<p></p>
+[Digitec](https://www.digitec.ch/de/shopList/show/ABB019BA20D90765AFCEC16A2800DF8C)
