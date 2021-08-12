@@ -135,3 +135,5 @@ slides: ""
 ➡️My notebook is cooled from below by two fans<br>
 ➡️Smartphones in general; Heatpipe, which transmits the heat to the outside
 <p></p>
+
+https://www.digitec.ch/de/shopList/show/ABB019BA20D90765AFCEC16A2800DF8C
