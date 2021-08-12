@@ -26,7 +26,7 @@ publication_types: ["0"]
 publication: ""
 publication_short: ""
 
-abstract: "In the following part i would like to present you the different components, which are inside of a PC, server or a notebook.
+In the following part i would like to present you the different components, which are inside of a PC, server or a notebook.
 
 Computer case: Inside of the computer case you will find all following components of a Computer. The main idea is to protect the interior. It also contributes to a visual aspect of the computer.
 
@@ -42,7 +42,7 @@ PSU (power supply unit): The electricity from the power socket goes truth the PS
 
 GPU (graphics processing unit): It's a specialized chip to calcultate all graphic outputs fast. A CPU can theoretically do the same, but it takes much longer than the GPU.
 
-Cooling: All components that consume electricity, are generating heat. Because of this reason, you need a cooling unit to prevent damages on the different modules."
+Cooling: All components that consume electricity, are generating heat. Because of this reason, you need a cooling unit to prevent damages on the different modules.
 
 
 # Summary. An optional shortened abstract.
