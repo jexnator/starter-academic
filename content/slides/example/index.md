@@ -12,20 +12,6 @@ slides:
   #   Light style: github. Dark style: dracula (default).
   highlight_style: dracula
 ---
-
-# Create slides in Markdown with Wowchemy
-
-[Wowchemy](https://wowchemy.com/) | [Documentation](https://owchemy.com/docs/managing-content/#create-slides)
-
----
-
-## Features
-
-- Efficiently write slides in Markdown
-- 3-in-1: Create, Present, and Publish your slides
-- Supports speaker notes
-- Mobile friendly slides
-
 <html lang="en"><head>
 	<meta charset="UTF-8">
 	<title>rymd</title>
@@ -52,6 +38,20 @@ slides:
 
 
 </body></html>
+---
+
+# Create slides in Markdown with Wowchemy
+
+[Wowchemy](https://wowchemy.com/) | [Documentation](https://owchemy.com/docs/managing-content/#create-slides)
+
+---
+
+## Features
+
+- Efficiently write slides in Markdown
+- 3-in-1: Create, Present, and Publish your slides
+- Supports speaker notes
+- Mobile friendly slides
 
 ![Test](icon.png "Test Caption")
 
