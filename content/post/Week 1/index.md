@@ -1,12 +1,12 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "First Week at Amanox Solutions"
+title: "First Week @Amanox Solutions"
 subtitle: ""
 summary: "Trainee diary"
 authors: [Xavier Jeiziner]
 tags: [PiBS]
-categories: [Welcome]
+categories: []
 date: 2021-08-11
 lastmod: 2021-08-11T15:24:31+02:00
 featured: false
