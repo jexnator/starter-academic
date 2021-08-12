@@ -110,36 +110,36 @@ slides: ""
 
 <I>How fast (in GHz) is the CPU you are using right now?</I>
 
-➡️Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz - 2.30 GHz
+    ➡️Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz - 2.30 GHz
 
 <I>What chipset is on the motherboard? Could there be more options?</I>
 
-➡️64-bit operating system, x64-based processor.
+    ➡️64-bit operating system, x64-based processor.
 
-➡️ x32 / x64 / x86
+    ➡️ x32 / x64 / x86
 
 <I>How many gigabytes of RAM are in the PC you’re using?</I>
 
-➡️16.0 GB (15.8 GB usable)
+    ➡️16.0 GB (15.8 GB usable)
 
 <I>What is/are the storage medium/media in your PC?</I>
 
-➡️500GB SSD
+    ➡️500GB SSD
 
 <I>Where is the PSU in your PC? What about a laptop?</I>
 
-➡️Inside the PC
+    ➡️Inside the PC
 
-➡️External Adapter
+    ➡️External Adapter
 
 <I>Do you have a GPU?</I>
 
-➡️IGPU in the CPU; Intel HD Graphics 620 (GT2)
+    ➡️IGPU in the CPU; Intel HD Graphics 620 (GT2)
 
 <I>How does the cooling work in your device? What about a smartphone?</I>
 
-➡️My notebook is cooled from below by two fans
+    ➡️My notebook is cooled from below by two fans
 
-➡️Smartphones in general; Heatpipe, which transmits the heat to the outside
+    ➡️Smartphones in general; Heatpipe, which transmits the heat to the outside
 
 ---
