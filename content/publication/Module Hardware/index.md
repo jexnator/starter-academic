@@ -72,7 +72,7 @@ projects: []
 slides: ""
 ---
  In the following part i would like to present you the different components, which are inside of a PC, server or a notebook.
- 
+
 
 <b>Computer case:</b> Inside of the computer case you will find all following components of a Computer. The main idea is to protect the interior. It also contributes to a visual aspect of the computer.
 
@@ -105,5 +105,36 @@ slides: ""
 <b>Cooling unit:</b> All components that consume electricity, are generating heat. Because of this reason, you need a cooling unit to prevent damages on the different modules.
 
 ![Cooling unit](cooling-unit.jpg "<b>Cooling unit</b> (Unsplash: Barez Omer)")
+
+<b>Advanced questions:</b>
+
+<I>How fast (in GHz) is the CPU you are using right now?</I>
+➡️ Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz - 2.30 GHz
+
+
+<I>What chipset is on the motherboard? Could there be more options?</I>
+--> 64-bit operating system, x64-based processor.
+--> x32 / x64 / x86
+
+
+
+<I>How many gigabytes of RAM are in the PC you’re using?</I>
+
+
+
+<I>What is/are the storage medium/media in your PC?</I>
+
+
+
+<I>Where is the PSU in your PC? What about a laptop?</I>
+
+
+
+<I>Do you have a GPU?</I>
+
+
+
+<I>How does the cooling work in your device? What about a smartphone?</I>
+
 
 ---
