@@ -108,38 +108,28 @@ slides: ""
 
 <b>Advanced questions:</b>
 
-{{< hl >}}<I>How fast (in GHz) is the CPU you are using right now?</I>{{< /hl >}}
-
+{{< hl >}}How fast (in GHz) is the CPU you are using right now?{{< /hl >}}
 ➡️Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz - 2.30 GHz
 
-{{< hl >}}<I>What chipset is on the motherboard? Could there be more options?</I>{{< /hl >}}
-
+{{< hl >}}What chipset is on the motherboard? Could there be more options?{{< /hl >}}
 ➡️64-bit operating system, x64-based processor.
-
 ➡️ x32 / x64 / x86
 
-{{< hl >}}<I>How many gigabytes of RAM are in the PC you’re using?</I>{{< /hl >}}
-
+{{< hl >}}How many gigabytes of RAM are in the PC you’re using?{{< /hl >}}
 ➡️16.0 GB (15.8 GB usable)
 
-{{< hl >}}<I>What is/are the storage medium/media in your PC?</I>{{< /hl >}}
-
+{{< hl >}}What is/are the storage medium/media in your PC?{{< /hl >}}
 ➡️500GB SSD
 
-{{< hl >}}<I>Where is the PSU in your PC? What about a laptop?</I>{{< /hl >}}
-
+{{< hl >}}Where is the PSU in your PC? What about a laptop?{{< /hl >}}
 ➡️Inside the PC
-
 ➡️External Adapter
 
-{{< hl >}}<I>Do you have a GPU?</I>{{< /hl >}}
-
+{{< hl >}}Do you have a GPU?{{< /hl >}}
 ➡️IGPU in the CPU; Intel HD Graphics 620 (GT2)
 
-{{< hl >}}<I>How does the cooling work in your device? What about a smartphone?</I>{{< /hl >}}
-
+{{< hl >}}How does the cooling work in your device? What about a smartphone?{{< /hl >}}
 ➡️My notebook is cooled from below by two fans
-
 ➡️Smartphones in general; Heatpipe, which transmits the heat to the outside
 
 ---
