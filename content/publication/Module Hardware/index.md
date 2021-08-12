@@ -108,15 +108,6 @@ slides: ""
 
 **<b>Advanced questions:</b>**
 
-
-<span class="code-label">
-"bash"
-</span>
-<code class="language-bash hljs">
-"choco"
-</code>
-
-
 {{< hl >}}How fast (in GHz) is the CPU you are using right now?{{< /hl >}}
 
 ➡️Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz - 2.30 GHz
