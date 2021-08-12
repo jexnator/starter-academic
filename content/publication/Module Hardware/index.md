@@ -26,24 +26,7 @@ publication_types: ["0"]
 publication: ""
 publication_short: ""
 
-abstract: "In the following part i would like to present you the different components, which are inside of a PC, server or a notebook.
-
-Computer case: Inside of the computer case you will find all following components of a Computer. The main idea is to protect the interior. It also contributes to a visual aspect of the computer.
-
-CPU (central processing unit): The CPU is the brain of the computer. It does the logical calculations, processes data and passes informations to the other parts.
-
-Motherboard: The motherboard or also known as mainboard connects all parts to each other and enables communication between each other components.
-
-RAM (random access memory): It's a temporary storage space to process data fast. The RAM is located nearby the CPU, to keep the latency as low as possible.
-
-Storage device: A distinction is made between the HDD (hard disk drives) and the SSD (solid state drives). The HDD is working mechanical like a music turntable, while the SSD is flash-storage. Both of them store data persistently.
-
-PSU (power supply unit): The electricity from the power socket goes truth the PSU and is distributed to the various components.
-
-GPU (graphics processing unit): It's a specialized chip to calcultate all graphic outputs fast. A CPU can theoretically do the same, but it takes much longer than the GPU.
-
-Cooling: All components that consume electricity, are generating heat. Because of this reason, you need a cooling unit to prevent damages on the different modules."
-
+abstract: ""
 
 # Summary. An optional shortened abstract.
 summary: Beside the the school we have to complete different modules in our company. The first topic is all about Hardware.
@@ -88,4 +71,22 @@ projects: []
 #   Otherwise, set `slides: ""`.
 slides: ""
 ---
+ "In the following part i would like to present you the different components, which are inside of a PC, server or a notebook.
 
+Computer case: Inside of the computer case you will find all following components of a Computer. The main idea is to protect the interior. It also contributes to a visual aspect of the computer.
+
+CPU (central processing unit): The CPU is the brain of the computer. It does the logical calculations, processes data and passes informations to the other parts.
+
+Motherboard: The motherboard or also known as mainboard connects all parts to each other and enables communication between each other components.
+
+RAM (random access memory): It's a temporary storage space to process data fast. The RAM is located nearby the CPU, to keep the latency as low as possible.
+
+Storage device: A distinction is made between the HDD (hard disk drives) and the SSD (solid state drives). The HDD is working mechanical like a music turntable, while the SSD is flash-storage. Both of them store data persistently.
+
+PSU (power supply unit): The electricity from the power socket goes truth the PSU and is distributed to the various components.
+
+GPU (graphics processing unit): It's a specialized chip to calcultate all graphic outputs fast. A CPU can theoretically do the same, but it takes much longer than the GPU.
+
+Cooling: All components that consume electricity, are generating heat. Because of this reason, you need a cooling unit to prevent damages on the different modules."
+
+---
