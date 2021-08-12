@@ -26,7 +26,7 @@ publication_types: ["0"]
 publication: ""
 publication_short: ""
 
-Abstract: In the following part i would like to present you the different components, which are inside of a PC, server or a notebook.
+abstract: In the following part i would like to present you the different components, which are inside of a PC, server or a notebook.
 
 "Computer case:" Inside of the computer case you will find all following components of a Computer. The main idea is to protect the interior. It also contributes to a visual aspect of the computer.
 
