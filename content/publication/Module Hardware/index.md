@@ -79,7 +79,7 @@ slides: ""
 
 <b>CPU (central processing unit):</b> The CPU is the brain of the computer. It does the logical calculations, processes data and passes informations to the other parts.
 
-![CPU](cpu.jpg "<b>CPU</b> (Unsplash: Fidel Fernando)")
+![CPU](processor.jpg "<b>CPU</b> (Unsplash: Fidel Fernando)")
 
 <b>Motherboard:</b> The motherboard or also known as mainboard connects all parts to each other and enables communication between each other components.
 
