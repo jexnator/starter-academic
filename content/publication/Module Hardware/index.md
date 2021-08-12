@@ -106,13 +106,15 @@ slides: ""
 
 ![Cooling unit](cooling-unit.jpg "<b>Cooling unit</b> (Unsplash: Barez Omer)")
 
-<b>Advanced questions:</b>
+**<b>Advanced questions:</b>**
 
 {{< hl >}}How fast (in GHz) is the CPU you are using right now?{{< /hl >}}
+
 
 ➡️Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz - 2.30 GHz
 
 {{< hl >}}What chipset is on the motherboard? Could there be more options?{{< /hl >}}
+
 
 ➡️64-bit operating system, x64-based processor.
 
@@ -120,13 +122,16 @@ slides: ""
 
 {{< hl >}}How many gigabytes of RAM are in the PC you’re using?{{< /hl >}}
 
+
 ➡️16.0 GB (15.8 GB usable)
 
 {{< hl >}}What is/are the storage medium/media in your PC?{{< /hl >}}
 
+
 ➡️500GB SSD
 
 {{< hl >}}Where is the PSU in your PC? What about a laptop?{{< /hl >}}
+
 
 ➡️Inside the PC
 
@@ -134,9 +139,11 @@ slides: ""
 
 {{< hl >}}Do you have a GPU?{{< /hl >}}
 
+
 ➡️IGPU in the CPU; Intel HD Graphics 620 (GT2)
 
 {{< hl >}}How does the cooling work in your device? What about a smartphone?{{< /hl >}}
+
 
 ➡️My notebook is cooled from below by two fans
 
