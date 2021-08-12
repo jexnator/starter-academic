@@ -75,7 +75,7 @@ slides: ""
 
 Computer case: Inside of the computer case you will find all following components of a Computer. The main idea is to protect the interior. It also contributes to a visual aspect of the computer.
 
-![Test](computer-case.jpg "Computer case")
+![Computer case](computer-case.png "Computer case")
 
 CPU (central processing unit): The CPU is the brain of the computer. It does the logical calculations, processes data and passes informations to the other parts.
 
