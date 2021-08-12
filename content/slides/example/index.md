@@ -26,6 +26,8 @@ slides:
 - Supports speaker notes
 - Mobile friendly slides
 
+![Test](icon.png "Test Caption")
+
 ---
 
 ## Controls
