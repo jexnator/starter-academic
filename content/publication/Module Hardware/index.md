@@ -129,7 +129,7 @@ slides: ""
 ➡️External Adapter
 <p></p>
 {{< hl >}}Do you have a GPU?{{< /hl >}}<br>
-➡️IGPU in the CPU; Intel HD Graphics 620 (GT2)
+➡️iGPU in the CPU; Intel HD Graphics 620 (GT2)
 <p></p>
 {{< hl >}}How does the cooling work in your device? What about a smartphone?{{< /hl >}}<br>
 ➡️My notebook is cooled from below by two fans<br>
