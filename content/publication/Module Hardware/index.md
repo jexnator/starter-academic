@@ -87,19 +87,19 @@ slides: ""
 
 <b>RAM (random access memory):</b> It's a temporary storage space to process data fast. The RAM is located nearby the CPU, to keep the latency as low as possible.
 
-![RAM](RAM.jpg "<b>RAM</b> (Unsplash: Luan Gjokaj)")
+![RAM](ram.jpg "<b>RAM</b> (Unsplash: Luan Gjokaj)")
 
 <b>Storage device:</b> A distinction is made between the HDD (hard disk drives) and the SSD (solid state drives). The HDD is working mechanical like a music turntable, while the SSD is a flash storage device. Both of them store data persistently.
 
-![HDD](HDD.jpg "<b>HDD</b> (Unsplash: Art Wall - Kittenprint)")
+![HDD](hdd.jpg "<b>HDD</b> (Unsplash: Art Wall - Kittenprint)")
 
 <b>PSU (power supply unit):</b> The electricity from the power socket goes truth the PSU and is distributed to the various components.
 
-![PSU](PSU.jpg "<b>PSU</b> (Unsplash: Luke Hodde)")
+![PSU](psu.jpg "<b>PSU</b> (Unsplash: Luke Hodde)")
 
 <b>GPU (graphics processing unit):</b> It's a specialized chip to calcultate all graphic outputs fast. A CPU can theoretically do the same, but it takes much longer than the GPU.
 
-![GPU](GPU.jpg "<b>GPU</b> (Unsplash: Nana Dua)")
+![GPU](gpu.jpg "<b>GPU</b> (Unsplash: Nana Dua)")
 
 <b>Cooling:</b> All components that consume electricity, are generating heat. Because of this reason, you need a cooling unit to prevent damages on the different modules."
 
