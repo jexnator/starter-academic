@@ -29,7 +29,7 @@ publication_short: ""
 abstract: ""
 
 # Summary. An optional shortened abstract.
-summary: Beside the the school we have to complete different modules in our company. The first topic is all about Hardware.
+summary: Beside the the school we have to complete different modules in our company. The first topic is about Hardware.
 
 tags: [PiBS]
 

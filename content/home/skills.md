@@ -15,7 +15,7 @@ subtitle:
 <div class="skills">
 
   <div class="skill">
-    <div class="skill-name">Webentwicklung</div>
+    <div class="skill-name">Web Development</div>
     <div class="skill-bar">
       <div class="skill-per" per="10%" style="max-width:10%"></div>
     </div>
