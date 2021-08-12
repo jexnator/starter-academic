@@ -29,7 +29,7 @@ publication_short: ""
 abstract: Text
 
 # Summary. An optional shortened abstract.
-summary: Our first Module "Hardware"
+summary: ""
 
 tags: [PiBS]
 
