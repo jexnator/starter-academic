@@ -144,5 +144,5 @@ slides: ""
   4. <b>Task – Bits and bytes</b>
 {{% /callout %}}<br>
 <p></p>
-{{< hl >}}1. Say you have a gigabit internet connection (downstream). How many kilobytes can you download per second?{{< /hl >}}<br>
-  ➡️1'000'000'000b / 800 = <b>125'000KB</b>
+{{< hl >}}Say you have a gigabit internet connection (downstream). How many kilobytes can you download per second?{{< /hl >}}<br>
+➡️1'000'000'000b / 800 = <b>125'000KB</b>
