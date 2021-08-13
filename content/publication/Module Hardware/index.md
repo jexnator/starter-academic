@@ -158,4 +158,8 @@ slides: ""
 ➡️Amanox Tea<br>
 💡You have to read the binary code from the right to the left side. Then you encode the binary digits.<br>
 Example: 10101 ➔ (1 * 2^1) + (0 *2^2) + (1 *2^3) + (0 *2^4) + (1 *2^5) = <b>42</b> <br>
-After this you can have a look to the ASCII-Table. <b>42</b> corresponds to <b> * </b>.
+After this you can have a look to the ASCII-Table. <b>42</b> corresponds to <b> * </b>.<br>
+<p></p>
+{{< hl >}}"Xavier" in a binary sequence{{< /hl >}}<br>
+➡️01011000 01100001 01110110 01101001 01100101 01110010<br>
+<p></p>
