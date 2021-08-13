@@ -146,9 +146,14 @@ slides: ""
 ➡️1'000'000'000b / 800 = <b>125'000KB</b>
 <p></p>
 {{< hl >}}How many bits are in a Mebibyte?{{< /hl >}}<br>
-➡️1'048'576B * 8 = 8’388’608b
+➡️1'048'576B * 8 = <b>8’388’608b</b>
 <p></p>
 {{< hl >}}You buy an HDD advertised with 1TB. How much usable space will the Windows operating system report you and why?{{< /hl >}}<br>
 ➡️If you have a 1TB HDD in your PC, then you have a real storage of 932GB. This is because the computer is working with binary numbers (1,024 bytes = 1kb).
 <p></p>
-
+{{% callout note %}}
+  5. <b>Task – Decode the following binary sequences to text. Each character uses 8-bits.</b>
+{{% /callout %}}
+{{< hl >}}01000001011011010110000101101110011011110111100000100000010101000110010101100001{{< /hl >}}<br>
+➡️Amanox Tea<br>
+💡You have to read the binary code from the right to the left side. Then you encode the binary digits (Example: 10101 [1*2^1] + [0*2^2] + [1*2^3] + [0*2^4] + [1*2^5] = <b>42</b>). After this you can have a look to the ASCII-Table. <b>42</b> corresponds to <b>"*"</b>.
