@@ -43,6 +43,7 @@ Afterwards we were invited by our team to the restaurant "La Carbonara" for lunc
 In the afternoon the Amanoxians suprised us with a little Excursion to an adventure room in the city of Bern. We slipped in the role of Indiana Jones. The main goal was to retrieve the holy grail, which was well protected. For the competition we divided us in two Teams.
 * Public Cloud Team (Where i was present)
 * Enterprise Cloud Team<br>
+
 At the end our team took the win with the result 2:0. It was a good way to encourage the team spirit.
 
 The rest of the week we worked on our trainee diary. We had to set up our own webpage on netlify with a manual that Fabian wrote for us. At the beginnig it was a little bit tricky, but after a few hours of working on the webpage, it went always better.
