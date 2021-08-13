@@ -27,10 +27,6 @@ content:
   filter_button:
   - name: PiBS
     tag: https://www.ffhs.ch/de/bachelor/praxisintegriertes-bachelor-studium-informatik-pibs
-  - name: ""
-    tag: "" 
-  - name: "" 
-    tag: "" 
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
