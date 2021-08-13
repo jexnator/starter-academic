@@ -134,6 +134,7 @@ slides: ""
 {{< hl >}}How does the cooling work in your device? What about a smartphone?{{< /hl >}}<br>
 ➡️My notebook is cooled from below by two fans<br>
 ➡️Smartphones in general; Heatpipe, which transmits the heat to the outside
+
 <p></p>
 <p></p>
 <p></p>
