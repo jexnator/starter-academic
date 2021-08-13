@@ -134,14 +134,15 @@ slides: ""
 {{< hl >}}How does the cooling work in your device? What about a smartphone?{{< /hl >}}<br>
 ➡️My notebook is cooled from below by two fans<br>
 ➡️Smartphones in general; Heatpipe, which transmits the heat to the outside<br>
-
+<p></p>
 {{% callout note %}}
   3. <b> This are the parts that i would buy, if i would build my own PC. Link ➔</b>
   [Digitec](https://www.digitec.ch/de/shopList/show/ABB019BA20D90765AFCEC16A2800DF8C)
-{{% /callout %}}
+{{% /callout %}}<br>
+<p></p>
 {{% callout note %}}
   4. <b>Task – Bits and bytes</b>
-{{% /callout %}}
-
+{{% /callout %}}<br>
+<p></p>
 {{< hl >}}1. Say you have a gigabit internet connection (downstream). How many kilobytes can you download per second?{{< /hl >}}<br>
   ➡️1'000'000'000b / 800 = <b>125'000KB</b>
