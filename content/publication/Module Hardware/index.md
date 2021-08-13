@@ -138,8 +138,7 @@ slides: ""
 {{% callout note %}}
   3. <b> This are the parts that i would buy, if i would build my own PC. Link ➔</b>
   [Digitec](https://www.digitec.ch/de/shopList/show/ABB019BA20D90765AFCEC16A2800DF8C)
-{{% /callout %}}<br>
-<p></p>
+{{% /callout %}}
 {{% callout note %}}
   4. <b>Task – Bits and bytes</b>
 {{% /callout %}}
