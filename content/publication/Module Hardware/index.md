@@ -140,9 +140,8 @@ slides: ""
 <p></p>
 
 {{% callout note %}}
-  3. <b> This are the parts that i would buy, if i need a new PC.</b>
+  3. <b> This are the parts that i would buy, if i would build my own PC. Link below ⬇️<br>
+  [Digitec](https://www.digitec.ch/de/shopList/show/ABB019BA20D90765AFCEC16A2800DF8C)</b>
 {{% /callout %}}
-<p></p>
-<p></p>
 
-[Digitec](https://www.digitec.ch/de/shopList/show/ABB019BA20D90765AFCEC16A2800DF8C)
+
