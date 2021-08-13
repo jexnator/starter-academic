@@ -1,4 +1,5 @@
 ---
+active: false
 title: PiBS
 summary: Example
 tags:
