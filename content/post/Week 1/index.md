@@ -27,19 +27,19 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
-I welcome you to my first post on my Netlify blog page.
+I welcome you to my first post on my netlify blog page.
 
 Last week Yonea Koch and me boarded into the Amanox airplane. Our goal is to fly high up into the clouds, where we would get our skills to cope with everyday life and to achieve the knowhow to past our bachelor’s degree in computer science. I would like to thank Amanox Solutions for the employment. I am excited about and looking forward to all the experience and insights that we will see in the next 4 years of our apprentissage.
 
 Our first day of work, was the 02/08/2021. We met us at 10:00 AM in the meeting room, where we get started. After a short round of presentations about our self and the coaches, they introduced us about the upcoming modules and the associated responsible persons. A few moments later we got our notebooks and some useful gifts.
 
-The next step was to configurate and prepare our notebooks. Fabian Brunner gave us the advice, which software we need for our daily business and how we can download this applications with Powershell and chocolatey. By the way he teached us about the difference between the CLI (command line interface) and the GUI (gratical user interface).
+The next step was to configurate and prepare our notebooks. Fabian Brunner gave us the advice, which software we need for our daily business and how we can download this applications with powershell and chocolatey. By the way he teached us about the difference between the CLI (command line interface) and the GUI (gratical user interface).
 
 Afterwards we were invited by our team to the restaurant "La Carbonara" for lunch. It was a good opportunity to know each other better.
 
-![La Carbonara](carbonara.jpg "<b>Lunch</b> (Credits: Kirusihaan Sathiyapalan)")
+![Lunch](carbonara.jpg "<b>Lunch</b> (Credits: Kirusihaan Sathiyapalan)")
 
-In the afternoon the Amanoxians suprised us with a little Excursion to an Adventure Room in the city of Bern. We slipped in the role of Indiana Jones. The main goal was to retrieve the holy grail, which was well protected. For the competition we divided us in two Teams.
+In the afternoon the Amanoxians suprised us with a little Excursion to an adventure room in the city of Bern. We slipped in the role of Indiana Jones. The main goal was to retrieve the holy grail, which was well protected. For the competition we divided us in two Teams.
 * Public Cloud Team (Where i was present)
 * Enterprise Cloud Team
 At the end our team took the win with the result 2:0. It was a good way to encourage the team spirit.
