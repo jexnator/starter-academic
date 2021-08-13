@@ -115,7 +115,7 @@ slides: ""
 ➡️Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz - 2.30 GHz
 <p></p>
 {{< hl >}}What chipset is on the motherboard? Could there be more options?{{< /hl >}}<br>
-➡️On my motherboard is a SoC (System-on-a-Chip) chipset<br>
+➡️On my motherboard is a SoC (System-on-a-Chip)<br>
 ➡️ Southbridge / Northbridge / System-on-a-Chip
 <p></p>
 {{< hl >}}How many gigabytes of RAM are in the PC you’re using?{{< /hl >}}<br>
