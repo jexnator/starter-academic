@@ -157,5 +157,5 @@ slides: ""
 {{< hl >}}01000001011011010110000101101110011011110111100000100000010101000110010101100001{{< /hl >}}<br>
 ➡️Amanox Tea<br>
 💡You have to read the binary code from the right to the left side. Then you encode the binary digits.<br>
-Example: 10101 (1 * 2^1) + (0 *2^2) + (1 *2^3) + (0 *2^4) + (1 *2^5) = <b>42</b><br>
-After this you can have a look to the ASCII-Table. <b>42</b> corresponds to <b>"*"</b>.
+Example: 10101 (1 * 2^1) + (0 *2^2) + (1 *2^3) + (0 *2^4) + (1 *2^5) = <b>42</b> <br>
+After this you can have a look to the ASCII-Table. <b>42</b> corresponds to <b> * </b>.
