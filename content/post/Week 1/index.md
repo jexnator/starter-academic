@@ -27,6 +27,7 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
+<p align="justify">
 I welcome you to my first post on my netlify blog page.
 
 Last week Yonea Koch and me boarded into the Amanox airplane. Our goal is to fly high up into the clouds, where we would get our skills to cope with everyday life and to achieve the knowhow to past our bachelor’s degree in computer science. I would like to thank Amanox Solutions for the employment. I am excited about and looking forward to all the experience and insights that we will see in the next 4 years of our apprentissage.
@@ -48,3 +49,4 @@ The rest of the week we worked on our trainee diary. We had to set up our own we
 
 That was my first blog post. I hope you enjoyed it and I will get back to you very soon.<br>
 Cheers!
+</p>
