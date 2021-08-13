@@ -36,7 +36,8 @@ Our first day of work, was the 02/08/2021. We met us at 10:00 AM in the meeting 
 The next step was to configurate and prepare our notebooks. Fabian Brunner gave us the advice, which software we need for our daily business and how we can download this applications with Powershell and chocolatey. By the way he teached us about the difference between the CLI (command line interface) and the GUI (gratical user interface).
 
 Afterwards we were invited by our team to the restaurant "La Carbonara" for lunch. It was a good opportunity to know each other better.
-![La Carbonara](la-carbonara.jpeg "<b>Lunch</b> (Credits: Kirusihaan Sathiyapalan)")
+
+![La Carbonara](carbonara.jpg "<b>Lunch</b> (Credits: Kirusihaan Sathiyapalan)")
 
 In the afternoon the Amanoxians suprised us with a little Excursion to an Adventure Room in the city of Bern. We slipped in the role of Indiana Jones. The main goal was to retrieve the holy grail, which was well protected. For the competition we divided us in two Teams.
 * Public Cloud Team (Where i was present)
