@@ -193,7 +193,8 @@ Example programm for a multiplication <b>8 * 5 = 40</b><br>
 | -------	|:----:	|----------:	|
 | 020    	| 8    	| Factor    	|
 | 021    	| 5    	| Factor    	|
-| 022    	| 40   	| Product   	|<br>
+| 022    	| 40   	| Product   	|
+
 Programm:<br>
 `1. NULL 022` Set value of adress 022 to zero<br>
 `2. TAKE 022` Transport value of adress 022 to the accumulator<br>
