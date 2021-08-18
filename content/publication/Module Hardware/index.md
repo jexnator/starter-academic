@@ -107,6 +107,8 @@ slides: ""
 
 ![Cooling unit](cooling-unit.jpg "<b>Cooling unit</b> (Unsplash: Barez Omer)")
 
+## {{< hl >}}<b>CMy Notebook</b>{{< /hl >}}<br>
+
 {{% callout note %}}
   2. <b>Advanced questions about my notebook (ThinkPad X1):</b>
 {{% /callout %}}
@@ -135,10 +137,16 @@ slides: ""
 ➡️My notebook is cooled from below by two fans<br>
 ➡️Smartphones in general; Heatpipe, which transmits the heat to the outside<br>
 <p></p>
+
+## {{< hl >}}<b>My future PC</b>{{< /hl >}}<br>
+
 {{% callout note %}}
   3. <b> This are the parts that i would buy, if i would build my own PC. Link ➔</b>
   [Digitec](https://www.digitec.ch/de/shopList/show/ABB019BA20D90765AFCEC16A2800DF8C)
 {{% /callout %}}
+
+## {{< hl >}}<b>Bits and Bytes</b>{{< /hl >}}<br>
+
 {{% callout note %}}
   4. <b>Task – Bits and bytes</b>
 {{% /callout %}}
@@ -151,6 +159,9 @@ slides: ""
 {{< hl >}}You buy an HDD advertised with 1TB. How much usable space will the Windows operating system report you and why?{{< /hl >}}<br>
 ➡️If you have a 1TB HDD in your PC, then you have a real storage of 932GB. This is because the computer is working with binary numbers (1,024 bytes = 1kb).
 <p></p>
+
+## {{< hl >}}<b>Binary Digits</b>{{< /hl >}}<br>
+
 {{% callout note %}}
   5. <b>Task – Decode the following binary sequences to text. Each character uses 8-bits.</b>
 {{% /callout %}}
@@ -163,15 +174,12 @@ After this you can have a look to the ASCII-Table. <b>42</b> corresponds to <b> 
 {{< hl >}}"Xavier" in a binary sequence{{< /hl >}}<br>
 ➡️01011000 01100001 01110110 01101001 01100101 01110010<br>
 <p></p>
+
 {{% callout note %}}
   4. <b>Task – Multiplication with basic instructions<br>
   Create a sequence in the Johnny simulator that takes 2 numbers from any 2 registers, multiplies them and writes the result to another register.
 </b>
 {{% /callout %}}<br>
-<p></p>
-<p></p>
-
-## {{< hl >}}<b>Johny Simulator</b>{{< /hl >}}<br>
 <p>
 The Johny Simulator shows us, how a RAM calculation is working. Additions and subtractions can be performed directly, while multiplications have to be added up over several steps. In the simulator you have the opportunity to write and simulate programms.<br>
 </p>
@@ -239,8 +247,12 @@ A transistor can be thought of as a gate that is either open or closed. When a t
 </p>
 
 ![Gate](gate.jpg "<b>Gate</b> (Unsplash: Tianshu Liu)")<br>
+<p>
 
 ## {{< hl >}}<b>Cheat in CookieClicker</b>{{< /hl >}}<br>
 <pre> Score up faster with CheatEngine ➔ No more words needed  </pre><br>
 
 ![CookieClicker](cookieclicker.jpg "<b>CookieClicker</b> Screenshot")<br>
+</p>
+
+## {{< hl >}}<b>Cheat in CookieClicker</b>{{< /hl >}}<br>
