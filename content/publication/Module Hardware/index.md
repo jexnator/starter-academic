@@ -169,6 +169,7 @@ After this you can have a look to the ASCII-Table. <b>42</b> corresponds to <b> 
 </b>
 {{% /callout %}}
 <p></p>
+
 ## {{< hl >}}Johny Simulator{{< /hl >}}<br>
 
 > Example: <b>8 * 5 = 40</b>
