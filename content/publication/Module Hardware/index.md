@@ -174,19 +174,19 @@ After this you can have a look to the ASCII-Table. <b>42</b> corresponds to <b> 
 
 > The Johny Simulator shows us, how a RAM calculation is working. Additions and subtractions can be performed directly, while multiplications have to be added up over several steps. In the simulator you have the opportunity to write and simulate programms.<br> Here is a list of the program commands:<br>
 ● `TAKE` The value of the location (given by the absolute address) is transported to
-the accumulator.
+the accumulator.<br>
 ● `SAVE` The value of the accumulator is transported to the location given by the absolute
-address.
+address.<br>
 ● `ADD` The value of a location (given by the absolute address) is added to the value
-in the accumulator.
+in the accumulator.<br>
 ● `SUB` The value of a location (given by the absolute address) is subtracted from the
-value in the accumulator.
-● `INC` The value of the location (given by the absolute address) is incremented.
-● `DEC` The value of the location (given by the absolute address) is decremented.
-● `NULL` The value of the location (given by the absolute address) is set to zero.
+value in the accumulator.<br>
+● `INC` The value of the location (given by the absolute address) is incremented.<br>
+● `DEC` The value of the location (given by the absolute address) is decremented.<br>
+● `NULL` The value of the location (given by the absolute address) is set to zero.<br>
 ● `TST` If and only if the location (given by the absolute address) has a zero value,
-the next macro instruction is skipped.
-● `JMP` The program is continued at the given location.
+the next macro instruction is skipped.<br>
+● `JMP` The program is continued at the given location.<br>
 ● `HLT` The simulator shows a message that the program is finished.<br>
 <p></p>
 
