@@ -238,6 +238,9 @@ A transistor can be thought of as a gate that is either open or closed. When a t
   font-family:"Lucida Console", Monaco, monospace !important;;font-size:36px;text-align:center;vertical-align:bottom}
 .tg .tg-0gfu{background-color:#38fff8;border-color:#000000;font-family:"Lucida Console", Monaco, monospace !important;;
   font-size:36px;font-weight:bold;text-align:center;vertical-align:bottom}
+.tg .tg-sja5{background-color:#ffffff;border-color:inherit;color:#000000;
+  font-family:"Lucida Console", Monaco, monospace !important;;font-size:xx-large;text-align:center;vertical-align:bottom
+  }
 .tg .tg-af8j{background-color:#efefef;border-color:inherit;color:#000000;
   font-family:"Lucida Console", Monaco, monospace !important;;font-size:36px;text-align:center;vertical-align:bottom}
 </style>
@@ -261,7 +264,7 @@ A transistor can be thought of as a gate that is either open or closed. When a t
     <td class="tg-jnts">0</td>
     <td class="tg-jnts">1</td>
     <td class="tg-jnts">0</td>
-    <td class="tg-jnts">1</td>
+    <td class="tg-sja5">1</td>
     <td class="tg-jnts">0</td>
     <td class="tg-jnts">1</td>
   </tr>
