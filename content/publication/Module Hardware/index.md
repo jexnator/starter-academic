@@ -255,4 +255,10 @@ A transistor can be thought of as a gate that is either open or closed. When a t
 ![CookieClicker](cookieclicker.jpg "<b>CookieClicker</b> Screenshot")<br>
 </p>
 
-## {{< hl >}}<b>Cheat in CookieClicker</b>{{< /hl >}}<br>
+## {{< hl >}}<b>HDD & SSD in depth</b>{{< /hl >}}<br>
+> If you ever shopped for HDDs, you probably stumbled across multiple flavors. For example, consumer-grade, NAS-grade and server-grade.<br>
+● What are the differences between those grades?<br>
+
+> ● Are there grades/tiers for SSDs? <br>
+
+> ● Search the web for 2 HDDs and SSDs that you would use in a consumer PC or server (1 for each use case).<br>
