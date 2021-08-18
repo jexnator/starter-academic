@@ -224,3 +224,5 @@ Adress 021: <b>5</b> (Factor)<br>
 
 ## {{< hl >}}<b>Transistors and Logic Gates</b>{{< /hl >}}<br>
 ![Gate](gate.jpg "<b>Gate</b> (Unsplash: Tianshu Liu)")<br>
+A transistor can be thought of as a gate that is either open or closed. When a transistor is on, then an electric current can flow through. And when it’s off, then no current flows. The first Transistor came up in 1947. This gates are very small but a lot faster than mechanical relay switches and vaacum tubes. A microprocessor contains more than five million transistors.
+
