@@ -245,6 +245,4 @@ A transistor can be thought of as a gate that is either open or closed. When a t
 <pre> Score up faster with CheatEngine ➔ No more words needed  </pre>
 </p>
 
-![CookieClicker](clicker.jpg "<b>CookieClicker</b> Screenshot")<br>
-
-hello
+![CookieClicker](cookieclicker.jpg "<b>CookieClicker</b> Screenshot")<br>
