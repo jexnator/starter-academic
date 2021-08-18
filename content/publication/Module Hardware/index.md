@@ -228,12 +228,13 @@ A transistor can be thought of as a gate that is either open or closed. When a t
 <p>
 <pre> <b>Logic gate function:</b><br> 0 ➔ OFF ➔ no low voltage (0V) <br> 1 ➔ ON ➔ low voltage (5V) </pre>
 </p>
+
 | ON | OFF | AND | NAND | OR | NOR | XOR | XNOR |
 |----|-----|-----|------|----|-----|-----|------|
 | 0  | 0   | 0   | 1    | 0  | 1   | 0   | 1    |
 | 0  | 1   | 0   | 1    | 1  | 0   | 1   | 0    |
 | 1  | 0   | 0   | 1    | 1  | 0   | 1   | 0    |
-| 1  | 1   | 1   | 0    | 1  | 0   | 0   | 1    |
+| 1  | 1   | 1   | 0    | 1  | 0   | 0   | 1    |<br>
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
