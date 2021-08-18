@@ -171,7 +171,7 @@ After this you can have a look to the ASCII-Table. <b>42</b> corresponds to <b> 
 <p></p>
 <p></p>
 
-## {{< hl >}}Johny Simulator{{< /hl >}}<br>
+## {{< hl >}}<b>Johny Simulator</b>{{< /hl >}}<br>
 
 > The Johny Simulator shows us, how a RAM calculation is working. Additions and subtractions can be performed directly, while multiplications have to be added up over several steps. In the simulator you have the opportunity to write and simulate programms.<br> Here is a list of the program commands:<br>
 ● `TAKE` The value of the location (given by the absolute address) is transported to
@@ -206,8 +206,7 @@ Adress 022: <b>40</b> (Product)<br>
 5.`DEC 021`; Decrement value of the adress 021<br>
 6.`TST 021`; If the value 021 is equal 0, the next macro instruction is skipped<br>
 7.`JMP 001`; The programm continious at the location 001<br>
-8.`HLT 000`; End of program
-<p></p>
+8.`HLT 000`; End of program<br>
 If everything has worked fine, then the adress line 022 should contain the value <b>40</b>.
 
 ![Johny](johny.jpg "<b>Johny Simulator</b> (Screenshot)")<br>
