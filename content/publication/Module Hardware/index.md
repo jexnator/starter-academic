@@ -175,6 +175,8 @@ After this you can have a look to the ASCII-Table. <b>42</b> corresponds to <b> 
 ➡️01011000 01100001 01110110 01101001 01100101 01110010<br>
 <p></p>
 
+## {{< hl >}}<b>Johny Simulator</b>{{< /hl >}}<br>
+
 {{% callout note %}}
   4. <b>Task – Multiplication with basic instructions<br>
   Create a sequence in the Johnny simulator that takes 2 numbers from any 2 registers, multiplies them and writes the result to another register.
