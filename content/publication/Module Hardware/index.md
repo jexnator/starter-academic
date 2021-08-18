@@ -174,7 +174,8 @@ After this you can have a look to the ASCII-Table. <b>42</b> corresponds to <b> 
 ## {{< hl >}}<b>Johny Simulator</b>{{< /hl >}}<br>
 <p>
 The Johny Simulator shows us, how a RAM calculation is working. Additions and subtractions can be performed directly, while multiplications have to be added up over several steps. In the simulator you have the opportunity to write and simulate programms.<br>
-</p> 
+</p>
+<p> 
 Here is a list of the program commands:<br>
 
 
@@ -218,3 +219,4 @@ Adress 021: <b>5</b> (Factor)<br>
 ### `💡If everything has worked fine, then the adress line 022 should contain the value 40.`
 
 ![Johny](johny.jpg "<b>Johny Simulator</b> (Screenshot)")<br>
+</p>
