@@ -250,7 +250,7 @@ A transistor can be thought of as a gate that is either open or closed. When a t
 <p>
 
 ## {{< hl >}}<b>Cheat in CookieClicker</b>{{< /hl >}}<br>
-<pre> Score up faster with CheatEngine ➔ No more words needed  </pre><br>
+<pre> Score up faster with CheatEngine ➔ No more words needed  </pre>
 
 ![CookieClicker](cookieclicker.jpg "<b>CookieClicker</b> Screenshot")<br>
 </p>
