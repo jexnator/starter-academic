@@ -191,11 +191,14 @@ the next macro instruction is skipped.<br>
 <p></p>
 
 Example programm for a multiplication <b>8 * 5 = 40</b><br>
+<p></p>
 | Adress | Data | Data type |
-| --- |--- | --- |
-| 020 | 8 | Factor |
-| 021 | 5 | Factor |
-| 022 | 40 | Product |
+|--------|------|-----------|
+| 020    | 8    | Factor    |
+| 021    | 5    | Factor    |
+| 022    | 40   | Product   |<br>
+<p></p>
+
 1.   
 
 ![Johny](johny.jpg "<b>Johny Simulator</b> (Screenshot)")<br>
