@@ -228,78 +228,12 @@ A transistor can be thought of as a gate that is either open or closed. When a t
 <p>
 <pre> <b>Logic gate function:</b><br> 0 ➔ OFF ➔ no low voltage (0V) <br> 1 ➔ ON ➔ low voltage (5V) </pre>
 </p>
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-jnts{background-color:#ffffff;border-color:inherit;color:#000000;
-  font-family:"Lucida Console", Monaco, monospace !important;;font-size:36px;text-align:center;vertical-align:bottom}
-.tg .tg-0gfu{background-color:#38fff8;border-color:#000000;font-family:"Lucida Console", Monaco, monospace !important;;
-  font-size:36px;font-weight:bold;text-align:center;vertical-align:bottom}
-.tg .tg-sja5{background-color:#ffffff;border-color:inherit;color:#000000;
-  font-family:"Lucida Console", Monaco, monospace !important;;font-size:xx-large;text-align:center;vertical-align:bottom
-  }
-.tg .tg-af8j{background-color:#efefef;border-color:inherit;color:#000000;
-  font-family:"Lucida Console", Monaco, monospace !important;;font-size:36px;text-align:center;vertical-align:bottom}
-</style>
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-0gfu">ON</th>
-    <th class="tg-0gfu">OFF</th>
-    <th class="tg-0gfu">AND</th>
-    <th class="tg-0gfu">NAND</th>
-    <th class="tg-0gfu">OR</th>
-    <th class="tg-0gfu">NOR</th>
-    <th class="tg-0gfu">XOR</th>
-    <th class="tg-0gfu">XNOR</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-jnts">0</td>
-    <td class="tg-jnts">0</td>
-    <td class="tg-jnts">0</td>
-    <td class="tg-jnts">1</td>
-    <td class="tg-jnts">0</td>
-    <td class="tg-sja5">1</td>
-    <td class="tg-jnts">0</td>
-    <td class="tg-jnts">1</td>
-  </tr>
-  <tr>
-    <td class="tg-af8j">0</td>
-    <td class="tg-af8j">1</td>
-    <td class="tg-af8j">0</td>
-    <td class="tg-af8j">1</td>
-    <td class="tg-af8j">1</td>
-    <td class="tg-af8j">0</td>
-    <td class="tg-af8j">1</td>
-    <td class="tg-af8j">0</td>
-  </tr>
-  <tr>
-    <td class="tg-jnts">1</td>
-    <td class="tg-jnts">0</td>
-    <td class="tg-jnts">0</td>
-    <td class="tg-jnts">1</td>
-    <td class="tg-jnts">1</td>
-    <td class="tg-jnts">0</td>
-    <td class="tg-jnts">1</td>
-    <td class="tg-jnts">0</td>
-  </tr>
-  <tr>
-    <td class="tg-af8j">1</td>
-    <td class="tg-af8j">1</td>
-    <td class="tg-af8j">1</td>
-    <td class="tg-af8j">0</td>
-    <td class="tg-af8j">1</td>
-    <td class="tg-af8j">0</td>
-    <td class="tg-af8j">0</td>
-    <td class="tg-af8j">1</td>
-  </tr>
-</tbody>
-</table>
+| ON | OFF | AND | NAND | OR | NOR | XOR | XNOR |
+|:--:|:---:|:---:|:----:|:--:|:---:|:---:|:----:|
+|  0 |  0  |  0  |   1  |  0 |  1  |  0  |   1  |
+|  0 |  1  |  0  |   1  |  1 |  0  |  1  |   0  |
+|  1 |  0  |  0  |   1  |  1 |  0  |  1  |   0  |
+|  1 |  1  |  1  |   0  |  1 |  0  |  0  |   1  |
 </p>
 
 ![Gate](gate.jpg "<b>Gate</b> (Unsplash: Tianshu Liu)")<br>
