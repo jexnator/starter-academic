@@ -172,5 +172,30 @@ After this you can have a look to the ASCII-Table. <b>42</b> corresponds to <b> 
 
 ## {{< hl >}}Johny Simulator{{< /hl >}}<br>
 
-> Example: <b>8 * 5 = 40</b>
+> The Johny Simulator shows us, how a RAM calculation is working. Additions and subtractions can be performed directly, while multiplications have to be added up over several steps. In the simulator you have the opportunity to write and simulate programms.<br> Here is a list of the program commands:<br>
+● `TAKE` The value of the location (given by the absolute address) is transported to
+the accumulator.
+● `SAVE` The value of the accumulator is transported to the location given by the absolute
+address.
+● `ADD` The value of a location (given by the absolute address) is added to the value
+in the accumulator.
+● `SUB` The value of a location (given by the absolute address) is subtracted from the
+value in the accumulator.
+● `INC` The value of the location (given by the absolute address) is incremented.
+● `DEC` The value of the location (given by the absolute address) is decremented.
+● `NULL` The value of the location (given by the absolute address) is set to zero.
+● `TST` If and only if the location (given by the absolute address) has a zero value,
+the next macro instruction is skipped.
+● `JMP` The program is continued at the given location.
+● `HLT` The simulator shows a message that the program is finished.<br>
+<p></p>
+
+Example programm for a multiplication <b>8 * 5 = 40</b><br>
+| Adress        | Data          | Datat ype  |
+| ------------- |:-------------:| ----------:|
+| 020           | 8             | Factor     |
+| 021           | 5             | Factor     |
+| 022           | 40            | Product    |
+1.   
+
 ![Johny](johny.jpg "<b>Johny Simulator</b> (Screenshot)")<br>
