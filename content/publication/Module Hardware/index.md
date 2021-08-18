@@ -207,9 +207,10 @@ Adress 021: <b>5</b> (Factor)<br>
 7.`JMP 001`; The programm continious at the location 001<br>
 8.`HLT 000`; End of program<br>
 
-### {{< hl >}}Inputs{{< /hl >}}<br>
+### {{< hl >}}Output{{< /hl >}}<br>
 
 > Adress 022: <b>40</b> (Product)<br>
+
 If everything has worked fine, then the adress line 022 should contain the value <b>40</b>.
 
 ![Johny](johny.jpg "<b>Johny Simulator</b> (Screenshot)")<br>
