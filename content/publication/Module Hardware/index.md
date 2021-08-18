@@ -189,11 +189,13 @@ the next macro instruction is skipped.<br>
 ● `JMP` The program is continued at the given location.<br>
 ● `HLT` The simulator shows a message that the program is finished.<br>
 Example programm for a multiplication <b>8 * 5 = 40</b><br>
-*Inputs*<br>
-Adress 020: <b>8/b> (Factor)<br>
-Adress 021: <b>5/b> (Factor)<br>
-Adress 022: <b>40/b> (Product)<br>
-*Programm*<br>
+
+> ### {{< hl >}}Inputs{{< /hl >}}<br>
+Adress 020: <b>8</b> (Factor)<br>
+Adress 021: <b>5</b> (Factor)<br>
+Adress 022: <b>40</b> (Product)<br>
+
+> ### {{< hl >}}Programm{{< /hl >}}<br>
 1.`NULL 022`; Set value of adress 022 to zero<br>
 2.`TAKE 022`; Transport value of adress 022 to the accumulator<br>
 3.`ADD 020`; Add the value of adress 020 to the value in the accumulator<br>
