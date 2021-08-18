@@ -208,6 +208,6 @@ Adress 022: <b>40</b> (Product)<br>
 7.`JMP 001`; The programm continious at the location 001<br>
 8.`HLT 000`; End of program
 <p></p>
-If everything has worked correctly, then should the adress line 022 contain the value <b>40</b>.
+If everything has worked fine, then the adress line 022 should contain the value <b>40</b>.
 
 ![Johny](johny.jpg "<b>Johny Simulator</b> (Screenshot)")<br>
