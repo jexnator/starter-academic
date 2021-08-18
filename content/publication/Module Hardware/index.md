@@ -171,8 +171,9 @@ After this you can have a look to the ASCII-Table. <b>42</b> corresponds to <b> 
 <p></p>
 {{< hl >}}Johny Simulator{{< /hl >}}<br>
 <p></p>
+> Example: <b>8 * 5 = 40</b><br>
 
 ![Johny](johny.jpg "<b>Johny Simulator</b> (Screenshot)")<br>
-> Blockquotes are very handy in email to emulate reply text.
+
 
 
