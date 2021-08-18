@@ -167,15 +167,15 @@ After this you can have a look to the ASCII-Table. <b>42</b> corresponds to <b> 
   4. <b>Task – Multiplication with basic instructions<br>
   Create a sequence in the Johnny simulator that takes 2 numbers from any 2 registers, multiplies them and writes the result to another register.
 </b>
-{{% /callout %}}
+{{% /callout %}}<br>
 <p></p>
 <p></p>
 
 ## {{< hl >}}<b>Johny Simulator</b>{{< /hl >}}<br>
-
+<p>
 The Johny Simulator shows us, how a RAM calculation is working. Additions and subtractions can be performed directly, while multiplications have to be added up over several steps. In the simulator you have the opportunity to write and simulate programms.<br> 
 Here is a list of the program commands:<br>
-<p></p>
+</p>
 
 > ● `TAKE` The value of the location (given by the absolute address) is transported to
 the accumulator.<br>
