@@ -228,6 +228,77 @@ A transistor can be thought of as a gate that is either open or closed. When a t
 <p>
 <pre> <b>Logic gate function:</b><br> 0 ➔ OFF ➔ no low voltage (0V) <br> 1 ➔ ON ➔ low voltage (5V) </pre>
 </p>
+| ON | OFF | AND | NAND | OR | NOR | XOR | XNOR |
+|----|-----|-----|------|----|-----|-----|------|
+| 0  | 0   | 0   | 1    | 0  | 1   | 0   | 1    |
+| 0  | 1   | 0   | 1    | 1  | 0   | 1   | 0    |
+| 1  | 0   | 0   | 1    | 1  | 0   | 1   | 0    |
+| 1  | 1   | 1   | 0    | 1  | 0   | 0   | 1    |
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">ON</th>
+    <th class="tg-0pky">OFF</th>
+    <th class="tg-0pky">AND</th>
+    <th class="tg-0pky">NAND</th>
+    <th class="tg-0pky">OR</th>
+    <th class="tg-0pky">NOR</th>
+    <th class="tg-0pky">XOR</th>
+    <th class="tg-0pky">XNOR</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">1</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">0</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">0</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">1</td>
+  </tr>
+</tbody>
+</table>
 
 ![Gate](gate.jpg "<b>Gate</b> (Unsplash: Tianshu Liu)")<br>
 
