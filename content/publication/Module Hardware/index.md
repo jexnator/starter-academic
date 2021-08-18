@@ -169,7 +169,7 @@ After this you can have a look to the ASCII-Table. <b>42</b> corresponds to <b> 
 </b>
 {{% /callout %}}
 <p></p>
-{{< hl >}}Johny Simulator{{< /hl >}}<br>
+## {{< hl >}}Johny Simulator{{< /hl >}}<br>
 
 > Example: <b>8 * 5 = 40</b>
 ![Johny](johny.jpg "<b>Johny Simulator</b> (Screenshot)")<br>
