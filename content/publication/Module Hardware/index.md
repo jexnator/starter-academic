@@ -240,3 +240,9 @@ A transistor can be thought of as a gate that is either open or closed. When a t
 
 ![Gate](gate.jpg "<b>Gate</b> (Unsplash: Tianshu Liu)")<br>
 
+## {{< hl >}}<b>Cheat in CookieClicker</b>{{< /hl >}}<br>
+<p>
+<pre> Score up faster with CheatEngine ➔ No more words needed  </pre>
+</p>
+
+![CookieClicker](clicker.jpg "<b>CookieClicker</b> Screenshot")<br>
