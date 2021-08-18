@@ -211,6 +211,6 @@ Adress 021: <b>5</b> (Factor)<br>
 
 > Adress 022: <b>40</b> (Product)<br>
 
-#### `💡If everything has worked fine, then the adress line 022 should contain the value <b>40</b>.`
+### `💡If everything has worked fine, then the adress line 022 should contain the value 40.`
 
 ![Johny](johny.jpg "<b>Johny Simulator</b> (Screenshot)")<br>
