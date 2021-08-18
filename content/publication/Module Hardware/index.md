@@ -170,8 +170,9 @@ After this you can have a look to the ASCII-Table. <b>42</b> corresponds to <b> 
 {{% /callout %}}
 <p></p>
 {{< hl >}}Johny Simulator{{< /hl >}}<br>
+<p></p>
 
-![Johny](johny.jpg "<b>Johny Simulator</b> (Screenshot)")
+![Johny](johny.jpg "<b>Johny Simulator</b> (Screenshot)")<br>
 > Blockquotes are very handy in email to emulate reply text.
 
 
