@@ -169,6 +169,7 @@ After this you can have a look to the ASCII-Table. <b>42</b> corresponds to <b> 
 </b>
 {{% /callout %}}
 <p></p>
+<p></p>
 
 ## {{< hl >}}Johny Simulator{{< /hl >}}<br>
 
@@ -206,5 +207,7 @@ Adress 022: <b>40</b> (Product)<br>
 6.`TST 021`; If the value 021 is equal 0, the next macro instruction is skipped<br>
 7.`JMP 001`; The programm continious at the location 001<br>
 8.`HLT 000`; End of program
+<p></p>
+If everything has worked correctly, then should the adress line 022 contain the value <b>40</b>.
 
 ![Johny](johny.jpg "<b>Johny Simulator</b> (Screenshot)")<br>
