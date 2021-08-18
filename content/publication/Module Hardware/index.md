@@ -189,11 +189,11 @@ the next macro instruction is skipped.<br>
 ● `JMP` The program is continued at the given location.<br>
 ● `HLT` The simulator shows a message that the program is finished.<br>
 Example programm for a multiplication <b>8 * 5 = 40</b><br>
-| Adress | Data | Data type |
-|--------|------|-----------|
-| 020    | 8    | Factor    |
-| 021    | 5    | Factor    |
-| 022    | 40   | Product   |
+| Adress 	| Data 	| Data type 	|
+|--------	|------	|-----------	|
+| 020    	| 8    	| Factor    	|
+| 021    	| 5    	| Factor    	|
+| 022    	| 40   	| Product   	|
 
 
 1.   
