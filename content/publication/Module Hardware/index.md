@@ -194,13 +194,13 @@ Adress 020: <b>8/b> (Factor)<br>
 Adress 021: <b>5/b> (Factor)<br>
 Adress 022: <b>40/b> (Product)<br>
 **Programm**<br>
-1. `NULL 022`; Set value of adress 022 to zero<br>
-2. `TAKE 022`; Transport value of adress 022 to the accumulator<br>
-3. `ADD 020`; Add the value of adress 020 to the value in the accumulator<br>
-4. `SAVE 022`; Transport value of the accumulator back to the address 022<br>
-5. `DEC 021`; Decrement value of the adress 021<br>
-6. `TST 021`; If the value 021 is equal 0, the next macro instruction is skipped<br>
-7. `JMP 001`; The programm continious at the location 001<br>
-8. `HLT 000`; End of program<br>
+1.`NULL 022`; Set value of adress 022 to zero<br>
+2.`TAKE 022`; Transport value of adress 022 to the accumulator<br>
+3.`ADD 020`; Add the value of adress 020 to the value in the accumulator<br>
+4.`SAVE 022`; Transport value of the accumulator back to the address 022<br>
+5.`DEC 021`; Decrement value of the adress 021<br>
+6.`TST 021`; If the value 021 is equal 0, the next macro instruction is skipped<br>
+7.`JMP 001`; The programm continious at the location 001<br>
+8.`HLT 000`; End of program<br>
 
 ![Johny](johny.jpg "<b>Johny Simulator</b> (Screenshot)")<br>
