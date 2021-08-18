@@ -220,3 +220,7 @@ Adress 021: <b>5</b> (Factor)<br>
 
 ![Johny](johny.jpg "<b>Johny Simulator</b> (Screenshot)")<br>
 </p>
+<p>
+
+## {{< hl >}}<b>Transistors and Logic Gates</b>{{< /hl >}}<br>
+![Gate](gate.jpg "<b>Gate</b> (Unsplash: Tianshu Liu)")<br>
