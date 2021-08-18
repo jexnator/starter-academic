@@ -168,3 +168,7 @@ After this you can have a look to the ASCII-Table. <b>42</b> corresponds to <b> 
   Create a sequence in the Johnny simulator that takes 2 numbers from any 2 registers, multiplies them and writes the result to another register.
 </b>
 {{% /callout %}}
+<p></p>
+{{< hl >}}Johny Simulator{{< /hl >}}<br>
+
+![Johny](johny.jpg "<b>Johny Simulator</b> (Screenshot)")
