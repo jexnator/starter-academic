@@ -195,7 +195,6 @@ Example programm for a multiplication <b>8 * 5 = 40</b><br>
 
 > Adress 020: <b>8</b> (Factor)<br>
 Adress 021: <b>5</b> (Factor)<br>
-Adress 022: <b>40</b> (Product)<br>
 
 ### {{< hl >}}Programm{{< /hl >}}<br>
 
@@ -207,6 +206,10 @@ Adress 022: <b>40</b> (Product)<br>
 6.`TST 021`; If the value 021 is equal 0, the next macro instruction is skipped<br>
 7.`JMP 001`; The programm continious at the location 001<br>
 8.`HLT 000`; End of program<br>
+
+### {{< hl >}}Inputs{{< /hl >}}<br>
+
+> Adress 022: <b>40</b> (Product)<br>
 If everything has worked fine, then the adress line 022 should contain the value <b>40</b>.
 
 ![Johny](johny.jpg "<b>Johny Simulator</b> (Screenshot)")<br>
