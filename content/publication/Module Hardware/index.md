@@ -190,13 +190,13 @@ the next macro instruction is skipped.<br>
 ● `HLT` The simulator shows a message that the program is finished.<br>
 Example programm for a multiplication <b>8 * 5 = 40</b><br>
 
-> ### {{< hl >}}Inputs{{< /hl >}}
-Adress 020: <b>8</b> (Factor)<br>
+### {{< hl >}}Inputs{{< /hl >}}
+> Adress 020: <b>8</b> (Factor)<br>
 Adress 021: <b>5</b> (Factor)<br>
 Adress 022: <b>40</b> (Product)<br>
 
-> ### {{< hl >}}Programm{{< /hl >}}
-1.`NULL 022`; Set value of adress 022 to zero<br>
+### {{< hl >}}Programm{{< /hl >}}
+> 1.`NULL 022`; Set value of adress 022 to zero<br>
 2.`TAKE 022`; Transport value of adress 022 to the accumulator<br>
 3.`ADD 020`; Add the value of adress 020 to the value in the accumulator<br>
 4.`SAVE 022`; Transport value of the accumulator back to the address 022<br>
