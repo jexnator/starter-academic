@@ -291,7 +291,7 @@ A transistor can be thought of as a gate that is either open or closed. When a t
 
 > ● What would you change for in a server?<br>
 
-In a server I would install 2x RJ45 for security reasons (redundancy).<br
+In a server I would install 2x RJ45 for security reasons (redundancy).<br>
 </p>
 
 |      Name     	|           Use case           	| Release 	|  Bandwidth  	| Wires 	|   Clock  	| Signaltype 	| Distance 	|
