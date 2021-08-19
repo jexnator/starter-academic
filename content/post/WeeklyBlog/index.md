@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: ""
+title: "08/11/21 - 08/13/21"
 subtitle: ""
 summary: "Trainee diary"
 authors: [Xavier Jeiziner]
@@ -28,8 +28,6 @@ image:
 projects: []
 ---
 <p align="justify">
-
-# 08/11/21 - 08/13/21
 
 In the second week we started with our first intern modul. Dan and Jim were the coaches of the hardware modul. The goal was to get knowledge about all hardware parts in a personal computer, notebook or a server. This includes also the princips, how the different parts are working and how they communicate together.<br>
 
