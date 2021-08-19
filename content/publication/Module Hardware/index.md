@@ -284,8 +284,14 @@ A transistor can be thought of as a gate that is either open or closed. When a t
   1. `HDMI`<br>
   2. `RJ45`<br>
   3. `USB-A`<br>
-  4. `AUX`
+  4. `AUX In/Out`
   5. `Thunderbolt 3`<br>
+</p>
+<p>
+
+> ● What would you change for in a server?<br>
+In a server I would install 2x RJ45 for security reasons (redundancy).<br
+</p>
 
 |      Name     	|           Use case           	| Release 	|  Bandwidth  	| Wires 	|   Clock  	| Signaltype 	| Distance 	|
 |:-------------:	|:----------------------------:	|:-------:	|:-----------:	|:-----:	|:--------:	|:----------:	|:--------:	|
