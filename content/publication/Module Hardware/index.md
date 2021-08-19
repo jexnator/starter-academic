@@ -256,9 +256,11 @@ A transistor can be thought of as a gate that is either open or closed. When a t
 `SERVER-DISKS` have a lower probability of failure. They are designed for continuous operation.<br>
 
 > ● Are there grades/tiers for SSDs? <br>
-  1. Consumer SSD ➔ conventional ssd (low cost)<br>
-  2. Workstation SSD ➔ 5-6 times faster than consumer-grade devices<br>
-  3. Enterprise SSD ➔ These SSDs are used for server applications in permanent operation<br>
-  4. CDN SSD ➔ <br> deliver the best balance of read performance, high reliability and low thermal load
+  1. `Consumer SSD` ➔ conventional ssd (low cost)<br>
+  2. `Workstation SSD` ➔ 5-6 times faster than consumer-grade devices<br>
+  3. `Enterprise SSD` ➔ These SSDs are used for server applications in permanent operation<br>
+  4. `CDN SSD` ➔ deliver the best balance of read performance, high reliability and low thermal load<br>
 
 > ● Search the web for 2 HDDs and SSDs that you would use in a consumer PC or server (1 for each use case).<br>
+  - Consumer PC: [Desktop HDD & SSD](https://www.digitec.ch/de/shopList/show/B42BF2000167C4CA847665AE614E72F1)<br>
+  - Server: [Server HDD & SSD](https://www.digitec.ch/de/shopList/show/22ECEE352F6A7C468972888CC174D10B)<br>
