@@ -246,6 +246,8 @@ A transistor can be thought of as a gate that is either open or closed. When a t
 
 </p>
 
+![AND](and.jpg)<br>
+
 ![Gate](gate.jpg "<b>Gate</b> (Unsplash: Tianshu Liu)")<br>
 <p>
 
