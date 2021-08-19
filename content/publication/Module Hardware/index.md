@@ -250,10 +250,18 @@ A transistor can be thought of as a gate that is either open or closed. When a t
 ## {{< hl >}}<b>HDD & SSD in depth</b>{{< /hl >}}<br>
 > If you ever shopped for HDDs, you probably stumbled across multiple flavors. For example, consumer-grade, NAS-grade and server-grade.<br>
 ● What are the differences between those grades?<br>
+<p>
 
 `NAS-DISKS` is a storage type, which is connected to a network that allows network users and clients to store and collect data from a central location. Normally a NAS-HDD is working permanent (24/7), but power-saving. NAS systems are flexible and scalable. <br>
+</p>
+<p>
+
 `CONSUMER-DISKS` storage grade devices are used for conventional use in a PC. <br>
+</p>
+<p>
+
 `SERVER-DISKS` have a lower probability of failure. They are designed for continuous operation.<br>
+</p>
 
 > ● Are there grades/tiers for SSDs? <br>
   1. `Consumer SSD` ➔ conventional ssd (low cost)<br>
@@ -262,5 +270,5 @@ A transistor can be thought of as a gate that is either open or closed. When a t
   4. `CDN SSD` ➔ deliver the best balance of read performance, high reliability and low thermal load<br>
 
 > ● Search the web for 2 HDDs and SSDs that you would use in a consumer PC or server (1 for each use case).<br>
-  - Consumer PC: [Desktop HDD & SSD](https://www.digitec.ch/de/shopList/show/B42BF2000167C4CA847665AE614E72F1)<br>
-  - Server: [Server HDD & SSD](https://www.digitec.ch/de/shopList/show/22ECEE352F6A7C468972888CC174D10B)<br>
+  - `Consumer PC:` [HDD & SSD](https://www.digitec.ch/de/shopList/show/B42BF2000167C4CA847665AE614E72F1)<br>
+  - `Server:` [HDD & SSD](https://www.digitec.ch/de/shopList/show/22ECEE352F6A7C468972888CC174D10B)<br>
