@@ -251,6 +251,14 @@ A transistor can be thought of as a gate that is either open or closed. When a t
 > If you ever shopped for HDDs, you probably stumbled across multiple flavors. For example, consumer-grade, NAS-grade and server-grade.<br>
 ● What are the differences between those grades?<br>
 
+`NAS-DISKS` is a storage type, which is connected to a network that allows network users and clients to store and collect data from a central location. Normally a NAS-HDD is working permanent (24/7), but power-saving. NAS systems are flexible and scalable. <br>
+`CONSUMER-DISKS` storage grade devices are used for conventional use in a PC. <br>
+`SERVER-DISKS` have a lower probability of failure. They are designed for continuous operation.<br>
+
 > ● Are there grades/tiers for SSDs? <br>
+  1. Consumer SSD ➔ conventional ssd (low cost)<br>
+  2. Workstation SSD ➔ 5-6 times faster than consumer-grade devices<br>
+  3. Enterprise SSD ➔ These SSDs are used for server applications in permanent operation<br>
+  4. CDN SSD ➔ <br> deliver the best balance of read performance, high reliability and low thermal load
 
 > ● Search the web for 2 HDDs and SSDs that you would use in a consumer PC or server (1 for each use case).<br>
