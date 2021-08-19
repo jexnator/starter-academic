@@ -31,7 +31,9 @@ projects: []
 
 In the second week we started with our first intern modul. Dan and Jim were the coaches of the hardware modul. The goal was to get knowledge about all hardware parts in a personal computer, notebook or a server. This includes also the princips, how the different parts are working and how they communicate together.<br>
 
-We learned that hardware contains different parts of a computer, which can work internal or external in a device. An important part of this was to understand the basic principle of data storage. It was exciting to get an insight into the computer language. The binary code consists of a 1 or a 0 and occupies exactly one bit. With this knowhow we had to do serveral task, which you can see in [A publication]({{< relref "/publication/module-hardware" >}})
+We learned that hardware contains different parts of a computer, which can work internal or external in a device. An important part of this was to understand the basic principle of data storage. It was exciting to get an insight into the computer language. The binary code consists of a 1 or a 0 and occupies exactly one bit. With this knowhow we had to do serveral task, which you can see in 
+
+
 
 </p>
 
