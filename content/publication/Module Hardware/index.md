@@ -291,4 +291,17 @@ A transistor can be thought of as a gate that is either open or closed. When a t
   7. `Bluetooth`
 </p>
 <p>
-  
+
+|      Name     	|           Use case           	| Release 	|  Bandwidth  	| Wires 	|   Clock  	| Signaltype 	| Distance 	|
+|:-------------:	|:----------------------------:	|:-------:	|:-----------:	|:-----:	|:--------:	|:----------:	|:--------:	|
+|      RCA      	|         Video, Audio         	|   1940  	|    10 MHz   	|   1   	|  768 kHz 	|   Analog   	|    3m    	|
+|      VGA      	|         Video Trans.         	|   1987  	|   3 MBit/s  	|   14  	|  60 MHz  	|   Digital  	|    46m   	|
+|      DVI      	|         Video Trans.         	|   1999  	| 7.44 GBit/s 	|   29  	|  165 MHz 	|   Digital  	|   4.5m   	|
+|      PS/2     	|           Periphery          	|   1990  	|   350 MHz   	|   4   	|  16 kHz  	|   Digital  	|    5m    	|
+|      RJ45     	|            Network           	|   1970  	|  10 GBit/s  	|   8   	|  160 MHz 	|   Digital  	|    3m    	|
+|    USB-1.0    	|      Power, Data Trans.      	|   1996  	|  1.5 MBit/s 	|   4   	|   1 kHz  	|   Digital  	|    5m    	|
+|    USB-2.0    	|      Power, Data Trans.      	|   2000  	|  480 MBit/s 	|   4   	|  24 kHz  	|   Digital  	|    5m    	|
+|    USB-3.0    	|      Power, Data Trans.      	|   2008  	|   5 GBit/s  	|   4   	|  33 kHz  	|   Digital  	|    5m    	|
+| Thunderbold 3 	| Power, Video, Audio, Network 	|   2015  	|  40 GBit/s  	|   4   	|  240 Hz  	|   Digital  	|    2m    	|
+|       DP      	|          Video Audio         	|   2006  	|  77 GBit/s  	|   20  	|  225 MHz 	|   Digital  	|   1.8m   	|
+|      HDMI     	|        Video and Audio       	|   2002  	|  43 GBit/s  	|   19  	|  150 MHz 	|   Digital  	|    25m   	| 
