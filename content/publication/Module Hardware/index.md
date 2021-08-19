@@ -279,5 +279,16 @@ A transistor can be thought of as a gate that is either open or closed. When a t
 <p>
 
 ## {{< hl >}}<b>Desired interfaces</b>{{< /hl >}}<br>
-
+> ● What are your desired interfaces in a consumer PC/laptop?<br>
+### External<br>
+  1. `HDMI`<br>
+  2. `RJ45`<br>
+  3. `USB-A`<br>
+  4. `AUX`
+  5. `Thunderbolt 3`<br>
+  ### Internal<br>
+  6. `WIFI`
+  7. `Bluetooth`
+</p>
+<p>
   
