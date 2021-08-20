@@ -349,4 +349,17 @@ Download: `~21MBit/s`<br>
 Upload: `~1.5MBit/s`<br>
 
 </p>
+<p></p><br>
+<p>
+
+## {{< hl >}}<b>VR Headsets</b>{{< /hl >}}<br>
+> ● What do you think are problems when placing screens this close to our eyes? What specifications should the display fullfill to enable a good experience?<br>
+
+VR glasses trick the brain as well as the eyes. The main problem is, that a VR headset is very close to the eyes. If you are using this devices for too long, it can lead to myopia or to sleep rhythm disorders. Especially the blue light is said to be harmful for our eyes.<br>
+
+For a good virtual experience you should have a 4K-Display with 3840 x 2160 pixels.<br>
+</p>
+<p></p><br>
+<p>
+
 
