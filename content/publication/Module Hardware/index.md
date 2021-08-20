@@ -321,7 +321,9 @@ In a server I would install 2x RJ45 for security reasons (redundancy).<br>
 |    WLAN   	|             Network interface             	|   1980  	|  300 MBit/s 	|     -    	| 240 MHz 	|   Digital  	|
 | Bluetooth 	|            BT Device Connection           	|   1999  	|   2 Mbit/s  	|     -    	|  2 MHz  	|   Digital  	|<br>
 
-</p>
+</p><br>
+<p></p>
+<p></p>
 <p>
 
 ## {{< hl >}}<b>Transferspeed and Bandwidth</b>{{< /hl >}}<br>
