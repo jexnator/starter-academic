@@ -319,10 +319,10 @@ In a server I would install 2x RJ45 for security reasons (redundancy).<br>
 |    SATA   	|       Data exchange with hard disks       	|   2007  	|   3 GBit/s  	|     7    	|  6 GHz  	|   Digital  	|
 |    SAS    	|           Mass storage interface          	|   2004  	| 1200 MBit/s 	|     -    	|  12 GHz 	|   Digital  	|
 |    WLAN   	|             Network interface             	|   1980  	|  300 MBit/s 	|     -    	| 240 MHz 	|   Digital  	|
-| Bluetooth 	|            BT Device Connection           	|   1999  	|   2 Mbit/s  	|     -    	|  2 MHz  	|   Digital  	|
+| Bluetooth 	|            BT Device Connection           	|   1999  	|   2 Mbit/s  	|     -    	|  2 MHz  	|   Digital  	|<br>
 
 </p>
-
+<p>
 
 ## {{< hl >}}<b>Transferspeed and Bandwidth</b>{{< /hl >}}<br>
 > ● How much bandwidth is needed to stream a typical 2 hour Netflix 1080p movie (~6GB)?<br>
@@ -341,5 +341,5 @@ Upload: `~350MBit/s`<br>
 Download: `~21MBit/s`<br>
 Upload: `~1.5MBit/s`<br>
 
-
+</p>
 
