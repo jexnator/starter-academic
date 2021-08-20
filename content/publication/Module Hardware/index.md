@@ -397,3 +397,39 @@ OLED displays promise higher contrast images than LCD displays. This is because 
 </p>
 <p></p><br>
 <p>
+
+## {{< hl >}}<b>Office Workplace</b>{{< /hl >}}<br>
+> ● How should the PC perform? Did you choose a laptop or a workstation?<br>
+ 
+I plan to move to Bern in the next time. For this i will need an office workplace. The idea is to buy a notebook. Maybe i create my own notebook with the knowledge i got in the last few days.<br>
+Here is alist of the required hardware:<br>
+###### Hardware<br>
+- `Notebook`<br>
+- `Mouse`<br>
+- `Keyboard`<br>
+- `Docking Station`<br>
+- `curved display (OLED)`<br>
+- `Headset`<br>
+- `confortable chair & adjustable table`<br>
+- `eGPU`<br>
+
+> ● What interfaces do you need?<br>
+###### Interfaces<br>
+- `HDMI`<br>
+- `USB-3.1`<br>
+- `AUX In/Out`<br>
+- `Thunderbolt 3 or 4`<br>
+- `Bluetooth`<br>
+- `WIFI`<br>
+- `Cellular interface`<br>
+
+> ● Is an upgrade possible down the road?<br>
+Depending on the notebook I buy, maybe yes.<br>
+- `eGPU`<br>
+- `RAM (if not soldered)`<br>
+- `CPU`<br>
+</p>
+<p></p><br>
+<p>
+
+
