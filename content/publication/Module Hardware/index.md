@@ -335,9 +335,3 @@ $$6h\cdot3600=7200s$$
 $$\frac{6000MB}{7200s}=0.83MB/s$$
 
 $$0.83MB/s\cdot8Bit=6.67MBit/s$$
-
-
-$$\gamma_{n} = \frac{ 
-\left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T 
-\left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}
-{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
