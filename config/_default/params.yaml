@@ -74,7 +74,7 @@ highlight_languages:
   - css
   - javascript
   - yaml
-math: true
+math: false
 diagram: true
 privacy_pack: false
 edit_page:
