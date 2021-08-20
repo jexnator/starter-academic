@@ -335,11 +335,11 @@ $$0.83MB/s\cdot8Bit=6.67MBit/s$$<br>
 
 > ● What bandwidth (upload/download) do you have at home and on your mobile phone?<br>
 ### Home WIFI:<br>
-Download: ~200MBit/s<br>
-Upload: ~350MBit/s<br>
+Download: `~200MBit/s`<br>
+Upload: `~350MBit/s`<br>
 ### Mobile phone (4G):<br>
-Download: ~21MBit/s<br>
-Upload: ~1.5MBit/s<br>
+Download: `~21MBit/s`<br>
+Upload: `~1.5MBit/s`<br>
 
 
 
