@@ -326,8 +326,20 @@ In a server I would install 2x RJ45 for security reasons (redundancy).<br>
 
 ## {{< hl >}}<b>Transferspeed and Bandwidth</b>{{< /hl >}}<br>
 > ● How much bandwidth is needed to stream a typical 2 hour Netflix 1080p movie (~6GB)?<br>
-> $$Data\ Transfer\ Rate =\frac{Data\ Volume}{Time}$$<br>
+
+$$Data\ Transfer\ Rate =\frac{Data\ Volume}{Time}$$<br>
 $$6GB\cdot1000=6000MB$$<br>
 $$2h\cdot3600=7200s$$<br>
 $$\frac{6000MB}{7200s}=0.83MB/s$$<br>
 $$0.83MB/s\cdot8Bit=6.67MBit/s$$<br>
+
+> ● What bandwidth (upload/download) do you have at home and on your mobile phone?<br>
+### Home WIFI:<br>
+Download: ~200MBit/s<br>
+Upload: ~350MBit/s<br>
+### Mobile phone (4G):<br>
+Download: ~21MBit/s<br>
+Upload: ~1.5MBit/s<br>
+
+
+
