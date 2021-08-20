@@ -329,8 +329,5 @@ In a server I would install 2x RJ45 for security reasons (redundancy).<br>
 > $$Data\ Transfer\ Rate =\frac{Data\ Volume}{Time}$$<br>
 $$6GB\cdot1000=6000MB$$<br>
 $$2h\cdot3600=7200s$$<br>
-<p>
 $$\frac{6000MB}{7200s}=0.83MB/s$$<br>
-</p>
-
-$$0.83MB/s\cdot8Bit=6.67MBit/s$$
+$$0.83MB/s\cdot8Bit=6.67MBit/s$$<br>
