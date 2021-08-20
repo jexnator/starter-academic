@@ -207,12 +207,12 @@ the next macro instruction is skipped.<br>
 ● `HLT` The simulator shows a message that the program is finished.<br>
 Example programm for a multiplication <b>8 * 5 = 40</b><br>
 
-### {{< hl >}}Inputs{{< /hl >}}<br>
+### Inputs<br>
 
 > Adress 020: <b>8</b> (Factor)<br>
 Adress 021: <b>5</b> (Factor)<br>
 
-### {{< hl >}}Programm{{< /hl >}}<br>
+### Programm<br>
 
 > 1.`NULL 022`; Set value of adress 022 to zero<br>
 2.`TAKE 022`; Transport value of adress 022 to the accumulator<br>
@@ -223,7 +223,7 @@ Adress 021: <b>5</b> (Factor)<br>
 7.`JMP 001`; The programm continious at the location 001<br>
 8.`HLT 000`; End of program<br>
 
-### {{< hl >}}Output{{< /hl >}}<br>
+### Output<br>
 
 > Adress 022: <b>40</b> (Product)<br>
 
