@@ -327,9 +327,9 @@ In a server I would install 2x RJ45 for security reasons (redundancy).<br>
 ## {{< hl >}}<b>Transferspeed and Bandwidth</b>{{< /hl >}}<br>
 > ● How much bandwidth is needed to stream a typical 2 hour Netflix 1080p movie (~6GB)?<br>
 > $$Data\ Transfer\ Rate =\frac{Data\ Volume}{Time}$$<br>
+$$6GB\cdot1000=6000MB$$<br>
+$$2h\cdot3600=7200s$$<br>
 <p>
-$$6GB\cdot1000=6000MB$$
-$$2h\cdot3600=7200s$$
 $$\frac{6000MB}{7200s}=0.83MB/s$$<br>
 </p>
 
