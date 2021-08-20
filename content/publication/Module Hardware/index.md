@@ -385,4 +385,13 @@ For a good virtual experience you should have a 4K-Display with 3840 x 2160 pixe
 <p></p><br>
 <p>
 
+## {{< hl >}}<b>Display</b>{{< /hl >}}<br>
+> ● Why did manufacturers ditch the CRT and plasma technologies?<br>
+The former advantages of plasma technology, namely fast image changes, better colors and strong contrasts, are now all surpassed by OLED. CRT screens are very old and require an enormous amount of space, which is no longer time compliant. The vaakum tube in a crt display is under a large negative pressure. Because of this reason, crt screens must be made of glass, which can withstand this pressure. Due to the glass housing, crt screens weigh a lot.<br>
 
+> ● What are the pros and cons of LCD and OLED compared to eachother?<br>
+A LCD display is brighter than an OLED Display. For example, this can be crucial for a mobile phone, if you are your smartphone outside a lot.
+OLED displays promise higher contrast images than LCD displays. This is because each individual pixel can be adjusted in brightness, whereas LCD screens can only be darkened in areas.<br>
+</p>
+<p></p><br>
+<p>
