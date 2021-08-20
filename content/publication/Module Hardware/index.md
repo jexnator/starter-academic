@@ -158,7 +158,10 @@ slides: ""
 <p></p>
 {{< hl >}}You buy an HDD advertised with 1TB. How much usable space will the Windows operating system report you and why?{{< /hl >}}<br>
 ➡️If you have a 1TB HDD in your PC, then you have a real storage of 932GB. This is because the computer is working with binary numbers (1,024 bytes = 1kb).
+<p></p><br>
 <p></p>
+<p></p>
+
 
 ## {{< hl >}}<b>Binary Digits</b>{{< /hl >}}<br>
 
