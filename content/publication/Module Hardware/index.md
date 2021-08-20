@@ -323,3 +323,16 @@ In a server I would install 2x RJ45 for security reasons (redundancy).<br>
 
 </p>
 <p>
+
+## {{< hl >}}<b>Transferspeed and Bandwidth</b>{{< /hl >}}<br>
+> ● How much bandwidth is needed to stream a typical 2 hour Netflix 1080p movie (~6GB)?<br>
+> {{< hl >}}Data transfer rate = data volume / time{{< /hl >}}<br>
+
+6GB * 1000 = 6000MB<br>
+2h * 3600 = 7200s<br>
+
+6000MB / 7200sec = 0.83MB/s
+0.83MB/s * 8Bit = <b>6.67MBit/s</b>
+
+</p>
+<p>
