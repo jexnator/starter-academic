@@ -330,8 +330,8 @@ In a server I would install 2x RJ45 for security reasons (redundancy).<br>
 
 $$6GB\cdot1000=6000MB$$
 
-$$6h\cdot3600=7200s$$
+$$2h\cdot3600=7200s$$
 
 $$\frac{6000MB}{7200s}=0.83MB/s$$
 
-$$0.83MB/s\cdot8Bit=6.67MBit/s$$
+$$0.83MB/s\cdot8Bit=<b>6.67MBit/s</b>$$
