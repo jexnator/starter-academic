@@ -424,6 +424,7 @@ Here is alist of the required hardware:<br>
 - `Cellular interface`<br>
 
 > ● Is an upgrade possible down the road?<br>
+###### later Upgrades<br>
 Depending on the notebook I buy, maybe yes.<br>
 - `eGPU`<br>
 - `RAM (if not soldered)`<br>
