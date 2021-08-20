@@ -328,9 +328,7 @@ In a server I would install 2x RJ45 for security reasons (redundancy).<br>
 > ● How much bandwidth is needed to stream a typical 2 hour Netflix 1080p movie (~6GB)?<br>
 > {{< hl >}}Data transfer rate = data volume / time{{< /hl >}}<br>
 
-$$
 $$\gamma_{n} = \frac{ 
 \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T 
 \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}
 {\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
-$$
