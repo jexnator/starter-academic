@@ -107,7 +107,7 @@ slides: ""
 
 ![Cooling unit](cooling-unit.jpg "<b>Cooling unit</b> (Unsplash: Barez Omer)")
 
-## {{< hl >}}<b>CMy Notebook</b>{{< /hl >}}<br>
+## {{< hl >}}<b>My Notebook</b>{{< /hl >}}<br>
 
 {{% callout note %}}
   2. <b>Advanced questions about my notebook (ThinkPad X1):</b>
@@ -159,8 +159,8 @@ slides: ""
 {{< hl >}}You buy an HDD advertised with 1TB. How much usable space will the Windows operating system report you and why?{{< /hl >}}<br>
 ➡️If you have a 1TB HDD in your PC, then you have a real storage of 932GB. This is because the computer is working with binary numbers (1,024 bytes = 1kb).
 <p></p><br>
-<p></p>
-<p></p>
+<p></p><br>
+<p></p><br>
 
 
 ## {{< hl >}}<b>Binary Digits</b>{{< /hl >}}<br>
