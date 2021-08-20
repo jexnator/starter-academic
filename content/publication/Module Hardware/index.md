@@ -357,8 +357,30 @@ Upload: `~1.5MBit/s`<br>
 
 VR glasses trick the brain as well as the eyes. The main problem is, that a VR headset is very close to the eyes. If you are using this devices for too long, it can lead to myopia or to sleep rhythm disorders. Especially the blue light is said to be harmful for our eyes.<br>
 
-> ● What specifications should the display fullfill to enable a good experience?
+> ● What specifications should the display fullfill to enable a good experience?<br>
 For a good virtual experience you should have a 4K-Display with 3840 x 2160 pixels.<br>
+</p>
+<p></p><br>
+<p>
+
+## {{< hl >}}<b>Audio Interfaces</b>{{< /hl >}}<br>
+> ● What interfaces are used to play surround sound? <br>
+- S/PDIF<br>
+- HDMI<br>
+
+#### other Audio Interfaces<br>
+- AES/EBU<br>
+- MADI<br>
+- ADAT<br>
+- TDIF<br>
+- Wordclock<br>
+
+> ● What are common codecs?<br>
+- PCM (Puls-Code-Modulation<br>
+- MP3 (MPEG-1 Audio Layer 3)<br>
+- AAC (Advanced Audio Coding)<br>
+- Vorbis<br>
+- WMA (Windows Media Audio)<br>
 </p>
 <p></p><br>
 <p>
