@@ -175,7 +175,7 @@ After this you can have a look to the ASCII-Table. <b>42</b> corresponds to <b> 
 <p></p>
 {{< hl >}}"Xavier" in a binary sequence{{< /hl >}}<br>
 ➡️01011000 01100001 01110110 01101001 01100101 01110010<br>
-<p></p><br>
+
 <p></p><br>
 
 ## {{< hl >}}<b>Johny Simulator</b>{{< /hl >}}<br>
@@ -349,6 +349,4 @@ Download: `~21MBit/s`<br>
 Upload: `~1.5MBit/s`<br>
 
 </p>
-
-hello
 
