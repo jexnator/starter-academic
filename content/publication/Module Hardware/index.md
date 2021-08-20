@@ -106,6 +106,7 @@ slides: ""
 <b>Cooling unit:</b> All components that consume electricity, are generating heat. Because of this reason, you need a cooling unit to prevent damages on the different modules.
 
 ![Cooling unit](cooling-unit.jpg "<b>Cooling unit</b> (Unsplash: Barez Omer)")
+<p></p><br>
 
 ## {{< hl >}}<b>My Notebook</b>{{< /hl >}}<br>
 
@@ -136,7 +137,7 @@ slides: ""
 {{< hl >}}How does the cooling work in your device? What about a smartphone?{{< /hl >}}<br>
 ➡️My notebook is cooled from below by two fans<br>
 ➡️Smartphones in general; Heatpipe, which transmits the heat to the outside<br>
-<p></p>
+<p></p><br>
 
 ## {{< hl >}}<b>My future PC</b>{{< /hl >}}<br>
 
@@ -144,6 +145,7 @@ slides: ""
   3. <b> This are the parts that i would buy, if i would build my own PC. Link ➔</b>
   [Digitec](https://www.digitec.ch/de/shopList/show/ABB019BA20D90765AFCEC16A2800DF8C)
 {{% /callout %}}
+<p></p><br>
 
 ## {{< hl >}}<b>Bits and Bytes</b>{{< /hl >}}<br>
 
@@ -173,7 +175,7 @@ After this you can have a look to the ASCII-Table. <b>42</b> corresponds to <b> 
 <p></p>
 {{< hl >}}"Xavier" in a binary sequence{{< /hl >}}<br>
 ➡️01011000 01100001 01110110 01101001 01100101 01110010<br>
-<p></p>
+<p></p><br>
 
 ## {{< hl >}}<b>Johny Simulator</b>{{< /hl >}}<br>
 
