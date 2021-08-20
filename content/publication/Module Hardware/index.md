@@ -433,4 +433,14 @@ Depending on the notebook I buy, maybe yes.<br>
 <p></p><br>
 <p>
 
+## {{< hl >}}<b>Cooling Systems</b>{{< /hl >}}<br>
+> ● What metric should be high for a fan on a heatsink?<br>
+`RPM`<br>
+> ● What metric should be high for a case fan?<br>
+`performance`<br>
+> Why do servers often use small fans instead of bigger ones?<br>
+On the one hand, it is important to save as much space as possible when building a server, and on the other hand, fewer programs and calculations are carried out on a server than on a desktop PC, which means that the processor also has to be cooled less.<br>
+
+
+
 
