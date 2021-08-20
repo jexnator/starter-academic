@@ -326,9 +326,9 @@ In a server I would install 2x RJ45 for security reasons (redundancy).<br>
 
 ## {{< hl >}}<b>Transferspeed and Bandwidth</b>{{< /hl >}}<br>
 > ● How much bandwidth is needed to stream a typical 2 hour Netflix 1080p movie (~6GB)?<br>
-> {{< hl >}}Data transfer rate = data volume / time{{< /hl >}}<br>
+> $$Data\ Transfer\ Rate =\frac{Data\ Volume}{Time}$$<br>
 
-$$Data\ Transfer\ Rate =\frac{Data\ Volume}{Time}$$
+
 
 
 $$\gamma_{n} = \frac{ 
