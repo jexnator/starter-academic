@@ -275,7 +275,9 @@ A transistor can be thought of as a gate that is either open or closed. When a t
 > ● Search the web for 2 HDDs and SSDs that you would use in a consumer PC or server (1 for each use case).<br>
   - `Consumer PC:` [HDD & SSD](https://www.digitec.ch/de/shopList/show/B42BF2000167C4CA847665AE614E72F1)<br>
   - `Server:` [HDD & SSD](https://www.digitec.ch/de/shopList/show/22ECEE352F6A7C468972888CC174D10B)<br>
-</p>
+</p><br>
+<p></p>
+<p></p>
 <p>
 
 ## {{< hl >}}<b>Desired interfaces</b>{{< /hl >}}<br>
