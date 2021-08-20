@@ -392,7 +392,7 @@ The former advantages of plasma technology, namely fast image changes, better co
 
 > ● What are the pros and cons of LCD and OLED compared to eachother?<br>
 
-A LCD display is brighter than an OLED Display. For example, this can be crucial for a mobile phone, if you are your smartphone outside a lot.
+A LCD display is brighter than an OLED Display. For example, this can be crucial for a mobile phone, if you are using your smartphone outside a lot.
 OLED displays promise higher contrast images than LCD displays. This is because each individual pixel can be adjusted in brightness, whereas LCD screens can only be darkened in areas.<br>
 </p>
 <p></p><br>
