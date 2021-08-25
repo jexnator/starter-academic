@@ -41,3 +41,6 @@ By the way our supervisor Dan showed us the hole building in which our company i
 So far, I am very satisfied with our journey @Amanox Solutions. If you have any questions or uncertainties, you can always contact a coach or employee and count on their support. You also notice that the coaches put a lot of effort into creating the modules to guarantee a varied learning experience.<br>
 </p>
 
+## 08/16/21 - 08/20/21
+
+...
