@@ -436,11 +436,11 @@ Depending on the notebook I buy, maybe yes.<br>
 ## {{< hl >}}<b>Cooling Systems</b>{{< /hl >}}<br>
 > ● What metric should be high for a fan on a heatsink?<br>
 
-`RPM`<br>
+➔ `RPM`<br>
 
 > ● What metric should be high for a case fan?<br>
 
-`performance`<br>
+➔ `performance`<br>
 
 > ● Why do servers often use small fans instead of bigger ones?<br>
 
