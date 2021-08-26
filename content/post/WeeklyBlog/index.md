@@ -41,7 +41,7 @@ By the way our supervisor Dan showed us the hole building in which our company i
 So far, I am very satisfied with our journey @Amanox Solutions. If you have any questions or uncertainties, you can always contact a coach or employee and count on their support. You also notice that the coaches put a lot of effort into creating the modules to guarantee a varied learning experience.<br>
 </p>
 
-![Bern](bern.jpg "<b>Bern</b> Unsplash: Ben Mysc")
+![Bern](bern.jpg "<b>Bern</b> | Unsplash: Ben Mysc")
 
 ## 08/16/21 - 08/20/21
 <p align="justify">
@@ -65,7 +65,7 @@ Already on the first day I had to determine that the preperation at home is very
 I am very satisfied with the first day of school. The location is technically very well equipped and you have also good catering options nearby.<br>
 
 On Tuesday, our free provided day, I started with the Postprocessing Session from Monday at home. In the afternoon I still had time to focus on the next schoolday.<br>
-![School](school.jpg "<b>School</b> Unsplash: Scott Graham")
+![School](school.jpg "<b>School</b> | Unsplash: Scott Graham")
 
 ### @Work
 On Wendesday till Friday I followed Jim's [Hardware Module](https://xavierjeiziner.netlify.app/publication/module-hardware/). The goal was to get knowledge about the different hardware parts in depth. This included also the  exact mode of operation of a CPU. For this part i used the Johnny Simulator to simulate how a CPU performs calculations. The Addition and subtraction calculation is working quite easily, while multiplication requires several program steps including a loop until the counter is set to zero.
