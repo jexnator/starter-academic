@@ -75,3 +75,21 @@ After the Johnny Simulator session I got acquainted with the program cheatengine
 Looking back, it was a very instructive week. I think that this prior knowledge will certainly benefit us for the subject Fundamentals of Computer Engineering. I have heared that we will use the Johnny Simulator also at School.
 </p>
 
+## 08/23/21 - 08/27/21
+<p align="justify">
+
+### @School
+On Monday we had our second school day @FFHS.<br>
+
+The remaining modules on Monday were:<br>
+● Web Fundamentals<br>
+● Basics of technical Informatics<br>
+
+The second school day was also very interesting. I think that we got very competent lecturers for the subjects WebF an BtI.
+
+It should be mentioned that Yonea and I have to take the additional module linear algebra on this Saturday afternoon (every last Saturday of the month), because we do not own a gymnasium diploma.
+
+### @Work
+At our company I continued with Jim's ["Hardware Module"](https://xavierjeiziner.netlify.app/publication/module-hardware/).
+
+</p>
