@@ -77,35 +77,35 @@ slides: ""
 
 <b>Computer case:</b> Inside of the computer case you will find all following components of a Computer. The main idea is to protect the interior. It also contributes to a visual aspect of the computer.
 
-![Computer Case](computer-case.jpg "<b>Computer case</b> (Unsplash: Onur Binay)")
+![Computer Case](computer-case.jpg "<b>Computer case |</b> Unsplash: Onur Binay")
 
 <b>CPU (central processing unit):</b> The CPU is the brain of the computer. It does the logical calculations, processes data and passes informations to the other parts.
 
-![CPU](processor.jpg "<b>CPU</b> (Unsplash: Fidel Fernando)")
+![CPU](processor.jpg "<b>CPU |</b> Unsplash: Fidel Fernando")
 
 <b>Motherboard:</b> The motherboard or also known as mainboard connects all parts to each other and enables communication between each other components.
 
-![Motherboard](motherboard.jpg "<b>motherboard</b> (Unsplash: Thomas Jensen)")
+![Motherboard](motherboard.jpg "<b>motherboard |</b> Unsplash: Thomas Jensen")
 
 <b>RAM (random access memory):</b> It's a temporary storage space to process data fast. The RAM is located nearby the CPU, to keep the latency as low as possible.
 
-![RAM](ram.jpg "<b>RAM</b> (Unsplash: Luan Gjokaj)")
+![RAM](ram.jpg "<b>RAM |</b> Unsplash: Luan Gjokaj")
 
 <b>Storage device:</b> A distinction is made between the HDD (hard disk drives) and the SSD (solid state drives). The HDD is working mechanical like a music turntable, while the SSD is a flash storage device. Both of them store data persistently.
 
-![HDD](hdd.jpg "<b>HDD</b> (Unsplash: Art Wall - Kittenprint)")
+![HDD](hdd.jpg "<b>HDD |</b> Unsplash: Art Wall - Kittenprint")
 
 <b>PSU (power supply unit):</b> The electricity from the power socket goes truth the PSU and is distributed to the various components.
 
-![PSU](psu.jpg "<b>PSU</b> (Unsplash: Luke Hodde)")
+![PSU](psu.jpg "<b>PSU |</b> Unsplash: Luke Hodde")
 
 <b>GPU (graphics processing unit):</b> It's a specialized chip to calcultate all graphic outputs fast. A CPU can theoretically do the same, but it takes much longer than the GPU.
 
-![GPU](gpu.jpg "<b>GPU</b> (Unsplash: Nana Dua)")
+![GPU](gpu.jpg "<b>GPU |</b> Unsplash: Nana Dua")
 
 <b>Cooling unit:</b> All components that consume electricity, are generating heat. Because of this reason, you need a cooling unit to prevent damages on the different modules.
 
-![Cooling unit](cooling-unit.jpg "<b>Cooling unit</b> (Unsplash: Barez Omer)")
+![Cooling unit](cooling-unit.jpg "<b>Cooling unit |</b> Unsplash: Barez Omer")
 <p></p><br>
 
 ## {{< hl >}}<b>My Notebook</b>{{< /hl >}}<br>
@@ -229,7 +229,7 @@ Adress 021: <b>5</b> (Factor)<br>
 
 ### `💡If everything has worked fine, then the adress line 022 should contain the value 40.`
 
-![Johny](johny.jpg "<b>Johny Simulator</b> (Screenshot)")<br>
+![Johny](johny.jpg "<b>Johny Simulator |</b> Screenshot")<br>
 </p>
 <p>
 
@@ -241,13 +241,13 @@ A transistor can be thought of as a gate that is either open or closed. When a t
 </p>
 
 ![AND](and.jpg)
-![Gate](gate.jpg "<b>Gate</b> (Unsplash: Tianshu Liu)")<br>
+![Gate](gate.jpg "<b>Gate |</b> Unsplash: Tianshu Liu")<br>
 <p>
 
 ## {{< hl >}}<b>Cheat in CookieClicker</b>{{< /hl >}}<br>
 <pre> Score up faster with CheatEngine ➔ No more words needed  </pre>
 
-![CookieClicker](cookieclicker.jpg "<b>CookieClicker</b> Screenshot")<br>
+![CookieClicker](cookieclicker.jpg "<b>CookieClicker |</b> Screenshot")<br>
 </p>
 
 ## {{< hl >}}<b>HDD & SSD in depth</b>{{< /hl >}}<br>
