@@ -47,7 +47,7 @@ So far, I am very satisfied with our journey @Amanox Solutions. If you have any 
 <p align="justify">
 
 ### @School
-On Monday we had our first school day @FFHS. The school is located in the "Welle 7" at the central station of Bern. The various modules take place every two weeks.<br>
+On Monday we had our first school day @FFHS. The school is located in the "Welle 7" building at the central station of Bern. The various modules take place every two weeks.<br>
 
 In a first session we had the modules:<br>
 ● Project Management<br>
