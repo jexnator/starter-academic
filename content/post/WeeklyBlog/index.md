@@ -32,7 +32,7 @@ projects: []
 
 In the second week we started with our first intern modul. Dan and Jim were the coaches of the hardware modul. The goal was to get knowledge about all hardware parts in a personal computer, notebook or a server. This includes also the princips, how the different parts are working and how they communicate together.<br>
 
-We learned that hardware contains different parts of a computer, which can work internal or external in a device. An important part of this was to understand the basic principle of data storage. It was exciting to get an insight into the computer language. The binary code consists of a 1 or a 0 and occupies exactly one bit. With this knowhow we had to do serveral task, which you can see in my publication ["Hardware"](https://xavierjeiziner.netlify.app/publication/module-hardware/).<br>
+We learned that hardware contains different parts of a computer, which can work internal or external in a device. An important part of this was to understand the basic principle of data storage. It was exciting to get an insight into the computer language. The binary code consists of a 1 or a 0 and occupies exactly one bit. With this knowhow we had to do serveral task, which you can see in my publication [Hardware](https://xavierjeiziner.netlify.app/publication/module-hardware/).<br>
 
 Also interesting was the task of assembling my own computer on the Digitec platform. In the next step, we had to apply the theory we had learned in practice and assemble a PC with the hardware, which was provided by our company. Unfortunately, not all parts were in our company by then, so we had to postpone this. However, I look forward to making up for this in the future.<br>
 
@@ -68,7 +68,7 @@ On Tuesday, our free provided day, I started with the Postprocessing Session fro
 ![School](school.jpg "<b>School</b> Unsplash: Scott Graham")
 
 ### @Work
-On Wendesday till Friday I followed Jim's ["Hardware Module"](https://xavierjeiziner.netlify.app/publication/module-hardware/). The goal was to get knowledge about the different hardware parts in deept. This included also the  exact mode of operation of a CPU. For this part i used the Johnny Simulator to simulate how a CPU performs calculations. The Addition and subtraction calculation is working quite easily, while multiplication requires several program steps including a loop until the counter is set to zero.
+On Wendesday till Friday I followed Jim's [Hardware Module](https://xavierjeiziner.netlify.app/publication/module-hardware/). The goal was to get knowledge about the different hardware parts in depth. This included also the  exact mode of operation of a CPU. For this part i used the Johnny Simulator to simulate how a CPU performs calculations. The Addition and subtraction calculation is working quite easily, while multiplication requires several program steps including a loop until the counter is set to zero.
 
 After the Johnny Simulator session I got acquainted with the program cheatengine. The goal was to manipulate a score. This was a quite interesting task.
 
@@ -90,6 +90,13 @@ The second school day was also very interesting. I think that we got very compet
 It should be mentioned that Yonea and I have to take the additional module linear algebra on this Saturday afternoon (every last Saturday of the month), because we do not own a gymnasium diploma.
 
 ### @Work
-At our company I continued with Jim's ["Hardware Module"](https://xavierjeiziner.netlify.app/publication/module-hardware/).
+At our company I continued with Jim's Hardware Module. We focused us on HDD's & SSD's in detail.
+The goal was to find out the different grades of this storage devices. For example, WD storage media distinguishes the different grades with colors, which I have not noticed before.
+After that i started to develope the different types of interfaces. I learned, that you distinguish between internal and exterenal interfaces. More tasks you will find [here](https://xavierjeiziner.netlify.app/publication/module-hardware/).
+
+On Thursday i prepared me for the last task in the module. It is about creating a presentation, where we deepen ourselves in a learned topic from the module. I have chosen the topic of optical disk storage.
+I tried to visualize the PowerPoint presentation with the help of the Wacom pen display, that we received from the school. This was a good exercise, because we will need this devive in the future.
+![Wacom](wacom.jpg "<b>Wacom Pad</b> Unsplash: Szabo Viktor")
 
 </p>
+
