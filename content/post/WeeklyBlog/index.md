@@ -54,8 +54,9 @@ In a first session we had the modules:<br>
 ● Java Fundamentals<br>
 ● Discrete Mathematics<br>
 
-In every single module we were informed about the exact schedule of the semester.<br>
-Basically, the same principle always applies:<br>
+In every single module we were informed about the exact schedule of the semester. Afterwards, we were allowed to ask questions regarding the preparation and clarify ambiguities. Afterwards, we usually had time to do some exercises together with the lecturers.<br>
+
+Basically, the same principle in every module applies:<br>
 ● Preparation at home<br>
 ● face-to-face teaching at school<br>
 ● Postprocessing at home<br>
