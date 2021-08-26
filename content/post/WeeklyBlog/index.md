@@ -63,6 +63,9 @@ Basically, the same principle in every module applies:<br>
 
 Already on the first day I had to determine that the preperation at home is very important. If you don't prepare you, you can't follow during the presence classes sessions.
 I am very satisfied with the first day of school. The location is technically very well equipped and you have also good catering options nearby.<br>
+
+On Tuesday, our free provided day, I started with the Postprocessing Session from Monday at home. In the afternoon I still had time to focus on the next schoolday.<br>
 ![School](school.jpg "<b>School</b> Unsplash: Scott Graham")
 
 ### @Work
+
