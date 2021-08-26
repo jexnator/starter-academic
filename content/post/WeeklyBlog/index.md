@@ -44,4 +44,22 @@ So far, I am very satisfied with our journey @Amanox Solutions. If you have any 
 ![Bern](bern.jpg "<b></b> (Unsplash: Ben Mysc)")
 
 ## 08/16/21 - 08/20/21
+<p align="justify">
 
+#### @School
+On Monday we had our first school day @FFHS. The school is located in the "Welle 7" at the central station of Bern.<br>
+The various modules take place every two weeks.<br>
+In a first session we had the modules:<br>
+● Project Management<br>
+● Java Fundamentals<br>
+● Discrete Mathematics<br>
+In every single module we were informed about the exact schedule of the semester.<br>
+Basically, the same principle always applies:<br>
+● Preparation at home<br>
+● face-to-face teaching at school<br>
+● Postprocessing at home<br>
+Already on the first day I had to determine that the preperation at home is very important. If you don't prepare you, you can't follow during the presence classes sessions.
+I am very satisfied with the first day of school. The location is technically very well equipped and you have also good catering options nearby.<br>
+
+
+#### @Work
