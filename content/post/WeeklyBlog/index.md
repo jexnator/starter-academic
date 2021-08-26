@@ -68,4 +68,7 @@ On Tuesday, our free provided day, I started with the Postprocessing Session fro
 ![School](school.jpg "<b>School</b> Unsplash: Scott Graham")
 
 ### @Work
+On Wendesday till Friday I followed Jim's ["Hardware Module"](https://xavierjeiziner.netlify.app/publication/module-hardware/). The goal was to get knowledge about the different hardware parts in deept. This included also the  exact mode of operation of a CPU. For this part i used the Johnny Simulator to simulate how a CPU performs calculations. The Addition and subtraction calculation is working quite easily, while multiplication requires several program steps including a loop until the counter is set to zero. After the Johnny Simulator session I got acquainted with the program Cheatengine. The goal was to manipulate a score. This was a quite interesting task.
+
+Looking back, it was a very instructive week. I think that this prior knowledge will certainly benefit us for the subject Fundamentals of Computer Engineering. I have heared that we will use the Johnny Simulator also at School.
 
