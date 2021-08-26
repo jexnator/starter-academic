@@ -42,6 +42,7 @@ So far, I am very satisfied with our journey @Amanox Solutions. If you have any 
 </p>
 
 ![Bern](bern.jpg "<b>Bern |</b> Unsplash: Ben Mysc")
+<p></p>
 
 ## 08/16/21 - 08/20/21
 <p align="justify">
@@ -74,6 +75,7 @@ After the Johnny Simulator session I got acquainted with the program cheatengine
 
 Looking back, it was a very instructive week. I think that this prior knowledge will certainly benefit us for the subject Fundamentals of Computer Engineering. I have heared that we will use the Johnny Simulator also at School.
 </p>
+<p></p>
 
 ## 08/23/21 - 08/27/21
 <p align="justify">

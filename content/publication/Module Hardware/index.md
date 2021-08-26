@@ -445,7 +445,3 @@ Depending on the notebook I buy, maybe yes.<br>
 > ● Why do servers often use small fans instead of bigger ones?<br>
 
 On the one hand, it is important to save as much space as possible when building a server, and on the other hand, fewer programs and calculations are carried out on a server than on a desktop PC, which means that the processor also has to be cooled less.<br>
-
-
-
-
