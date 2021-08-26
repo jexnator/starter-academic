@@ -92,7 +92,7 @@ It should be mentioned that Yonea and I have to take the additional module linea
 ### @Work
 At our company I continued with Jim's Hardware Module. We focused us on HDD's & SSD's in detail.
 The goal was to find out the different grades of this storage devices. For example, WD storage media distinguishes the different grades with colors, which I have not noticed before.
-After that i started to develope the different types of interfaces. I learned, that you distinguish between internal and exterenal interfaces. More tasks you will find [here](https://xavierjeiziner.netlify.app/publication/module-hardware/).
+After that I started to develope the different types of interfaces. I learned, that you distinguish between internal and exterenal interfaces. More tasks you will find [here](https://xavierjeiziner.netlify.app/publication/module-hardware/).
 
 On Thursday i prepared me for the last task in the module. It is about creating a presentation, where we deepen ourselves in a learned topic from the module. I have chosen the topic of optical disk storage.
 I tried to visualize the PowerPoint presentation with the help of the Wacom pen display, that we received from the school. This was a good exercise, because we will need this devive in the future.
