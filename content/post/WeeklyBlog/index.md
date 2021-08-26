@@ -41,12 +41,12 @@ By the way our supervisor Dan showed us the hole building in which our company i
 So far, I am very satisfied with our journey @Amanox Solutions. If you have any questions or uncertainties, you can always contact a coach or employee and count on their support. You also notice that the coaches put a lot of effort into creating the modules to guarantee a varied learning experience.<br>
 </p>
 
-![Bern](bern.jpg "<b></b> (Unsplash: Ben Mysc)")
+![Bern](bern.jpg "<b>Bern</b> Unsplash: Ben Mysc")
 
 ## 08/16/21 - 08/20/21
 <p align="justify">
 
-#### @School
+### @School
 On Monday we had our first school day @FFHS. The school is located in the "Welle 7" at the central station of Bern. The various modules take place every two weeks.<br>
 
 In a first session we had the modules:<br>
@@ -62,6 +62,6 @@ Basically, the same principle always applies:<br>
 
 Already on the first day I had to determine that the preperation at home is very important. If you don't prepare you, you can't follow during the presence classes sessions.
 I am very satisfied with the first day of school. The location is technically very well equipped and you have also good catering options nearby.<br>
-![School](school.jpg "<b></b> (Unsplash: Scott Graham)")
+![School](school.jpg "<b>School</b> Unsplash: Scott Graham")
 
-#### @Work
+### @Work
