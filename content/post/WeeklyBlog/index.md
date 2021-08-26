@@ -74,7 +74,7 @@ On Wendesday till Friday I followed Jim's [Hardware Module](https://xavierjeizin
 After the Johnny Simulator session I got acquainted with the program cheatengine. The goal was to manipulate a score. This was a quite interesting task.
 
 Looking back, it was a very instructive week. I think that this prior knowledge will certainly benefit us for the subject Fundamentals of Computer Engineering. I have heared that we will use the Johnny Simulator also at School.
-</p>
+</p><br>
 <p></p>
 
 ## 08/23/21 - 08/27/21
