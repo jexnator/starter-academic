@@ -99,6 +99,6 @@ After that I started to develope the different types of interfaces. I learned, t
 On Thursday i prepared me for the last task in the module. It is about creating a presentation, where we deepen ourselves in a learned topic from the module. I have chosen the topic of optical disk storage.
 I tried to visualize the PowerPoint presentation with the help of the Wacom pen display, that we received from the school. This was a good exercise, because we will need this devive in the future.
 ![Wacom](wacom.jpg "<b>Wacom Pad |</b> Unsplash: Szabo Viktor")
-On Friday morning, I gave my presentation the final touches. Then at 11:15 AM I held my presentation about optical "disk storage". In my opinion the presentation did not go badly, but I focused me a little bit too much on the visual aspect of the slides than on the preperation. I also need to improve my english skills.<br>
-Jim and John gave me some constructive feedback that I plan to implement in future presentations.
+On Friday morning, I gave my presentation the final touches. Then at 11:15 AM I held my presentation about optical "disk storage". In my opinion the presentation did not go badly, but I focused me a little bit too much on the visual aspect of the slides than on the preperation. I also need to improve my english skills.
+Jim and John gave me some constructive feedback, that I plan to implement in future presentations.
 </p>
