@@ -101,7 +101,8 @@ I tried to visualize the PowerPoint presentation with the help of the Wacom pen 
 ![Wacom](wacom.jpg "<b>Wacom Pad |</b> Unsplash: Szabo Viktor")
 On Friday morning, I gave my presentation the final touches. Then at 11:15 AM I held my presentation about optical "disk storage". The presentation did not go badly, but I think that I focused me a little bit too much on the visual aspect of the slides than on the preperation. I also need to improve my english skills.
 Jim and John gave me some constructive feedback, that I plan to implement in future presentations. The slides of the presentation you will find {{% staticref "uploads/slides.pdf" "newtab" %}}here{{% /staticref %}}.
-</p>
+</p><br>
+<p></p>
 
 ## 09/01/21 - 09/03/21
 <p align="justify">
