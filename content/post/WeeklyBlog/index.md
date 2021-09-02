@@ -99,6 +99,13 @@ After that I started to develope the different types of interfaces. I learned, t
 On Thursday i prepared me for the last task in the module. It is about creating a presentation, where we deepen ourselves in a learned topic from the module. I have chosen the topic of optical disk storage.
 I tried to visualize the PowerPoint presentation with the help of the Wacom pen display, that we received from the school. This was a good exercise, because we will need this devive in the future.
 ![Wacom](wacom.jpg "<b>Wacom Pad |</b> Unsplash: Szabo Viktor")
-On Friday morning, I gave my presentation the final touches. Then at 11:15 AM I held my presentation about optical "disk storage". The presentation did not go badly, but I focused me a little bit too much on the visual aspect of the slides than on the preperation. I also need to improve my english skills.
-Jim and John gave me some constructive feedback, that I plan to implement in future presentations. The slides you will find {{% staticref "uploads/slides.pdf" "newtab" %}}here{{% /staticref %}}.
+On Friday morning, I gave my presentation the final touches. Then at 11:15 AM I held my presentation about optical "disk storage". The presentation did not go badly, but I think that I focused me a little bit too much on the visual aspect of the slides than on the preperation. I also need to improve my english skills.
+Jim and John gave me some constructive feedback, that I plan to implement in future presentations. The slides of the presentation you will find {{% staticref "uploads/slides.pdf" "newtab" %}}here{{% /staticref %}}.
+</p>
+
+## 09/01/21 - 09/03/21
+<p align="justify">
+This week Yonea an me learned how an offer should look like. First we got some theorie inputs about how to write an offer correctly. Then i started with the first task. The goal was to create two PC offers for Yonea with her personal requirements including the desired budget. She was looking for a gamer pc with associated peripherals. I tried to configurate the two PCs on my own, how we learned it in the hardware modul. During this I had to realize that creating an offer can be difficult, if you would match all requirements depending on the price. Yonea did also the same for me. I searched a portable workstation for CAD and CAM softwares, which i can use in the office and also in a production environment.<br>
+
+After that we discused our founded solutions together and decided us for the preferred hardware.
 </p>
