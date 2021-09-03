@@ -121,7 +121,7 @@ The next step was to do some collaboration task together with Yonea, to understa
 ● Maintain: that's a typical role for a project manager who need to manage the repository, without sensitive or destructive actions<br>
 ● Admin: for people who have full access to the project, including sensitive and destructive actions<br>
 Each of us created our own branch. Then we worked on the same file and tried to merge our branches to the master. So there we had our first merge conflict ⬇️.<br>
-![Merge conflict](github.jpg "<b>Github |</b> Unsplash: Yancy Min")
+![Merge conflict](mergeconflict.jpg "<b>Merge Conflict |</b> Screenshot")
 
 
 
