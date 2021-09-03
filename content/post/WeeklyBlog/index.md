@@ -113,6 +113,7 @@ After that we discused our founded solutions together and decided us for the pre
 
 The next thing was to explore the versioning tool Git. The tool is absolutely important if multiple programmes work together on the similar project. After i readed trough the theorie block i started with the first task.
 The goal was to create a new repository on Github, to clone it to your local folder, to create a new branch and merge it then to the master branch. By the way Rafael Wicht gave me some important advices and illustrated them with some practical examples on Github.
+![Github](github.jpg "<b>Github |</b> Unsplash: Yancy Min")
 
 </p><br>
 <p></p>
