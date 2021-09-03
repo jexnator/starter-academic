@@ -122,7 +122,7 @@ The next step was to do some collaboration task together with Yonea, to understa
 ● `Maintain`: that's a typical role for a project manager who need to manage the repository, without sensitive or destructive actions<br>
 ● `Admin`: for people who have full access to the project, including sensitive and destructive actions<br>
 
-Each of us created our own branch. Then we worked on the same file and tried to merge our branches to the master. So there we had our first merge conflict ⬇️.<br>
+Each of us created a personal branch. Then we worked on the same file and tried to merge our branches to the master. So there we had our first merge conflict ⬇️.<br>
 ![Merge conflict](mergeconflict.jpg "<b>Merge Conflict |</b> Screenshot")
 In this situation you should talk to each other and find a solution, which is fine for all involved developers. This task gave me an idea of how to work with Git in a collaboration space. Git is a very useful tool and we will certainly need it a lot in the future.<br>
 </p><br>
