@@ -112,8 +112,18 @@ Yonea did also the same for me. I searched a portable workstation for CAD and CA
 After that we discused our founded solutions together and decided us for the preferred hardware.<br>
 
 The next thing was to explore the versioning tool Git. The tool is absolutely important if multiple programmes work together on the similar project. After I readed trough the theorie block, I started with the first task.
-The goal was to create a new repository on Github, to clone it to your local folder, to create a new branch and merge it then to the master branch. By the way Rafael Wicht gave me some important advices and illustrated them with some practical examples on Github.
+The goal was to create a new repository on Github, to clone it to your local folder, to create a new branch and merge it then to the master branch. By the way Rafael Wicht gave me some important advices and illustrated them with some practical examples on Github.<br>
 ![Github](github.jpg "<b>Github |</b> Unsplash: Yancy Min")
+The next step was to do some collaboration task together with Yonea, to understand what a merge conflict is. I created a new repository on Github and added Yonea as a collaborator. On Github you have the possibility to give different access roles:<br>
+● Read: for non-code contributors, read-only accsess<br>
+● Triage: for contributors who need to manage issues and pull requests without write access<br>
+● Write: for contributors who write and push code to the repository<br>
+● Maintain: that's a typical role for a project manager who need to manage the repository, without sensitive or destructive actions<br>
+● Admin: for people who have full access to the project, including sensitive and destructive actions<br>
+Each of us created our own branch. Then we worked on the same file and tried to merge our branches to the master. So there we had our first merge conflict ⬇️.<br>
+![Merge conflict](github.jpg "<b>Github |</b> Unsplash: Yancy Min")
+
+
 
 </p><br>
 <p></p>
