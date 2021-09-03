@@ -106,12 +106,12 @@ Jim and John gave me some constructive feedback, that I plan to implement in fut
 
 ## 09/01/21 - 09/03/21
 <p align="justify">
-This week Yonea an me learned how an offer should look like. First we got some theorie inputs about how to write an offer correctly. Then i started with the first task. The goal was to create two PC offers for Yonea with her personal requirements including the desired budget. She was looking for a gamer pc with associated peripherals. I tried to configurate the two PCs on my own, how we learned it in the hardware modul. During this I had to realize that creating an offer can be difficult, if you would match all requirements depending on the price.<br>
+This week Yonea an me learned how an offer should look like. First we got some theorie inputs about how to write an offer correctly. Then I started with the first task. The goal was to create two PC offers for Yonea with her personal requirements including the desired budget. She was looking for a gamer pc with associated peripherals. I tried to configurate the two PCs on my own, how we learned it in the hardware modul. During this I had to realize that creating an offer can be difficult, if you would match all requirements depending on the price.<br>
 
-Yonea did also the same for me. I searched a portable workstation for CAD and CAM softwares, which i can use in the office and also in a production environment.
+Yonea did also the same for me. I searched a portable workstation for CAD and CAM softwares, which I can use in the office and also in a production environment.
 After that we discused our founded solutions together and decided us for the preferred hardware.<br>
 
-The next thing was to explore the versioning tool Git. The tool is absolutely important if multiple programmes work together on the similar project. After i readed trough the theorie block i started with the first task.
+The next thing was to explore the versioning tool Git. The tool is absolutely important if multiple programmes work together on the similar project. After I readed trough the theorie block, I started with the first task.
 The goal was to create a new repository on Github, to clone it to your local folder, to create a new branch and merge it then to the master branch. By the way Rafael Wicht gave me some important advices and illustrated them with some practical examples on Github.
 ![Github](github.jpg "<b>Github |</b> Unsplash: Yancy Min")
 
