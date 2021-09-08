@@ -92,7 +92,7 @@ Hello Back
 <p></p><br>
 <p>
 
-### Different types of comments<br>
+### {{< hl >}}<b>Different types of comments</b>{{< /hl >}}<br>
 In Python you have the possibility to write single-line comments and multi-line comments.<br>
 ```python
 # I'm a single-line comment
@@ -108,7 +108,7 @@ comment
 <p></p><br>
 <p>
 
-### Data Types<br>
+### {{< hl >}}<b>Data Types</b>{{< /hl >}}<br>
 #### Primitive Variables<br>
 `● Integer`<br>
 `● Float`<br>
