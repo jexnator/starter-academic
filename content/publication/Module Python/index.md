@@ -29,7 +29,7 @@ publication_short: ""
 abstract: ""
 
 # Summary. An optional shortened abstract.
-summary: Beside the the school we have to complete different modules in our company. In this module I work on the programming language python.
+summary: Beside the the school we have to complete different modules in our company. In this module I start to code with the programming language python.
 
 tags: [PiBS]
 
