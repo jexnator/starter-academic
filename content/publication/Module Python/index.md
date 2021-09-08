@@ -74,7 +74,8 @@ slides: ""
 ## {{< hl >}}<b>Get Started with Python</b>{{< /hl >}}<br>
 In this module I will learn how to code with Python. You will find several tasks about Python in this publication.<br>
 > Write a Hello World-Program<br>
-<iframe height=”400px” width=”100%” src=”https://repl.it/@zyvxn/DeveloperComEmbeddedRepl?lite=true” scrolling=”no” frameborder=”no” allowtransparency=”true” allowfullscreen=”true” sandbox=”allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals”></iframe>
+
+<iframe height=”100px” width=”50%” src=”https://replit.com/@JEX-98/HelloWorld” scrolling=”no” frameborder=”no” allowtransparency=”true” allowfullscreen=”true” sandbox=”allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals”></iframe>
 
 <script src="https://gist.github.com/JEX-98/f9214cbc546248a662356562b8df4c65.js"></script>
  
