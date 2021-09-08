@@ -88,8 +88,18 @@ print(response)
 Hello World
 Hello Back
 ```
-<script src="https://replit.com/@JEX-98/HelloWorld"></script>
-
 </p>
 <p></p><br>
 <p>
+
+### Different types of comments<br>
+In Python you have the possibility to write single-line comments and multi-line comments.<br>
+```python
+# I'm a single-line comment
+"""
+I'm
+a 
+multi-line
+comment
+"""
+```
