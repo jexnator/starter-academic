@@ -104,3 +104,47 @@ multi-line
 comment
 """
 ```
+</p>
+<p></p><br>
+<p>
+
+### Data Types<br>
+#### Primitive Variables<br>
+`● Integer`<br>
+`● Float`<br>
+`● String`<br>
+`● Boolean`<br>
+> Assign each primitive Type to a variable<br>
+###### Input<br>
+```python
+#This is an integer Variable
+integerVariable = 1
+
+#This is a floating point Variable
+floatVariable = 1.0
+
+#This is a string Variable
+stringVariable = "Amanoxian"
+
+#This is a boolean Variable
+booleanVariable = True
+
+typeOfIntegerVariable = type(integerVariable)
+typeOfFloatVariable = type(floatVariable)
+typeOfStringVariable = type(stringVariable)
+typeOfBooleanVariable = type(booleanVariable)
+
+print(typeOfIntegerVariable)
+print(typeOfFloatVariable)
+print(typeOfStringVariable)
+print(typeOfBooleanVariable)
+```
+###### Output<br>
+```
+<class 'int'>
+<class 'float'>
+<class 'str'>
+<class 'bool'>
+```
+
+
