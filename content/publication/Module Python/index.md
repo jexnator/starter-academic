@@ -96,10 +96,11 @@ Hello Back
 In Python you have the possibility to write single-line comments and multi-line comments.<br>
 ```python
 # I'm a single-line comment
-"""
+
+“””
 I'm
 a 
 multi-line
 comment
-"""
+“””
 ```
