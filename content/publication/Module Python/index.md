@@ -93,7 +93,7 @@ Hello Back
 <p>
 
 ### {{< hl >}}<b>Different types of comments</b>{{< /hl >}}<br>
-In Python you have the possibility to write single-line comments and multi-line comments.<br>
+In Python you have the possibility to write single-line comments or multi-line comments.<br>
 ```python
 # I'm a single-line comment
 
@@ -108,8 +108,7 @@ comment
 <p></p><br>
 <p>
 
-### {{< hl >}}<b>Data Types</b>{{< /hl >}}<br>
-#### Primitive Variables<br>
+### {{< hl >}}<b>Primitive Types</b>{{< /hl >}}<br>
 `● Integer`<br>
 `● Float`<br>
 `● String`<br>
@@ -146,5 +145,15 @@ print(typeOfBooleanVariable)
 <class 'str'>
 <class 'bool'>
 ```
-
-
+### {{< hl >}}<b>String-Methods</b>{{< /hl >}}<br>
+> Use the following string-methods on a string
+- capitalize()
+- count()
+- endswith()
+- find()
+- lower()
+- replace()
+- split()
+- startswith()
+- strip()
+- upper()
