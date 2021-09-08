@@ -88,7 +88,7 @@ print(response)
 Hello World
 Hello Back
 ```
-https://replit.com/@JEX-98/HelloWorld
+<script src="https://replit.com/@JEX-98/HelloWorld"></script>
 
 </p>
 <p></p><br>
