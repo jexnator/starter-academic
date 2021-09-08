@@ -71,4 +71,39 @@ projects: []
 #   Otherwise, set `slides: ""`.
 slides: ""
 ---
+## {{< hl >}}<b>Get Started with Python</b>{{< /hl >}}<br>
+In this module I will learn how to code with Python. You will find several tasks about Python in this publication.<br>
+> Write a Hello World-Program<br>
+<script src="https://gist.github.com/JEX-98/f9214cbc546248a662356562b8df4c65.js"></script>
+ 
+I plan to move to Bern in the next time. For this i will need an office workplace. The idea is to buy a notebook. Maybe i create my own notebook with the knowledge i got in the last few days.<br>
+Here is alist of the required hardware:<br>
+###### Hardware<br>
+- `Notebook`<br>
+- `Mouse`<br>
+- `Keyboard`<br>
+- `Docking Station`<br>
+- `curved display (OLED)`<br>
+- `Headset`<br>
+- `confortable chair & adjustable table`<br>
+- `eGPU`<br>
 
+> ● What interfaces do you need?<br>
+###### Interfaces<br>
+- `HDMI`<br>
+- `USB-3.1`<br>
+- `AUX In/Out`<br>
+- `Thunderbolt 3 or 4`<br>
+- `Bluetooth`<br>
+- `WIFI`<br>
+- `Cellular interface`<br>
+
+> ● Is an upgrade possible down the road?<br>
+###### Upgrades<br>
+Depending on the notebook I buy, maybe yes.<br>
+- `eGPU`<br>
+- `RAM (if not soldered)`<br>
+- `CPU`<br>
+</p>
+<p></p><br>
+<p>
