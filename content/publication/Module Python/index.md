@@ -74,6 +74,8 @@ slides: ""
 ## {{< hl >}}<b>Get Started with Python</b>{{< /hl >}}<br>
 In this module I will learn how to code with Python. You will find several tasks about Python in this publication.<br>
 > Write a Hello World-Program<br>
+<iframe height=”400px” width=”100%” src=”https://repl.it/@zyvxn/DeveloperComEmbeddedRepl?lite=true” scrolling=”no” frameborder=”no” allowtransparency=”true” allowfullscreen=”true” sandbox=”allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals”></iframe>
+
 <script src="https://gist.github.com/JEX-98/f9214cbc546248a662356562b8df4c65.js"></script>
  
 I plan to move to Bern in the next time. For this i will need an office workplace. The idea is to buy a notebook. Maybe i create my own notebook with the knowledge i got in the last few days.<br>
