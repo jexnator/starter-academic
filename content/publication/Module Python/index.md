@@ -88,6 +88,7 @@ print(response)
 Hello World
 Hello Back
 ```
+<p></p><br>
 
 ### {{< hl >}}<b>Different types of comments</b>{{< /hl >}}<br>
 In Python you have the possibility to write single-line comments or multi-line comments.<br>
@@ -101,6 +102,7 @@ multi-line
 comment
 """
 ```
+<p></p><br>
 
 ### {{< hl >}}<b>Primitive Types</b>{{< /hl >}}<br>
 > Assign each primitive Type to a variable<br>
@@ -135,6 +137,7 @@ print(typeOfBooleanVariable)
 <class 'str'>
 <class 'bool'>
 ```
+<p></p><br>
 
 ### {{< hl >}}<b>String-Methods</b>{{< /hl >}}<br>
 > Use different methods on a string
@@ -288,6 +291,7 @@ print(x)
 ```
 SPAGHETTI CARBONARA
 ```
+<p></p><br>
 
 ### {{< hl >}}<b>Non-Primitive Types</b>{{< /hl >}}<br>
 ### Lists<br>
