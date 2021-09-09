@@ -74,7 +74,7 @@ slides: ""
 ## {{< hl >}}<b>Get Started with Python</b>{{< /hl >}}<br>
 In this module I will learn how to code with Python. You will find several tasks about Python in this publication.<br>
 > Write a Hello World-Program<br>
-###### Input<br>
+##### Input<br>
 ```python
 # Hello World-Programm
 print("Hello World")
@@ -83,7 +83,7 @@ response = "Hello Back"
 
 print(response)
 ```
-###### Output<br>
+##### Output<br>
 ```
 Hello World
 Hello Back
@@ -114,7 +114,7 @@ comment
 `● String`<br>
 `● Boolean`<br>
 > Assign each primitive Type to a variable<br>
-###### Input<br>
+##### Input<br>
 ```python
 #This is an integer Variable
 integerVariable = 1
@@ -138,7 +138,7 @@ print(typeOfFloatVariable)
 print(typeOfStringVariable)
 print(typeOfBooleanVariable)
 ```
-###### Output<br>
+##### Output<br>
 ```
 <class 'int'>
 <class 'float'>
@@ -151,7 +151,7 @@ print(typeOfBooleanVariable)
 
 ### {{< hl >}}<b>String-Methods</b>{{< /hl >}}<br>
 > Use different methods on a string
-###### Input<br>
+##### Input<br>
 `capitalize()`
 ```python
 #define a string and capitalize the first letter
@@ -160,13 +160,13 @@ a = a.capitalize()
 
 print(a)
 ```
-###### Output<br>
+##### Output<br>
 ```
 Hello world
 ```
 <p></p><br>
 
-###### Input<br>
+##### Input<br>
 `count()`
 ```python
 #define a string variable and count the number of a value
@@ -176,7 +176,7 @@ pieces = " times"
 
 print (str(tot)+pieces)
 ```
-###### Output<br>
+##### Output<br>
 ```
 2 times
 ```
