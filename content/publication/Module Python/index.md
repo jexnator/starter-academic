@@ -216,7 +216,7 @@ Position 19
 ### `❯ lower()`<br>
 ##### Input<br>
 ```python
-#define a string and change upper case letters to lower case letters with method lower()
+#define a string and change uppercase letters to lowercase with method lower()
 message = "Hello, my name is Python."
 x = message.lower()
 
@@ -226,17 +226,87 @@ print(x)
 ```
 hello, my name is python.
 ```
+<p></p><br>
 
+### `❯ replace()`<br>
+##### Input<br>
+```python
+#define a string and replace a specific value with method replace()
+message = "Hello, my name is Python."
+x = message.replace("Python", "Xavier")
 
+print(x)
+```
+##### Output<br>
+```
+Hello, my name is Xavier
+```
+<p></p><br>
 
+### `❯ split()`<br>
+##### Input<br>
+```python
+#define a string and split up with method split()
+message= "Hello, my name is Python."
+x = message.split()
 
+print(x)
+```
+##### Output<br>
+```
+['Hello,', 'my', 'name', 'is', 'Python.']
+```
+<p></p><br>
 
-- lower()
-- replace()
-- split()
-- startswith()
-- strip()
-- upper()
+### `❯ startswith()`<br>
+##### Input<br>
+```python
+#define a string Variable and analyze the start with method startswith()
+message = "Hello, my name is Python."
+x = message.startswith("Salut")
+
+print(x)
+```
+##### Output<br>
+```
+False
+```
+<p></p><br>
+
+### `❯ strip()`<br>
+##### Input<br>
+```python
+#define a string and insert a strip with method strip()
+dish = "spaghetti code"
+x = dish.strip()
+
+print("Of all dishes", x, "is my favorite")
+```
+##### Output<br>
+```
+Of all dishes spaghetti code is my favorite.
+```
+<p></p><br>
+
+### `❯ upper()`<br>
+##### Input<br>
+```python
+#define a string and change lowercase letters to uppercase with method upper()
+dish = "spaghetti carbonara"
+x = dish.upper()
+
+print(x)
+```
+##### Output<br>
+```
+SPAGHETTI CARBONARA
+```
+</p>
+<p></p><br>
+<p>
+
+### {{< hl >}}<b></b>{{< /hl >}}<br>
+
 
 
 
