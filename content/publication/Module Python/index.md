@@ -306,12 +306,7 @@ SPAGHETTI CARBONARA
 <p>
 
 ### {{< hl >}}<b>Non-Primitive Types</b>{{< /hl >}}<br>
-`● Array`<br>
-`● List`<br>
-`● Tuple`<br>
-`● Dictionary`<br>
-`● Set`<br>
-`● File`<br>
+#### Lists and Arrays<br>
 > ● Implement a List<br>
 ● The list should contain: an Integer, a String and a nested list<br>
 ● Make a second list and merge both.<br>
