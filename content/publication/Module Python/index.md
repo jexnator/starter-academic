@@ -582,3 +582,32 @@ Position 3
 ```
 Whenever, we need to make sure that the data remains unchanged and write protected, then a tuple is the best option in Python.<br>
 <p></p><br>
+<p></p><br>
+
+### Sets<br>
+> ● Implement a Set with 3 elements<br>
+● Add a duplicate value and then print the content. Explain what happens.<br>
+● Join two sets into one with .union()<br>
+● Explain a case where sets are better than lists as a comment or demonstrate with an example<br>
+● Use all existing methods and demonstrate the usage. Explain the different parameters if they have params.<br>
+##### Input<br>
+```python
+# 1. define a set with 3 elements + one similar
+# 2. Join two sets into one with .union()
+
+thisSet = {"lime", "lime", "orange", "banana"}
+nextSet = {"hello", "I'm", "unordered"}
+
+unionSet = thisSet.union(nextSet)
+
+print(thisSet)
+print(unionSet)
+```
+##### Output<br>
+```
+{'lime', 'orange', 'banana'}
+{'unordered', 'banana', 'hello', "I'm", 'lime', 'orange'}
+```
+Sets cannot contain duplicates, and they will simply disappear. That's why we see the element "lime" only one time in the printout.
+Processing a set is faster than processing a list, because each element can only occur once. This allows us to use the hash function.<br>
+<p></p><br>
