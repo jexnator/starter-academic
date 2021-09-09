@@ -279,7 +279,7 @@ print("Of all dishes", x, "is my favorite")
 Of all dishes spaghetti code is my favorite.
 ```
 
-### `❯ upper()`<br>
+### `❯ upper()`
 ##### Input<br>
 ```python
 #define a string and change lowercase letters to uppercase with method upper()
@@ -291,7 +291,6 @@ print(x)
 ##### Output<br>
 ```
 SPAGHETTI CARBONARA
-******************************************************************************
 ```
 </p>
 <p></p><br>
