@@ -507,3 +507,23 @@ print(brands)
 <p></p><br>
 <p></p><br>
 
+### Tuples<br>
+> ● Implement a Tuple with 3 elements<br>
+● Change the tuple to a 4 elements structure. Add a 4th element.<br>
+● Join two Tuples.<br>
+● Explain a case where tuples are better than lists as a comment or demonstrate with an example<br>
+● Use all existing methods and demonstrate the usage. Explain the different parameters if they have params.<br>
+##### Input<br>
+```python
+#define two lists and merge them together
+firstList = [1, "Python", [2, "I'm a nested list"]]
+secondList = [3, "Keyboard", 3.1]
+
+print(firstList+secondList)
+```
+##### Output<br>
+```
+[1, 'Python', [2, "I'm a nested list"], 3, 'Keyboard', 3.1]
+```
+<p></p><br>
+
