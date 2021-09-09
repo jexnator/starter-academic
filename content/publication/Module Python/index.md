@@ -145,10 +145,42 @@ print(typeOfBooleanVariable)
 <class 'str'>
 <class 'bool'>
 ```
+</p>
+<p></p><br>
+<p>
+
 ### {{< hl >}}<b>String-Methods</b>{{< /hl >}}<br>
-> Use the following string-methods on a string
+> Use different methods on a string
+###### Input<br>
 - capitalize()
+```python
+#define a string and capitalize the first letter
+a = "hello world"
+a = a.capitalize()
+
+print(a)
+```
+###### Output<br>
+```
+Hello world
+```
+###### Input<br>
 - count()
+```python
+#define a string variable and count the number of a value
+brand = ["Opel", "Toyota", "Audi", "Opel", "Kia"]
+tot = brand.count("Opel")
+pieces = " times"
+
+print (str(tot)+pieces)
+```
+###### Output<br>
+```
+2 times
+```
+
+
+
 - endswith()
 - find()
 - lower()
@@ -157,3 +189,6 @@ print(typeOfBooleanVariable)
 - startswith()
 - strip()
 - upper()
+
+
+
