@@ -152,7 +152,7 @@ print(typeOfBooleanVariable)
 ### {{< hl >}}<b>String-Methods</b>{{< /hl >}}<br>
 > Use different methods on a string
 ###### Input<br>
-- capitalize()
+`capitalize()`
 ```python
 #define a string and capitalize the first letter
 a = "hello world"
@@ -164,8 +164,10 @@ print(a)
 ```
 Hello world
 ```
+<p></p><br>
+
 ###### Input<br>
-- count()
+`count()`
 ```python
 #define a string variable and count the number of a value
 brand = ["Opel", "Toyota", "Audi", "Opel", "Kia"]
