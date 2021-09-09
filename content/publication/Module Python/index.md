@@ -306,7 +306,7 @@ SPAGHETTI CARBONARA
 <p>
 
 ### {{< hl >}}<b>Non-Primitive Types</b>{{< /hl >}}<br>
-#### Lists and Arrays<br>
+#### ❯ Lists and those Methods<br>
 > ● Implement a List<br>
 ● The list should contain: an Integer, a String and a nested list<br>
 ● Make a second list and merge both.<br>
@@ -324,6 +324,112 @@ print(firstList+secondList)
 ```
 <p></p><br>
 
+### `❯ append()`<br>
+##### Input<br>
+```python
+#define a list and append an element with append()
+elements = [1, "Python"]
+elements.append(2)
+
+print(elements)
+```
+##### Output<br>
+```
+[1, 'Python', 2]
+```
+<p></p><br>
+
+### `❯ clear()`<br>
+##### Input<br>
+```python
+#define a list and clear all eith method clear()
+fruits = ["strawberry", "apple", "orange"]
+
+fruits.clear()
+
+print(fruits)
+```
+##### Output<br>
+```
+[]
+```
+<p></p><br>
+
+### `❯ copy()`<br>
+##### Input<br>
+```python
+#define a list and copy the elements in an other var with method copy()
+fruits = ["strawbery", "apple", "orange"]
+
+a = fruits.copy()
+
+print(a)
+```
+##### Output<br>
+```
+['strawbery', 'apple', 'orange']
+```
+<p></p><br>
+
+### `❯ count()`<br>
+##### Input<br>
+```python
+#define a list and count a specific element with count()
+fruits = ["orange" , "lime", "orange", "apple", "orange"]
+pieces = " times"
+
+a = fruits.count("orange")
+
+print (str(a)+pieces)
+```
+##### Output<br>
+```
+3 times
+```
+<p></p><br>
+
+### `❯ extend()`<br>
+##### Input<br>
+```python
+#define a list an extend with an other list with method extend()
+fruits = ["orange" , "lime", "orange", "apple", "orange"]
+otherFruits = ["papaya", "melon"]
+
+fruits.extend(otherFruits)
+
+print (fruits)
+```
+##### Output<br>
+```
+['orange', 'lime', 'orange', 'apple', 'orange', 'papaya', 'melon']
+```
+<p></p><br>
+
+### `❯ index()`<br>
+##### Input<br>
+```python
+#define a list and find the index of a specific element with method index()
+fruits = ["orange" , "lime", "orange", "apple", "orange"]
+c = fruits.index("apple")
+position = "Position "
+
+print (position+str(c))
+```
+##### Output<br>
+```
+Position 3
+```
+<p></p><br>
+
+
+
+
+
+
+
+<p></p><br>
+
+#### ❯ Arrays<br>
 > ● Make two numpy-Arrays with numbers.<br>
 ● Sum those arrays together.<br>
 ##### Input<br>
