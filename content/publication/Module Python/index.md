@@ -107,10 +107,6 @@ comment
 <p></p><br>
 
 ### {{< hl >}}<b>Primitive Types</b>{{< /hl >}}<br>
-`● Integer`<br>
-`● Float`<br>
-`● String`<br>
-`● Boolean`<br>
 > Assign each primitive Type to a variable<br>
 ##### Input<br>
 ```python
@@ -302,7 +298,7 @@ SPAGHETTI CARBONARA
 <p></p><br>
 
 ### {{< hl >}}<b>Non-Primitive Types</b>{{< /hl >}}<br>
-### Lists and those Methods<br>
+### Lists<br>
 > ● Implement a List<br>
 ● The list should contain: an Integer, a String and a nested list<br>
 ● Make a second list and merge both.<br>
@@ -320,6 +316,24 @@ print(firstList+secondList)
 ```
 <p></p><br>
 
+### Arrays<br>
+> ● Make two numpy-Arrays with numbers.<br>
+● Sum those arrays together.<br>
+##### Input<br>
+```python
+#define two numpy arrays and sum those together
+numpy1 = [1, 2, 3, 4, 5]
+numpy2 = [5, 4, 3, 2, 1]
+
+print(sum(numpy1 + numpy2))
+```
+##### Output<br>
+```
+30
+```
+<p></p><br>
+
+### List- & Array-Methods<br>
 ### `❯ append()`<br>
 ##### Input<br>
 ```python
@@ -493,19 +507,3 @@ print(brands)
 <p></p><br>
 <p></p><br>
 
-### Arrays<br>
-> ● Make two numpy-Arrays with numbers.<br>
-● Sum those arrays together.<br>
-##### Input<br>
-```python
-#define two numpy arrays and sum those together
-numpy1 = [1, 2, 3, 4, 5]
-numpy2 = [5, 4, 3, 2, 1]
-
-print(sum(numpy1 + numpy2))
-```
-##### Output<br>
-```
-30
-```
-<p></p><br>
