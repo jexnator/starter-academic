@@ -88,9 +88,8 @@ print(response)
 Hello World
 Hello Back
 ```
-</p>
 <p></p><br>
-<p>
+<p></p><br>
 
 ### {{< hl >}}<b>Different types of comments</b>{{< /hl >}}<br>
 In Python you have the possibility to write single-line comments or multi-line comments.<br>
@@ -104,9 +103,8 @@ multi-line
 comment
 """
 ```
-</p>
 <p></p><br>
-<p>
+<p></p><br>
 
 ### {{< hl >}}<b>Primitive Types</b>{{< /hl >}}<br>
 `● Integer`<br>
@@ -145,9 +143,8 @@ print(typeOfBooleanVariable)
 <class 'str'>
 <class 'bool'>
 ```
-</p>
 <p></p><br>
-<p>
+<p></p><br>
 
 ### {{< hl >}}<b>String-Methods</b>{{< /hl >}}<br>
 > Use different methods on a string
@@ -301,12 +298,11 @@ print(x)
 ```
 SPAGHETTI CARBONARA
 ```
-</p>
 <p></p><br>
-<p>
+<p></p><br>
 
 ### {{< hl >}}<b>Non-Primitive Types</b>{{< /hl >}}<br>
-### ❯ Lists and those Methods<br>
+### Lists and those Methods<br>
 > ● Implement a List<br>
 ● The list should contain: an Integer, a String and a nested list<br>
 ● Make a second list and merge both.<br>
@@ -497,7 +493,7 @@ print(brands)
 <p></p><br>
 <p></p><br>
 
-### ❯ Arrays<br>
+### Arrays<br>
 > ● Make two numpy-Arrays with numbers.<br>
 ● Sum those arrays together.<br>
 ##### Input<br>
