@@ -544,4 +544,42 @@ print(joinTuple)
 ```
 ('lime', 'orange', 'banana', 'papaya', 'apple')
 ```
+<p></p><br>
+<p></p><br>
+
+### Tuple-Methods<br>
+### `❯ count()`<br>
+##### Input<br>
+```python
+#define a tuple and count a specific element with method count()
+anothertuple = (2, 2, 2, 2, 3, 4, 5)
+
+u = anothertuple.count(2)
+times = " times"
+
+print(str(u)+times)
+```
+##### Output<br>
+```
+4 times
+```
+<p></p><br>
+
+### `❯ index()`<br>
+##### Input<br>
+```python
+#define a tuple and find the index of a specific element with method index()
+fruits = ("orange" , "lime", "orange", "apple", "orange")
+c = fruits.index("apple")
+position = "Position "
+
+print (position+str(c))
+
+```
+##### Output<br>
+```
+Position 3
+```
+<p></p><br>
+Whenever, we need to make sure that the data remains unchanged and write protected, then a tuple is the best option in Python.<br>
 
