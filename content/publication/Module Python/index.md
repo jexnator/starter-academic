@@ -169,7 +169,7 @@ Hello world
 ### `❯ count()`<br>
 ##### Input<br>
 ```python
-#define a string variable and count the number of a value
+#define a string variable and count the number of a specific value
 brand = ["Opel", "Toyota", "Audi", "Opel", "Kia"]
 tot = brand.count("Opel")
 pieces = " times"
