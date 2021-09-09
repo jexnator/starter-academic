@@ -182,7 +182,7 @@ print (str(tot)+pieces)
 ```
 <p></p><br>
 
-### `endswith()`
+### <b>`endswith()`</b>
 ##### Input<br>
 ```python
 #define a string Variable and analyze the end with method endswith()
