@@ -505,7 +505,6 @@ print(brands)
 ['Audi', 'Jeep', 'Kia', 'Mercedes']
 ```
 <p></p><br>
-<p></p><br>
 
 ### Tuples<br>
 > ● Implement a Tuple with 3 elements<br>
@@ -544,8 +543,6 @@ print(joinTuple)
 ```
 ('lime', 'orange', 'banana', 'papaya', 'apple')
 ```
-<p></p><br>
-<p></p><br>
 
 ### Tuple-Methods<br>
 ### `❯ count()`<br>
@@ -610,8 +607,6 @@ print(unionSet)
 ```
 Sets cannot contain duplicates, and they will simply disappear. That's why we see the element "lime" only one time in the printout.
 Processing a set is faster than processing a list, because each element can only occur once. This allows us to use the hash function.<br>
-<p></p><br>
-<p></p><br>
 
 ### Set-Methods<br>
 ### `❯ All methods`<br>
