@@ -633,7 +633,8 @@ tuple1copy = tuple1.copy()
 print(tuple1copy)
 
 
-#define two sets and show up the differences between them with method difference()
+#define two sets and show up the differences between them
+#method difference()
 a = {"Apple", "Strawberry", "Lime"}
 b = {"Apple", "Microsoft", "Google"}
 c = a.difference(b)
@@ -723,8 +724,9 @@ c = a.symmetric_difference(b)
 print(c)
 
 
-#define two sets and remove from the first set all elements which are present in both sets
-#and add the remaining elements from the second set with method symmetric_difference_update
+#define two sets and remove from the first set all elements which 
+#are present in both setsand add the remaining elements from the 
+#second set with method symmetric_difference_update
 a = {1, 2, 3, 4, 5, 6}
 b = {3, 2, 1, 7, 8, 9, 10}
 a.symmetric_difference_update(b)
