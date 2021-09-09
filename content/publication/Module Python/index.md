@@ -195,11 +195,27 @@ print(x)
 ```
 True
 ```
+<p></p><br>
+
+> ● find()
+##### Input<br>
+```python
+#define a string and find a specific value with method(find)
+message = "Hello, my name is Python."
+x = message.find("y", 15, 20)
+position = "Position "
+
+print(position+str(x))
+```
+##### Output<br>
+```
+Position 19
+```
 
 
 
-- endswith()
-- find()
+
+
 - lower()
 - replace()
 - split()
