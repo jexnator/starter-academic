@@ -286,7 +286,6 @@ print("Of all dishes", x, "is my favorite")
 ```
 Of all dishes spaghetti code is my favorite.
 ```
-<p></p><br>
 
 ### `❯ upper()`<br>
 ##### Input<br>
