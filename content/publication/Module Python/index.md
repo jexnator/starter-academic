@@ -611,3 +611,168 @@ print(unionSet)
 Sets cannot contain duplicates, and they will simply disappear. That's why we see the element "lime" only one time in the printout.
 Processing a set is faster than processing a list, because each element can only occur once. This allows us to use the hash function.<br>
 <p></p><br>
+<p></p><br>
+
+### Set-Methods<br>
+### `❯ All methods`<br>
+##### Input<br>
+```python
+#define a set and add an element with method add()
+tuple1 = {"mouse", "rat", "cat"}
+tuple1.add("dog")
+
+print(tuple1)
+
+
+#define a set and then clear it with method clear()
+tuple1 = {"mouse", "rat", "cat"}
+tuple1.clear()
+
+print(tuple1)
+
+
+#define a set and copy the elements in an other var with method copy()
+tuple1 = {"mouse", "rat", "cat"}
+tuple1copy = tuple1.copy()
+
+print(tuple1copy)
+
+
+#define two sets and show up the differences between them with method difference()
+a = {"Apple", "Strawberry", "Lime"}
+b = {"Apple", "Microsoft", "Google"}
+c = a.difference(b)
+
+print(c)
+
+
+#define two sets and show up the differences + clear the similar elements
+#with method difference_update()
+a = {"Apple", "Strawberry", "Lime"}
+b = {"Apple", "Microsoft", "Google"}
+a.difference_update(b)
+
+print(a)
+
+
+#define a set and clear an element with method .discard()
+a = {"hello", "my", "name", "is", "Python"}
+a.discard("Python")
+
+print(a)
+
+#define two sets and show up the similar elements with method intersection()
+a = {"Apple", "Strawberry", "Lime"}
+b = {"Apple", "Microsoft", "Google"}
+c = a.intersection(b)
+
+print(c)
+
+
+#define two sets and remove elements in which are not present in both sets
+#method intersection_update()
+a = {"Apple", "Banana", "Cherry"}
+b = {"Google", "Microsoft", "Apple"}
+a.intersection_update(b)
+
+print(a)
+
+
+#define two sets and test if there are similar elements in the two sets or not
+#method isthisjoint()
+x = {"cat", "fish", "dog"}
+y = {"instagram", "whatsapp", "pycharm"}
+z = x.isdisjoint(y)
+
+print(z)
+
+
+#define two sets and check if both sets contain the similar elements
+#method issubset()
+a = {1, 2, 3}
+b = {4, 5, 6, 3, 2, 0}
+c = a.issubset(b) 
+
+print(c)
+
+
+#define two sets and check if all items from the second set are present
+#in the first set use the method issuperset()
+a = {1, 2, 3, 4, 5, 6}
+b = {3, 2, 1}
+c = a.issuperset(b)
+
+print(c)
+
+
+#define a set and remove a random element with method pop()
+d = {"Hello", "This", "Is", "Very", "Satisfying"}
+d.pop()
+
+print(d)
+
+
+#define a set and remove a specific element with method remove()
+d = {"Hello", "This", "Is", "Very", "Satisfying"}
+d.remove("Is")
+
+print(d)
+
+
+#define two sets and show up the elements which are not present in both sets
+#method symmetric_difference
+a = {1, 2, 3, 4, 5, 6}
+b = {3, 2, 1, 7, 8, 9, 10}
+c = a.symmetric_difference(b)
+
+print(c)
+
+
+#define two sets and remove from the first set all elements which are present in both sets
+#and add the remaining elements from the second set with method symmetric_difference_update
+a = {1, 2, 3, 4, 5, 6}
+b = {3, 2, 1, 7, 8, 9, 10}
+a.symmetric_difference_update(b)
+
+print(a)
+
+
+#define two sets and create an union of them with method union()
+brands = {"DC", "Nike", "Puma"}
+things = {"bicycle", "car", "helmet"}
+
+mixture = brands.union(things)
+
+print(mixture)
+
+
+#define two sets and update the first set with the elements from the second set
+#method update()
+brandsmixedwiththings = {"DC", "Nike", "Puma"}
+things = {"bicycle", "car", "helmet", "DC", "Nike", "Puma"}
+brandsmixedwiththings.update(things)
+
+print(brandsmixedwiththings)
+
+```
+##### Output<br>
+```
+{'mouse', 'rat', 'dog', 'cat'}
+set()
+{'mouse', 'rat', 'cat'}
+{'Strawberry', 'Lime'}
+{'Strawberry', 'Lime'}
+{'hello', 'name', 'my', 'is'}
+{'Apple'}
+{'Apple'}
+True
+False
+True
+{'This', 'Satisfying', 'Very', 'Hello'}
+{'This', 'Satisfying', 'Very', 'Hello'}
+{4, 5, 6, 7, 8, 9, 10}
+{4, 5, 6, 7, 8, 9, 10}
+{'Puma', 'Nike', 'car', 'bicycle', 'helmet', 'DC'}
+{'Nike', 'bicycle', 'car', 'Puma', 'helmet', 'DC'}
+```
+<p></p><br>
