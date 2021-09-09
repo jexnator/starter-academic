@@ -88,8 +88,6 @@ print(response)
 Hello World
 Hello Back
 ```
-<p></p><br>
-<p></p><br>
 
 ### {{< hl >}}<b>Different types of comments</b>{{< /hl >}}<br>
 In Python you have the possibility to write single-line comments or multi-line comments.<br>
@@ -103,8 +101,6 @@ multi-line
 comment
 """
 ```
-<p></p><br>
-<p></p><br>
 
 ### {{< hl >}}<b>Primitive Types</b>{{< /hl >}}<br>
 > Assign each primitive Type to a variable<br>
@@ -139,8 +135,6 @@ print(typeOfBooleanVariable)
 <class 'str'>
 <class 'bool'>
 ```
-<p></p><br>
-<p></p><br>
 
 ### {{< hl >}}<b>String-Methods</b>{{< /hl >}}<br>
 > Use different methods on a string
@@ -294,8 +288,6 @@ print(x)
 ```
 SPAGHETTI CARBONARA
 ```
-<p></p><br>
-<p></p><br>
 
 ### {{< hl >}}<b>Non-Primitive Types</b>{{< /hl >}}<br>
 ### Lists<br>
@@ -543,6 +535,7 @@ print(joinTuple)
 ```
 ('lime', 'orange', 'banana', 'papaya', 'apple')
 ```
+<p></p><br>
 
 ### Tuple-Methods<br>
 ### `❯ count()`<br>
@@ -578,6 +571,7 @@ print (position+str(c))
 Position 3
 ```
 Whenever, we need to make sure that the data remains unchanged and write protected, then a tuple is the best option in Python.<br>
+<p></p><br>
 
 ### Sets<br>
 > ● Implement a Set with 3 elements<br>
@@ -605,6 +599,7 @@ print(unionSet)
 ```
 Sets cannot contain duplicates, and they will simply disappear. That's why we see the element "lime" only one time in the printout.
 Processing a set is faster than processing a list, because each element can only occur once. This allows us to use the hash function.<br>
+<p></p><br>
 
 ### Set-Methods<br>
 ### `❯ All methods`<br>
