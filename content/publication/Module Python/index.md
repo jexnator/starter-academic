@@ -312,12 +312,12 @@ SPAGHETTI CARBONARA
 `● Dictionary`<br>
 `● Set`<br>
 `● File`<br>
-> - Implement a List and an Array<br>
-The list should contain:<br>
-- an Integer<br>
-- a String<br>
-- a nested list<br>
-- Make a second list (chose the items yourself) and merge both.<br>
+> ● Implement a List<br>
+● The list should contain:<br>
+  - an Integer<br>
+  - a String<br>
+  - a nested list<br>
+● Make a second list (chose the items yourself) and merge both.<br>
 ##### Input<br>
 ```python
 #define two lists and merge them together
@@ -331,3 +331,6 @@ print(firstList+secondList)
 [1, 'Python', [2, "I'm a nested list"], 3, 'Keyboard', 3.1]
 ```
 <p></p><br>
+
+> ● Make two numpy-Arrays with numbers.<br>
+● Sum those arrays together.<br>
