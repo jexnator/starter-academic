@@ -151,7 +151,7 @@ print(typeOfBooleanVariable)
 
 ### {{< hl >}}<b>String-Methods</b>{{< /hl >}}<br>
 > Use different methods on a string
-#### `capitalize()`
+### `capitalize()`
 ##### Input<br>
 ```python
 #define a string and capitalize the first letter
@@ -166,7 +166,7 @@ Hello world
 ```
 <p></p><br>
 
-#### `count()`
+### `count()`
 ##### Input<br>
 ```python
 #define a string variable and count the number of a value
@@ -182,7 +182,7 @@ print (str(tot)+pieces)
 ```
 <p></p><br>
 
-#### `endswith()`
+### `endswith()`
 ##### Input<br>
 ```python
 #define a string Variable and analyze the end with method endswith()
@@ -197,7 +197,7 @@ True
 ```
 <p></p><br>
 
-#### `find()`
+### `find()`
 ##### Input<br>
 ```python
 #define a string and find a specific value with method(find)
