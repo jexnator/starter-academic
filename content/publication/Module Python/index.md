@@ -527,7 +527,6 @@ print(thisTuple)
 {{% callout warning %}}
 You can't insert new elements in created tuples because they have an immutable property. But you have the possibility to join serveral tuples in a new tuple. See below 🠗
 {{% /callout %}}
-<p></p><br>
 
 ##### Input<br>
 ```python
