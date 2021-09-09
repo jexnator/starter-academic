@@ -306,7 +306,7 @@ SPAGHETTI CARBONARA
 <p>
 
 ### {{< hl >}}<b>Non-Primitive Types</b>{{< /hl >}}<br>
-#### ❯ Lists and those Methods<br>
+### ❯ Lists and those Methods<br>
 > ● Implement a List<br>
 ● The list should contain: an Integer, a String and a nested list<br>
 ● Make a second list and merge both.<br>
@@ -421,15 +421,83 @@ Position 3
 ```
 <p></p><br>
 
+### `❯ insert()`<br>
+##### Input<br>
+```python
+#define a list and insert an element with method insert()
+fruits = ["orange" , "lime", "orange", "apple", "orange"]
+fruits.insert(0, "apple")
 
-
-
-
-
-
+print (fruits)
+```
+##### Output<br>
+```
+['apple', 'orange', 'lime', 'orange', 'apple', 'orange']
+```
 <p></p><br>
 
-#### ❯ Arrays<br>
+### `❯ pop()`<br>
+##### Input<br>
+```python
+#define a list and delete a specific element with method pop()
+fruits = ["orange" , "lime"]
+fruits.pop(0)
+
+print (fruits)
+```
+##### Output<br>
+```
+['lime']
+```
+<p></p><br>
+
+### `❯ remove()`<br>
+##### Input<br>
+```python
+#define a list and remove an element with method remove()
+fruits = ["orange" , "lime"]
+fruits.remove("lime")
+
+print (fruits)
+```
+##### Output<br>
+```
+['orange']
+```
+<p></p><br>
+
+### `❯ reverse()`<br>
+##### Input<br>
+```python
+#define a list and reverse the order with method reverse()
+fruits = ["orange" , "lime"]
+fruits.reverse()
+
+print (fruits)
+```
+##### Output<br>
+```
+['lime', 'orange']
+```
+<p></p><br>
+
+### `❯ sort()`<br>
+##### Input<br>
+```python
+#define a list and sort alphabetically with method sort()
+brands = ['Mercedes', 'Jeep', 'Audi','Kia']
+brands.sort()
+
+print(brands)
+```
+##### Output<br>
+```
+['Audi', 'Jeep', 'Kia', 'Mercedes']
+```
+<p></p><br>
+<p></p><br>
+
+### ❯ Arrays<br>
 > ● Make two numpy-Arrays with numbers.<br>
 ● Sum those arrays together.<br>
 ##### Input<br>
