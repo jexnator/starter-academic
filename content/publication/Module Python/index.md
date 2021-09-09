@@ -180,6 +180,21 @@ print (str(tot)+pieces)
 ```
 2 times
 ```
+<p></p><br>
+
+> ● endswith()
+##### Input<br>
+```python
+#define a string Variable and analyze the end with method endswith()
+message = "Hello, my name is Python."
+x = message.endswith(".")
+
+print(x)
+```
+##### Output<br>
+```
+True
+```
 
 
 
