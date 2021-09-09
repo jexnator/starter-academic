@@ -313,10 +313,7 @@ SPAGHETTI CARBONARA
 `● Set`<br>
 `● File`<br>
 > ● Implement a List<br>
-● The list should contain:<br>
-  - an Integer<br>
-  - a String<br>
-  - a nested list<br>
+● The list should contain: an Integer, a String and a nested list<br>
 ● Make a second list (chose the items yourself) and merge both.<br>
 ##### Input<br>
 ```python
