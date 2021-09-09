@@ -580,6 +580,5 @@ print (position+str(c))
 ```
 Position 3
 ```
-<p></p><br>
 Whenever, we need to make sure that the data remains unchanged and write protected, then a tuple is the best option in Python.<br>
-
+<p></p><br>
