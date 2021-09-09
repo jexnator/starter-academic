@@ -305,5 +305,29 @@ SPAGHETTI CARBONARA
 <p></p><br>
 <p>
 
-### {{< hl >}}<b></b>{{< /hl >}}<br>
+### {{< hl >}}<b>Non-Primitive Types</b>{{< /hl >}}<br>
+`● Array`<br>
+`● List`<br>
+`● Tuple`<br>
+`● Dictionary`<br>
+`● Set`<br>
+`● File`<br>
+> - Implement a List and an Array<br>
+The list should contain:<br>
+- an Integer<br>
+- a String<br>
+- a nested list<br>
+- Make a second list (chose the items yourself) and merge both.<br>
+##### Input<br>
+```python
+#define two lists and merge them together
+firstList = [1, "Python", [2, "I'm a nested list"]]
+secondList = [3, "Keyboard", 3.1]
 
+print(firstList+secondList)
+```
+##### Output<br>
+```
+[1, 'Python', [2, "I'm a nested list"], 3, 'Keyboard', 3.1]
+```
+<p></p><br>
