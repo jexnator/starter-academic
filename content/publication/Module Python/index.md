@@ -515,15 +515,32 @@ print(brands)
 ● Use all existing methods and demonstrate the usage. Explain the different parameters if they have params.<br>
 ##### Input<br>
 ```python
-#define two lists and merge them together
-firstList = [1, "Python", [2, "I'm a nested list"]]
-secondList = [3, "Keyboard", 3.1]
+#define a tuple with 3 elements
+thisTuple = ("lime", "orange", "banana")
 
-print(firstList+secondList)
+print(thisTuple)
 ```
 ##### Output<br>
 ```
-[1, 'Python', [2, "I'm a nested list"], 3, 'Keyboard', 3.1]
+('lime', 'orange', 'banana')
 ```
+{{% callout warning %}}
+You can't insert new elements in created tuples because they have an immutable property. But you have the possibility to join serveral tuples in a new tuple. See below 🠗
+{{% /callout %}}
 <p></p><br>
+
+##### Input<br>
+```python
+#define serveral tuples and join them
+thisTuple = ("lime", "orange", "banana")
+nextTuple = ("papaya", "apple")
+
+joinTuple = thisTuple + nextTuple
+
+print(joinTuple)
+```
+##### Output<br>
+```
+('lime', 'orange', 'banana', 'papaya', 'apple')
+```
 
