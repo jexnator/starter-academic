@@ -164,7 +164,6 @@ print(a)
 ```
 Hello world
 ```
-<p></p><br>
 
 ### `❯ count()`<br>
 ##### Input<br>
@@ -180,7 +179,6 @@ print (str(tot)+pieces)
 ```
 2 times
 ```
-<p></p><br>
 
 ### `❯ endswith()`<br>
 ##### Input<br>
@@ -195,7 +193,6 @@ print(x)
 ```
 True
 ```
-<p></p><br>
 
 ### `❯ find()`<br>
 ##### Input<br>
@@ -211,7 +208,6 @@ print(position+str(x))
 ```
 Position 19
 ```
-<p></p><br>
 
 ### `❯ lower()`<br>
 ##### Input<br>
@@ -226,7 +222,6 @@ print(x)
 ```
 hello, my name is python.
 ```
-<p></p><br>
 
 ### `❯ replace()`<br>
 ##### Input<br>
@@ -241,7 +236,6 @@ print(x)
 ```
 Hello, my name is Xavier
 ```
-<p></p><br>
 
 ### `❯ split()`<br>
 ##### Input<br>
@@ -256,7 +250,6 @@ print(x)
 ```
 ['Hello,', 'my', 'name', 'is', 'Python.']
 ```
-<p></p><br>
 
 ### `❯ startswith()`<br>
 ##### Input<br>
@@ -271,7 +264,6 @@ print(x)
 ```
 False
 ```
-<p></p><br>
 
 ### `❯ strip()`<br>
 ##### Input<br>
@@ -286,8 +278,7 @@ print("Of all dishes", x, "is my favorite")
 ```
 Of all dishes spaghetti code is my favorite.
 ```
-▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
-▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼
+
 ### `❯ upper()`<br>
 ##### Input<br>
 ```python
@@ -300,12 +291,11 @@ print(x)
 ##### Output<br>
 ```
 SPAGHETTI CARBONARA
+*********************************************************************************
 ```
-▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
 </p>
 <p></p><br>
 <p>
 
 ### {{< hl >}}<b></b>{{< /hl >}}<br>
-
 
