@@ -200,7 +200,7 @@ True
 ### `❯ find()`<br>
 ##### Input<br>
 ```python
-#define a string and find a specific value with method(find)
+#define a string and find a specific value with method find()
 message = "Hello, my name is Python."
 x = message.find("y", 15, 20)
 position = "Position "
@@ -210,6 +210,21 @@ print(position+str(x))
 ##### Output<br>
 ```
 Position 19
+```
+<p></p><br>
+
+### `❯ lower()`<br>
+##### Input<br>
+```python
+#define a string and change upper case letters to lower case letters with method lower()
+message = "Hello, my name is Python."
+x = message.lower()
+
+print(x)
+```
+##### Output<br>
+```
+hello, my name is python.
 ```
 
 
