@@ -747,7 +747,6 @@ things = {"bicycle", "car", "helmet", "DC", "Nike", "Puma"}
 brandsmixedwiththings.update(things)
 
 print(brandsmixedwiththings)
-
 ```
 ##### Output<br>
 ```
@@ -807,3 +806,17 @@ print(dict1)
 {'person': [{'Name': 'Jeiziner', 'Firstname': 'Xavier', 'Age': 22}],
  'animal': [{'Name': 'Lennox', 'sex': 'male', 'age': 1}]}
 ```
+Processing a dictionary is faster than processing a list, because each key can only occur once. In a list the elements are accessed via indices, while in a dictionary the elements are accessed via key-values. This allows us to use the hash function.<br>
+<p></p><br>
+
+### Set-Methods<br>
+### `❯ All methods`<br>
+##### Input<br>
+```python
+
+```
+##### Output<br>
+```
+
+```
+<p></p><br>
