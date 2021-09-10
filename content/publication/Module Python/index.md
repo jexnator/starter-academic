@@ -770,3 +770,39 @@ True
 {'Nike', 'bicycle', 'car', 'Puma', 'helmet', 'DC'}
 ```
 <p></p><br>
+
+### Dictionaries<br>
+> ● Implement a Dictionary that contains a key called “persons” with an empty list as value<br>
+● Call the list via the key. It should be empty<br>
+● Join two sets into one with .union()<br>
+● Call the list inside the dict and fill the embedded list it with new dictionaries. Each new dict should contain the following keys: “Name”, “Firstname” and “Age”. <br>
+● Create a second dict that contains a new key and a different value. Join the first dict with the new one.<br>
+● Explain a case where dicts are better than lists as a comment or demonstrate with an example<br>
+● Use all existing methods for dicts and demonstrate the usage. Explain the different parameters if they have params.<br>
+##### Input<br>
+```python
+#define a dictionary that contains a key called
+#"person" with an empty list as value
+#Call the list inside the dict and fill the embedded list it with new dictionaries
+#Each new dict should contain the following keys: “Name”, “Firstname” and “Age”.
+#Create a second dict that contains a new key and a different value
+#Join the first dict with the new one.
+
+dict1 = {'person': []}
+print(dict1['person'])
+
+dict1 = {'person': [{'Name': 'Jeiziner',
+                     'Firstname': 'Xavier',
+                     'Age': 22}]}
+
+dict2 = {'animal': [{'Name': 'Lennox',
+                     'sex': 'male',
+                     'age': 1,}]}
+dict1.update(dict2)
+print(dict1)
+```
+##### Output<br>
+```
+[]
+{'person': [{'Name': 'Jeiziner', 'Firstname': 'Xavier', 'Age': 22}], 'animal': [{'Name': 'Lennox', 'sex': 'male', 'age': 1}]}
+```
