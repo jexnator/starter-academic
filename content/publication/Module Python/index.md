@@ -783,7 +783,7 @@ True
 ```python
 #define a dictionary that contains a key called
 #"person" with an empty list as value
-#Call the list inside the dict and fill the embedded list it with new dictionaries
+#Call the list inside the dict and fill the embedded list it with new dicts.
 #Each new dict should contain the following keys: “Name”, “Firstname” and “Age”.
 #Create a second dict that contains a new key and a different value
 #Join the first dict with the new one.
@@ -804,5 +804,6 @@ print(dict1)
 ##### Output<br>
 ```
 []
-{'person': [{'Name': 'Jeiziner', 'Firstname': 'Xavier', 'Age': 22}], 'animal': [{'Name': 'Lennox', 'sex': 'male', 'age': 1}]}
+{'person': [{'Name': 'Jeiziner', 'Firstname': 'Xavier', 'Age': 22}],
+ 'animal': [{'Name': 'Lennox', 'sex': 'male', 'age': 1}]}
 ```
