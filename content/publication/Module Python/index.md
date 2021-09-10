@@ -809,7 +809,7 @@ print(dict1)
 Processing a dictionary is faster than processing a list, because each key can only occur once. In a list the elements are accessed via indices, while in a dictionary the elements are accessed via key-values. This allows us to use the hash function.<br>
 <p></p><br>
 
-### Set-Methods<br>
+### Dictionary-Methods<br>
 ### `❯ All methods`<br>
 ##### Input<br>
 ```python
