@@ -1110,3 +1110,118 @@ AB
 [1, 3.0, 'String', 1.0, 3.0, True, False]
 ```
 <p></p><br>
+
+> What happens if you use combine datatypes? For example 5 * “lol”
+##### Input<br>
+```python
+# Concatenation * 5
+print(5 * "lol")
+```
+##### Output<br>
+```
+lollollollollol
+```
+<p></p><br>
+
+> What other combination exist for operators? Demonstrate
+##### Input<br>
+```python
+# Operator +=
+x = 5
+x += 3
+
+print(x)
+
+
+# Operator -=
+x = 5
+x -= 3
+
+print(x)
+
+
+#Operator *=
+x = 5
+x *= 3
+
+print(x)
+
+
+#Operator /=
+x = 5
+x /= 3
+
+print(x)
+
+
+#Operator %=
+x = 5
+x%=3
+
+print(x)
+
+
+#Operator //=
+x = 5
+x//=3
+
+print(x)
+
+
+#Operator //=
+x = 5
+x//=3
+
+print(x)
+
+
+#Operrator &=
+x = 5
+x &= 3
+
+print(x)
+
+
+#Operator |=
+x = 5
+x |= 3
+
+print(x)
+
+
+#Operator ^=
+x = 5
+x ^= 3
+
+print(x)
+
+
+#Operator >>=
+x = 5
+x >>= 3
+
+print(x)
+
+
+#Operator <<=
+x = 5
+x <<= 3
+
+print(x)
+```
+##### Output<br>
+```
+8
+2
+15
+1.6666666666666667
+2
+1
+1
+1
+7
+6
+0
+40
+```
+<p></p><br>
