@@ -936,9 +936,6 @@ dict_values(['Audi', 'RS3', 2016])
 
 ### Files<br>
 > ● Demonstrate on a file all modes.<br>
-● Create a new file with "hello" as text inside the file<br>
-● Edit the file, read its content and the rewrite it to "Hello World"<br>
-● Delete the file as a last action.<br>
 ##### Input<br>
 ```python
 #different modes on files
@@ -1012,3 +1009,42 @@ os.remove("demofile.txt")
 b'\x05\n\x0f\x14\x19'
 ```
 <p></p><br>
+● Create a new file with "hello" as text inside the file<br>
+● Edit the file, read its content and the rewrite it to "Hello World"<br>
+● Delete the file as a last action.<br>
+
+##### Input<br>
+```python
+#1. create a file
+f = open("HelloWorld.txt", "x")
+f.close()
+
+#2. write something in it
+f = open("HelloWorld.txt","w")
+f.write("Hello")
+f.close()
+
+#3. read and print the content
+f = open("HelloWorld.txt", "r")
+print(f.read())
+f.close()
+
+#4. append some more text
+f = open("HelloWorld.txt", "a")
+f.write(" World")
+f.close()
+
+#5. read and print the content
+f = open("HelloWorld.txt", "r")
+print(f.read())
+f.close()
+
+#6. delete the generated file
+import os
+os.remove("HelloWorld.txt")
+```
+##### Output<br>
+```
+Hello
+Hello World
+```
