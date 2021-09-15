@@ -1048,3 +1048,65 @@ os.remove("HelloWorld.txt")
 Hello
 Hello World
 ```
+<p></p><br>
+
+### {{< hl >}}<b>Arithmetic Operators</b>{{< /hl >}}<br>
+> Test all operators on an integer, float, string, boolean <br>
+##### Input<br>
+```python
+#operators --> Integer
+a = 2 + 2
+b = 3 -1
+c = 100 / 5
+d = 5 // 2
+e = 8 % 5
+f = 2 ** 3
+g = 3 * 3
+x = ','
+
+print(str(a)+x, str(b)+x, str(c)+x, str(d)+x, str(e)+x, str(f)+x, str(g))
+
+
+#operators --> Float
+a = 2.0 + 2.0
+b = 3.0 -1.0
+c = 100.0 / 5.0
+d = 5.0 // 2.0
+e = 8.0 % 5.0
+f = 2.0**3.0
+g = 3.0 * 3.0
+x = ','
+
+print(str(a)+x, str(b)+x, str(c)+x, str(d)+x, str(e)+x, str(f)+x, str(g))
+
+
+#operators --> String
+a = "A" + "B"
+
+print(a)
+
+
+#operators --> Boolean
+a = True
+d = False
+x = ','
+
+print(str(a + a) + x, str(a - a) + x, str(a / a) + x,
+      str((a + b) // b) + x, str((a + b + b) % b) + x,
+      str(b ** b) + x, str(a * b) + x)
+
+#operators --> Lists
+a = [1, 3.0, "String"]
+b = [1.0, 3.0, True, False]
+
+print(a + b)
+```
+##### Output<br>
+```
+4, 2, 20.0, 2, 3, 8, 9
+4.0, 2.0, 20.0, 2.0, 3.0, 8.0, 9.0
+AB
+2, 0, 1.0, 1.0, 1.0, 4.0, 2.0,
+[1, 3.0, 'String', 1.0, 3.0, True, False]
+```
+<p></p><br>
