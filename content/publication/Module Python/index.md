@@ -1010,7 +1010,8 @@ os.remove("demofile.txt")
 b'\x05\n\x0f\x14\x19'
 ```
 <p></p><br>
-● Create a new file with "hello" as text inside the file<br>
+
+> ● Create a new file with "hello" as text inside the file<br>
 ● Edit the file, read its content and the rewrite it to "Hello World"<br>
 ● Delete the file as a last action.<br>
 
