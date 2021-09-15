@@ -980,6 +980,8 @@ os.remove("demofile1.txt")
 I'm a new written textfile
 []
 ```
+<p></p><br>
+
 > ● Explain or show the difference between: -f = open("demofile.txt", "rt") / -f = open("demofile.txt", "rb")<br>
 The "t" means that python reads the demofile.txt as a text. If you use the character "b", then the demofile.txt is read as binary code. See below 🠗<br>
 ##### Input<br>
