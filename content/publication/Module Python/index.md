@@ -1125,17 +1125,77 @@ lollollollollol
 ```
 <p></p><br>
 
-> What other combination exist for operators? Demonstrate
+### {{< hl >}}<b>Relational Operators</b>{{< /hl >}}<br>
+> Demonstrate all relational operators on different data-types<br>
 ##### Input<br>
 ```python
-# Operator +=
+#relational operators --> Integer
+a = 2 < 3
+b = 3 > 1
+c = 100 <= 5
+d = 5 >= 2
+e = 8 % 5
+f = 2 == 3
+g = 3 != 3
+x = ','
+
+print(str(a)+x, str(b)+x, str(c)+x, str(d)+x, str(e)+x, str(f)+x, str(g))
+
+
+#relational operators --> float
+a = 2.0 < 3.0
+b = 3.0 > 1.0
+c = 100.0 <= 5.0
+d = 5.0 >= 2.0
+e = 8.0 % 5.0
+f = 2.0 == 3.0
+g = 3.0 != 3.0
+x = ','
+
+print(str(a)+x, str(b)+x, str(c)+x, str(d)+x, str(e)+x, str(f)+x, str(g))
+
+
+
+#relational operators --> String
+a = "A" == "B"
+
+print(a)
+
+
+#relational operators --> Boolean
+a = True == True
+
+print(a)
+
+
+#relational operators --> Lists
+a = [1, 3.0, "String"]
+b = [1.0, 3.0, True, False]
+
+print(a == b)
+```
+##### Output<br>
+```
+True, True, False, True, 3, False, False
+True, True, False, True, 3.0, False, False
+False
+True
+False
+```
+<p></p><br>
+
+### {{< hl >}}<b>Assignment Operators</b>{{< /hl >}}<br>
+> Demonstrate all assignment operators<br>
+##### Input<br>
+```python
+#Operator +=
 x = 5
 x += 3
 
 print(x)
 
 
-# Operator -=
+#Operator -=
 x = 5
 x -= 3
 
