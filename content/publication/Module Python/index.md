@@ -933,3 +933,80 @@ RS3
 dict_values(['Audi', 'RS3', 2016])
 ```
 <p></p><br>
+
+### Files<br>
+> ● Demonstrate on a file all modes.<br>
+● Create a new file with "hello" as text inside the file<br>
+● Edit the file, read its content and the rewrite it to "Hello World"<br>
+● Delete the file as a last action.<br>
+##### Input<br>
+```python
+#different modes on files
+#1. create a file
+f = open("demofile.txt", "x")
+f.close()
+
+#2. write something in it
+f = open("demofile.txt", "w")
+f.write("I'm a new written textfile")
+f.close()
+
+#3. read and print the content
+f = open("demofile.txt", "r")
+print(f.read())
+f.close()
+
+#4. append a new file if it doesn't exists
+f = open("demofile1.txt", "a")
+f.close()
+
+#2. write something in it
+f = open("demofile1.txt", "w")
+f.write("[]")
+f.close()
+
+#5. read the new file
+f = open("demofile1.txt", "r")
+print(f.read())
+f.close()
+
+#6. delete the generated files
+import os
+os.remove("demofile.txt")
+os.remove("demofile1.txt")
+```
+##### Output<br>
+```
+I'm a new written textfile
+[]
+```
+> ● Explain or show the difference between: -f = open("demofile.txt", "rt") / -f = open("demofile.txt", "rb")<br>
+The "t" means that python reads the demofile.txt as a text. If you use the character "b", then the demofile.txt is read as binary code. See below 🠗<br>
+##### Input<br>
+```python
+#binary
+#1. create a file
+f = open("demofile.txt", "x")
+f.close()
+
+#2. write something in it
+f = open("demofile.txt","wb")
+num = [5, 10, 15, 20, 25]
+arr=bytearray(num)
+f.write(arr)
+f.close()
+
+#3. read and print the content --> binary
+f = open("demofile.txt", "rb")
+print(f.read())
+f.close()
+
+#5. delete the generated file
+import os
+os.remove("demofile.txt")
+```
+##### Output<br>
+```
+b'\x05\n\x0f\x14\x19'
+```
+<p></p><br>
