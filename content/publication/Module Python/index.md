@@ -813,10 +813,123 @@ Processing a dictionary is faster than processing a list, because each key can o
 ### `❯ All methods`<br>
 ##### Input<br>
 ```python
+#define a dictionary and clear the content with method clear()
+dream = {
+    "brand": "Audi",
+    "model": "RS3",
+    "year": 2016
+    }
 
+dream.clear()
+print(dream)
+
+
+#define a dictionary and copy the content to a new dictionary
+#with method copy()
+dream = {
+    "brand": "Audi",
+    "model": "RS3",
+    "year": 2016
+    }
+
+car = dream.copy()
+print(car)
+
+#define a tuple with keys and then convert it to a dictionary
+#with method fromkeys()
+a = ('a', 'b', 'c')
+b = 1
+
+dict1 = dict.fromkeys(a, b)
+print(dict1)
+
+
+#define a dictionary and print a defined key with method get()
+dream = {
+    "brand": "Audi",
+    "model": "RS3",
+    "year": 2016
+    }
+
+print(dream.get("model"))
+
+
+#define a dictionary and print a the dict_items with method items()
+dream = {
+    "brand": "Audi",
+    "model": "RS3",
+    "year": 2016
+    }
+
+print(dream.items())
+
+
+#define a dictionary and print the involved keys with method keys()
+dream = {
+    "brand": "Audi",
+    "model": "RS3",
+    "year": 2016
+    }
+
+print(dream.keys())
+
+
+#define a dictionary and delete the last added item with method popitem()
+dream = {
+    "brand": "Audi",
+    "model": "RS3",
+    "year": 2016,
+    "Motorcode": "BAM" 
+    }
+
+dream.popitem()
+print(dream)
+
+
+#define a dictionary and print a specific item with method setdefault()
+#if the item does not exists, print the parameter from the method
+dream = {
+    "brand": "Audi",
+    "model": "RS3",
+    "year": 2016 
+    }
+
+model = dream.setdefault("model", "S3")
+print(model)
+
+
+#define a dictionary and add a new item with method update()
+dream = {
+    "brand": "Audi",
+    "model": "RS3",
+    "year": 2016,
+    }
+
+dream.update({"Motorcode": "BAM"})
+print(dream)
+
+
+#define a dictionary and print the values from all keys
+#with method values()
+dream = {
+    "brand": "Audi",
+    "model": "RS3",
+    "year": 2016,
+    }
+
+print(dream.values())
 ```
 ##### Output<br>
 ```
-
+{}
+{'brand': 'Audi', 'model': 'RS3', 'year': 2016}
+{'a': 1, 'b': 1, 'c': 1}
+RS3
+dict_items([('brand', 'Audi'), ('model', 'RS3'), ('year', 2016)])
+dict_keys(['brand', 'model', 'year'])
+{'brand': 'Audi', 'model': 'RS3', 'year': 2016}
+RS3
+{'brand': 'Audi', 'model': 'RS3', 'year': 2016, 'Motorcode': 'BAM'}
+dict_values(['Audi', 'RS3', 2016])
 ```
 <p></p><br>

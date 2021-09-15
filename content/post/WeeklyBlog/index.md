@@ -27,7 +27,7 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
-## 08/11/21 - 08/13/21
+## 11/08/21 - 13/08/21
 <p align="justify">
 
 In the second week we started with our first intern modul. Dan and Jim were the coaches of the hardware modul. The goal was to get knowledge about all hardware parts in a personal computer, notebook or a server. This includes also the princips, how the different parts are working and how they communicate together.<br>
@@ -44,7 +44,7 @@ So far, I am very satisfied with our journey @Amanox Solutions. If you have any 
 ![Bern](bern.jpg "<b>Bern |</b> Unsplash: Ben Mysc")
 <p></p>
 
-## 08/16/21 - 08/20/21
+## 16/08/21 - 20/08/21
 <p align="justify">
 
 ### @School
@@ -77,7 +77,7 @@ Looking back, it was a very instructive week. I think that this prior knowledge 
 </p><br>
 <p></p>
 
-## 08/23/21 - 08/27/21
+## 23/08/21 - 27/08/21
 <p align="justify">
 
 ### @School
@@ -104,7 +104,7 @@ Jim and John gave me some constructive feedback, that I plan to implement in fut
 </p><br>
 <p></p>
 
-## 09/01/21 - 09/03/21
+## 01/09/21 - 03/09/21
 <p align="justify">
 This week Yonea an me learned how an offer should look like. First we got some theorie inputs about how to write an offer correctly. Then I started with the first task. The goal was to create two PC offers for Yonea with her personal requirements including the desired budget. She was looking for a gamer pc with associated peripherals. I tried to configurate the two PCs on my own, how we learned it in the hardware modul. During this I had to realize that creating an offer can be difficult, if you would match all requirements depending on the price.<br>
 
@@ -127,3 +127,14 @@ Each of us created a personal branch. Then we worked on the same file and tried 
 In this situation you should talk to each other and find a solution, which is fine for all involved developers. This task gave me an idea of how to work with Git in a collaboration space. Git is a very useful tool and we will certainly need it a lot in the future.<br>
 </p><br>
 <p></p>
+
+## 01/09/21 - 03/09/21
+<p align="justify">
+"Let's get ready with Python"<br>
+In the sixth week of our journey we started with the module python. After the download of the python IDLE, i wrote my first "Hello World" programm to check if everything went fine. Then i got in touch with the syntax rules of python. I was very suprised if I heared that we don't need to declare a block of code with "{ }"-brackets or don't need to show up the end of a line with a ";"-semicolon. The next thing was to learn the two solutions how you can write a comment. Also important was to get knowledge about the datastructure in python.<br>
+
+![Python](python.jpg "<b>Python |</b> Unsplash: Davide Clode")
+</p><br>
+<p></p>
+
+ 
