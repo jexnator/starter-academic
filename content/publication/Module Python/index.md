@@ -1287,3 +1287,108 @@ print(x)
 40
 ```
 <p></p><br>
+
+> Demonstrate the Operators on al different Datatypes<br>
+##### Input<br>
+```python
+#assignment operators --> integer
+a = 1
+a += 2
+print(a)
+
+a -= 1
+print(a)
+
+a*= 10
+print(a)
+
+a %= 7
+print(a)
+
+a **= 3
+print(a)
+
+a //= 2
+print(a)
+
+a /= a
+print(int(a))
+
+
+
+#assignment operators --> float
+a = 1.0
+a += 2.0
+print(a)
+
+a -= 1.0
+print(a)
+
+a*= 10.0
+print(a)
+
+a %= 7.0
+print(a)
+
+a **= 3.0
+print(a)
+
+a //= 2.0
+print(a)
+
+a /= a
+print(a)
+
+
+#assignment operators --> string
+a = "A"
+a += "B"
+print(a)
+
+
+#assignment operators --> boolean
+a = True
+a += False
+print(a)
+
+
+#assignment operators --> lists
+a = [1, 3.0, "String"]
+b = [1.0, 3.0, True, False]
+a += b
+print(a)
+```
+##### Output<br>
+```
+3
+2
+20
+6
+216
+108
+1
+3.0
+2.0
+20.0
+6.0
+216.0
+108.0
+1.0
+AB
+1
+[1, 3.0, 'String', 1.0, 3.0, True, False]
+```
+<p></p><br>
+
+> Prove if the same cross-data-type operations work with assignment or not.
+```python
+#cross-data-type operations work with assignment
+a = "ha"
+a *= 5
+print(a)
+```
+##### Output<br>
+```
+hahahahaha
+```
+<p></p><br>
