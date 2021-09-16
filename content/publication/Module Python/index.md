@@ -1288,7 +1288,7 @@ print(x)
 ```
 <p></p><br>
 
-> Demonstrate the Operators on al different Datatypes<br>
+> Demonstrate assignment operators on different Datatypes<br>
 ##### Input<br>
 ```python
 #assignment operators --> integer
