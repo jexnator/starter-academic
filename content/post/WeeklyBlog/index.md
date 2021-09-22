@@ -128,14 +128,18 @@ In this situation you should talk to each other and find a solution, which is fi
 </p><br>
 <p></p>
 
-## 01/09/21 - 03/09/21
+## 08/09/21 - 10/09/21
 <p align="justify">
 "Let's get ready with Python"<br>
-In the sixth week of our journey we started with the module python. After the download of the python IDLE, i wrote my first "Hello World" programm to check if everything went fine. Then i got in touch with the syntax rules of python. I was very suprised if I heared that we don't need to declare a block of code with "{ }"-brackets or don't need to show up the end of a line with a ";"-semicolon. The next thing was to learn the two solutions how you can write a comment. Also important was to get knowledge about the datastructure in python.<br>
+In the sixth week of our journey we started with the module python. After the download of the python IDLE, I wrote my first "Hello World" programm to check if everything went fine. Then I got in touch with the syntax rules of python. I was very suprised if I heared that we don't need to declare a block of code with "{ }"-brackets or don't need to show up the end of a line with a ";"-semicolon. The next thing was to learn the two solutions how you can write a comment. Also important was to get knowledge about the datastructure in python. The data structure includes two Datatypes. I learned about the different primitive types and the non-primitive Types. It was interesting to apply the many methods to the respective data type.<br>
 
 ![Python](python.jpg "<b>Python |</b> Unsplash: Davide Clode")
 </p><br>
 <p></p>
-
-Hallo
  
+## 15/09/21 - 17/09/21
+<p align="justify">
+On tuesday and wednesday i continued with the python module. Then Yonea and me got a call from John. He informed us, that we have to organize the trial week from Emma Vögeli. Emma is a 14 years old girl and would like to get more knowledge about our profession. After that, Yonea and I tried to come up with a plan for what we would like to show Emma over the next week. It was all a bit short notice, but at the end we were able to put an acceptable program together.
+
+</p><br>
+<p></p>
