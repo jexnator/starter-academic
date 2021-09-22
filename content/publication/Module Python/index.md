@@ -1496,7 +1496,6 @@ print(x)
 40
 ```
 <p></p><br>
-<p></p><br>
 
 ### {{< hl >}}<b> Logical Operators</b>{{< /hl >}}<br>
 > Show the difference between 3 != 3 and not 3 == 3<br>
@@ -1538,7 +1537,7 @@ True
 <p></p><br>
 
 ### {{< hl >}}<b>For- & While-Loops</b>{{< /hl >}}<br>
-> -> Use a for-loop that doubles each number beginning from 1 up to 100<br>
+> -> For-loop that doubles each number beginning from 1 to 100<br>
 -> Create a while-loop that does the same<br>
 -> Save the file in the usual place<br>
 <br>
