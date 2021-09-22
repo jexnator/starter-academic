@@ -1392,3 +1392,187 @@ print(a)
 hahahahaha
 ```
 <p></p><br>
+
+### {{< hl >}}<b>Assignment Operators</b>{{< /hl >}}<br>
+> Demonstrate all assignment operators<br>
+##### Input<br>
+```python
+#Operator +=
+x = 5
+x += 3
+
+print(x)
+
+
+#Operator -=
+x = 5
+x -= 3
+
+print(x)
+
+
+#Operator *=
+x = 5
+x *= 3
+
+print(x)
+
+
+#Operator /=
+x = 5
+x /= 3
+
+print(x)
+
+
+#Operator %=
+x = 5
+x%=3
+
+print(x)
+
+
+#Operator //=
+x = 5
+x//=3
+
+print(x)
+
+
+#Operator //=
+x = 5
+x//=3
+
+print(x)
+
+
+#Operrator &=
+x = 5
+x &= 3
+
+print(x)
+
+
+#Operator |=
+x = 5
+x |= 3
+
+print(x)
+
+
+#Operator ^=
+x = 5
+x ^= 3
+
+print(x)
+
+
+#Operator >>=
+x = 5
+x >>= 3
+
+print(x)
+
+
+#Operator <<=
+x = 5
+x <<= 3
+
+print(x)
+```
+##### Output<br>
+```
+8
+2
+15
+1.6666666666666667
+2
+1
+1
+1
+7
+6
+0
+40
+```
+<p></p><br>
+<p></p><br>
+
+### {{< hl >}}<b> Logical Operators</b>{{< /hl >}}<br>
+> Show the difference between 3 != 3 and not 3 == 3<br>
+##### Input<br>
+```python
+#Difference between 3 != 3 and 3 == 3
+a = 3 != 3
+b = 3 == 3
+
+print(a, b)
+print(a and b)
+```
+##### Output<br>
+```
+False True
+False
+```
+<p></p><br>
+
+> Create the following statement<br>
+-> 3 is bigger than 7 or 7 is bigger than 3<br>
+-> additional type ('5') equals str<br>
+-> or give true out if 7 equals 3<br>
+-> The result of this one condition should be True<br>
+##### Input<br>
+```python
+#Logical operators statement
+a = 3 > 7
+b = 7 > 3
+c = "5" == str
+d = 7 == 3
+
+print((a or b) or c or d)
+```
+##### Output<br>
+```
+True
+```
+<p></p><br>
+
+### {{< hl >}}<b>For- & While-Loops</b>{{< /hl >}}<br>
+> -> Use a for-loop that doubles each number beginning from 1 up to 100<br>
+-> Create a while-loop that does the same<br>
+-> Save the file in the usual place<br>
+<br>
+
+##### Input<br>
+```python
+# For-loop that doubles the number until the value 100
+a = 1
+
+for x in range(0, 6):
+    a += a
+    print(a)
+
+
+# While-loop that does the same
+a = 1
+
+while a < 64:
+    a += a
+    print(a)
+```
+##### Output<br>
+```
+2
+4
+8
+16
+32
+64
+2
+4
+8
+16
+32
+64
+```
+<p></p><br>
