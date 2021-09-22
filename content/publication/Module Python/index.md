@@ -1537,10 +1537,10 @@ True
 <p></p><br>
 
 ### {{< hl >}}<b>For- & While-Loops</b>{{< /hl >}}<br>
-> -> For-loop that doubles each number beginning from 1 to 100<br>
+> Task:<br>
+-> For-loop that doubles each number beginning from 1 to 100<br>
 -> Create a while-loop that does the same<br>
 -> Save the file in the usual place<br>
-<br>
 
 ##### Input<br>
 ```python
