@@ -139,7 +139,31 @@ In the sixth week of our journey we started with the module python. After the do
  
 ## 15/09/21 - 17/09/21
 <p align="justify">
-On tuesday and wednesday i continued with the python module. Then Yonea and me got a call from John. He informed us, that we have to organize the trial week from Emma Vögeli. Emma is a 14 years old girl and would like to get more knowledge about our profession. After that, Yonea and I tried to come up with a plan for what we would like to show Emma over the next week. It was all a bit short notice, but at the end we were able to put an acceptable program together.
+On tuesday and wednesday i continued with the python module. Then Yonea and me got a call from John. He informed us, that we have to organize the trial week from Emma Vögeli. Emma is a 14 years old girl and would like to get more knowledge about our profession. After that, Yonea and I tried to come up with a plan for what we would like to show Emma over the next week. It was all a bit short notice, but at the end we were able to put an acceptable program together. We planned the following workshops for the following week:<br>
 
+`Monday`: On next Monday Emma come with us to the school, to get an insight of our study.<br>
+`Tuesday`: For Tuesday Morning we planned a short presentation about our company and our services. In the afternoon I would like to show Emma something about the programming language Python.<br>
+`Wednesday`: On Wednesday Yonea planned an introduction about HTML and CSS.<br>
+`Thursday`: On Thursday Yonea and me are out of office because our 60% ratio. We asked our coworker Kiru and Jim to do some workshops with Emma. Kiru would like to show Emma something about Virtual-Machines and Jim does a workshop with the Rasperry Pi.<br>
+`Friday`: On Friday Morning we planed a short review with Emma about the trial week. In the afternoon we have the possibility to join Rubén and Armstrong to view how they install some new nodes in the datacenter<br>
+
+
+In this week i learned how to manage some short-term tasks. John explained us that this can be very normal in the IT. I think that Yonea and I did not a bad job.<br>
+![Week](emma.jpg)
+</p><br>
+<p></p>
+
+## 20/09/21 - 24/09/21
+<p align="justify">
+On tuesday and wednesday i continued with the python module. Then Yonea and me got a call from John. He informed us, that we have to organize the trial week from Emma Vögeli. Emma is a 14 years old girl and would like to get more knowledge about our profession. After that, Yonea and I tried to come up with a plan for what we would like to show Emma over the next week. It was all a bit short notice, but at the end we were able to put an acceptable program together. We planned the following workshops for the following week:<br>
+
+`Monday`: On next Monday Emma come with us to the school, to get an insight of our study.<br>
+`Tuesday`: For Tuesday Morning we planned a short presentation about our company and our services. In the afternoon I would like to show Emma something about the programming language Python.<br>
+`Wednesday`: On Wednesday Yonea planned an introduction about HTML and CSS.<br>
+`Thursday`: On Thursday Yonea and me are out of office because our 60% ratio. We asked our coworker Kiru and Jim to do some workshops with Emma. Kiru would like to show Emma something about Virtual-Machines and Jim does a workshop with the Rasperry Pi.<br>
+`Friday`: On Friday Morning we planed a short review with Emma about the trial week. In the afternoon we have the possibility to join Rubén and Armstrong to view how they install some new nodes in the datacenter<br>
+
+
+In this week i learned how to manage some short-term tasks. John explained us that this can be very normal in the IT. I think that Yonea and I did not a bad job.<br>
 </p><br>
 <p></p>
