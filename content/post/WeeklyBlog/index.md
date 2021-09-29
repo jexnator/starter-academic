@@ -155,16 +155,19 @@ In this week i learned how to manage some short-term tasks. John explained us th
 
 ## 20/09/21 - 24/09/21
 ### @School
+<p align="justify">
 On Monday Yonea and me met us as discussed with Emma at 08:30 at the entrance of Welle 7. Then we visited together the subject WebG. I think it was a well opportunity for Emma to see how it's inside of our study.<br>
 ### @Work
 For the rest of the week we have arranged with Emma that she can be in the office at 10:00 AM each day.<br>
-On Tuesday morning we showed Emma our company in detail. Rafael Wicht did a short introduction of the areas of activity of our job. After that I started with my workshop about Python. I demonstrated Emma the basics of the program language Python. I tried to bring in some programming tasks, where she can playfully learn, how to write programs with Python. Emma seemed very interested and asked questions diligently. At the end oft the day I was quite happy about my short workshop. As a last point I provided Emma some important links, if she is interested in Python programming in the future.<br>
+
+On Tuesday morning we showed Emma our company in detail. Rafael Wicht did a short introduction of the areas of activity of our job. After that I started with my workshop. I demonstrated Emma the basics of the program language Python. I tried to bring in some programming tasks, where she can playfully learn, how to write programs with Python. Emma seemed very interested and asked questions diligently. As a last point I provided Emma some useful links, if she is interested in Python programming in the future. At the end oft the day I was quite happy about my short workshop.<br>
 
 The next day, Yonea showed Emma how to design a website using HTML and CSS. While this I focussed me on the intern python module. I learned about state machines and algortithms. There are two different types of state machines and they can be determenistic and non-deterministic. Deterministic means that only one Statechange of a specific character can be performed, while by non-deterministic statemachines multiple statechanges with the same character are possible. I did serveral tasks about the topic, where i had to draw statemachines or to decide whether a statemachine is derterministic or non-deterministic.<br>
 
 On Thursday I had my free day, which i used to prepare me for the next school session.<br>
 
-The following day, Yonea and I did a review of the trial week together with Emma. In the afternoon we had the possibilty to see our companys datacenter together with Armstrong and Rubén. They assembled and installed four new nodes in the lab. For me it was very interesting, because I have never been able to see a datacenter from this close up. In case of questions or uncertainties, Rubén and Armstrong were very helpful and informed us in great detail.<br>
+The following day, Yonea and I did a review of the trial week together with Emma. In the afternoon we had the possibilty to see our companys datacenter together with Armstrong and Rubén. They assembled and installed four new nodes in the lab.<br>
+For me it was very interesting, because I have never been able to see a datacenter from this close up. In case of questions or uncertainties, Rubén and Armstrong were very helpful and informed us in great detail.<br>
 
 ![Datacenter](datacenter.jpg "<b>Datacenter |</b> Credits: Yonea Koch")
 
