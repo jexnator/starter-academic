@@ -139,7 +139,7 @@ In the sixth week of our journey we started with the module python. After the do
  
 ## 15/09/21 - 17/09/21
 <p align="justify">
-On tuesday and wednesday i continued with the python module. Then Yonea and me got a call from John. He informed us, that we have to organize the trial week from Emma Vögeli. Emma is a 14 years old girl and would like to get more knowledge about our profession. After that, Yonea and I tried to come up with a plan for what we would like to show Emma over the next week. It was all a bit short notice, but at the end we were able to put an acceptable program together. We planned the following workshops for the following week:<br>
+On Tuesday and Wednesday I continued with the python module. Then Yonea and me got a call from John. He informed us, that we have to organize the trial week from Emma Vögeli. Emma is a 14 years old girl and would like to get more knowledge about our profession. After that, Yonea and I tried to come up with a plan for what we would like to show Emma over the next week. It was all a bit short notice, but at the end we were able to put an acceptable program together. We planned the following workshops for the following week:<br>
 
 `Monday`: On next Monday Emma come with us to the school, to get an insight of our study.<br>
 `Tuesday`: For Tuesday Morning we planned a short presentation about our company and our services. In the afternoon I would like to show Emma something about the programming language Python.<br>
@@ -154,16 +154,19 @@ In this week i learned how to manage some short-term tasks. John explained us th
 <p></p>
 
 ## 20/09/21 - 24/09/21
-<p align="justify">
-On tuesday and wednesday i continued with the python module. Then Yonea and me got a call from John. He informed us, that we have to organize the trial week from Emma Vögeli. Emma is a 14 years old girl and would like to get more knowledge about our profession. After that, Yonea and I tried to come up with a plan for what we would like to show Emma over the next week. It was all a bit short notice, but at the end we were able to put an acceptable program together. We planned the following workshops for the following week:<br>
+### @School
+On Monday Yonea and me met us as discussed with Emma at 08:30 at the entrance of Welle 7. Then we visited together the subject WebG. I think it was a well opportunity for Emma to see how it's inside of our study.<br>
+### @Work
+For the rest of the week we have arranged with Emma that she can be in the office at 10:00 AM each day.<br>
+On Tuesday morning we showed Emma our company in detail. Rafael Wicht did a short introduction of the areas of activity of our job. After that I started with my workshop about Python. I demonstrated Emma the basics of the program language Python. I tried to bring in some programming tasks, where she can playfully learn, how to write programs with Python. Emma seemed very interested and asked questions diligently. At the end oft the day I was quite happy about my short workshop. As a last point I provided Emma some important links, if she is interested in Python programming in the future.<br>
 
-`Monday`: On next Monday Emma come with us to the school, to get an insight of our study.<br>
-`Tuesday`: For Tuesday Morning we planned a short presentation about our company and our services. In the afternoon I would like to show Emma something about the programming language Python.<br>
-`Wednesday`: On Wednesday Yonea planned an introduction about HTML and CSS.<br>
-`Thursday`: On Thursday Yonea and me are out of office because our 60% ratio. We asked our coworker Kiru and Jim to do some workshops with Emma. Kiru would like to show Emma something about Virtual-Machines and Jim does a workshop with the Rasperry Pi.<br>
-`Friday`: On Friday Morning we planed a short review with Emma about the trial week. In the afternoon we have the possibility to join Rubén and Armstrong to view how they install some new nodes in the datacenter<br>
+The next day, Yonea showed Emma how to design a website using HTML and CSS. While this I focussed me on the intern python module. I learned about state machines and algortithms. There are two different types of state machines and they can be determenistic and non-deterministic. Deterministic means that only one Statechange of a specific character can be performed, while by non-deterministic statemachines multiple statechanges with the same character are possible. I did serveral tasks about the topic, where i had to draw statemachines or to decide whether a statemachine is derterministic or non-deterministic.<br>
 
+On Thursday I had my free day, which i used to prepare me for the next school session.<br>
 
-In this week i learned how to manage some short-term tasks. John explained us that this can be very normal in the IT. I think that Yonea and I did not a bad job.<br>
+The following day, Yonea and I did a review of the trial week together with Emma. In the afternoon we had the possibilty to see our companys datacenter together with Armstrong and Rubén. They assembled and installed four new nodes in the lab. For me it was very interesting, because I have never been able to see a datacenter from this close up. In case of questions or uncertainties, Rubén and Armstrong were very helpful and informed us in great detail.<br>
+
+![Datacenter](datacenter.jpg "<b>Datacenter |</b> Credits: Yonea Koch")
+
 </p><br>
 <p></p>
