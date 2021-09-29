@@ -157,6 +157,7 @@ In this week i learned how to manage some short-term tasks. John explained us th
 ### @School
 <p align="justify">
 On Monday Yonea and me met us as discussed with Emma at 08:30 at the entrance of Welle 7. Then we visited together the subject WebG. I think it was a well opportunity for Emma to see how it's inside of our study.<br>
+
 ### @Work
 For the rest of the week we have arranged with Emma that she can be in the office at 10:00 AM each day.<br>
 
