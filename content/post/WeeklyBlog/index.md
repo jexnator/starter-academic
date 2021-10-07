@@ -185,7 +185,7 @@ The next thing was to learn how to iterate trough a list or an array using a for
 
 On Thursday Yonea had her last day at our company. We became a very good PiBS-team in the meantime. I think it is a great pity that she has ended the journey with this, but that is life. I wish her the best for the future and I think that we will surely run into each other sometime.<br>
 
-![Farewell](farewell.jfif "<b>Farewell |</b> Unsplash: Lute")
+![Farewell](farewell.jpg "<b>Farewell |</b> Unsplash: Lute")
 
 </p><br>
 <p></p>
