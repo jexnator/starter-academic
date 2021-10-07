@@ -163,7 +163,7 @@ For the rest of the week we have arranged with Emma that she can be in the offic
 
 On Tuesday morning we showed Emma our company in detail. Rafael Wicht did a short introduction of the areas of activity of our job. After that I started with my workshop. I demonstrated Emma the basics of the program language Python. I tried to bring in some programming tasks, where she can playfully learn, how to write programs with Python. Emma seemed very interested and asked questions diligently. As a last point I provided Emma some useful links, if she is interested in Python programming in the future. At the end oft the day I was quite happy about my short workshop.<br>
 
-The next day, Yonea showed Emma how to design a website using HTML and CSS. While this I focussed me on the intern python module. I learned about state machines and algortithms. There are two different types of state machines and they can be determenistic and non-deterministic. Deterministic means that only one Statechange of a specific character can be performed, while by non-deterministic statemachines multiple statechanges with the same character are possible. I did serveral tasks about the topic, where i had to draw statemachines or to decide whether a statemachine is derterministic or non-deterministic.<br>
+The next day, Yonea showed Emma how to design a website using HTML and CSS. While this I focussed me on the intern python module. I learned about state machines and algorithms. There are two different types of state machines and they can be determenistic and non-deterministic. Deterministic means that only one Statechange of a specific character can be performed, while by non-deterministic statemachines multiple statechanges with the same character are possible. I did serveral tasks about the topic, where i had to draw statemachines or to decide whether a statemachine is derterministic or non-deterministic.<br>
 
 On Thursday I had my free day, which i used to prepare me for the next school session.<br>
 
@@ -171,6 +171,21 @@ The following day, Yonea and I did a review of the trial week together with Emma
 For me it was very interesting, because I have never been able to see a datacenter from this close up. In case of questions or uncertainties, Rubén and Armstrong were very helpful and informed us in great detail.<br>
 
 ![Datacenter](datacenter.jpg "<b>Datacenter |</b> Credits: Yonea Koch")
+
+</p><br>
+<p></p>
+
+## 28/09/21 - 30/09/21
+### @Work
+This week I continued working on the Python module.<br>
+
+I learned about conditions and loops. Now I'm able to write an "if: else:" statement. Furthermore I practiced how to use for-, foreach- and while loops correctly. It was fundamental to ecxercice on different tasks, to obtain a solid base of the theorie. Until now is stored all the previous files local on my notebook. If it's necessary, i have the possibilty to have a look to this files, when something recurring is not directly clear. I also recommend W3-Schools, if you have questions regarding programming languages.<br>
+
+The next thing was to learn how to iterate trough a list or an array using a for loop. For this I used the different return possibilities "return" & "yield". Another important part of this week, was to understand how object oriented programming works in Python.<br>
+
+On Thursday Yonea had her last day at our company. We became a very good PiBS-team in the meantime. I think it is a great pity that she has ended the journey with this, but that is life. I wish her the best for the future and I think that we will surely run into each other sometime.<br>
+
+![Farewell](farewell.jfif "<b>Farewell |</b> Unsplash: Lute")
 
 </p><br>
 <p></p>
