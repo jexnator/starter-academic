@@ -176,16 +176,27 @@ For me it was very interesting, because I have never been able to see a datacent
 <p></p>
 
 ## 28/09/21 - 30/09/21
-### @Work
 This week I continued working on the Python module.<br>
 
-I learned about conditions and loops. Now I'm able to write an "if: else:" statement. Furthermore I practiced how to use for-, foreach- and while loops correctly. It was fundamental to ecxercice on different tasks, to obtain a solid base of the theorie. Until now is stored all the previous files local on my notebook. If it's necessary, i have the possibilty to have a look to this files, when something recurring is not directly clear. I also recommend W3-Schools, if you have questions regarding programming languages.<br>
+I learned about conditions and loops. Now I'm able to write an "if: else:" statement. Furthermore I practiced how to use for-, foreach- and while loops correctly. It was fundamental to exercice on different tasks, to obtain a solid base of the theorie. Until now is stored all the previous files local on my notebook. If it's necessary, i have the possibilty to have a look to this files, when something recurring is not directly clear. I also recommend W3-Schools, if you have questions regarding programming languages.<br>
 
 The next thing was to learn how to iterate trough a list or an array using a for loop. For this I used the different return possibilities "return" & "yield". Another important part of this week, was to understand how object oriented programming works in Python.<br>
 
-On Thursday Yonea had her last day at our company. We became a very good PiBS-team in the meantime. I think it is a great pity that she has ended the journey with this, but that is life. I wish her the best for the future and I think that we will surely run into each other sometime.<br>
+On Thursday Yonea had her last day at our company. We became a very good PiBS-team in the meantime. I think it is a great pity that she has ended the journey with this, but that's life. I wish her the best for the future and I think that we will surely run into each other sometime.<br>
 
 ![Farewell](farewell.jpg "<b>Farewell |</b> Unsplash: Lute")
+
+</p><br>
+<p></p>
+
+## 05/10/21 - 07/10/21
+During this week I got the beatiful message, that I have the possibilty to move into a shared room here in Bern from middle of october. I'm very happy about this because commuting, in my opinion, can become quite uncomfortable after a while.<br>
+
+At Work i continued with the Python module. The main topics of this week were OOP, errorhandling, PIP and casting. I learned that classes are blueprints, which define the attributes and functions of their objects. Therefore I did an interesting task, where I should create a dog and a cat class to represent a fight between the objects with specific functions. I had to realize that the OOP concept of Python is a bit different as from Java.<br>
+After the OOP introduction I went to the errorhandling topic in Python, which is also an important topic in Python. The goal is to detect errors early and act accordingly to avoid program errors in the subsequent code. Keywords are "--> `try:`, `except:` (& optional --> `else:`, `finally:`)". I'm now able to test out a code block with `try:` and then to decide what should happen if an error occurs or not.<br>
+Furthermore, I learned how to download and import predefined packages using PIP in the command line interface. Then i got a short introdution, how to cast the different types of variables.<br>
+
+On Friday afternoon, I gave a small presentation to Rafael about what I had learned that week.
 
 </p><br>
 <p></p>
