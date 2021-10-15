@@ -204,7 +204,7 @@ On Friday afternoon, I gave a small presentation to Rafael about what I had lear
 ## 13/10/21 - 15/10/21
 
 This week I reached the end of the first part of the Python module. The final task was to implement a TicTacToe console game using my previous basic knowledge.
-It was quit interesting, to implement this first task. I tried to bring some color into the game to make it a bit clearer. For this I imported a predefined class from the PIP called "termcolor".
+It was quit interesting, to implement this first task. I tried to bring some color into the game to make it a bit clearer. For this I imported a predefined class from PIP,which is called "termcolor".
 ![TicTacToe Console Game](tictactoe.jpg "<b>Tic Tac Toe |</b> Screenshot")
 
 </p><br>
