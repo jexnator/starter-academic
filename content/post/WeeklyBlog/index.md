@@ -189,7 +189,7 @@ On Thursday Yonea had her last day at our company. We became a very good PiBS-te
 </p><br>
 <p></p>
 
-## 05/10/21 - 07/10/21
+## 06/10/21 - 08/10/21
 During this week I got the beatiful message, that I have the possibilty to move into a shared room here in Bern from middle of october. I'm very happy about this because commuting, in my opinion, can become quite uncomfortable after a while.<br>
 
 At Work i continued with the Python module. The main topics of this week were OOP, errorhandling, PIP and casting. I learned that classes are blueprints, which define the attributes and functions of their objects. Therefore I did an interesting task, where I should create a dog and a cat class to represent a fight between the objects with specific functions. I had to realize that the OOP concept of Python is a bit different as from Java.<br>
@@ -197,6 +197,15 @@ After the OOP introduction I went to the topic errorhandling, which is also an i
 Furthermore, I learned how to download and import predefined packages using PIP in the command line interface. Then i got a short introdution, how to cast the different types of variables.<br>
 
 On Friday afternoon, I gave a small presentation to Rafael about what I had learned that week.
+
+</p><br>
+<p></p>
+
+## 13/10/21 - 15/10/21
+
+This week I reached the end of the first part of the Python module. The final task was to implement a TicTacToe console game using my previous basic knowledge.
+It was quit interesting, to implement this first task. I tried to bring some color into the game to make it a bit clearer. For this I imported a predefined class from the PIP called "termcolor".
+![TicTacToe Console Game](tictactoe.jpg "<b>Tic Tac Toe |</b> Screenshot")
 
 </p><br>
 <p></p>
