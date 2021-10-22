@@ -202,12 +202,12 @@ On Friday afternoon, I gave a small presentation to Rafael about what I had lear
 <p></p>
 
 ## 13/10/21 - 15/10/21
-
 This week I reached the end of the first part of the Python module. The final task was to implement a TicTacToe console game using my previous basic knowledge.
-It was quit interesting, to implement this first task. I tried to bring some color into the game to make it a bit clearer. For this I imported a predefined class from PIP,which is called "termcolor".
+It was quit interesting, to implement this first task. I tried to bring some color into the game to make it a bit clearer. For this I imported a predefined class from PIP, which is called "termcolor".
 ![TicTacToe Console Game](tictactoe.jpg "<b>Tic Tac Toe |</b> Screenshot")
 Afterwards I did the voluntary task, where a GUI for the TicTacToe had to be implemented. I tried to realize it with the pygame-package. To learn how to use pygame, I watched a tutorial on youtube.
 The final result was as follows:
 ![TicTacToe GUI](GUITTT.jpg "<b>Tic Tac Toe GUI |</b> Screenshot")
+For me it was a very exciting week. I learned about, how to implement large code on my own. The tasks did not have many concrete specifications, which gave one a certain freedom in the implementation. 
 </p><br>
 <p></p>
