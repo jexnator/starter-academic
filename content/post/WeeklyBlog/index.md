@@ -221,7 +221,7 @@ Then I got in touch with the Nassi-Schneidermann diagram. I learned about the di
 After that I earned the basic knowledge about the Use-Case diagram, which describes the interaction with a software system. There I saw the different graphical Elements and the corresponding table for the information flow.
 Then I did a task, where I had visualize how a party night of me could look like.<br>
 
-When we implement software it's useful to show up the different relations between the classes. For this a class diagram could be very practical. A classdiagram contains the variables and methods of class. Furthermore, the various relationships and interactions between the classes are mapped.<br>
+When we implement software it's useful to show up the different relations between the classes. For this a class diagram could be very practical. A classdiagram contains the variables and methods of a class. Furthermore, the various relationships and interactions between the classes are mapped.<br>
 
 In the upcoming two weeks I have to possibility to programm a console casino in Python.
 </p><br>
