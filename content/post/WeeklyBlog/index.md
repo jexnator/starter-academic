@@ -208,6 +208,21 @@ It was quit interesting, to implement this first task. I tried to bring some col
 Afterwards I did the voluntary task, where a GUI for the TicTacToe had to be implemented. I tried to realize it with the pygame-package. To learn how to use pygame, I watched a tutorial on youtube.
 The final result was as follows:
 ![TicTacToe GUI](GUITTT.jpg "<b>Tic Tac Toe GUI |</b> Screenshot")
-For me it was a very exciting week. I learned about, how to implement large code on my own. The tasks did not have many concrete specifications, which gave one a certain freedom in the implementation. 
+For me it was a very exciting week. I learned about, how to implement large code on my own. The tasks did not have many concrete specifications, which gave one a certain freedom during the realization.
+</p><br>
+<p></p>
+
+## 20/10/21 - 22/10/21
+During this week I continued with the second Python sub-module. The core topics in this sub-module were UML-standards: the Nassi-Schneiderman diagram, the Use-Case diagram and the classdiagram.<br>
+
+First I got some basic information about UML. The main idea of UML is to approach a graphical schema to implement Software.
+Then I got in touch with the Nassi-Schneidermann diagram. I learned about the different blocks, which are useful for the graphical representation of code decissions. For this I did a task where I had to describe my dating process.<br>
+
+After that I earned the basic knowledge about the Use-Case diagram, which describes the interaction with a software system. There I saw the different graphical Elements and the corresponding table for the information flow.
+Then I did a task, where I had visualize how a party night of me could look like.<br>
+
+When we implement software it's useful to show up the different relations between the classes. For this a class diagram could be very practical. A classdiagram contains the variables and methods of class. Furthermore, the various relationships and interactions between the classes are mapped.<br>
+
+In the upcoming two weeks I have to possibility to programm a console casino in Python.
 </p><br>
 <p></p>
