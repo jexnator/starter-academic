@@ -234,9 +234,10 @@ For my console-casino I had to draw a class-diagram with the relations between t
 When I finished that, I organised a call with John to view the diagram with each other.
 At the end the class-diagram looked then as follows.
 
-![Class-diagram](class-diagram.jpg "<b>Casino class-diagram |</b> Screenshot")
+![Class-diagram](classdiagram.jpg "<b>Casino class-diagram |</b> Screenshot")
 
 On Friday morning I repeated the OOP concept to prepare me on the casino task.
-In the afternoon we had our 10th anniversary event. Until the end it was a very successful event.<br>
+In the afternoon we had our 10th anniversary event. Until the end it was a very successful event.
+
 </p><br>
 <p></p>
