@@ -232,7 +232,7 @@ For my console-casino I had to draw a class-diagram with the relations between t
 When I finished that, I organised a call with John to view the diagram with each other.
 At the end the class-diagram looked then as follows.
 
-![Class-diagram](GUITTT.jpg "<b>Casino class-diagram |</b> Screenshot")
+![Class-diagram](class-diagram.jpg "<b>Casino class-diagram |</b> Screenshot")
 
 </p><br>
 <p></p>
