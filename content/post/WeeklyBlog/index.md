@@ -237,7 +237,6 @@ At the end the class-diagram looked then as follows.
 ![Class-diagram](class-diagram.jpg "<b>Casino class-diagram |</b> Screenshot")
 
 On Friday morning I repeated the OOP concept to prepare me on the casino task.
-In the afternoon we had our 10th anniversary event. Until the end it was a very successful event.
-
+In the afternoon we had our 10th anniversary event. Until the end it was a very successful event.<br>
 </p><br>
 <p></p>
