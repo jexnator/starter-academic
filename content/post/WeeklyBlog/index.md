@@ -223,6 +223,16 @@ Then I did a task, where I had visualize how a party night of me could look like
 
 When we implement software it's useful to show up the different relations between the classes. For this a class diagram could be very practical. A classdiagram contains the variables and methods of a class. Furthermore, the various relationships and interactions between the classes are mapped.<br>
 
-In the upcoming two weeks I have to possibility to programm a console casino in Python.
+In the upcoming two weeks I have to possibility to programm a console-casino in Python.
+</p><br>
+<p></p>
+
+## 27/10/21 - 29/10/21
+For my console-casino I had to draw a class-diagram with the relations between the different objects.<br>
+When I finished that, I organised a call with John to view the diagram with each other.
+At the end the class-diagram looked then as follows.
+
+![Class-diagram](GUITTT.jpg "<b>Casino class-diagram |</b> Screenshot")
+
 </p><br>
 <p></p>
