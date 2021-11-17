@@ -79,9 +79,14 @@ Virtualization allows multiple resources or environments to be configured on a s
 
 > Complete the definition with advantages and disadvantages of virtualization.
 
-Advantages:<br>
-- Potenzialausschöpfung der eigenen hardware
+`Advantages of virtualization:`<br>
+- Exploiting the potential of your own hardware
 - Cost savings / Energy saving, because less hardware is needed
+- more flexibility
+- easier upgrade and downgrade of used / unused extensions
 - Through virtualization, custom labs can be implemented to test environments in advance.
 
-Disadvantages:<br>
+`Disadvantages of virtualization:`<br>
+- In the event of a hardware failure, all virtual machines are affected.
+- Higher response times with many VM's on one hardware.
+- Performance degradation as the hypervisor also requires resources
