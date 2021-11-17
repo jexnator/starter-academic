@@ -88,5 +88,5 @@ Virtualization allows multiple resources or environments to be configured on a s
 
 `Disadvantages of virtualization:`<br>
 - In the event of a hardware failure, all virtual machines are affected.
-- Higher response times with many VM's on one hardware.
+- Higher response times with many VM's on one hardware
 - Performance degradation as the hypervisor also requires resources
