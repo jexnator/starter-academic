@@ -73,10 +73,12 @@ slides: ""
 ---
 ## {{< hl >}}<b>Get Started with Linux</b>{{< /hl >}}<br>
 In this module I will learn how to administrate servers and networks with Linux. Here you will find several tasks about the topic.<br>
-> Write a definition for virtualization.<br>
+> Write a definition for virtualization.
+
 Virtualization allows multiple resources or environments to be configured on a single hardware system. The different environments and resources can be referred to as virtual machines, which act independently of each other. Therefore you need a hypervisor. The hypervisor is software that manages the various VM containers. It divides the machine resources optimally between the different VMs.<br>
 
-> Complete the definition with advantages and disadvantages of virtualization.<br>
+> Complete the definition with advantages and disadvantages of virtualization.
+
 Advantages:<br>
 - Potenzialausschöpfung der eigenen hardware
 - Cost savings / Energy saving, because less hardware is needed
