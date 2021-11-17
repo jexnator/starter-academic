@@ -29,13 +29,6 @@ subtitle:
   </div>
 
   <div class="skill">
-    <div class="skill-name">Data Science</div>
-    <div class="skill-bar">
-      <div class="skill-per" per="5%" style="max-width:5%"></div>
-    </div>
-  </div>
-
-  <div class="skill">
     <div class="skill-name">Java</div>
     <div class="skill-bar">
       <div class="skill-per" per="40%" style="max-width:40%"></div>
