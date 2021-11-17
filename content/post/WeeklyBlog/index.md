@@ -241,3 +241,14 @@ In the afternoon we had our 10th anniversary event. Until the end it was a very 
 
 </p><br>
 <p></p>
+
+## 03/11/21 - 12/11/21
+During this two weeks i implemented my console-casino.<br>
+
+The first step was to create the basic structure of the code. For this I prepared all classes and methods, which I drawed in the class diagram before. Each casino game inherits the basic structure of the Game class, which gives the possibility to add new games to the casino at any time with little effort. After that I started programming the roulette() class. The difficult part here, was to implement the game logic. The roulette rules were slightly slimmed down by me for my casino, which is why I called it Xaviers' Roulette. In the game you have now the possibilty to bet on a number between 0 and 36, on even numbers, on odd numbers, on red numbers and on black numbers.<br>
+
+The task wasn't so easy as I expected first. In the beginning, I had a bit of trouble implementing the various relationships between classes. Sometimes I needed help, when I was at a loss. Therefore I could contact John, who gave me helpful advice. During these two weeks I could gain a lot of knowledge about OOP in Python. It was a very good exercise to deepen again based on the learned theory.<br>
+
+After finishing the casino task, I prepared the final presentation on the Python module, which I will present to John and Rafael.
+</p><br>
+<p></p>
