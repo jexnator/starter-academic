@@ -260,9 +260,10 @@ After that I started with the new module. Rafael provided me with the theory. Th
 
 After installing the necessary software, I set up the virtual machine using Rafael's instructions. He also showed me how to configure the optional Windows Terminal application from the Microsoft Store so that each time you open the application, you were directly in the correct directory where you can start the virtual machine. Another advantage of this application is that multiple terminal tabs can be used simultaneously.<br>
 
-After opening the Windows terminal application, the virtual one can be started using the following commands:
+After opening the Windows terminal application, the virtual machine can be started using the following commands:
 - `vagrant up`<br>
 - `ssh default`<br>
+
 After entering these commands you are in the Unix shell.
 
 During the rest of the time I started with the Linux tutorial on the website of ryanstutorial, where I learn the basics in the Linux CLI.<br>
