@@ -252,3 +252,20 @@ The task wasn't so easy as I expected first. In the beginning, I had a bit of tr
 After finishing the casino task, I prepared the final presentation on the Python module, which I will present to John and Rafael.
 </p><br>
 <p></p>
+
+## 17/11/21 - 19/11/21
+This week I started with a new module, in which I will learn how to administrate servers and networks with the Linux CLI.<br>
+On Tuesday morning, I gave the final presentation on the Python module to John and Rafael, where I showed various tasks and gave a reflection on the past module.
+After that I started with the new module. Rafael provided me with the theory. The first step was to install the software VirtualBox on which later Linux will be instantiated as a virtual machine, because I'm working on the operating system windows. In addition, the Vagrant software is installed, which makes it easy to set up and manage virtual machines.<br>
+
+After installing the necessary software, I set up the virtual machine using Rafael's instructions. He also showed me how to configure the optional Windows Terminal application from the Microsoft Store so that each time you open the application, you were directly in the correct directory where you can start the virtual machine. Another advantage of this application is that multiple terminal tabs can be used simultaneously.<br>
+
+After opening the Windows terminal application, the virtual one can be started using the following commands:
+- `vagrant up`<br>
+- `ssh default`<br>
+After entering these commands you are in the Unix shell.
+
+During the rest of the time I started with the Linux tutorial on the website of ryanstutorial, where I learn the basics in the Linux CLI.<br>
+In the meantime, I continued to work on linear algebra on Friday.
+</p><br>
+<p></p>
