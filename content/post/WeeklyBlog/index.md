@@ -264,7 +264,7 @@ After opening the Windows terminal application, the virtual machine can be start
 - `vagrant up`<br>
 - `ssh default`<br>
 
-After entering these commands you are in the Unix shell.
+After entering these commands you are in the Bash shell.
 
 During the rest of the time I started with the Linux tutorial on the website of ryanstutorial, where I learn the basics in the Linux CLI.<br>
 In the meantime, I continued to work on linear algebra on Friday.
