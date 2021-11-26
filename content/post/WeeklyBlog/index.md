@@ -270,3 +270,13 @@ During the rest of the time I started with the Linux tutorial on the website of 
 In the meantime, I continued to work on linear algebra on Friday.
 </p><br>
 <p></p>
+
+## 24/11/21 - 26/11/21
+On this wednesday I continued with the Linux tutorial on ryanstutorial.net till I completed all the 13 chapters.
+The main goal of this tutorial was to learn how to interact with the bash shell. It's quit interesting to work on the CLI instead of using a GUI.
+Then I wrote my first little script, which is useful for creating any backups of files.
+
+...
+
+</p><br>
+<p></p>
