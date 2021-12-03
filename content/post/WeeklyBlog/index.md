@@ -283,8 +283,8 @@ During the rest of the week I exercised on RHCSA 8 Cert Guide. Therfore I read d
 
 ## 01/12/21 - 03/12/21
 Now I have been 4 months @Amanox Solutions and this week I start my 5th month. I'm still happy that I can complete my trainee program in such a cool company!<br>
-On wednesday till friday I continued with the RHCSA 8 Cert Guide.<br>
 
+On wednesday till friday I continued with the RHCSA 8 Cert Guide.<br>
 Here a list of the most important topics I have worked on till yet:
 - `Basics and Environment`<br>
 - `Users and Groups`<br>
