@@ -255,7 +255,7 @@ After finishing the casino task, I prepared the final presentation on the Python
 
 ## 17/11/21 - 19/11/21
 This week I started with a new module, in which I will learn how to administrate servers and networks with the Linux CLI.<br>
-On Tuesday morning, I gave the final presentation on the Python module to John and Rafael, where I showed various tasks and gave a reflection on the past module.
+On Tuesday morning, I held the final presentation of the Python module to John and Rafael, where I showed various tasks and gave a reflection on the past module.
 After that I started with the new module. Rafael provided me with the theory. The first step was to install the software VirtualBox on which later Linux will be instantiated as a virtual machine, because I'm working on the operating system windows. In addition, the Vagrant software is installed, which makes it easy to set up and manage virtual machines.<br>
 
 After installing the necessary software, I set up the virtual machine using Rafael's instructions. He also showed me how to configure the optional Windows Terminal application from the Microsoft Store so that each time you open the application, you were directly in the correct directory where you can start the virtual machine. Another advantage of this application is that multiple terminal tabs can be used simultaneously.<br>
@@ -274,9 +274,31 @@ In the meantime, I continued to work on linear algebra on Friday.
 ## 24/11/21 - 26/11/21
 On this wednesday I continued with the Linux tutorial on ryanstutorial.net till I completed all the 13 chapters.
 The main goal of this tutorial was to learn how to interact with the bash shell. It's quit interesting to work on the CLI instead of using a GUI.
-Then I wrote my first little script, which is useful for creating any backups of files.
+After that I wrote my first little script, which is useful for creating any backups of files.<br>
 
-...
+During the rest of the week I exercised on RHCSA 8 Cert Guide. Therfore I read different chapters and did some tasks on these topics.
 
 </p><br>
 <p></p>
+
+## 01/12/21 - 03/12/21
+Now I have been 4 months @Amanox Solutions and this week I start my 5th month. I'm still happy that I can complete my trainee program in such a cool company!<br>
+On wednesday till friday I continued with the RHCSA 8 Cert Guide.<br>
+
+Here a list of the most important topics I have worked on till yet:
+- `Basics and Environment`<br>
+- `Users and Groups`<br>
+- `Managing Software`<br>
+- `Working with Systemd`<br>
+In each chapter you have to complete differnet Excercices about the topic and a knowledge quiz at the end.
+In chapter `Basics and Environment` I deepned my knowledge, which I have already acquired from the ryanstutorial.
+Thereby it was again about the handling of the shell and the basic commands, which are used for the work with the file system hierarchy.
+In chapter `Users and Groups` I learned how to grant access rights to different actors in the environment and how to manage Users and Groups.
+The main goal of the chapter `Managing software` was to learn how to get software on your system and to keep it up to date.
+Last but not least I worked on the `Working with Systemd` chapter, where I learned how to use systemd configuarations for different process flows on Linux.<br>
+
+On Thursday I also had my end-of-the-year-meeting with Dan and John.
+
+
+
+
