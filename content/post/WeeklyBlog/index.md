@@ -290,6 +290,7 @@ Here a list of the most important topics I have worked on till yet:
 - `Users and Groups`<br>
 - `Managing Software`<br>
 - `Working with Systemd`<br>
+
 In each chapter you have to complete differnet Excercices about the topic and a knowledge quiz at the end.
 In chapter `Basics and Environment` I deepned my knowledge, which I have already acquired from the ryanstutorial.
 Thereby it was again about the handling of the shell and the basic commands, which are used for the work with the file system hierarchy.
