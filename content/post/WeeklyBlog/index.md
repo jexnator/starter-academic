@@ -300,6 +300,30 @@ Last but not least I worked on the `Working with Systemd` chapter, where I learn
 
 On Thursday I also had my end-of-the-year-meeting with Dan and John.
 
+</p><br>
+<p></p>
 
+## 08/12/21 - 10/12/21
+This week I continued working on the RHCSA 8 Cert Guide.
+To familiarize myself with the topic of network configuration on CentOS, I completed the basic course on networks that the coaches prepared for me. The course can be found on the blog page of Fabian Brunner.<br>
 
+Thereby I acquired the basic knowledge in the following topics. <br>
 
+Basic Concepts:
+- `different network areas`<br>
+- `Latency`<br>
+- `Network reference models`<br>
+- `Functionality of the different parts of the ISO/OSI layer model`<br>
+
+Internet Protocol:
+- `IPv4 and IPv6`<br>
+- `network mask`<br>
+- `Subnets`<br>
+
+More:
+- `DNS`<br>
+- `Ports`<br>
+- `Firewall`<br>
+- `different network protocols`<br>
+
+After that I started with the chapter Networks in the RHCSA 8 Cert Guide. The first step was to learn how to validate network configurations. This included, among other things, the temporary mutation of the IP address, routing and the link status of the packet transmission. In another step I practiced how to set up the hostname for communication and how to add a selected DNS server.
