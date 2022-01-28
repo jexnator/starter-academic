@@ -12,8 +12,13 @@ weight: 30
 title: Skills
 subtitle:
 ---
-<div>
-<script>
-  console.log("Whats going on here?")
-</script>
+<div class="fun">
+  <div class="text">
+  <p>Pickaxe</p>
+    <img src="diamond.png" alt="Pickaxe" width="500" height="500">
+  </div>
+  <script>
+    console.log("Whats going on here?")
+  </script>
 </div>
+
