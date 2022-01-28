@@ -13,5 +13,5 @@ title:
 subtitle:
 ---
 <div class="fun">
-<img src="/amanox.png" class="amanox" alt="Amanox Solutions">
+<img src="/amanox.svg" class="amanox" alt="Amanox Solutions">
 </div>
