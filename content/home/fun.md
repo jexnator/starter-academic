@@ -12,8 +12,9 @@ weight: 30
 title:
 subtitle:
 ---
+<div class="fun">
 <img src="/diamond.png" class="pickaxe" alt="Pickaxe">
-
+</div>
 <script>
   console.log("Whats going on here?")
 </script>
