@@ -327,3 +327,8 @@ More:
 - `different network protocols`<br>
 
 After that I started with the chapter Networks in the RHCSA 8 Cert Guide. The first step was to learn how to validate network configurations. This included, among other things, the temporary mutation of the IP address, routing and the link status of the packet transmission. In another step I practiced how to set up the hostname for communication and how to add a selected DNS server.
+
+## 26/01/22 - 28/01/22
+After my two-week winter vacation and the subsequent semester exams, I am now back to the daily routine at Amanox Solutions. The new modules in the university of applied sciences start already next week. Due to the current situation, I work mostly from home and attend classes homebased as well. During this and the next weeks it is about completing and finishing the internal module [Networks.](https://fabianbrunner.netlify.app/docs/chapter2/)
+
+For this, I have been repeating the provided theory again and have been doing some tasks to create subnets. Thereby I got a little theory input from Jim, which was very useful for the tasks. Over the next week, I will be provided with several more tasks from Jim, which will be completed using the Cisco Packet Tracer. This is a simulation and visualization tool for networks, which we will also use later in class at FFHS.
