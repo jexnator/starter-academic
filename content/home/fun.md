@@ -13,9 +13,5 @@ title:
 subtitle:
 ---
 <div class="fun">
-<img src="/diamond.png" class="pickaxe" alt="Pickaxe">
+<img src="/amanox.png" class="amanox" alt="Amanox Solutions">
 </div>
-<script>
-  console.log("Whats going on here?")
-</script>
-
