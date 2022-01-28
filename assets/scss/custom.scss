@@ -30,10 +30,6 @@
         "Noto Color Emoji";
 }
 
-.fun {
-    width: 100%;
-    height: 100%;
-}
 .skills {
     width: 100%;
     max-width: 600px;
@@ -71,3 +67,23 @@
         width: 100%;
     }
 }
+
+
+.pickaxe {
+    animation-duration: 3s;
+    animation-name: pickaxe;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes pickaxe {
+    from {
+      margin-left: 100%;
+      width: 10%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 50%;
+    }
+  }

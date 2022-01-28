@@ -9,13 +9,12 @@ headless: true
 # Order that this section appears on the page.
 weight: 30
 
-title: Skills
+title:
 subtitle:
 ---
-<div class="fun">
-    <img src="/diamond.png" alt="Pickaxe">
-  <script>
-    console.log("Whats going on here?")
-  </script>
-</div>
+<img src="/diamond.png" class="pickaxe" alt="Pickaxe">
+
+<script>
+  console.log("Whats going on here?")
+</script>
 
