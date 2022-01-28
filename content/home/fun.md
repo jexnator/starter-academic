@@ -15,7 +15,7 @@ subtitle:
 <div class="fun">
   <div class="text">
   <p>Pickaxe</p>
-    <img src="diamond.png" alt="Pickaxe" width="500" height="500">
+    <img src="starter-academic\assets\media\diamond.png" alt="Pickaxe" width="500" height="500">
   </div>
   <script>
     console.log("Whats going on here?")
