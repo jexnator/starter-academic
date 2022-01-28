@@ -73,10 +73,11 @@
 }
 
 .amanox {
+    position: center;
     animation-duration: 3s;
     animation-name: amanox;
     animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
   }
   
   @keyframes amanox {
