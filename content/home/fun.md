@@ -13,9 +13,7 @@ title: Skills
 subtitle:
 ---
 <div class="fun">
-  <div class="text">
     <img src="/diamond.png" alt="Pickaxe">
-  </div>
   <script>
     console.log("Whats going on here?")
   </script>
