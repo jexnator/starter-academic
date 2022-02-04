@@ -333,6 +333,9 @@ After my two-week winter vacation and the subsequent semester exams, I am now ba
 
 For this, I have been repeating the provided theory again and have been doing some tasks to create subnets. Thereby I got a little theory input from Jim, which was very useful for the tasks. Over the next week, I will be provided with several more tasks from Jim, which will be completed using the Cisco Packet Tracer. This is a simulation and visualization tool for networks, which we will also use later in class at FFHS.
 
+</p><br>
+<p></p>
+
 ## 26/01/22 - 28/01/22
 This week I started with some LAB-tasks in the cisco packet tracer. I started with some Basic Tasks to get to know and understand the software better.
 
