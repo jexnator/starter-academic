@@ -345,7 +345,8 @@ After these instructive introductory tasks, I turned my attention to the big mod
 - 1 Office network (with subnets IT, Office-Employees, Printer)
 - Production network
 - Internal server network
-- DMZ network
+- DMZ network<br>
+
 The different devices in the respective networks should receive an IP from the DHCP server in the internal server network. In addition, the 4 main networks should be interconnected by means of an ASA firewall and regulate the various traffic restrictions.
 
 ![Task 1](tracer3.png "<b>Big-LAB |</b> Screenshot")
