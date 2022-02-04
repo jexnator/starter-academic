@@ -332,3 +332,22 @@ After that I started with the chapter Networks in the RHCSA 8 Cert Guide. The fi
 After my two-week winter vacation and the subsequent semester exams, I am now back to the daily routine at Amanox Solutions. The new modules in the university of applied sciences start already next week. Due to the current situation, I work mostly from home and attend classes homebased as well. During this and the next weeks it is about completing and finishing the internal module [Networks.](https://fabianbrunner.netlify.app/docs/chapter2/)
 
 For this, I have been repeating the provided theory again and have been doing some tasks to create subnets. Thereby I got a little theory input from Jim, which was very useful for the tasks. Over the next week, I will be provided with several more tasks from Jim, which will be completed using the Cisco Packet Tracer. This is a simulation and visualization tool for networks, which we will also use later in class at FFHS.
+
+## 26/01/22 - 28/01/22
+This week I started with some LAB-tasks in the cisco packet tracer. I started with some Basic Tasks to get to know and understand the software better.
+
+#### Task 1 - 7
+Create a network with just a switch and 2 clients (laptop and PC). The clients should be able to ping eachother. Expand the network with a DHCP server. The clients should get an IP from your defined DHCP pool. Expand the network with a router and place the DHCP server in another subnet. The clients and the server should be in different subnets. Configure your devices correctly, and your clients should still be able to get an IP-Address from the DHCP server. Expand the network with a webserver, which you place in the same subnet the DHCP server resides (call it the internal server subnet). Can your clients access the website? Expand your serverfarm with a DNS server. Give all your servers a name and check, if your clients can ping them with just the name. Can you open the website with the name now? Expand your network with an access point (AP). Connect a new, additional laptop to the client subnet via the AP. Add an additional router, connect it to the switch in the internal servers subnet. Add a new switch and connect it to the new router. Add a printer and connect it to the new switch. Create a DNS record for the printer.
+
+![Task 1](tracer2.png "<b>LAB Cisco Packet Tracer |</b> Screenshot")
+
+After these instructive introductory tasks, I turned my attention to the big module task, which I have not yet completely finished. The goal was to build 4 subnets representing a company network.
+- 1 Office network (with subnets IT, Office-Employees, Printer)
+- Production network
+- Internal server network
+- DMZ network
+The different devices in the respective networks should receive an IP from the DHCP server in the internal server network. In addition, the 4 main networks should be interconnected by means of an ASA firewall and regulate the various traffic restrictions.
+
+![Task 1](tracer3.png "<b>Big-LAB |</b> Screenshot")
+
+It was a very exciting and educational week for me. I also had a lot of fun. For the most part, I had to work with the CLI to configure routers or firewalls. For this I informed myself mainly about the Cisco-manuals in the internet. The Cisco Packet Tracer is a very powerful tool, which simplifies the entrance in the area of the network technology playfully.
