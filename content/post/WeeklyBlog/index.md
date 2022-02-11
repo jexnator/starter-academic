@@ -339,7 +339,7 @@ For this, I have been repeating the provided theory again and have been doing so
 </p><br>
 <p></p>
 
-## 26/01/22 - 28/01/22
+## 02/02/22 - 04/02/22
 This week I started with some LAB-tasks in the cisco packet tracer. I started with some Basic Tasks to get to know and understand the software better.
 
 #### Task 1 - 7
@@ -358,3 +358,13 @@ The different devices in the respective networks should receive an IP from the D
 ![Task 1](tracer3.png "<b>Big-LAB |</b> Screenshot")
 
 It was a very exciting and educational week for me. I also had a lot of fun. For the most part, I had to work with the CLI to configure routers or firewalls. For this I informed myself mainly about the Cisco-manuals in the internet. The Cisco Packet Tracer is a very powerful tool, which simplifies the entrance in the area of the network technology playfully.
+
+</p><br>
+<p></p>
+
+## 09/02/22 - 11/02/22
+During this week I continued on the Big-LAB excercice in the Network-Module. It was still about configuring the ASA firewall between the different networks. The goal here was to set the 4 interfaces according to various predefined rules for filtering the traffic.To limit the traffic I created four access lists (ACL's) and assigned them to the right interfaces.  At first I was a bit confused, but after some research I found my way around. I read up on the topic on the Cisco Man-Page. It was important to know the correct tcp and udp ports on layer 3.
+
+Now I have agreed with Jim that we will look at the task together on occasion and he will give me feedback on it.
+
+After finishing this rather small module I started on Friday with the next "Intro to the Cloud" module from Luca and Dom. You'll hear more about that next week. Now it's time for the weekend! ;-)
