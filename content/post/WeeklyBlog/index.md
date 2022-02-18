@@ -368,3 +368,16 @@ During this week I continued on the Big-LAB excercice in the Network-Module. It 
 Now I have agreed with Jim that we will look at the task together on occasion and he will give me feedback on it.
 
 After finishing this rather small module I started on Friday with the next "Intro to the Cloud" module from Luca and Dom. You'll hear more about that next week. Now it's time for the weekend! ;-)
+
+</p><br>
+<p></p>
+
+## 16/02/22 - 18/02/22
+This week I continued with the “Intro to the Cloud” Module.
+
+Luca and Dominik provided me with introductory material for this in the form of videos on a personal website. At the beginning, it was about the basics of virtualization and the associated function of the hypervisor. Afterwards, I got an overview of how containers work and what dominant market leaders exist in this field. In addition, the term “hyperconverged” was explained in a video. After that, a Nutanix video gave me an insight into the private cloud sector.
+In a further step, I was introduced to the public cloud, where I learned about the various providers in detail.
+
+After the introduction, I created a Microsoft Azure Educate account and instantiated a first virtual machine and accessed it using RPD.
+
+Afterwards, Fabian told me how to access my AWS LAB. The first LAB task was to create an EC2 WordPress instance and to write a first post on the created website.
