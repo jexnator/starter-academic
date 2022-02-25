@@ -381,3 +381,15 @@ In a further step, I was introduced to the public cloud, where I learned about t
 After the introduction, I created a Microsoft Azure Educate account and instantiated a first virtual machine and accessed it using RPD.
 
 Afterwards, Fabian told me how to access my AWS LAB. The first LAB task was to create an EC2 WordPress instance and to write a first post on the created website.
+
+</p><br>
+<p></p>
+
+## 24/02/22 - 25/02/22
+
+That Thursday, I continued experimenting on my AWS account. I tested several different VM's in my AWS Lab. Fabian showed me how to access the different instances via the CLI using Putty. With this knowledge, I could now adjust and change various things, such as customizing the user data and the behaviour of the instance.
+
+On Friday I received an assignment from Dan. This one is about monitoring our lab costs from all the staff involved. Lately, there were more and more unnecessary, high costs due to services that were not really used. To solve this problem, I should contact the users more and clarify whether the services are really used. In addition, the input was there to possibly automate this process, since the invoice information can be retrieved at any time as a CSV document.
+Accordingly, I will think about it and look for a potential solution.
+
+Today, Remo will have a farewell apero, which I will attend.
