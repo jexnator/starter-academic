@@ -393,15 +393,3 @@ On Friday I received an assignment from Dan. This one is about monitoring our la
 Accordingly, I will think about it and look for a potential solution.
 
 Today, Remo will have a farewell apero, which I will attend.
-
-
-
-
-
-
-
-
-
-
-
-Testtest
