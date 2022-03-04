@@ -387,9 +387,24 @@ Afterwards, Fabian told me how to access my AWS LAB. The first LAB task was to c
 
 ## 24/02/22 - 25/02/22
 
-That Thursday, I continued experimenting on my AWS account. I tested several different VM's in my AWS Lab. Fabian showed me how to access the different instances via the CLI using Putty. With this knowledge, I could now adjust and change various things, such as customizing the user data and the behaviour of the instance.
+That Thursday, I continued experimenting on my AWS account. I tested several different VM's in my EC2. Fabian showed me how to access the different instances via the CLI using Putty. With this knowledge, I could now adjust and change various things, such as customizing the user data and the behaviour of the instance.
 
 On Friday I received an assignment from Dan. This one is about monitoring our lab costs from all the staff involved. Lately, there were more and more unnecessary, high costs due to services that were not really used. To solve this problem, I should contact the users more and clarify whether the services are really used. In addition, the input was there to possibly automate this process, since the invoice information can be retrieved at any time as a CSV document.
 Accordingly, I will think about it and look for a potential solution.
 
 Today, Remo will have a farewell apero, which I will attend.
+
+</p><br>
+<p></p>
+
+## 02/03/22 - 04/03/22
+
+During the week, I finished the "Intro to the Cloud" module by giving a presentation on the tasks I completed. Afterwards, I looked into AWS billing and discussed it with Dan.
+
+Another goal of this week was to start with the new module "IAM&Account". As a result, I now know the difference between Authentication and Authorization. In addition, I have stored the MFA on the root account and created a user via IAM, with which I will work in the future on AWS, since one should use the root user only for billing, IAM, etc..
+
+Furthermore, I can now create IAM groups, provide permissions and then link them to the users.
+I also know how to change the sign-in link for the users and configure the desired password policy.
+I find working with AWS very exciting. In the meantime, I am very well supported and you can see that a lot of heart and soul is put into the cloud modules. I would like to thank all the coaches involved for this.
+
+In the interim, I have also received the grades for the first semester from the university of applied sciences. It is worth mentioning that I passed 5 out of 6 modules. At the end of April I have the chance to take a re-examination of the module I did not pass.
