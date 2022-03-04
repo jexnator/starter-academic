@@ -399,7 +399,7 @@ Today, Remo will have a farewell apero, which I will attend.
 
 ## 02/03/22 - 04/03/22
 
-During the week, I finished the "Intro to the Cloud" module by giving a presentation on the tasks I completed. Afterwards, I looked into AWS-billing (mentioned last week ↑) topic and discussed it with Dan.
+During the week, I finished the "Intro to the Cloud" module by giving a presentation on the tasks I completed. Afterwards, I looked into AWS-billing topic (mentioned last week ↑) and discussed it with Dan.
 
 Another goal of this week was to start with the new module "IAM&Account". As a result, I now know the difference between Authentication and Authorization. In addition, I have stored the MFA on the root account and created a user via IAM, with which I will work in the future on AWS, since one should use the root user only for billing, IAM, etc..
 
