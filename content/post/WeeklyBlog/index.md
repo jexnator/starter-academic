@@ -414,12 +414,32 @@ In the interim, I have also received the grades for the first semester from the 
 
 ## 14/03/22 - 25/03/22
 
-During these to weeks, I finished the "Intro to the Cloud" module by giving a presentation on the tasks I completed. Afterwards, I looked into AWS-billing topic (mentioned last week ↑) and discussed it with Dan.
+After completing the "IAM&Account" module, John slipped me another exercise on implementing a Quote app. I have to say that I was allowed to inform myself independently in order to understand what exactly I was deploying.
+In the first of the four exercises, I implemented the basic architecture of the Quote app. For this I needed the following instances:
 
-Another goal of this week was to start with the new module "IAM&Account". As a result, I now know the difference between Authentication and Authorization. In addition, I have stored the MFA on the root account and created a user via IAM, with which I will work in the future on AWS, since one should use the root user only for billing, IAM, etc..
+- EC2 dev-server
+- EC2 backend-server
+- S3 frontend-bucket
+- DynamoDB
 
-Furthermore, I can now create IAM groups, provide permissions and then link them to the users.
-I also know how to change the sign-in link for the users and configure the desired password policy.
-I find working with AWS very exciting. In the meantime, I am very well supported and you can see that a lot of heart and soul is put into the cloud modules. I would like to thank all the coaches involved for this.
+The first step was to create roles with the appropriate permissions for the two EC2 instances. I also added two security groups for the virtual machines. Then I launched the development server and the backend server.
+In a further step, I created a DynamoDB, which I filled with various quotes. Afterwards I tested if the backend could access the database.
+Then I set up an S3 bucket which hosts the static website. After that I uploaded the static web application (React) to the created bucket. I then launched the React app on the frontend and accessed the frontend's public IP.
 
-In the interim, I have also received the grades for the first semester from the university of applied sciences. It is worth mentioning that I passed 5 out of 6 modules. At the end of April I have the chance to take a re-examination of the module I did not pass.
+During the realization I had some failures / challenges, because the guide was not so up to date. However, I was able to fix these bugs. Sometimes it took a bit more time than expected though.
+
+</p><br>
+<p></p>
+
+## 28/03/22 - 08/04/22
+
+The second part of the exercise (quote-app) was about implementing an elastic-architecture. For this, loadbalancing and autoscaling comes into play.
+For this I made an image of the backend-server to create arbitrary new backends from the template via autoscaling. From the template I created a new backend-instance. Afterwards I prepared an application-loadbalancer with the corresponding target-group (the two backends). Afterwards I tested the loadbalancer and was forwarded alternately to the two different public IP's. Finally I created an autoscaling group. During the configuration I made sure that always at least 2 backend instances are running and that with a large load up to a maximum of 4 backends can run simultaneously. In addition, the configuration of the launch configuration from the prefabricated image.
+
+In the third part of the exercise I implemented a serverless architecture. For this I created a lambda function with Python. Afterwards I added a new HTTP API.
+The application now works serverless.
+As an optional task I created a CICD pipeline to automate the backend programming, which can automatically create a lambda function and an Rset API. For this I created a code commit repo with the corresponding Python file for the lambda function and the "SAM.cf" file. After that I created the pipeline and referenced the new API in the S3 bucket.
+
+In the last part of the task, I used the AWS Comprehend service to analyze the sentiments of the different quotes. To do this, I accessed the Comprehend service in the Lambda function, which now also provides the sentiment of the quotes.
+
+I found the tasks very cool. Sometimes it was a bit challenging, but I think that's the only way to learn, because you have to deal with the matter in depth to implement the working solution.
