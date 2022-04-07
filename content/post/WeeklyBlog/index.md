@@ -397,9 +397,24 @@ Today, Remo will have a farewell apero, which I will attend.
 </p><br>
 <p></p>
 
-## 02/03/22 - 04/03/22
+## 02/03/22 - 11/03/22
 
-During the week, I finished the "Intro to the Cloud" module by giving a presentation on the tasks I completed. Afterwards, I looked into AWS-billing topic (mentioned last week ↑) and discussed it with Dan.
+During these to weeks, I finished the "Intro to the Cloud" module by giving a presentation on the tasks I completed. Afterwards, I looked into AWS-billing topic (mentioned last week ↑) and discussed it with Dan.
+
+Another goal of this week was to start with the new module "IAM&Account". As a result, I now know the difference between Authentication and Authorization. In addition, I have stored the MFA on the root account and created a user via IAM, with which I will work in the future on AWS, since one should use the root user only for billing, IAM, etc..
+
+Furthermore, I can now create IAM groups, provide permissions and then link them to the users.
+I also know how to change the sign-in link for the users and configure the desired password policy.
+I find working with AWS very exciting. In the meantime, I am very well supported and you can see that a lot of heart and soul is put into the cloud modules. I would like to thank all the coaches involved for this.
+
+In the interim, I have also received the grades for the first semester from the university of applied sciences. It is worth mentioning that I passed 5 out of 6 modules. At the end of April I have the chance to take a re-examination of the module I did not pass.
+
+</p><br>
+<p></p>
+
+## 14/03/22 - 25/03/22
+
+During these to weeks, I finished the "Intro to the Cloud" module by giving a presentation on the tasks I completed. Afterwards, I looked into AWS-billing topic (mentioned last week ↑) and discussed it with Dan.
 
 Another goal of this week was to start with the new module "IAM&Account". As a result, I now know the difference between Authentication and Authorization. In addition, I have stored the MFA on the root account and created a user via IAM, with which I will work in the future on AWS, since one should use the root user only for billing, IAM, etc..
 
