@@ -443,3 +443,16 @@ As an optional task I created a CICD pipeline to automate the backend programmin
 In the last part of the task, I used the AWS Comprehend service to analyze the sentiments of the different quotes. To do this, I accessed the Comprehend service in the Lambda function, which now also provides the sentiment of the quotes.
 
 I found the tasks very cool. Sometimes it was a bit challenging, but I think that's the only way to learn, because you have to deal with the matter in depth to implement the working solution.
+
+</p><br>
+<p></p>
+
+## 11/04/22 - 20/05/22
+The last few weeks I worked on the "Serverless Module". Along the way, I spent a week working on preparation for the Java exam.
+In the first part, Rafael taught me hands-on how a web application works from scratch. Some videos about REST API and Flask served as an introduction. Afterwards I read the provided theory carefully. Afterwards I created an API with Python and Flask and executed various tasks.
+
+After this small but very informative introduction, I then went over to Luca's part, in which I learned the basics about serverless computing in AWS. I was provided with some very helpful videos on what a serverless application is, what microservices are, how to break down a monolithic application into microservices in the cloud, and what platform as a service means.
+
+I then elaborated on the theory in the PowerPoint presentation and got acquainted with some key AWS services used in the serverless space. At the end of the theory, I received some links where various sample implementations and workshops were available. I then worked through some of these workshops myself to expand my knowhow.
+
+The past weeks were very exciting and the learning effect was definitely there. I am looking forward to the further parts of this module and am excited about it.
