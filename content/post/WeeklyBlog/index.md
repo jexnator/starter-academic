@@ -447,7 +447,7 @@ I found the tasks very cool. Sometimes it was a bit challenging, but I think tha
 </p><br>
 <p></p>
 
-## 11/04/22 - 20/05/22
+## 11/05/22 - 20/06/22
 The last few weeks I worked on the "Serverless Module". Along the way, I spent a week working on preparation for the Java exam.
 In the first part, Rafael taught me hands-on how a web application works from scratch. Some videos about REST API and Flask served as an introduction. Afterwards I read the provided theory carefully. Afterwards I created an API with Python and Flask and executed various tasks.
 
