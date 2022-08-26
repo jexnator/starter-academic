@@ -38,7 +38,7 @@ In addition, I informed myself with some employees to eliminate various ambiguit
 
 On Thursday evening I started with the programming of the scripts. Unfortunately, I had to realize that the whole thing is not as simple as I had imagined. The first programming language that could be used in the CDK was Typescript. For this reason the documentation for this programming language is also the best. The CDK documentation for Python is a bit more meager, which made it a bit more difficult for me to get started.
 
-I'll deal with the topic once more next week, and again get back to you here. With that in mind, have a great weekend.
+I'll deal with the topic once more next week, and again get back to you here. With that in mind, have a great weekend!
 
 </p><br>
 <p></p>
