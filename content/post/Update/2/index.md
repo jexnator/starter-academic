@@ -28,7 +28,7 @@ image:
 projects: []
 ---
 
-Update will come very soon!
+
 
 </p><br>
 <p></p>
