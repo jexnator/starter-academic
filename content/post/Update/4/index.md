@@ -1,14 +1,14 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "06/09 - 09/09/2022"
+title: "14/09 - 16/09/2022"
 subtitle: ""
 summary: "Trainee diary"
 authors: [Xavier Jeiziner]
 tags: [PiBS]
 categories: []
-date: 2022-09-09
-lastmod: 2022-09-09
+date: 2022-09-16
+lastmod: 2022-09-16
 featured: false
 draft: false
 
@@ -28,16 +28,12 @@ image:
 projects: []
 ---
 
-The week started with a presentation in which Oliver, my classmate, and I gave on an implemented recursive algorithm for computing all permutations of the sequence 0 - n in a two-dimensional array.
-The presentation was important because it counts for 15% of the module experience grade in "datastructures & algorithms".
+During this week I worked again on the BI-Tool. The final polish on the code was still missing, so it now compiles cleanly and spits out a CloudFormation template.
+Since the CDK Python reference is not documented that extensively, I contacted Leo a few times regarding various questions.
+To define various properties of instances, Typescript works with interfaces. The properties can be specified after the constructor of the class. In Python, the properties are defined directly in the respective class and are passed individually in the constructor. This still required a restructuring of the code from my side to get the same logic. However, I was able to learn things from it and refresh my Python knowledge at the same time.
 
-On tuesday I had a meeting with Dan to discuss the organizational part of the transfer work I will do in this semester. He also introduced me to the different types of scientific papers that can be written in the IT industry. Then he showed me some examples of scientific papers that he personally wrote and what a correct disposition looks like.
-Later I checked if Amazon Business account would be an alternative for our Lab accounts to possibly benefit from various savings. However, it turned out that Amazon Business focuses mainly on its own sales platform and offers advantages for business customers as opposed to private customers.
-
-I still used the remaining time to read through and internalize the guidelines and directives for the transfer work. Afterwards, I continued to work briefly on the BI tool. On Wednesday afternoon I got to accompany Dan to do some shopping for the AWS Meetup coming up in the evening. In between I supported Gianluca with some ambiguities about Python. At the end of the day I was allowed to listen to his presentation about what he had learned so far in the Python module.
-
-On Friday, I dealt with AWS billing and checked with the respective staff for any discrepancies. Next, I looked at a lambda function of the BI tool, which currently has a high runtime for unknown reasons and thus causes high costs. I could not find out the cause until now. However, I will take up the topic again and possibly look at it with an engineer, if I do not find the error on my own.
-I will use the remaining time on Friday to choose a topic for the upcoming transfer work.
+On Thursday, Omero showed Gianluca and me the sales process in a small meeting. It was very informative and individual questions from our side were well answered by Omero.
+On Friday, I briefly checked on the progress of the AWS Lab costs so far. The rest of the time I use to prepare for the upcoming post exams at the end of September.
 
 </p><br>
 <p></p>
