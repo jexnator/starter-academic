@@ -35,5 +35,9 @@ I also helped Armstrong to change his password for his AWS root account.
 
 In the meantime I spent another day with the implementation of sorting algorithms for the subject Data Structures and Algorithms. Since my group member relieved me a bit during the review phase, I did the full assignment for this, which in retrospect was quite time-consuming. However, the effort was worth it and the assignment received a grade of 6.0.
 
+Last week on Thursday Andreas showed me the user interfaces of Nutanix, Cloudian and Rubrik and their corresponding functionalities.
+
+On Friday, those present in the office were able to attend Matthieu's presentation on Bayesian probability theory, where he also showed how to break down the mathematical facts to real situations. Afterwards, everyone had a meal of Mongolian specialties.
+
 </p><br>
 <p></p>
