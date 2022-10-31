@@ -1,14 +1,14 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "20/09 - 07/10/2022"
+title: "10/10 - 28/10/2022"
 subtitle: ""
 summary: "Trainee diary"
 authors: [Xavier Jeiziner]
 tags: [PiBS]
 categories: []
-date: 2022-10-07
-lastmod: 2022-10-07
+date: 2022-10-31
+lastmod: 2022-10-31
 featured: false
 draft: false
 
@@ -28,18 +28,12 @@ image:
 projects: []
 ---
 
-The last two weeks I have been preparing for exams.
-This week I worked in between on an algorithm to find the median in an unsorted array in linear time.
-The main goal of this week was to find out why a specific lambda function takes so long and has a high cost. It turned out that it is not the lambda function itself that is to blame, but that the request via the soap wastes a lot of time. Nevertheless it has to be said that the dataset is quite large compared to the other datasets that are obtained in the other lambdas.
-This means that the function also requires comparatively more memory. By increasing the working memory, the Lambda function is now about half faster.
+During the last few weeks I have neglected the blog a bit. Now I have to make up for this.
+The BI tool is now running on the prod account and is functional and the associated CDK github repository has been created. In addition to the tool, a manually configured EC2 instance was set up for the Power BI gateway, since Microsoft does not allow direct access to AWS instances (in our case, the database). After redundant and successful test time, running both DB instances in Rafael's account and the Prod account, the no longer needed Lab account could be nuked.
 
-At this point I would like to thank Dino and Leo for their support and helpful inputs.
+I also helped Armstrong to change his password for his AWS root account.
 
-I then recalculated the cost of the Lambda using the "AWS Lambda Pricing Calculator". Despite the long duration, I found that this was not the cost driver as Dan initially feared. After further analysis, I came to the conclusion that the high costs in the Lambda area were due to the "AWS Lambda - Provisioned Concurrency" feature. In the account where the BI tool is currently still running, there was an unneeded Lambda function somewhere that had activated this feature and was wasting money unnecessarily.
-This feature keeps the container of the required Lambda function warm, so that it can be executed within the shortest possible time when an event occurs. This way the container is always running. Normally the container is booted as soon as the lambda receives an event, which takes a certain instantiation time, which can be eliminated by this.
-
-Next week I will test my version written in CDK with Python and see if everything works as desired.
-
+In the meantime I spent another day with the implementation of sorting algorithms for the subject Data Structures and Algorithms. Since my group member relieved me a bit during the review phase, I did the full assignment for this, which in retrospect was quite time-consuming. However, the effort was worth it and the assignment received a grade of 6.0.
 
 </p><br>
 <p></p>
