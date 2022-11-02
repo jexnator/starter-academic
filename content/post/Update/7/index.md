@@ -33,7 +33,7 @@ The BI tool is now running on the prod account and is functional and the associa
 
 I also helped Armstrong to change his password for his AWS root account.
 
-In the meantime I spent another day with the implementation of sorting algorithms for the subject Data Structures and Algorithms. Since my group member relieved me a bit during the review phase, I did the full assignment for this, which in retrospect was quite time-consuming. However, the effort was worth it and the assignment received a grade of 6.0.
+In the meantime I spent another day with the implementation of sorting algorithms for the subject Data Structures and Algorithms. Since my group member relieved me a bit during the re-examination time, I did the full assignment for this, which in retrospect was quite time-consuming. However, the effort was worth it and the assignment received a grade of 6.0.
 
 Last week on Thursday Andreas showed me the user interfaces of Nutanix, Cloudian and Rubrik and their corresponding functionalities.
 
