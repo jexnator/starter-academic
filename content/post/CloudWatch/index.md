@@ -27,7 +27,16 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
- Hello you
+ ## Important concepts & definitions in AWS CloudWatch
+ ### Standard metrics & custom metrics
+
+ ### Namespaces
+
+ ### Standard & High Resolution
+
+ ### Alarms & Notifications
+
+ ### Units & Periods  
 
 </p><br>
 <p></p>
