@@ -29,6 +29,13 @@ projects: []
 ---
  ## Important concepts & definitions in AWS CloudWatch
  ### Standard metrics & custom metrics
+ A metric represents a time-ordered set of data points that are accessible via CloudWatch. You can think of a metric as a variable that represents data points. An example of this can be the error count and success rate of a lambda function. With metrics you can get an idea about the performance and other measurable aspects of your system. Metrics are aggregable from many different AWS-Services.
+
+ ![Standard metric for a lambda function](success-lambda.jpg "<b>Standard metric for a lambda function | </b>Screenshot from LAB-Account")
+
+ A standard metric is grouped by the service name and is created automatically from scratch by AWS. The metric appears only if the service has been used in the last 15 months. They are graphically displayed by plots and are reachable via the AWS CLI or API. An example could be the CPU usage of an EC2 instance or as mentioned above the Lambda failure rate.
+
+ As the name suggests, the user can create custom metrics for an individual use case. An example of this could be a monitoring system that records how many drivers are driving without daytime running lights on a certain section of road during the day and visualizes this by summing it up in a CloudWatch metric.
 
  ### Namespaces
 
