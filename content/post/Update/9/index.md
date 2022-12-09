@@ -1,14 +1,14 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "14/11 - 25/11/2022"
+title: "02/11 - 11/11/2022"
 subtitle: ""
 summary: "Trainee diary"
 authors: [Xavier Jeiziner]
 tags: [PiBS]
 categories: []
-date: 2022-11-26
-lastmod: 2022-11-26
+date: 2022-11-14
+lastmod: 2022-11-14
 featured: false
 draft: false
 
