@@ -1,14 +1,14 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "02/11 - 11/11/2022"
+title: "28/11 - 09/12/2022"
 subtitle: ""
 summary: "Trainee diary"
 authors: [Xavier Jeiziner]
 tags: [PiBS]
 categories: []
-date: 2022-11-14
-lastmod: 2022-11-14
+date: 2022-12-09
+lastmod: 2022-12-09
 featured: false
 draft: false
 
@@ -28,13 +28,13 @@ image:
 projects: []
 ---
 
-During the last two weeks I finished the Serverless module with the final presentation. Since I was busy with the BI tool for a few weeks in between, I had to work up the material a bit to be able to present the completed tasks in detail. I also filled out the module evaluation.
+From 28/11 to 02/12 I started with the AWS CloudWatch Module. I learned about important concepts and definitions in CloudWatch. I'm now able to view or create standard or custom metrics from any important services. Furthermore I was informed about the terms Namespaces, Standard and high resolution, Alarms & Notifications and about Units & Periods. Along the way, I worked on my semester paper in the Software Engineering and Modeling module.
 
-In the following week I visited the introduction day of the civil service. Unfortunately I had to realize that this procedure will rather hinder me during my studies instead of having a positive effect.
+On Friday, the Amanox Lunch (sponsored by CloudCademy) took place, where Matthieu decided for the second time in a row to spontaneously give a talk about his current project in the area of Data Lakes.
 
-On Thursday morning I created an overview of the FFHS modules using a kanban board. Thereby we students can assign the current modules to us, so that our PiBS coaches are always up to date.
+During the next week I spended still one day to finish the semester paper in. After that I started with my first transfer work, which I can write in the practice company (with us @Amanox).The work will be evaluated internally by Dan and externally by a FFHS lecturer.
 
-A fellow student and I were given the opportunity to present the PiBS program at the Kollegium Brig during Friday. The rest of the time I invested in the preparation of this workshop together with my colleague.
+The start with the work still caused me a little difficulty. I was already allowed to write some scientific papers in the first semesters. However, the requirements and expectations for these papers were quite clearly defined, which made it easier to work on them. Building a paper from scratch with the right methods and empirical procedures is still quite new to me. Therefore, I am glad that we will write a transfer paper every semester until the end of the study, which is certainly a good preparation for the upcoming bachelor thesis.
 
 </p><br>
 <p></p>
