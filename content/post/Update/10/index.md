@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "14/12 - 25/01"
+title: "14/12 - 25/01/2023"
 subtitle: ""
 summary: "Trainee diary"
 authors: [Xavier Jeiziner]
@@ -9,7 +9,7 @@ tags: [PiBS]
 categories: []
 date: 2022-02-25
 lastmod: 2022-02-25
-featured: true
+featured: false
 draft: false
 
 # Featured image
