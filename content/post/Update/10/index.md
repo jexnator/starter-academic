@@ -9,7 +9,7 @@ tags: [PiBS]
 categories: []
 date: 2022-02-25
 lastmod: 2022-02-25
-featured: false
+featured: true
 draft: false
 
 # Featured image
