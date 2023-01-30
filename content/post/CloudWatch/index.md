@@ -38,6 +38,7 @@ projects: []
  As the name suggests, the user can create custom metrics for an individual use case. An example of this could be a monitoring system that records how many drivers are driving without daytime running lights on a certain section of road during the day and visualizes this by summing it up in a CloudWatch metric.
 
  ### Namespaces
+ In AWS CloudWatch, a namespace is a container for metrics. It allows to group and organize metrics so that you can more easily view and work with them. For example, you could create a namespace for metrics related to your website's performance, and another namespace for metrics related to your database. This way, you can easily view and analyze the metrics for each area of your application without having to sift through all of the metrics together.
 
  ### Standard & High Resolution
 
