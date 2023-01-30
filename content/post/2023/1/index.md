@@ -5,10 +5,10 @@ title: "14/12/2022 - 25/01/2023"
 subtitle: ""
 summary: "Trainee diary"
 authors: [Xavier Jeiziner]
-tags: [PiBS]
+tags: []
 categories: []
-date: 2023-02-25
-lastmod: 2023-02-25
+date: 2023-01-25
+lastmod: 2023-01-25
 featured: false
 draft: false
 
@@ -27,6 +27,7 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
+
 After a few intense weeks I am now back via this blog. I wish you all a happy new year and I am looking forward to the coming year and of course to working with you.
 
 For this year I plan to improve my presentation skills. Towards the end of the semester, I received a wake-up call from one of my lecturers about my presentation style. It said that I was very unconfident, unsteady and that it was unpleasant to have to listen to me 15 minutes at a time. In addition, my slides were too crammed with text and therefore too much of it was read off. As a tip, the following was mentioned: "Try to hold a part of the lecture in front of the WebCam and watch yourself, the goal would be to be able to radiate more confidence with more practice."
