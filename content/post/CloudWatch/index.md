@@ -60,5 +60,19 @@ Units: Units in CloudWatch identify the measurement type for a metric. For insta
 
 Period: The Period in CloudWatch determines the length of time in seconds over which metric data is aggregated. For example, if the period is 60 seconds, the metric data will be consolidated over 60 second intervals. The Period controls the level of detail for the metric data, with smaller periods providing more detailed data and larger periods providing less detail.
 
+### Part 1
+In the first part of the learning unit I got the basic knowledge about AWS CloudWatch.
+
+The three main goals of CloudWatch are to create metrics about existing architectures or individual instances in AWS, monitoring and related logging, and creating and setting alarms.
+The most important basic concepts to know for working with CloudWatch are mentioned above. As a first step, I was taught independently of CloudWatch what classic log formats can look like and how to use them. I also learned how to work with specific filter patterns.
+
+After that, I moved on to the topic of metrics and I created my first custom metric that traces employee happiness from different companies. This rather theoretical example was meant to show me how I can create my own namespaces and insert and create custom metrics there. Namespaces cannot be created via the AWS Management Console, so I performed the task using the AWS CLI.
+
+Furthermore, I moved on to the topic of CloudWatch alarms. In doing so, I learned how to set CloudWatch alarms and what events can be executed based on those alarms. In one task, I then created an EC2 instance to track CPU usage. Prior to this, I also created an SNS topic, which reaches me via email. I subsequently created a rule under the CloudWatch events to notify me whenever the CPU utilization exceeds the 80% limit or drops below 20% in the one minute time period. On the RedHat VM, I then downloaded an application where I could artificially change the CPU utilization. Subsequently, emails were sent to me with the alarms based on this.
+
+In a further step I went on to the topic of logging. Using different tasks I learned about the different ways to log events, for example in Lambda functions. The easiest way to do this is by using a print-statement, with which you can log a value of a variable for example. Another way is to use the Python package logging, which gives you different possibilities for logging. Finally I learned how to use AWS-Powertools-for-Python, which makes logging much easier.
+
+At the end, I learned how to create my own dashboards and create and configure widgets from standard or custom metrics.
+
 </p><br>
 <p></p>
