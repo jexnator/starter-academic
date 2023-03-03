@@ -1,14 +1,14 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "01/02/2023 - 03/02/2023"
+title: "09/02/2023 - 03/03/2023"
 subtitle: ""
 summary: "Trainee diary"
 authors: [Xavier Jeiziner]
 tags: []
 categories: []
-date: 2023-02-03
-lastmod: 2023-02-03
+date: 2023-03-03
+lastmod: 2023-03-03
 featured: false
 draft: false
 
@@ -29,15 +29,12 @@ projects: []
 
 ---
 
-This week I started with some AWS LAB tasks. I got to create a Lab account for Omero, which he will need for school purposes. Also, another account was needed for a new employee.
-Following that, I looked at an issue regarding the BI tool. Dan brought to my attention that for some projects, the project times in the database were not updating when adjusted in ZEP. However, only individual projects were affected.
-It seemed like the update error was occurring rather sporadically and thus I couldn't see a concrete pattern. I then proceeded to analyze and test the SQL-Loader Lambda function locally in my development environment in more detail. When processing the CSV file, everything seemed to work correctly. Since the function seemed to be correct so far and also updates existing table entries, I then took a look at the CloudWatch logs. There I encountered an error: "IntegrityError: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails", which indicates that an attempt to update or insert data in a database table failed because a foreign key constraint was violated. I then modified the Lambda function to print the rows to be inserted in the logs. After manually triggering the Lambda function, I saw that not the whole data set of the CSV file was processed. After running the function several times, it turned out that the function always takes exactly 3001 milliseconds, no matter which data set is to be updated. From this I could conclude that the Lambda function in question had a too small timeout slot. After increasing the timeout and reexecuting the update of the tables in the database, the error was eliminated.
+The last free weeks I worked on different topics. On Friday the 17.02 a content creator from our school the FFHS came over to shoot a commercial for Socialmedia with Gian and me. Furthermore, I did some internal-IT tasks, including various AWS Lab things or preparing for the on-boarding of the new employees. I communicated with Nino for this. He took his time to introduce me and instruct me in the onboarding & offboarding process (Thanks Nino :-).
 
-The specified error occurred because the entire data set of the Customer table could not be updated due to the too short timeout and therefore no new projects could be created due to the foreign key relationship, since the corresponding customers did not yet exist in the database at the time of the update of the Projects table.
+In between I had a week of vacation which I used to recover. Despite the fact that there was little snow in Valais, my colleague and I did some other sports. We went to Crans-Montana and stretched there a Highline (Slackline). Afterwards, we spent almost every day on our midline, which was noticed at the end of the week by a severe muscle ache.
 
-During the rest of the time in the office, I continued working on the CloudWatch module. Furthermore, Gianluca and I joined the internal IT, as well as the Lab team. On Friday we already had the first meeting of the lab team, in which Sämi instructed us and showed us up our internal lab in more detail.
-
-In addition, I was allowed to solve a problem reported by Horst, which concerned the docking stations of two workstations.
+After my vacations, we continued with the on-boarding of our new teammates together with Nino. So far, everything went according to plan. At noon, we all went out for pizza together at Celina.
+The rest of the week I was busy with the internal CloudWatch module.
 
 </p><br>
 <p></p>
