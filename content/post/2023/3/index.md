@@ -28,9 +28,6 @@ image:
 projects: []
 
 ---
-
-{{ $image = $image.Resize "200x r90" }}
-
 The last free weeks I worked on different topics. On Friday the 17.02 a content creator from our school the FFHS came over to shoot a commercial for Socialmedia with Gian and me. Furthermore, I did some internal-IT tasks, including various AWS Lab things or preparing for the on-boarding of the new employees. I communicated with Nino for this. He took his time to introduce me and instruct me in the onboarding & offboarding process (Thanks Nino :-).
 
 In between I had a week of vacation which I used to recover. Despite the fact that there was little snow in Valais, my colleague and I did some other sports. We went to Crans-Montana and stretched there a Highline (Slackline). Afterwards, we spent almost every day on our midline, which was noticed at the end of the week by a severe muscle ache.
