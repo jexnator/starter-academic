@@ -74,5 +74,10 @@ In a further step I went on to the topic of logging. Using different tasks I lea
 
 At the end, I learned how to create my own dashboards and create and configure widgets from standard or custom metrics.
 
+### UseCase of CloudTrail
+A helpful use case of CloudTrail could certainly be tracking login activities in the own AWS account. In case that someone improperly gains access to an account the owner can see the activity and has the possibility to intervene directly if it is noticed in time. To improve this even further, one could, for example, create a CloudTrail that tracks management events. This also includes the event "ConsoleLogin". In the specific CloudTrail, a logstream could then be created that sends the events to CloudWatch and creates a log group there. A metrics filter can then be set up in CloudWatch, which filters the logs according to the variable EventType = "ConsoleLogin" and generates a corresponding metric and an associated metric value (int=1). Once the metric has been successfully created, a CloudWatch alert can be created that will be triggered whenever new login activity occurs. The metric alarm is kept according to the "Maximum" statistic and is given a threshold value of 1. Thus, every time the value is greater than or equal to 1, an alarm is triggered. An SNS topic can be added to the alarm afterwards, which will contact the user via email or SMS, for example. The architecture for this is shown in the following graphic.
+
+![ConsoleLogin Alert](console-logins.jpg "Create an Console Login Alert with AWS-Cloudtrail, -CloudWatch and -SNS")
+
 </p><br>
 <p></p>
