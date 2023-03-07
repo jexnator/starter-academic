@@ -99,7 +99,7 @@ ORDER BY count(*) DESC
 ```
 
 The first statement lists all events, where the eventName is equal to the management event "ConsoleLogin".
-The second statement is used to determine which user has logged into the console the most during the last few weeks.
+The second statement is used to determine which user has logged into the console the most during the last week.
 
 </p><br>
 <p></p>
