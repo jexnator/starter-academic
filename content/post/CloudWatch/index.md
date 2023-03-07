@@ -79,5 +79,26 @@ A helpful use case of CloudTrail could certainly be tracking login activities in
 
 ![ConsoleLogin Alert](console-logins.jpg "Create an Console Login Alert with AWS-Cloudtrail, -CloudWatch and -SNS")
 
+### CloudTrail Lake
+CloudTrail Lake is an extension of the traditional CloudTrail Trails. AWS itself describes it as "...a managed audit and security lake that allows you to aggregate, immutably store, and query your activity logs for auditing, security investigation, and operational troubleshooting." (from the blog post announcing CloudTrail Lake). The main difference is that a lake, unlike a conventional trail, is created in the form of a data store in which events are stored during a desired time period in the form of a table. The data records can then be queried with SQL query statements and, if necessary, processed further. One notable benefit of CLoudtrail Lake is that you can collect data a cross regions and across multiple accounts that reside within an AWS organization.
+
+As an exercise I have created the following SQL statements:
+
+```sql
+SELECT * FROM <event-data-store-ID>
+WHERE eventName = 'ConsoleLogin'
+```
+
+```sql
+SELECT userIdentity.arn, COUNT(*) AS loginCount
+FROM <event-data-store-ID>
+WHERE eventName = 'ConsoleLogin'
+AND eventTime > '2023-02-28 00:00:00'
+GROUP BY userIdentity.arn
+ORDER BY count(*) DESC
+```
+
+The first statement lists all events, where the eventName is equal to the management event "ConsoleLogin"
+The second statement is used to determine which user has logged into the console the most during the last few weeks.
 </p><br>
 <p></p>
