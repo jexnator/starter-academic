@@ -7,8 +7,8 @@ summary: "Trainee diary"
 authors: [Xavier Jeiziner]
 tags: []
 categories: []
-date: 2023-05-26
-lastmod: 2023-05-26
+date: 2023-05-31
+lastmod: 2023-05-31
 featured: false
 draft: false
 
