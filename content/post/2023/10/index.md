@@ -39,9 +39,9 @@ In addition, Gian and I collaborated on creating a comprehensive documentation f
 
 To validate the effectiveness of the documentation we created, I tested restore scenarios. Thankfully, everything worked as needed.
 
-As part of the preparations for our quarterly meeting, I created the presentation slides that highlight the capabilities of our Rubrik Secure Cloud Subscription for Microsoft 365. These slides aim to show the advantages and features of our subscription to the employees.
+On Friday was the monthly internal IT meeting. After the meeting Gian and I had a session with Fabian. We are considering automating our current AzureAD tenant and creating a CI/CD pipeline in Github. Fabian introduced us to this and set up the base on Github with us.
 
-On Friday was the monthly bilateral talk with Dan and the internal IT meeting.
+In addition, I configured voicemail for our main number in between. Calls that are not answered during one minute will now be forwarded to a voicemail.
 
 </p><br>
 <p></p>
