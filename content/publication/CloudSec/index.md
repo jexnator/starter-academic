@@ -75,12 +75,38 @@ slides: ""
 In this module I will learn about Cloud Security in AWS. Here you will find several tasks or summarizations about the topic.<br>
 
 ## Day 1 Basics
-`Security in the AWS cloud`<br>
 Security is the practice of safeguarding intellectual property from unauthorized access, use, or modification.
 
 The CIA triad is a fundamental concept in information security, comprising three core principles:
-a. Confidentiality: Limiting access to information to authorized users and preventing access by unauthorized persons.
-b. Integrity: Ensuring the consistency, accuracy, and trustworthiness of data throughout its lifecycle, including the origin or source of the data.
-c. Availability: Ensuring that information resources are readily accessible when needed.
+- Confidentiality: Limiting access to information to authorized users and preventing access by unauthorized persons.
+- Integrity: Ensuring the consistency, accuracy, and trustworthiness of data throughout its lifecycle, including the origin or source of the data.
+- Availability: Ensuring that information resources are readily accessible when needed.
 
 The CIA triad faces challenges in modern IT environments due to the large volume of information to be protected, the diverse sources of data, and the variety of formats used.
+
+`Security in the AWS cloud`<br>
+ AWS tries to make security as familiar as what we are doing day by day. Security is of utmost importance, especially in a cloud environment.
+Existing security models used in on-premises environments can be applied to the cloud.
+AWS offers various services and tools to enhance security, providing <b>controllability</b>, <b>auditability</b>, and <b>visibility</b> into cloud resources and workloads.
+The ability to work in an <b>agile</b> way and <b>automate</b> processes is especially important for incident response.
+
+`Security design principles`<br>
+- least privilege
+- enable traceability
+- secure all layers
+- automate security
+- protect data in transit and at rest
+- prepare for security events
+- minimize attack surface
+
+`AWS Well-Architected Framework`<br>
+AWS follows the Shared Responsibility model (SRM), where responsibilities are divided between AWS and its customers.
+
+![SRM](srm.jpg "<b> AWS Shared Responsibilty model |</b> Screenshot")<br>
+
+AWS is responsible for safeguarding the global infrastructure that hosts all AWS Cloud services, including hardware, software, networking, and facilities.
+As an AWS customer, you can securely provision various resources in the AWS Cloud, such as virtual machines, storage, databases, and desktops.
+Customers are responsible for securing their data, operating systems, networks, platforms, and other resources created in the AWS Cloud.
+Customers are accountable for maintaining the confidentiality, integrity, and availability of their data in the cloud, and for meeting specific business and compliance requirements for their workloads.
+
+The division of responsibilities varies depending on the type of AWS services used, implying different levels of responsibility for AWS and the customers.
