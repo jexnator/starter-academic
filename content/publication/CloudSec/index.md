@@ -76,7 +76,11 @@ In this module I will learn about Cloud Security in AWS. Here you will find seve
 
 ## Day 1 Basics
 `Security in the AWS cloud`<br>
-Security is the practice of protecting your intellectual property from unauthorized access, use, or modification. The CIA triad of confidentiality, integrity, and availability was originally developed to highlight the important aspects of information security within an organization.
-- Confidentiality refers to limiting information access and disclosure to authorized users (the right people) and preventing access by unauthorized people. 
-- Integrity involves maintaining the consistency, accuracy, and trustworthiness of data over its entire life cycle. It includes “origin” or “source integrity”. Integrity can even include the notion that the person or entity in question entered the right information. From a more restrictive view, integrity of an information system includes only preservation without corruption of whatever was transmitted or entered into the system. 
-- Availability refers to the readiness of information resources. An information system that is not available when you need it is almost as useless as no information system. Modern day IT environments bring out challenges to the CIA triad because of the volume of information that must be safeguarded, the multiplicity of sources the data comes from, and the variety of formats.
+Security is the practice of safeguarding intellectual property from unauthorized access, use, or modification.
+
+The CIA triad is a fundamental concept in information security, comprising three core principles:
+a. Confidentiality: Limiting access to information to authorized users and preventing access by unauthorized persons.
+b. Integrity: Ensuring the consistency, accuracy, and trustworthiness of data throughout its lifecycle, including the origin or source of the data.
+c. Availability: Ensuring that information resources are readily accessible when needed.
+
+The CIA triad faces challenges in modern IT environments due to the large volume of information to be protected, the diverse sources of data, and the variety of formats used.
