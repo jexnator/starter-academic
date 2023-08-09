@@ -138,11 +138,15 @@ An Identity Pool allows temporary AWS credentials to be assigned to users (authe
 | Guest access to news app        | Identity pool                  | A news app where unauthenticated users (guests) can read articles and watch videos from a media archive.                      | An Identity Pool can be used to grant temporary AWS permissions to guests to access media content in AWS services. Since there is no authentication requirement for access, no user pool is needed.                                                                                 |
 | Photo sharing app               | both                           | A mobile photo sharing app where users can upload their photos, which are stored in an S3 bucket, and share them with others. | A User Pool authenticates users and manages their credentials. After successful authentication, the Identity Pool provides temporary AWS permissions that allow the authenticated user to upload or download photos in an S3 bucket.                                                |
 
-
-`AWS Directory Service for User Federation`
-
 ## Day 1: Detective Controls
-`Monitoring Overview`  
-`Amazon GuardDuty for Threat Detection`    
+`Monitoring Overview`
+![Monitoring Overview](monitoring-overview.jpg "<b> AWS Monitoring Overview |</b> Screenshot")
+
+`Amazon GuardDuty for Threat Detection`
+Amazon GuardDuty is an intelligent threat detection service for AWS accounts and workloads. It uses threat intelligence and machine learning to detect anomalies and suspicious activities, such as unauthorized deployments. When a threat is found, alerts are sent to the GuardDuty console and AWS CloudWatch Events for integration with existing services or systems.
+![GuardDuty detection categories](detection-categories.jpg "<b> GuardDuty detection categories |</b> Screenshot") 
+
 `AWS Security Hub for Prioritizing Findings`    
 `Optional - Amazon Macie for Data Monitoring`
+
+
