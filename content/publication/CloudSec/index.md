@@ -84,7 +84,7 @@ The CIA triad is a fundamental concept in information security, comprising three
 
 The CIA triad faces challenges in modern IT environments due to the large volume of information to be protected, the diverse sources of data, and the variety of formats used.
 
-`Security in the AWS cloud`<br>
+`Security in the AWS cloud`
  AWS tries to make security as familiar as what we are doing day by day. Security is of utmost importance, especially in a cloud environment.
 Existing security models used in on-premises environments can be applied to the cloud.
 AWS offers various services and tools to enhance security, providing <b>controllability</b>, <b>auditability</b>, and <b>visibility</b> into cloud resources and workloads.
@@ -99,10 +99,10 @@ The ability to work in an <b>agile</b> way and <b>automate</b> processes is espe
 - prepare for security events
 - minimize attack surface
 
-`AWS Well-Architected Framework`<br>
+`AWS Well-Architected Framework`
 AWS follows the Shared Responsibility model (SRM), where responsibilities are divided between AWS and its customers.
 
-![SRM](srm.jpg "<b> AWS Shared Responsibilty model |</b> Screenshot")<br>
+![SRM](srm.jpg "<b> AWS Shared Responsibilty model |</b> Screenshot")
 
 AWS is responsible for safeguarding the global infrastructure that hosts all AWS Cloud services, including hardware, software, networking, and facilities.
 As an AWS customer, you can securely provision various resources in the AWS Cloud, such as virtual machines, storage, databases, and desktops.
@@ -111,9 +111,9 @@ Customers are accountable for maintaining the confidentiality, integrity, and av
 
 The division of responsibilities varies depending on the type of AWS services used, implying different levels of responsibility for AWS and the customers.<br>
 
-`Authentication vs. Authorization`<br>
+`Authentication vs. Authorization`
 - Authentication is the process of identifying the users and validating who they claim to be.
 - Authorization is the process (after authentication) to give the user access to specific resources (mostly role-based)
 
-`AWS Identity and Access Management (IAM)`<br>
-`Amazon Cognito for Authentication`<br>
+`AWS Identity and Access Management (IAM)`
+`Amazon Cognito for Authentication`
