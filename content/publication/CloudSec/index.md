@@ -74,7 +74,7 @@ slides: ""
 ## {{< hl >}}<b>Cloud Security in AWS</b>{{< /hl >}}<br>
 In this module I will learn about Cloud Security in AWS. Here you will find several tasks or summarizations about the topic.<br>
 
-## Day 1 Basics
+## Day 1: Course Introduction
 Security is the practice of safeguarding intellectual property from unauthorized access, use, or modification.
 
 The CIA triad is a fundamental concept in information security, comprising three core principles:
@@ -101,7 +101,6 @@ The ability to work in an <b>agile</b> way and <b>automate</b> processes is espe
 
 `AWS Well-Architected Framework`
 AWS follows the Shared Responsibility model (SRM), where responsibilities are divided between AWS and its customers.
-
 ![SRM](srm.jpg "<b> AWS Shared Responsibilty model |</b> Screenshot")
 
 AWS is responsible for safeguarding the global infrastructure that hosts all AWS Cloud services, including hardware, software, networking, and facilities.
@@ -111,9 +110,39 @@ Customers are accountable for maintaining the confidentiality, integrity, and av
 
 The division of responsibilities varies depending on the type of AWS services used, implying different levels of responsibility for AWS and the customers.<br>
 
+## Day 1: IaM
 `Authentication vs. Authorization`
 - Authentication is the process of identifying the users and validating who they claim to be.
 - Authorization is the process (after authentication) to give the user access to specific resources (mostly role-based)
 
-`AWS Identity and Access Management (IAM)`
+`AWS Identity and Access Management (IaM) Recap`
+AWS uses IaM for authentication and authorization in the cloud. The following entities are relevant:
+- Users: Indentity with long term credentials (pw/access key)
+- Groups: A collection of users, apply permissions to a collection of users
+- Roles: Identity with short term credentials, can be assumed by entities like users, services, accounts etc.
+- Policies: An object in AWS that defines permissions (on AWS resources), can be attached to users, groups and roles
+
 `Amazon Cognito for Authentication`
+Amazon Cognito is a service from AWS that provides authentication, authorization, and user management for web and mobile applications. It consists of two main components: User Pools and Identity Pools.
+
+A user pool serves as a user directory that manages the login and registration process for an application. Users can sign in either directly through a user pool, or federate through a third-party identity provider (IdP). The main purpose of a user pool is the authentication of users by storing user data and providing users with access tokens. User Pools are not directly associated with AWS resources and do not handle the authorization of AWS services (directly).
+![user pool workflow](user-pool.jpg "<b> user pool workflow |</b> Screenshot")
+
+An Identity Pool allows temporary AWS credentials to be assigned to users (authenticated or unauthenticated) for example from a user pool, or other IdPs to grant access to AWS resources. An Identity Pool is focused on authorizing and managing AWS credentials.
+![identity pools](identity-pools.jpg "<b> identity pools |</b> Screenshot")
+
+{{< hl >}}Different example use cases:{{< /hl >}}
+| **example App**                 | **User pool or Identity pool** | **Description**                                                                                                               | **Solution**                                                                                                                                                                                                                                                                        |
+|---------------------------------|--------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Blogging platform               | User pool                      | A blogging platform where users can write articles, comment and manage their profiles.                                        | A user pool is ideal for handling user registration and authentication. Users can log in, reset their password, and update their profiles. Since the interactions are mainly at the application level and do not require direct AWS permissions, an Identity Pool is not necessary. |
+| Guest access to a messaging app | Identity pool                  | A news app where unauthenticated users (guests) can read articles and watch videos from an AWS media archive.                 | An Identity Pool can be used to grant temporary AWS permissions to guests to access media content in AWS services. Since there is no authentication requirement for access, no user pool is needed.                                                                                 |
+| Photo sharing app               | both                           | A mobile photo sharing app where users can upload their photos, which are stored in an S3 bucket, and share them with others. | A User Pool authenticates users and manages their credentials. After successful authentication, the Identity Pool provides temporary AWS permissions that allow the authenticated user to upload or download photos in an S3 bucket.                                                |
+
+
+`AWS Directory Service for User Federation`
+
+## Day 1: Detective Controls
+`Monitoring Overview`  
+`Amazon GuardDuty for Threat Detection`    
+`AWS Security Hub for Prioritizing Findings`    
+`Optional - Amazon Macie for Data Monitoring`
