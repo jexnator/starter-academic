@@ -88,7 +88,7 @@ The CIA triad faces challenges in modern IT environments due to the large volume
  AWS tries to make security as familiar as what we are doing day by day. Security is of utmost importance, especially in a cloud environment.
 Existing security models used in on-premises environments can be applied to the cloud.
 AWS offers various services and tools to enhance security, providing <b>controllability</b>, <b>auditability</b>, and <b>visibility</b> into cloud resources and workloads.
-The ability to work in an <b>agile</b> way and <b>automate</b> processes is especially important for incident response.
+The ability to work in an <b>agile</b> way and <b>automate</b> processes is especially important for incident response.<br>
 
 `Security design principles`<br>
 - least privilege
@@ -109,4 +109,11 @@ As an AWS customer, you can securely provision various resources in the AWS Clou
 Customers are responsible for securing their data, operating systems, networks, platforms, and other resources created in the AWS Cloud.
 Customers are accountable for maintaining the confidentiality, integrity, and availability of their data in the cloud, and for meeting specific business and compliance requirements for their workloads.
 
-The division of responsibilities varies depending on the type of AWS services used, implying different levels of responsibility for AWS and the customers.
+The division of responsibilities varies depending on the type of AWS services used, implying different levels of responsibility for AWS and the customers.<br>
+
+`Authentication vs. Authorization`<br>
+- Authentication is the process of identifying the users and validating who they claim to be.
+- Authorization is the process (after authentication) to give the user access to specific resources (mostly role-based)
+
+`AWS Identity and Access Management (IAM)`<br>
+`Amazon Cognito for Authentication`<br>
