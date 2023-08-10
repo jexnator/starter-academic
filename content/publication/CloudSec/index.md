@@ -146,7 +146,9 @@ An Identity Pool allows temporary AWS credentials to be assigned to users (authe
 Amazon GuardDuty is an intelligent threat detection service for AWS accounts and workloads. It uses threat intelligence and machine learning to detect anomalies and suspicious activities, such as unauthorized deployments. When a threat is found, alerts are sent to the GuardDuty console and AWS CloudWatch Events for integration with existing services or systems.
 ![GuardDuty detection categories](detection-categories.jpg "<b> GuardDuty detection categories |</b> Screenshot") 
 
-`AWS Security Hub for Prioritizing Findings`    
-`Optional - Amazon Macie for Data Monitoring`
+`AWS Security Hub for Prioritizing Findings`
+AWS Security Hub is a consolidated view of security. It uses different AWS services as inputs (e.g. GuardDuty, Macie, Firewall Manager, etc.). It also support third party insights. In security hub you have the possibility to evaluate the security in the cloud with different securiry standards. The insights and findings can be forwarded to EventBridge for incident responses.
 
+`Amazon Macie for Data Monitoring`
+Amazon Macie can be used to analyze S3 buckets for sensitive data such as names, addresses, and credit card numbers. It also evaluates whether an S3 bucket is publicly accessible and whether it is encrypted or not. The analyses are be performed as jobs. They can be shedulded on personal preferences. The results can be published to security hub or even to event bridge to take action in an automated way.
 
