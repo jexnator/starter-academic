@@ -166,9 +166,27 @@ In AWS you have different opportunities to limit access to resources on the netw
 - ...
 ![Securing compute resources on AWS](securing-resources.jpg "<b> Securing compute resources on AWS |</b> Screenshot")
    
-`AWS WAF for Traffic Filtering`
+`WAF for Traffic Filtering`
+A web application firewall operates at layer 7 and is capable of filtering the http protocol. The most common method of catching violations is to block requests or block them above a certain threshold. Possible filter rules are:
+- filtering based on headers
+- Query parameters
+- HTTP-Methods
+- URI path
+- IPs
+- http body (e.g. strings, size or SQL injection)
+
+`AWS WAF`
+AWS WAF is a Web Application Firewall managed by AWS and is organized in Web Access Control Lists (Web ACLs). Web ACLs can be associated with different AWS services like:
+- ALBs
+- API Gateways
+- AppSync
+- CloudFront
+
+After a WAF is associated, every request gets checked based on the configured rules.
    
 `AWS Shield for DDoS Protection`
+AWS Shield is a managed DDoS protection service that safeguards web applications that run on AWS. AWS Shield provides always-on detection and automatic inline mitigations that minimize application downtime and latency.
+
 `Section 5: Data Protection`
 `What Is Cryptography | Encryption Basics`
 `Encryption on AWS`   
