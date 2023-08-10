@@ -148,13 +148,26 @@ Amazon GuardDuty is an intelligent threat detection service for AWS accounts and
 
 `AWS Security Hub for Prioritizing Findings`
 AWS Security Hub is a consolidated view of security. It uses different AWS services as inputs (e.g. GuardDuty, Macie, Firewall Manager, etc.). It also support third party insights. In security hub you have the possibility to evaluate the security in the cloud with different securiry standards. The insights and findings can be forwarded to EventBridge for incident responses.
+![AWS Security Hub](security-hub.jpg "<b> AWS Security Hub Overview |</b> Screenshot")
 
 `Amazon Macie for Data Monitoring`
 Amazon Macie can be used to analyze S3 buckets for sensitive data such as names, addresses, and credit card numbers. It also evaluates whether an S3 bucket is publicly accessible and whether it is encrypted or not. The analyses are be performed as jobs. They can be shedulded on personal preferences. The results can be published to security hub or even to event bridge to take action in an automated way.
+![Amazon Macie](macie.jpg "<b> Example workflow with Macie |</b> Screenshot")
+
 
 ### {{< hl >}}<b>Day 2: Infrastructure Protection</b>{{< /hl >}}<br>
-`Securing Your Compute Resources`    
-`AWS WAF for Traffic Filtering`   
+`Securing Your Compute Resources`
+In AWS you have different opportunities to limit access to resources on the network level. The most common ways are:
+- Firewall on the host (e.g. netfilter on linux)
+- Security Groups
+- Subnet access control lists
+- Web application firewall (WAF)
+- Network firewall
+- ...
+![Securing compute resources on AWS](securing-resources.jpg "<b> Securing compute resources on AWS |</b> Screenshot")
+   
+`AWS WAF for Traffic Filtering`
+   
 `AWS Shield for DDoS Protection`
 `Section 5: Data Protection`
 `What Is Cryptography | Encryption Basics`
