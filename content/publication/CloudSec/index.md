@@ -74,7 +74,7 @@ slides: ""
 ## {{< hl >}}<b>Cloud Security in AWS</b>{{< /hl >}}<br>
 In this module I will learn about Cloud Security in AWS. Here you will find several tasks or summarizations about the topic.<br>
 
-## Day 1: Course Introduction
+### {{< hl >}}<b>Day 1: Course Introduction</b>{{< /hl >}}<br>
 Security is the practice of safeguarding intellectual property from unauthorized access, use, or modification.
 
 The CIA triad is a fundamental concept in information security, comprising three core principles:
@@ -110,7 +110,7 @@ Customers are accountable for maintaining the confidentiality, integrity, and av
 
 The division of responsibilities varies depending on the type of AWS services used, implying different levels of responsibility for AWS and the customers.<br>
 
-## Day 1: IaM
+### {{< hl >}}<b>Day 1: IaM</b>{{< /hl >}}<br>
 `Authentication vs. Authorization`
 - Authentication is the process of identifying the users and validating who they claim to be.
 - Authorization is the process (after authentication) to give the user access to specific resources (mostly role-based)
@@ -138,7 +138,7 @@ An Identity Pool allows temporary AWS credentials to be assigned to users (authe
 | Guest access to news app        | Identity pool                  | A news app where unauthenticated users (guests) can read articles and watch videos from a media archive.                      | An Identity Pool can be used to grant temporary AWS permissions to guests to access media content in AWS services. Since there is no authentication requirement for access, no user pool is needed.                                                                                 |
 | Photo sharing app               | both                           | A mobile photo sharing app where users can upload their photos, which are stored in an S3 bucket, and share them with others. | A User Pool authenticates users and manages their credentials. After successful authentication, the Identity Pool provides temporary AWS permissions that allow the authenticated user to upload or download photos in an S3 bucket.                                                |
 
-## Day 1: Detective Controls
+### {{< hl >}}<b>Day 1: Detective Controls</b>{{< /hl >}}<br>
 `Monitoring Overview`
 ![Monitoring Overview](monitoring-overview.jpg "<b> AWS Monitoring Overview |</b> Screenshot")
 
@@ -152,3 +152,13 @@ AWS Security Hub is a consolidated view of security. It uses different AWS servi
 `Amazon Macie for Data Monitoring`
 Amazon Macie can be used to analyze S3 buckets for sensitive data such as names, addresses, and credit card numbers. It also evaluates whether an S3 bucket is publicly accessible and whether it is encrypted or not. The analyses are be performed as jobs. They can be shedulded on personal preferences. The results can be published to security hub or even to event bridge to take action in an automated way.
 
+### {{< hl >}}<b>Day 2: Infrastructure Protection</b>{{< /hl >}}<br>
+`Securing Your Compute Resources`    
+`AWS WAF for Traffic Filtering`   
+`AWS Shield for DDoS Protection`
+`Section 5: Data Protection`
+`What Is Cryptography | Encryption Basics`
+`Encryption on AWS`   
+`AWS Key Management Service (AWS KMS) for Key Management`    
+`AWS Certificate Manager (ACM) for Securing Communications`  
+`AWS Secrets Manager for Credentials Management`
