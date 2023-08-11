@@ -83,14 +83,18 @@ The CIA triad is a fundamental concept in information security, comprising three
 - Availability: Ensuring that information resources are readily accessible when needed.
 
 The CIA triad faces challenges in modern IT environments due to the large volume of information to be protected, the diverse sources of data, and the variety of formats used.
+<br>
+<br>
 
 `Security in the AWS cloud`
 AWS tries to make security as familiar as what we are doing day by day. Security is of utmost importance, especially in a cloud environment.
 Existing security models used in on-premises environments can be applied to the cloud.
 AWS offers various services and tools to enhance security, providing <b>controllability</b>, <b>auditability</b>, and <b>visibility</b> into cloud resources and workloads.
-The ability to work in an <b>agile</b> way and <b>automate</b> processes is especially important for incident response.<br>
+The ability to work in an <b>agile</b> way and <b>automate</b> processes is especially important for incident response.
+<br>
+<br>
 
-`Security design principles`<br>
+`Security design principles`
 - least privilege
 - enable traceability
 - secure all layers
@@ -98,6 +102,8 @@ The ability to work in an <b>agile</b> way and <b>automate</b> processes is espe
 - protect data in transit and at rest
 - prepare for security events
 - minimize attack surface
+<br>
+<br>
 
 `AWS Well-Architected Framework`
 AWS follows the Shared Responsibility model (SRM), where responsibilities are divided between AWS and its customers.
@@ -108,12 +114,15 @@ As an AWS customer, you can securely provision various resources in the AWS Clou
 Customers are responsible for securing their data, operating systems, networks, platforms, and other resources created in the AWS Cloud.
 Customers are accountable for maintaining the confidentiality, integrity, and availability of their data in the cloud, and for meeting specific business and compliance requirements for their workloads.
 
-The division of responsibilities varies depending on the type of AWS services used, implying different levels of responsibility for AWS and the customers.<br>
+The division of responsibilities varies depending on the type of AWS services used, implying different levels of responsibility for AWS and the customers.
+<br>
+<br>
 
 ### {{< hl >}}<b>Section 2: IaM</b>{{< /hl >}}<br>
 `Authentication vs. Authorization`
 - Authentication is the process of identifying the users and validating who they claim to be.
 - Authorization is the process (after authentication) to give the user access to specific resources (mostly role-based)
+<br>
 
 `AWS Identity and Access Management (IaM) Recap`
 AWS uses IaM for authentication and authorization in the cloud. The following entities are relevant:
@@ -121,6 +130,7 @@ AWS uses IaM for authentication and authorization in the cloud. The following en
 - Groups: A collection of users, apply permissions to a collection of users
 - Roles: Identity with short term credentials, can be assumed by entities like users, services, accounts etc.
 - Policies: An object in AWS that defines permissions (on AWS resources), can be attached to users, groups and roles
+<br>
 
 `Amazon Cognito for Authentication`
 Amazon Cognito is a service from AWS that provides authentication, authorization, and user management for web and mobile applications. It consists of two main components: User Pools and Identity Pools.
@@ -130,6 +140,8 @@ A user pool serves as a user directory that manages the login and registration p
 
 An Identity Pool allows temporary AWS credentials to be assigned to users (authenticated or unauthenticated) for example from a user pool, or other IdPs to grant access to AWS resources. An Identity Pool is focused on authorizing and managing AWS credentials.
 ![identity pools](identity-pools.jpg "<b> identity pools |</b> Screenshot")
+<br>
+<br>
 
 {{< hl >}}Different example use cases:{{< /hl >}}
 | **example App**                 | **pool?** | **Description**                                                                                                                                    | **Solution**                                                                                                                                                                                                                                                                        |
@@ -137,23 +149,29 @@ An Identity Pool allows temporary AWS credentials to be assigned to users (authe
 | Blogging platform               | User pool                      | A blogging platform where users can write articles, comment and manage their profiles.                                        | A user pool is ideal for handling user registration and authentication. Users can log in, reset their password, and update their profiles. Since the interactions are mainly at the application level and do not require direct AWS permissions, an Identity Pool is not necessary. |
 | Guest access to news app        | Identity pool                  | A news app where unauthenticated users (guests) can read articles and watch videos from a media archive.                      | An Identity Pool can be used to grant temporary AWS permissions to guests to access media content in AWS services. Since there is no authentication requirement for access, no user pool is needed.                                                                                 |
 | Photo sharing app               | both                           | A mobile photo sharing app where users can upload their photos, which are stored in an S3 bucket, and share them with others. | A User Pool authenticates users and manages their credentials. After successful authentication, the Identity Pool provides temporary AWS permissions that allow the authenticated user to upload or download photos in an S3 bucket.                                                |
+<br>
+<br>
 
 ### {{< hl >}}<b>Section 3: Detective Controls</b>{{< /hl >}}<br>
 `Monitoring Overview`
 ![Monitoring Overview](monitoring-overview.jpg "<b> AWS Monitoring Overview |</b> Screenshot")
+<br>
 
 `Amazon GuardDuty for Threat Detection`
 Amazon GuardDuty is an intelligent threat detection service for AWS accounts and workloads. It uses threat intelligence and machine learning to detect anomalies and suspicious activities, such as unauthorized deployments. When a threat is found, alerts are sent to the GuardDuty console and AWS CloudWatch Events for integration with existing services or systems.
-![GuardDuty detection categories](detection-categories.jpg "<b> GuardDuty detection categories |</b> Screenshot") 
+![GuardDuty detection categories](detection-categories.jpg "<b> GuardDuty detection categories |</b> Screenshot")
+<br>
 
 `AWS Security Hub for Prioritizing Findings`
 AWS Security Hub is a consolidated view of security. It uses different AWS services as inputs (e.g. GuardDuty, Macie, Firewall Manager, etc.). It also support third party insights. In security hub you have the possibility to evaluate the security in the cloud with different securiry standards. The insights and findings can be forwarded to EventBridge for incident responses.
 ![AWS Security Hub](security-hub.jpg "<b> AWS Security Hub Overview |</b> Screenshot")
+<br>
 
 `Amazon Macie for Data Monitoring`
 Amazon Macie can be used to analyze S3 buckets for sensitive data such as names, addresses, and credit card numbers. It also evaluates whether an S3 bucket is publicly accessible and whether it is encrypted or not. The analyses are be performed as jobs. They can be shedulded on personal preferences. The results can be published to security hub or even to event bridge to take action in an automated way.
 ![Amazon Macie](macie.jpg "<b> Example workflow with Macie |</b> Screenshot")
-
+<br>
+<br>
 
 ### {{< hl >}}<b>Section 4: Infrastructure Protection</b>{{< /hl >}}<br>
 `Securing Your Compute Resources`
@@ -165,6 +183,7 @@ In AWS you have different opportunities to limit access to resources on the netw
 - Network firewall
 - ...
 ![Securing compute resources on AWS](securing-resources.jpg "<b> Securing compute resources on AWS |</b> Screenshot")
+<br>
    
 `WAF for Traffic Filtering`
 A web application firewall operates at layer 7 and is capable of filtering the http protocol. The most common method of catching violations is to block requests or block them above a certain threshold. Possible filter rules are:
@@ -174,6 +193,7 @@ A web application firewall operates at layer 7 and is capable of filtering the h
 - URI path
 - IPs
 - http body (e.g. strings, size or SQL injection)
+<br>
 
 `AWS WAF`
 AWS WAF is a Web Application Firewall managed by AWS and is organized in Web Access Control Lists (Web ACLs). Web ACLs can be associated with different AWS services like:
@@ -183,9 +203,12 @@ AWS WAF is a Web Application Firewall managed by AWS and is organized in Web Acc
 - CloudFront
 
 After a WAF is associated, every request gets checked based on the configured rules.
+<br>
    
 `AWS Shield for DDoS Protection`
 AWS Shield is a managed DDoS protection service that safeguards web applications that run on AWS. AWS Shield provides always-on detection and automatic inline mitigations that minimize application downtime and latency.
+<br>
+<br>
 
 ### {{< hl >}}<b>Section 5: Data Protection</b>{{< /hl >}}<br>
 #### `Amazon S3 spotlight`
@@ -218,6 +241,8 @@ Bucket policies:
 
 IAM identity-based policies:
 - Manage permissions by creating users and groups and attaching policies
+<br>
+<br>
 
 ##### `S3 Protection via encryption`
 `AWS Key Management Service (AWS KMS) for Key Management`    
