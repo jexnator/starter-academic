@@ -1,5 +1,5 @@
 ---
-title: "Cloud Security"
+title: "Cloud Security in AWS"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
@@ -71,7 +71,6 @@ projects: []
 #   Otherwise, set `slides: ""`.
 slides: ""
 ---
-# {{< hl >}}<b>Cloud Security in AWS</b>{{< /hl >}}<br>
 In this module I will learn about Cloud Security in AWS. Here you will find several tasks or summarizations about the topic.<br>
 
 ## {{< hl >}}<b>Section 1: Course Introduction</b>{{< /hl >}}<br>
