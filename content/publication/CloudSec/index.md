@@ -142,7 +142,6 @@ An Identity Pool allows temporary AWS credentials to be assigned to users (authe
 | Photo sharing app               | both                           | A mobile photo sharing app where users can upload their photos, which are stored in an S3 bucket, and share them with others. | A User Pool authenticates users and manages their credentials. After successful authentication, the Identity Pool provides temporary AWS permissions that allow the authenticated user to upload or download photos in an S3 bucket.                                                |
 
 <br>
-<br>
 
 ## {{< hl >}}<b>Section 3: Detective Controls</b>{{< /hl >}}<br>
 ![Monitoring Overview](monitoring-overview.jpg "<b> AWS Monitoring Overview |</b> Screenshot")
