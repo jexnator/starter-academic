@@ -78,9 +78,9 @@ In this module I will learn about Cloud Security in AWS. Here you will find seve
 Security is the practice of safeguarding intellectual property from unauthorized access, use, or modification.
 
 The CIA triad is a fundamental concept in information security, comprising three core principles:
-- Confidentiality: Limiting access to information to authorized users and preventing access by unauthorized persons.
-- Integrity: Ensuring the consistency, accuracy, and trustworthiness of data throughout its lifecycle, including the origin or source of the data.
-- Availability: Ensuring that information resources are readily accessible when needed.
+- <b>Confidentiality</b>: Limiting access to information to authorized users and preventing access by unauthorized persons.
+- <b>Integrity</b>: Ensuring the consistency, accuracy, and trustworthiness of data throughout its lifecycle, including the origin or source of the data.
+- <b>Availability</b>: Ensuring that information resources are readily accessible when needed.
 
 The CIA triad faces challenges in modern IT environments due to the large volume of information to be protected, the diverse sources of data, and the variety of formats used.
 
@@ -140,6 +140,8 @@ An Identity Pool allows temporary AWS credentials to be assigned to users (authe
 | Blogging platform               | User pool                      | A blogging platform where users can write articles, comment and manage their profiles.                                        | A user pool is ideal for handling user registration and authentication. Users can log in, reset their password, and update their profiles. Since the interactions are mainly at the application level and do not require direct AWS permissions, an Identity Pool is not necessary. |
 | Guest access to news app        | Identity pool                  | A news app where unauthenticated users (guests) can read articles and watch videos from a media archive.                      | An Identity Pool can be used to grant temporary AWS permissions to guests to access media content in AWS services. Since there is no authentication requirement for access, no user pool is needed.                                                                                 |
 | Photo sharing app               | both                           | A mobile photo sharing app where users can upload their photos, which are stored in an S3 bucket, and share them with others. | A User Pool authenticates users and manages their credentials. After successful authentication, the Identity Pool provides temporary AWS permissions that allow the authenticated user to upload or download photos in an S3 bucket.                                                |
+|---------------------------------|--------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
 <br>
 <br>
 
