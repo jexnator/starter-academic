@@ -74,7 +74,7 @@ slides: ""
 ## {{< hl >}}<b>Cloud Security in AWS</b>{{< /hl >}}<br>
 In this module I will learn about Cloud Security in AWS. Here you will find several tasks or summarizations about the topic.<br>
 
-### {{< hl >}}<b>Day 1: Course Introduction</b>{{< /hl >}}<br>
+### {{< hl >}}<b>Section 1: Course Introduction</b>{{< /hl >}}<br>
 Security is the practice of safeguarding intellectual property from unauthorized access, use, or modification.
 
 The CIA triad is a fundamental concept in information security, comprising three core principles:
@@ -110,7 +110,7 @@ Customers are accountable for maintaining the confidentiality, integrity, and av
 
 The division of responsibilities varies depending on the type of AWS services used, implying different levels of responsibility for AWS and the customers.<br>
 
-### {{< hl >}}<b>Day 1: IaM</b>{{< /hl >}}<br>
+### {{< hl >}}<b>Section 2: IaM</b>{{< /hl >}}<br>
 `Authentication vs. Authorization`
 - Authentication is the process of identifying the users and validating who they claim to be.
 - Authorization is the process (after authentication) to give the user access to specific resources (mostly role-based)
@@ -138,7 +138,7 @@ An Identity Pool allows temporary AWS credentials to be assigned to users (authe
 | Guest access to news app        | Identity pool                  | A news app where unauthenticated users (guests) can read articles and watch videos from a media archive.                      | An Identity Pool can be used to grant temporary AWS permissions to guests to access media content in AWS services. Since there is no authentication requirement for access, no user pool is needed.                                                                                 |
 | Photo sharing app               | both                           | A mobile photo sharing app where users can upload their photos, which are stored in an S3 bucket, and share them with others. | A User Pool authenticates users and manages their credentials. After successful authentication, the Identity Pool provides temporary AWS permissions that allow the authenticated user to upload or download photos in an S3 bucket.                                                |
 
-### {{< hl >}}<b>Day 1: Detective Controls</b>{{< /hl >}}<br>
+### {{< hl >}}<b>Section 3: Detective Controls</b>{{< /hl >}}<br>
 `Monitoring Overview`
 ![Monitoring Overview](monitoring-overview.jpg "<b> AWS Monitoring Overview |</b> Screenshot")
 
@@ -155,7 +155,7 @@ Amazon Macie can be used to analyze S3 buckets for sensitive data such as names,
 ![Amazon Macie](macie.jpg "<b> Example workflow with Macie |</b> Screenshot")
 
 
-### {{< hl >}}<b>Day 2: Infrastructure Protection</b>{{< /hl >}}<br>
+### {{< hl >}}<b>Section 4: Infrastructure Protection</b>{{< /hl >}}<br>
 `Securing Your Compute Resources`
 In AWS you have different opportunities to limit access to resources on the network level. The most common ways are:
 - Firewall on the host (e.g. netfilter on linux)
@@ -187,9 +187,39 @@ After a WAF is associated, every request gets checked based on the configured ru
 `AWS Shield for DDoS Protection`
 AWS Shield is a managed DDoS protection service that safeguards web applications that run on AWS. AWS Shield provides always-on detection and automatic inline mitigations that minimize application downtime and latency.
 
-`Section 5: Data Protection`
-`What Is Cryptography | Encryption Basics`
-`Encryption on AWS`   
+### {{< hl >}}<b>Section 5: Data Protection</b>{{< /hl >}}<br>
+#### `Amazon S3 spotlight`
+Amazon S3 is an object storage service in AWS that enables storage, retrieval, and management of data in the cloud. It uses a flat namespace schema with buckets and keys and provides API access for CRUD operations. It is used for static websites, backups, archiving, and data analytics etc.
+-S3 data is fully private to an account, and public access is blocked by default 
+- Ability to encrypt your data and have AWS manage the keys
+
+##### `S3 Protection via resource-based policies`
+<b>Default Privacy and Access Control:</b>
+Amazon S3 resources are private by default, only accessible by the owner. Access can be controlled through policies and Access Control Lists (ACLs).
+
+<b>Types of Access Control Mechanisms:</b>
+Amazon S3 supports two groups of access control: resource-based (bucket policies, bucket ACLs, object ACLs) and user-based (IAM user policies). ACLs grant read or write access to groups of users. Policies enable centralized management.
+
+<b>Bucket Policies:</b>
+Bucket policies in Amazon S3 can add or deny permissions within a single bucket. They allow for flexibility in granting access to users within your AWS Account or other AWS accounts, centralizing the control of permissions.
+
+<b>Use cases</b>
+
+Object ACLs:
+- Grant access to individual objects
+- Access objects owned by another account
+
+Bucket ACLs:
+- Grant log delivery group write permissions to bucket
+
+Bucket policies:
+- Offer a larger range of permissions than bucket ACLs
+- Provide cross-account access to bucket
+
+IAM identity-based policies:
+- Manage permissions by creating users and groups and attaching policies
+
+##### `S3 Protection via encryption`
 `AWS Key Management Service (AWS KMS) for Key Management`    
 `AWS Certificate Manager (ACM) for Securing Communications`  
 `AWS Secrets Manager for Credentials Management`
