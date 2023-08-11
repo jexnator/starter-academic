@@ -72,6 +72,7 @@ projects: []
 slides: ""
 ---
 In this module I will learn about Cloud Security in AWS. Here you will find several tasks or summarizations about the topic.<br>
+<br>
 
 ## {{< hl >}}<b>Section 1: Course Introduction</b>{{< /hl >}}<br>
 Security is the practice of safeguarding intellectual property from unauthorized access, use, or modification.
@@ -109,6 +110,7 @@ Customers are accountable for maintaining the confidentiality, integrity, and av
 
 The division of responsibilities varies depending on the type of AWS services used, implying different levels of responsibility for AWS and the customers.
 <br>
+<br>
 
 ## {{< hl >}}<b>Section 2: IaM</b>{{< /hl >}}<br>
 ### {{< hl >}}<b>Authentication vs. Authorization</b>{{< /hl >}}<br>
@@ -139,6 +141,7 @@ An Identity Pool allows temporary AWS credentials to be assigned to users (authe
 | Guest access to news app        | Identity pool                  | A news app where unauthenticated users (guests) can read articles and watch videos from a media archive.                      | An Identity Pool can be used to grant temporary AWS permissions to guests to access media content in AWS services. Since there is no authentication requirement for access, no user pool is needed.                                                                                 |
 | Photo sharing app               | both                           | A mobile photo sharing app where users can upload their photos, which are stored in an S3 bucket, and share them with others. | A User Pool authenticates users and manages their credentials. After successful authentication, the Identity Pool provides temporary AWS permissions that allow the authenticated user to upload or download photos in an S3 bucket.                                                |
 <br>
+<br>
 
 ## {{< hl >}}<b>Section 3: Detective Controls</b>{{< /hl >}}<br>
 ![Monitoring Overview](monitoring-overview.jpg "<b> AWS Monitoring Overview |</b> Screenshot")
@@ -154,6 +157,7 @@ AWS Security Hub is a consolidated view of security. It uses different AWS servi
 ### {{< hl >}}<b>Amazon Macie for Data Monitoring</b>{{< /hl >}}<br>
 Amazon Macie can be used to analyze S3 buckets for sensitive data such as names, addresses, and credit card numbers. It also evaluates whether an S3 bucket is publicly accessible and whether it is encrypted or not. The analyses are be performed as jobs. They can be shedulded on personal preferences. The results can be published to security hub or even to event bridge to take action in an automated way.
 ![Amazon Macie](macie.jpg "<b> Example workflow with Macie |</b> Screenshot")
+<br>
 <br>
 
 ## {{< hl >}}<b>Section 4: Infrastructure Protection</b>{{< /hl >}}<br>
@@ -187,6 +191,7 @@ After a WAF is associated, every request gets checked based on the configured ru
    
 ### {{< hl >}}<b>AWS Shield for DDoS Protection</b>{{< /hl >}}<br>
 AWS Shield is a managed DDoS protection service that safeguards web applications that run on AWS. AWS Shield provides always-on detection and automatic inline mitigations that minimize application downtime and latency.
+<br>
 <br>
 
 ## {{< hl >}}<b>Section 5: Data Protection</b>{{< /hl >}}<br>
@@ -222,6 +227,6 @@ IAM identity-based policies:
 - Manage permissions by creating users and groups and attaching policies
 
 ### {{< hl >}}<b>S3 Protection via encryption</b>{{< /hl >}}<br>
-`AWS Key Management Service (AWS KMS) for Key Management`    
-`AWS Certificate Manager (ACM) for Securing Communications`  
-`AWS Secrets Manager for Credentials Management`
+### {{< hl >}}<b>AWS Key Management Service (AWS KMS) for Key Management</b>{{< /hl >}}<br>
+### {{< hl >}}<b>AWS Certificate Manager (ACM) for Securing Communicationsn</b>{{< /hl >}}<br>
+### {{< hl >}}<b>AWS Secrets Manager for Credentials Management</b>{{< /hl >}}<br>
