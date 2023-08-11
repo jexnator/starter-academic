@@ -85,7 +85,7 @@ The CIA triad is a fundamental concept in information security, comprising three
 The CIA triad faces challenges in modern IT environments due to the large volume of information to be protected, the diverse sources of data, and the variety of formats used.
 
 `Security in the AWS cloud`
- AWS tries to make security as familiar as what we are doing day by day. Security is of utmost importance, especially in a cloud environment.
+AWS tries to make security as familiar as what we are doing day by day. Security is of utmost importance, especially in a cloud environment.
 Existing security models used in on-premises environments can be applied to the cloud.
 AWS offers various services and tools to enhance security, providing <b>controllability</b>, <b>auditability</b>, and <b>visibility</b> into cloud resources and workloads.
 The ability to work in an <b>agile</b> way and <b>automate</b> processes is especially important for incident response.<br>
