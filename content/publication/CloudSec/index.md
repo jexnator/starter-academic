@@ -108,6 +108,7 @@ Customers are responsible for securing their data, operating systems, networks, 
 Customers are accountable for maintaining the confidentiality, integrity, and availability of their data in the cloud, and for meeting specific business and compliance requirements for their workloads.
 
 The division of responsibilities varies depending on the type of AWS services used, implying different levels of responsibility for AWS and the customers.
+<br>
 
 ## {{< hl >}}<b>Section 2: IaM</b>{{< /hl >}}<br>
 ### {{< hl >}}<b>Authentication vs. Authorization</b>{{< /hl >}}<br>
@@ -137,9 +138,9 @@ An Identity Pool allows temporary AWS credentials to be assigned to users (authe
 | Blogging platform               | User pool                      | A blogging platform where users can write articles, comment and manage their profiles.                                        | A user pool is ideal for handling user registration and authentication. Users can log in, reset their password, and update their profiles. Since the interactions are mainly at the application level and do not require direct AWS permissions, an Identity Pool is not necessary. |
 | Guest access to news app        | Identity pool                  | A news app where unauthenticated users (guests) can read articles and watch videos from a media archive.                      | An Identity Pool can be used to grant temporary AWS permissions to guests to access media content in AWS services. Since there is no authentication requirement for access, no user pool is needed.                                                                                 |
 | Photo sharing app               | both                           | A mobile photo sharing app where users can upload their photos, which are stored in an S3 bucket, and share them with others. | A User Pool authenticates users and manages their credentials. After successful authentication, the Identity Pool provides temporary AWS permissions that allow the authenticated user to upload or download photos in an S3 bucket.                                                |
+<br>
 
 ## {{< hl >}}<b>Section 3: Detective Controls</b>{{< /hl >}}<br>
-`Monitoring Overview`
 ![Monitoring Overview](monitoring-overview.jpg "<b> AWS Monitoring Overview |</b> Screenshot")
 
 ### {{< hl >}}<b>Amazon GuardDuty for Threat Detection</b>{{< /hl >}}<br>
@@ -153,9 +154,10 @@ AWS Security Hub is a consolidated view of security. It uses different AWS servi
 ### {{< hl >}}<b>Amazon Macie for Data Monitoring</b>{{< /hl >}}<br>
 Amazon Macie can be used to analyze S3 buckets for sensitive data such as names, addresses, and credit card numbers. It also evaluates whether an S3 bucket is publicly accessible and whether it is encrypted or not. The analyses are be performed as jobs. They can be shedulded on personal preferences. The results can be published to security hub or even to event bridge to take action in an automated way.
 ![Amazon Macie](macie.jpg "<b> Example workflow with Macie |</b> Screenshot")
+<br>
 
 ## {{< hl >}}<b>Section 4: Infrastructure Protection</b>{{< /hl >}}<br>
-`Securing Your Compute Resources`
+### {{< hl >}}<b>Securing Your Compute Resources</b>{{< /hl >}}<br>
 In AWS you have different opportunities to limit access to resources on the network level. The most common ways are:
 - Firewall on the host (e.g. netfilter on linux)
 - Security Groups
@@ -185,6 +187,7 @@ After a WAF is associated, every request gets checked based on the configured ru
    
 ### {{< hl >}}<b>AWS Shield for DDoS Protection</b>{{< /hl >}}<br>
 AWS Shield is a managed DDoS protection service that safeguards web applications that run on AWS. AWS Shield provides always-on detection and automatic inline mitigations that minimize application downtime and latency.
+<br>
 
 ## {{< hl >}}<b>Section 5: Data Protection</b>{{< /hl >}}<br>
 ### {{< hl >}}<b>Amazon S3 spotlight</b>{{< /hl >}}<br>
