@@ -158,7 +158,6 @@ AWS Security Hub is a consolidated view of security. It uses different AWS servi
 Amazon Macie can be used to analyze S3 buckets for sensitive data such as names, addresses, and credit card numbers. It also evaluates whether an S3 bucket is publicly accessible and whether it is encrypted or not. The analyses are be performed as jobs. They can be shedulded on personal preferences. The results can be published to security hub or even to event bridge to take action in an automated way.
 ![Amazon Macie](macie.jpg "<b> Example workflow with Macie |</b> Screenshot")
 <br>
-<br>
 
 ## {{< hl >}}<b>Section 4: Infrastructure Protection</b>{{< /hl >}}<br>
 ### {{< hl >}}<b>Securing Your Compute Resources</b>{{< /hl >}}<br>
