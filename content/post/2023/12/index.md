@@ -32,7 +32,7 @@ I spent my two-week vacation partly in Bern and also in my hometown in Valais. I
 
 After these two relaxing weeks of vacation, it was time to get back to work at Amanox. To be as ajour as possible again, I first checked my mailbox. After that, I took care of completing some tasks in internal IT and in the lab team. In the lab team, I was able to work on the Beam Cost Management tool and make some changes. The goal was to remove our production account from Beam and then recreate the entcloud-lab account. In addition, I also added our Azure lab account.
 
-As for school, there are some changes starting this semester regarding school days. Newly, I will no longer have school all day Monday, but only half day (afternoon) and the remaining half day on Friday (morning). Since this causes some conflicts with work deadlines, I have now loaded the entire school calendar into my work calendar.
+As for school, there are some changes starting this semester regarding school days. Newly, I will no longer have school all day Monday, but only half day (afternoon) and the remaining half day on Friday (morning). Since this causes some conflicts with work meetings, I have now loaded the entire school calendar into my work calendar.
 
 During the rest of the time, I have started the Cloud Security in AWS module from Anda. For more information on what I've learned so far in this module, see the Cloud Security in AWS publication.
 
