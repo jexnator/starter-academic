@@ -1,5 +1,5 @@
 ---
-title: "Cloud Security in AWS"
+title: "Cloud Monitoring in AWS"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
@@ -10,7 +10,7 @@ authors:
 # Author notes (optional)
 author_notes: ""
 
-date: "2023-08-07"
+date: "2023-06-05"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -29,7 +29,7 @@ publication_short: ""
 abstract: ""
 
 # Summary. An optional shortened abstract.
-summary: Beside the the school we have to complete different modules in our company. This publication is about Cloud Security
+summary: Beside the the school we have to complete different modules in our company. This publication is about Cloud Monitoring in AWS.
 
 tags: [PiBS]
 
