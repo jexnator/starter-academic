@@ -243,6 +243,42 @@ When selecting the right enryption solution for data in AWS then three question 
 
 ![Supported Enryption in AWS](s3-encryption.jpg "<b> Supported Enryption in AWS |</b> Screenshot")
 
+##### {{< hl >}}<b>S3 Client-side encryption</b>{{< /hl >}}<br>
+Only the encrypted version of the data is stored in S3, ensuring that AWS never sees the unencrypted content. The client maintains the keys and ecrypts and decrypts the data with 
+![CSE](cse.jpg "<b> Client-Side encryption |</b> Screenshot")
+
+##### {{< hl >}}<b>S3 Server-side encryption: Three different approaches</b>{{< /hl >}}<br>
+With SSE-C in Amazon S3, you provide an encryption key for S3 to handle encryption and decryption. You manage only this key, not the encryption process. S3 doesn't store your key but keeps a salted HMAC value to validate requests. This HMAC can't decrypt data. If you lose the key, you lose access to the object.
+![SSE-C](sse-c.jpg "<b> SSE-C |</b> Screenshot")
+
+SSE-S3 is an AWS managed approach. Amazon S3 encrypts each object with a unique key. As an additional safeguard, it encrypts the key itself with a Primary key that it rotates regularly. Amazon S3 server-side encryption uses one of the strongest block ciphers available to encrypt your data, 256-bit Advanced Encryption Standard (AES-256).
+![SSE-S3](sse-s3.jpg "<b> SSE-S3 |</b> Screenshot")
+
+SSE-KMS encrypts Amazon S3 objects using AWS KMS keys, offering greater benefits than SSE-S.
+AWS KMS employs envelope encryption with two keys:
+- a data key for object encryption
+- a master AWS KMS key for the data key's encryption.
+This process enhances security against unauthorized access. With SSE-KMS, users get an audit trail of key usage in CloudTrail, the choice to create or use a default encryption key, and the ability to enforce key policies and import personal key material, granting more control than SSE-S3.
+![SSE-KMS](sse-kms.jpg "<b> SSE-KMS |</b> Screenshot")
+
+##### {{< hl >}}<b>Best practices for protecting data in Amazon S3</b>{{< /hl >}}<br>
+- Enforce encryption at rest.
+- Separate data based on different classification levels.
+- Review S3 bucket and object permissions regularly.
+- Define your data retention requirements.
+- Implement secure key management.
+
 ### {{< hl >}}<b>AWS Key Management Service (AWS KMS) for Key Management</b>{{< /hl >}}<br>
+AWS KMS is a managed service that lets you create, control, and securely store encryption keys using FIPS 140-2 validated hardware. Integrated with most AWS services, it employs envelope encryption and a two-tiered key hierarchy. You can encrypt/decrypt data under keys you control, set key usage policies, and monitor usage through AWS CloudTrail. The key never leaves AWS KMS, minimizing data key compromise risks.
+
+When hardware is FIPS 140-2 (Federal Information Processing Standard Publication 140-2) validated, it means the hardware has undergone a rigorous testing process and is approved to be used in government and regulated industries for securing sensitive or classified information.
+
+![KMS](kms.jpg "<b> KMS exmaple with EBS|</b> Screenshot")
+1. Amazon EBS obtains an encrypted data key under a CMK through AWS KMS and stores the encrypted key with the volume metadata.
+2. Encrypted data key is retrieved from storage by the servers that host EC2 instances.
+3. A call is made to AWS KMS over SSL to decrypt the encrypted data key. AWS KMS identifies the CMK, makes an internal request to an HSA in the fleet to decrypt the data key, and returns the key back to the customer over the SSL session.
+4. The decrypted data key is stored in memory and used to encrypt and decrypt all data going to and from the attached EBS volume. Amazon EBS retains the encrypted data key for later use in case the data key in memory is no longer available.
+
 ### {{< hl >}}<b>AWS Certificate Manager (ACM) for Securing Communicationsn</b>{{< /hl >}}<br>
+
 ### {{< hl >}}<b>AWS Secrets Manager for Credentials Management</b>{{< /hl >}}<br>
