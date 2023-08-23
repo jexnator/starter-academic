@@ -287,3 +287,4 @@ When hardware is FIPS 140-2 (Federal Information Processing Standard Publication
 AWS Certificate Manager (ACM) lets you easily provision, manage, and deploy public and private Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificates for use with AWS services and your internal connected resources. With ACM, you no longer need to spend time purchasing, uploading, and renewing SSL/TLS certificates manually. This makes it simpler to secure your applications and services with SSL/TLS encryption and ensures that your certificates are always up-to-date.
 
 ### {{< hl >}}<b>AWS Secrets Manager for Credentials Management</b>{{< /hl >}}<br>
+
