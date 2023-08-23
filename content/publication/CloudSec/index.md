@@ -304,3 +304,70 @@ Choose AWS Secrets Manager for:
 - Monitoring secret usage without disrupting applications.
 - Avoiding embedded secrets in code or configs.
 ![Secret Manager](secretm.jpg "<b> AWS Secret Manager in Action |</b> Screenshot")
+
+<br>
+<br>
+
+## {{< hl >}}<b>Section 6: Application Security</b>{{< /hl >}}<br>
+### {{< hl >}}<b>Amazon Inspector</b>{{< /hl >}}<br>
+Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS. Amazon Inspector automatically assesses applications for vulnerabilities or deviations from best practices. After performing an assessment, Amazon Inspector produces a detailed list of security findings prioritized by level of severity. These findings can be reviewed directly or as part of detailed assessment reports which are available via the Amazon Inspector console or API. Amazon Inspector is an agent-based service where you deploy the Amazon Inspector agent on the Amazon EC2 Instances running the applications you want to assess.
+
+The service provides the following benefits to AWS Customers:
+- It automates security assesments
+- It provides the knowledge and best practices in security from AWS itself
+- It also provides guidance on resolving security findings
+![AWS Inspector](aws-inspector.jpg "<b> Getting started with the AWS Inspector |</b> Screenshot")
+
+An assessment template is a configuration that you create in Amazon Inspector to define your assessment run. It includes a rules package that is used to evaluate instances, the duration of the assessment run, and Amazon Simple Notification Service (Amazon SNS) topics to which you want Amazon Inspector to send notifications about assessment run states and findings. A rules package is a collection of security tests. Amazon Inspector has many rules packages, including common vulnerabilities and exposures (CVE), Center for Internet Security (CIS) Operating System configuration benchmarks, and security best practices.
+![AWS Inspector Assessment](inspector-assessment.jpg "<b> AWS Inspector - Assessment Template and rules |</b> Screenshot")
+<br>
+<br>
+
+## {{< hl >}}<b>Section 7: Incident Response</b>{{< /hl >}}<br>
+What is an incident?
+- An unplanned interruption or reduction in the quality of a service
+- Failure of a configuration item that has not yet affected a service
+- All incidents are events, but NOT all events are incidents
+
+### {{< hl >}}<b>Incident Response</b>{{< /hl >}}<br>
+Incident response is the methodology an organization uses to respond to and manage a security breach or cyberattack. It is an organized approach to addressing and managing the aftermath of an attack. Even with extremely mature preventive and detective controls, your organization should still put processes in place to respond to and mitigate the potential impact of security incidents.
+
+- Detect potential impacts
+- React and recover from security incidents
+- Automate Security
+- Etablish control
+
+### {{< hl >}}<b>IR on AWS</b>{{< /hl >}}<br>
+Incident response in the AWS Cloud is more efficient in terms of cost, speed, effectiveness, and management. AWS enhances your capacity to detect, react, and recover. AWS offers unique capabilities for investigations:
+
+- <b>Automation with APIs</b>: Routine tasks during incident response can be automated. For instance, a single command can alter security groups to isolate an instance.
+
+- <b>Forensics and Data Capture</b>: Amazon EBS snapshots and Amazon EC2 APIs allow you to capture disk images and system states for investigation purposes.
+
+- <b>Environment Creation</b>:AWS CloudFormation lets you swiftly set up a secure and isolated environment with the essential tools for in-depth forensic analysis.
+
+- <b>Detailed Logging</b>: AWS offers detailed logs for specific services, highlighting actions like file access and changes, aiding in understanding incidents and informing remediation steps.
+
+### {{< hl >}}<b>AWS Config for Responding to Incidents</b>{{< /hl >}}<br>
+AWS Config continuously monitors and logs configuration changes of your resources. Upon detecting changes, it sends notifications and can even trigger an AWS Lambda function for automated responses. Furthermore, it integrates with other AWS services, ensuring streamlined remediation of issues.
+
+With AWS Config rules, you can continuously monitor and assess your resources to ensure they align with your security guidelines, best practices, and compliance standards. AWS offers many ready-to-use managed rules that need little or no setup. For instance, there's a rule in AWS Config to confirm that all Amazon EBS volumes in your account are encrypted.
+![AWS Config Rules](config-rules.jpg "<b> AWS Config Rules |</b> Screenshot")
+
+Some managed rule examples include:
+- Checking if all attached Amazon EBS volumes are encrypted.
+- Verifying that all Amazon EC2 instances are part of a VPC.
+- Ensuring resources have the expected tags.
+- Confirming security groups deny unsolicited incoming SSH traffic.
+- Validating that AWS CloudTrail is active in your AWS account.
+- Checking if the IAM users' password policy meets certain criteria.
+
+For more tailored needs, you can craft custom AWS Config rules for example by using AWS Lambda Functions which can take actions when a specific incident appears.
+![AWS Config Example Use Case](config-use.jpg "<b> AWS Config example usecase |</b> Screenshot")
+<br>
+<br>
+
+## {{< hl >}}<b>Section 8: What’s Next</b>{{< /hl >}}<br>
+### {{< hl >}}<b>AWS Well-Architected Tool</b>{{< /hl >}}<br>
+### {{< hl >}}<b>Course Assessment</b>{{< /hl >}}<br>
+
