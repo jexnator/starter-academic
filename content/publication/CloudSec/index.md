@@ -268,7 +268,7 @@ This process enhances security against unauthorized access. With SSE-KMS, users 
 - Define your data retention requirements.
 - Implement secure key management.
 
-### {{< hl >}}<b>AWS Key Management Service (AWS KMS) for Key Management</b>{{< /hl >}}<br>
+### {{< hl >}}<b>AWS Key Management Service (KMS)</b>{{< /hl >}}<br>
 AWS KMS is a managed service that lets you create, control, and securely store encryption keys using FIPS 140-2 validated hardware. Integrated with most AWS services, it employs envelope encryption and a two-tiered key hierarchy. You can encrypt/decrypt data under keys you control, set key usage policies, and monitor usage through AWS CloudTrail. The key never leaves AWS KMS, minimizing data key compromise risks.
 
 When hardware is FIPS 140-2 (Federal Information Processing Standard Publication 140-2) validated, it means the hardware has undergone a rigorous testing process and is approved to be used in government and regulated industries for securing sensitive or classified information.
@@ -279,6 +279,11 @@ When hardware is FIPS 140-2 (Federal Information Processing Standard Publication
 3. A call is made to AWS KMS over SSL to decrypt the encrypted data key. AWS KMS identifies the CMK, makes an internal request to an HSA in the fleet to decrypt the data key, and returns the key back to the customer over the SSL session.
 4. The decrypted data key is stored in memory and used to encrypt and decrypt all data going to and from the attached EBS volume. Amazon EBS retains the encrypted data key for later use in case the data key in memory is no longer available.
 
+### {{< hl >}}<b>HTTPS - CA - SSL Certificate</b>{{< /hl >}}<br>
+![CSR](ca.jpg "<b> CSR Workflow |</b> Screenshot")
+![SSC](ssc.jpg "<b> self-signed certificate |</b> Screenshot")
+
 ### {{< hl >}}<b>AWS Certificate Manager (ACM) for Securing Communicationsn</b>{{< /hl >}}<br>
+AWS Certificate Manager (ACM) lets you easily provision, manage, and deploy public and private Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificates for use with AWS services and your internal connected resources. With ACM, you no longer need to spend time purchasing, uploading, and renewing SSL/TLS certificates manually. This makes it simpler to secure your applications and services with SSL/TLS encryption and ensures that your certificates are always up-to-date.
 
 ### {{< hl >}}<b>AWS Secrets Manager for Credentials Management</b>{{< /hl >}}<br>
