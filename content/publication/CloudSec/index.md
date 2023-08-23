@@ -283,8 +283,24 @@ When hardware is FIPS 140-2 (Federal Information Processing Standard Publication
 ![CSR](ca.jpg "<b> CSR Workflow |</b> Screenshot")
 ![SSC](ssc.jpg "<b> self-signed certificate |</b> Screenshot")
 
-### {{< hl >}}<b>AWS Certificate Manager (ACM) for Securing Communicationsn</b>{{< /hl >}}<br>
+### {{< hl >}}<b>AWS Certificate Manager (ACM)</b>{{< /hl >}}<br>
 AWS Certificate Manager (ACM) lets you easily provision, manage, and deploy public and private Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificates for use with AWS services and your internal connected resources. With ACM, you no longer need to spend time purchasing, uploading, and renewing SSL/TLS certificates manually. This makes it simpler to secure your applications and services with SSL/TLS encryption and ensures that your certificates are always up-to-date.
+![ACM](acm.jpg "<b> AWS Certificate Manager |</b> Screenshot")
 
 ### {{< hl >}}<b>AWS Secrets Manager for Credentials Management</b>{{< /hl >}}<br>
+### {{< hl >}}<b>Secret management best practices</b>{{< /hl >}}<br>
+- Safely and securely store secrets in a central repository
+- Audit log for the use and misuse of secrets
+- Secrets rotation on a regular schedule
+- Access control of secrets
 
+### {{< hl >}}<b>AWS Secrets Manager for Credentials Management</b>{{< /hl >}}<br>
+AWS Secrets Manager is an AWS tool designed for secure management of sensitive data like passwords and API keys. Users can centrally store, control access, and fetch these secrets, eliminating the need for hardcoded credentials in code. The service offers automatic secret rotation, enhancing security.
+
+Choose AWS Secrets Manager for:
+- Centralized and secure management of secrets.
+- Compliance with regulatory standards.
+- Automatic and safe secret rotation.
+- Monitoring secret usage without disrupting applications.
+- Avoiding embedded secrets in code or configs.
+![Secret Manager](secretm.jpg "<b> AWS Secret Manager in Action |</b> Screenshot")
