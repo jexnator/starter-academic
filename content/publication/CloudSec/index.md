@@ -369,5 +369,18 @@ For more tailored needs, you can craft custom AWS Config rules for example by us
 
 ## {{< hl >}}<b>Section 8: What’s Next</b>{{< /hl >}}<br>
 ### {{< hl >}}<b>AWS Well-Architected Tool</b>{{< /hl >}}<br>
+The AWS Well-Architected Tool is a self-service tool that is designed to help customers review AWS workloads at any time, without the need for an AWS Solutions Architect. The Tool provides clear guidance to make architectural, design, and implementation decisions, increasing the security, efficiency and reliability of cloud implementations.
+
+The AWS Well-Architected Framework includes five pillars, each with design principles and best practices. The five pillars represent:
+- Operational Excellence.
+- Safety and Security
+- Reliability
+- Performance Efficiency
+- Cost Optimization
+
+AWS recommends regular reviews of its own architectures against the five pillars above.
+![AWS Well-Architected Tool](well-architected.jpg "<b> AWS Well-Architected Tool |</b> Screenshot")
+
+
 ### {{< hl >}}<b>Course Assessment</b>{{< /hl >}}<br>
 
