@@ -363,7 +363,7 @@ Some managed rule examples include:
 - Checking if the IAM users' password policy meets certain criteria.
 
 For more tailored needs, you can craft custom AWS Config rules for example by using AWS Lambda Functions which can take actions when a specific incident appears.
-![AWS Config Example Use Case](config-use.jpg "<b> AWS Config example usecase |</b> Screenshot")
+![AWS Config Example Use Case](config-use.jpg "<b> AWS Config example usecase |</b> Screenshot")<br>
 
 ## {{< hl >}}<b>Section 8: What’s Next</b>{{< /hl >}}<br>
 ### {{< hl >}}<b>AWS Well-Architected Tool</b>{{< /hl >}}<br>
