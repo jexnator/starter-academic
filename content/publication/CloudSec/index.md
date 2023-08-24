@@ -380,7 +380,3 @@ The AWS Well-Architected Framework includes five pillars, each with design princ
 
 AWS recommends regular reviews of its own architectures against the five pillars above.
 ![AWS Well-Architected Tool](well-architected.jpg "<b> AWS Well-Architected Tool |</b> Screenshot")
-
-
-### {{< hl >}}<b>Course Assessment</b>{{< /hl >}}<br>
-
