@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "01/08/2023 - 11/08/2023"
+title: "01/08/2023 - 18/08/2023"
 subtitle: ""
 summary: "Trainee diary"
 authors: [Xavier Jeiziner]
@@ -30,7 +30,7 @@ projects: []
 ---
 I spent my two-week vacation partly in Bern and also in my hometown in Valais. It was all the nicer to meet various colleagues who study or work in another canton and whom you therefore don't see so often during the year. I also found time again to dedicate myself to my downhill bike and to maintain it in my grandfather's garage and bring it back to shape. The next day I took the opportunity to go for a bike ride with an old colleague I haven't seen for years. Together we rode from Unterbäch to Raron and from Jeizinen to Gampel, which was very nice and brought back many childhood memories that we shared on the bike.
 
-After these two relaxing weeks of vacation, it was time to get back to work at Amanox. To be as ajour as possible again, I first checked my mailbox. After that, I took care of completing some tasks in internal IT and in the lab team. In the lab team, I was able to work on the Beam Cost Management tool and make some changes. The goal was to remove our production account from Beam and then recreate the entcloud-lab account. In addition, I also added our Azure lab account.
+After these two relaxing weeks of vacation, it was time to get back to work at Amanox. To be up to date, I first checked my mailbox. After that, I took care of completing some tasks in internal IT and in the lab team. In the lab team, I was able to work on the Beam Cost Management tool and make some changes. The goal was to remove our production account from Beam and then recreate the entcloud-lab account. In addition, I also added our Azure lab account.
 
 As for school, there are some changes starting this semester regarding school days. Newly, I will no longer have school all day Monday, but only half day (afternoon) and the remaining half day on Friday (morning). Since this causes some conflicts with work meetings, I have now loaded the entire school calendar into my work calendar.
 
