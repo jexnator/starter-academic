@@ -87,5 +87,15 @@ Fünfte Woche:
 - Weekly mit Alessandro - weiteres Vorgehen definieren, was wird er am Infomeeting bekannt geben, was soll er aus unserer Sicht (interne IT) noch bekannt geben-> Inputs geben von interner IT Sicht, 
 - Abklärungen Software-Installation mit John-Nathan
 
+Sechste Woche:
+- Migration
+- Abklärungen SSO
+- Skript schreiben betreffend E-Mail Grösse
+- Sales Enabelment Workshop 2
+
+Siebte Woche:
+- Anleitung erstellen Installation Cortex Agent und verschicken an Mitarbeiter
+- Skript ausführen betreffend E-Mail Grösse und betroffene Mitarbeiter informieren
+
 </p><br>
 <p></p>
