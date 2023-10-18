@@ -96,6 +96,15 @@ Sechste Woche:
 Siebte Woche:
 - Anleitung erstellen Installation Cortex Agent und verschicken an Mitarbeiter
 - Skript ausführen betreffend E-Mail Grösse und betroffene Mitarbeiter informieren
+- Weekly
+- Bestellen Notebooks für Armstrong und David
+- SSO-Applikationen mehrere Meetings
+- Dispositionsgespräch
+
+Achte Woche:
+- SSO Integration Kyberna (failed)
+- Information Mitarbeiter (Neues Netzwerk, Clara Accounts, zu grosse E-Mails für Migration)
+- Unterstützung Adrian PC Einrichtung
 
 </p><br>
 <p></p>
