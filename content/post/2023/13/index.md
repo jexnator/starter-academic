@@ -77,41 +77,5 @@ The Cortex training was also scheduled for this week. We from internal IT were e
 
 At the end of the week we had the weekly with Alessandro and the weekly with our French colleagues at VESI.
 
-### Week 5
-Fünfte Woche:
-- Migration - Austausch mit AD Team betreffend den zu migrierenden SSO-Apps
-- Call VOIP-Teams Vorabklärungen mit Alessandro und Vuz
-- Installation Cortex Agent auf Test-Client.
-- Weekly mit Alessandro - weiteres Vorgehen definieren, was wird er am Infomeeting bekannt geben, was soll er aus unserer Sicht (interne IT) noch bekannt geben-> Inputs geben von interner IT Sicht, 
-- Abklärungen Software-Installation mit John-Nathan
-
-Sechste Woche:
-- Migration
-- Abklärungen SSO
-- Skript schreiben betreffend E-Mail Grösse
-- Sales Enabelment Workshop 2
-
-Siebte Woche:
-- Anleitung erstellen Installation Cortex Agent und verschicken an Mitarbeiter
-- Check AWS SSO
-- Skript ausführen betreffend E-Mail Grösse
-- Weekly
-- Bestellen Notebooks für Armstrong und David
-- SSO-Applikationen mehrere Meetings
-- Dispositionsgespräch
-
-Achte Woche:
-- SSO Integration Kyberna (failed)
-- Information Mitarbeiter (Neues Netzwerk, Clara Accounts, zu grosse E-Mails für Migration)
-- Unterstützung Adrian PC Einrichtung
-
-Neunte Woche
-- Drucker SMTP
-- Teams Migration Absprache mit Sepp und Alessandro
-- Mails verschicken: E-Mail Grösse
-- SSO Migration
-- Skripts schreiben für Aktivieren und Deaktivieren von Windows Hello for Business
-- Absprache & Bestellen Device für Andreas
-
 </p><br>
 <p></p>
