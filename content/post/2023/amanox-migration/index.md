@@ -29,14 +29,14 @@ projects: []
 
 ---
 ### Short Summary
-The acquisition of Vinci Energies has resulted in some changes to our internal IT at Axians Amanox AG. In short, the company accounts and the M365 subscriptions and the Windows clients were migrated to the centrally managed Azure AD Tenant of Vinci Energies, the Amanox Azure AD Tenant was terminated, the domain "amanox.ch" was transferred,the SSO applications were reassigned and we got a new network and new access points in our office.
+The acquisition of Vinci Energies has resulted in some changes to our internal IT at Axians Amanox AG. In short, the company accounts and the M365 subscriptions and the Windows clients were migrated to the centrally managed Azure AD Tenant of Vinci Energies, the Amanox Azure AD Tenant will be terminated in near future, the domain "amanox.ch" was transferred, the SSO applications were reassigned and we got a new network in our office.
 
 ### Milestones
 The following dates were relevant for the migration work and preparations had to be made accordingly:
-<b>Network change</b>: Week 23/10 & 24/10
-<b>Pilot tests software</b>: 25/10
-<b>Clara AD / SSO / installation software on all Windows clients</b>: 08/11 & 09/11
-<b>Messaging migration</b>: 15/11
+- <b>Network change</b>: Week 23/10 & 24/10
+- <b>Pilot tests software</b>: 25/10
+- <b>Clara AD / SSO / installation software on all Windows clients</b>: 08/11 & 09/11
+- <b>Messaging migration</b>: 15/11
 
 ### Preparation
 In order to prepare ourselves on the Amanox side and on the VESI and Vinci side, we held an initial workshop at an early stage to prepare for the migration. The responsible departments agreed in advance what was to be migrated and how. Now it was a matter of bringing everyone involved up to the same level, allocating responsibilities and getting to know each other, which was done by the project manager of the externally grown Vinci team, Georges. It was also announced that we would meet weekly in the form of a meeting - once with just the Swiss, i.e. Vesi, and once with the entire migration team - to discuss the progress of the migration. The above-mentioned network change was carried out independently by Sämi together with Vesi Switzerland, which is why it will not be discussed in much more detail here.
