@@ -59,27 +59,25 @@ During the rest of the time I worked on the CloudSec module, finalizing it and f
 By the way - this week we were in Croatia in the Workation. I shared my isights about it with Rebecca, who posted a post about it including a video on LinkedIn.
 
 ### Week 3
-...
+During this week, I focused on gathering important information required for the domain transfer to Vinci Energies. In a first step I made sure to look into the continuation of essential services like email and our website. It's important to have zero downtime during this transition. Then I secured the complete dump-file of the DNS zone along with the authentication code for the transfer. I then released the domain tranfer protection. I checked also if there are specific SPF records in the dump-file and outlined them.
 
-Notizen:
-Dritte Woche:
-- Vorbereitung Transfer Domäne -> Infos zusammentragen
-- Vorbereitung Integration AD
-- Laptop konfiguriert und bestellt für Matthias
-- Monitor Austausch Sonja
-- Neu aufsetzen Notebook von Anisa
-- Weekly mit Alessandro
+In the future, MX, NS and TXT records will be managed by VESI. However, we will still have the ability to manage A, AAAA and CNAME records locally.
 
-Vierte Woche:
-- Austausch mit Surface-Usern, anschliessendes Bestellen der Lenovos
-- Software-Package Installation auf Test Client mit John Nathan
-- Arbeit an Messaging Migration
-- Vorbereitung auf Cortex
-- Schulung Cortex
-- Weekly mit Alessandro & Feedback Cortex
-- Weekly mit Vinci
-- Blog schreiben
+On Wednesday I had the Weekly with Alessandro to discuss the progress of the migration and the next steps with each other.
 
+In between, some internal IT tasks were due. These included resetting our former marketing employee's laptop so that she can continue to use her notebook privately. I also changed Sonja's monitor. She felt the need to test a widescreen monitor, which we found to be good and therefore put into practice.
+
+### Week 4
+Since we at Vinci only have the choice between Lenovo and Apple devices in the future, I contacted the Surface users, exchanged ideas with them about their needs and then ordered them the new Lenovo devices.
+
+Afterwards I tested a software package on one of our clients with John-Nathan from Vesi. Unfortunately, we discovered that part of the installation could only be carried out in the new Vinci Energies network. We agreed to install the antivirus software in advance to meet the requirements of the new network.
+
+I then worked on the messaging migration. Here I filled out some Excel sheets.
+The Cortex training was also scheduled for this week. We from internal IT were each given an admin account at Vinci to make changes in the Cortex XDR console, such as temporarily disabling endpoint protection on individual clients.
+
+At the end of the week we had the weekly with Alessandro and the weekly with our French colleagues at VESI.
+
+### Week 5
 Fünfte Woche:
 - Migration - Austausch mit AD Team betreffend den zu migrierenden SSO-Apps
 - Call VOIP-Teams Vorabklärungen mit Alessandro und Vuz
@@ -95,7 +93,8 @@ Sechste Woche:
 
 Siebte Woche:
 - Anleitung erstellen Installation Cortex Agent und verschicken an Mitarbeiter
-- Skript ausführen betreffend E-Mail Grösse und betroffene Mitarbeiter informieren
+- Check AWS SSO
+- Skript ausführen betreffend E-Mail Grösse
 - Weekly
 - Bestellen Notebooks für Armstrong und David
 - SSO-Applikationen mehrere Meetings
@@ -105,6 +104,14 @@ Achte Woche:
 - SSO Integration Kyberna (failed)
 - Information Mitarbeiter (Neues Netzwerk, Clara Accounts, zu grosse E-Mails für Migration)
 - Unterstützung Adrian PC Einrichtung
+
+Neunte Woche
+- Drucker SMTP
+- Teams Migration Absprache mit Sepp und Alessandro
+- Mails verschicken: E-Mail Grösse
+- SSO Migration
+- Skripts schreiben für Aktivieren und Deaktivieren von Windows Hello for Business
+- Absprache & Bestellen Device für Andreas
 
 </p><br>
 <p></p>
