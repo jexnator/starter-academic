@@ -51,5 +51,10 @@ All in all, it was a very cool experience to be able to assemble a high-end gami
 
 Looking back, the first 3 weeks of the new year were very instructive. I was able to improve my skills in various areas and I'm happy with that.
 
+![Beautiful Hardware](IMG_7077.jpg)
+![Beautiful Hardware](IMG_7074.jpg)
+![Beautiful Hardware](IMG_7076.jpg)
+![Beautiful Hardware](IMG_7078.jpg)
+
 </p><br>
 <p></p>
