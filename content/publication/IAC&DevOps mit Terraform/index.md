@@ -143,7 +143,6 @@ Server provisioning tools are responsible for the initial setup of servers. They
 #### Examples of Server Provisioning Tools:
 - **Terraform**: Terraform is an open-source infrastructure as code software tool created by HashiCorp. It enables users to define and provision a data center infrastructure using a declarative configuration language.
 - **CloudFormation**: AWS CloudFormation provides a common language for you to model and provision AWS and third-party application resources in your cloud environment.
-- **OpenStack Heat**: Heat is the main project in the OpenStack Orchestration program. It implements an orchestration engine to launch multiple composite cloud applications based on templates in the form of text files that can be treated like code.
 
 ## Day 3 - Module 03: CloudFormation and AWS CDK
 
