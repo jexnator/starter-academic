@@ -128,6 +128,8 @@ Configuration management tools automate the process of controlling and tracking 
 ### Server Templating Tools
 Server templating tools are used to create images of server configurations, which can be rapidly deployed. This allows for the creation of consistent, repeatable server setups that can be quickly spun up or down as needed.
 
+![Server Templating Tools](server-templating.jpg "Server Templating Tools")
+
 #### Examples of Server Templating Tools:
 - **Docker**: Docker packages software into standardized units called containers that have everything the software needs to run including libraries, system tools, code, and runtime.
 - **Packer**: Packer automates the creation of any type of machine image. It embraces modern configuration management by encouraging you to use automated scripts to install and configure the software within your Packer-made images.
@@ -135,6 +137,8 @@ Server templating tools are used to create images of server configurations, whic
 
 ### Server Provisioning Tools
 Server provisioning tools are responsible for the initial setup of servers. They can create servers, install operating systems, and then hand them off to configuration management tools for further setup.
+
+![Server Provisioning Tools](server-provisioning-tools.jpg "Server Provisioning Tools")
 
 #### Examples of Server Provisioning Tools:
 - **Terraform**: Terraform is an open-source infrastructure as code software tool created by HashiCorp. It enables users to define and provision a data center infrastructure using a declarative configuration language.
