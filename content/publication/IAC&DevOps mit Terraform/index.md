@@ -144,16 +144,180 @@ Server provisioning tools are responsible for the initial setup of servers. They
 - **Terraform**: Terraform is an open-source infrastructure as code software tool created by HashiCorp. It enables users to define and provision a data center infrastructure using a declarative configuration language.
 - **CloudFormation**: AWS CloudFormation provides a common language for you to model and provision AWS and third-party application resources in your cloud environment.
 
-## Day 3 - Module 03: CloudFormation and AWS CDK
+### Procedural Language vs. Declarative Language Definition
 
-### CloudFormation: AWS's IAC Solution
-CloudFormation, an AWS-native tool, facilitates infrastructure orchestration using JSON or YAML templates, enabling immutable infrastructures and providing a GUI for parameter configuration.
+Procedural languages are characterized by their focus on the sequence of operations to perform a task. They do not inherently capture the complete state of the infrastructure, making it difficult to understand the deployment's current state without knowing the order in which scripts or templates were executed. This sequential nature also limits the reusability of procedural code, as adjustments must often be made based on the infrastructure's existing state.
 
-#### Differences Between CloudFormation and Terraform
-CloudFormation is exclusive to AWS and offers built-in state management and direct support from AWS, though it lacks the modularization and flexibility found in Terraform.
+Procedural languages: Chef & Ansible
 
-### AWS Cloud Development Kit (CDK)
-The CDK allows for defining cloud infrastructure using familiar programming languages and provisions it through CloudFormation. It supports modular, reusable code constructs, facilitating easier management, collaboration, and version control of cloud infrastructure.
+In contrast, declarative languages, as used in tools like CloudFormation and Terraform, allow for the description of the desired state of the infrastructure without specifying the sequence of steps to achieve it. This approach ensures that the code always accurately represents the infrastructure's current state, enhancing clarity, reusability, and manageability.
 
-#### CDK Concepts
-Key concepts include Constructs (basic building blocks), Apps (root constructs), Stacks (units of deployment), and Environments (target deployment accounts and regions). The CDK enhances infrastructure management through features like logical expressions, high-level abstractions, and language independence.
+Declarative languages: Terraform, Cloudformation, SaltStack, Puppet and OpenStack Heat
+
+![Difference between procedural and declarative Approach](procedural-declarative.jpg "Difference between procedural and declarative Approach")
+
+# CloudFormation and AWS CDK Overview
+
+## CloudFormation
+
+CloudFormation is a service provided by AWS that automates the provisioning and management of a wide range of AWS resources. It allows users to use programming languages or simple text files to model and provision, in an automated and secure manner, all the resources needed for their applications across all regions and accounts.
+
+### Architecture Concepts
+In advanced CloudFormation architecture, the focus is on designing scalable, resilient, and efficient infrastructure by leveraging the following concepts:
+
+- **Templates**: CloudFormation templates are the blueprints for creating AWS resources. They define the resources to be created and the properties for those resources. Templates can include variables (Parameters), conditions, resource configurations, mappings, and outputs to create reusable infrastructure architectures.
+- **Stacks**: The core unit of CloudFormation, stacks are collections of AWS resources that can be managed as a single unit. This means you can create, update, or delete a collection of resources by managing stacks. Stacks are created/deleted from a template
+- **Change Sets**: Before updating a stack, change sets can be used to preview how the proposed changes might impact your running resources, allowing for a review process to ensure updates are as expected.
+- **Drift Detection**: CloudFormation can detect drift on stack resources, which means it can identify configuration changes that deviate from the stack template, helping maintain consistency and compliance.
+
+![Architecture CloudFormation](architecture-cloudformation.jpg "Architecture CloudFormation")
+
+## CloudFormation StackSets & Nested Stacks
+
+### StackSets
+StackSets extend the functionality of CloudFormation stacks by enabling you to create, update, or delete stacks across multiple accounts and regions with a single operation. This is particularly useful for large-scale deployments where consistency and automation across accounts and regions are critical.
+
+![Stack Set](stack-sets.jpg "Stack Set")
+
+### Nested Stacks
+Nested Stacks allow you to organize your CloudFormation templates into reusable, manageable components. A nested stack is a stack that you create within another stack by using the AWS::CloudFormation::Stack resource. This modular approach simplifies the management of complex systems by allowing you to build layers of abstraction.
+
+![Nested Stack](nested-stack.jpg "Nested Stack")
+
+## Day 3 - Module 03-4: Understanding CloudFormation Template Syntax
+
+CloudFormation templates can be written in JSON or YAML format. They consist of five main sections: Parameters, Mappings, Conditions, Resources, and Outputs.
+
+- **Parameters**: Enable input of custom values to your template at runtime.
+- **Mappings**: A static key-value pair that can be used to match keys to corresponding values.
+- **Conditions**: Define conditions to control whether certain resources are created or whether properties are assigned specific values during stack creation or update.
+- **Resources**: The core section of the template, specifying the AWS resources to be created or managed.
+- **Outputs**: Define the output values that you can import into other stacks or return as results after the stack is created.
+
+### JSON Format CloudFormation Template
+
+```json
+{
+  "AWSTemplateFormatVersion": "2010-09-09", // Optional - Defines which CloudFormation Version is used
+  "Description": "An example CloudFormation template.", // Optional
+  "Metadata": { // Optional - Additional Infos about template, to document in a tagging matter.
+    "Template": "BasicExample"
+  },
+  "Parameters": { // Optional
+    "InstanceType": {
+      "Description": "EC2 instance type",
+      "Type": "String",
+      "Default": "t2.micro"
+    }
+  },
+  "Mappings": { // Optional
+    "RegionMap": {
+      "us-west-1": {"AMI": "ami-0abcdef1234567890"},
+      "eu-central-1": {"AMI": "ami-1234567890abcdef0"}
+    }
+  },
+  "Conditions": { // Optional
+    "CreateProdResources": {
+      "Fn::Equals": [{"Ref": "EnvType"}, "prod"]
+    }
+  },
+  "Transform": { // Optional
+    "Name": "AWS::Include",
+    "Parameters": {
+      "Location": "s3://my-bucket/my-transform-macro.yml"
+    }
+  },
+  "Resources": { // Required - Main part of the template
+    "MyEC2Instance": {
+      "Type": "AWS::EC2::Instance",
+      "Properties": {
+        "InstanceType": {"Ref": "InstanceType"},
+        "ImageId": {"Fn::FindInMap": ["RegionMap", {"Ref": "AWS::Region"}, "AMI"]}
+      }
+    }
+  },
+  "Outputs": { // Optional
+    "InstanceId": {
+      "Description": "The Instance ID",
+      "Value": {"Ref": "MyEC2Instance"}
+    }
+  }
+}
+```
+
+### YAML Format CloudFormation Template
+
+```yaml
+AWSTemplateFormatVersion: '2010-09-09' # Optional - Defines which CloudFormation Version is used
+Description: An example CloudFormation template. # Optional
+Metadata: # Optional - Additional Infos about template, to document in a tagging matter.
+  Template: BasicExample
+Parameters: # Optional
+  InstanceType:
+    Description: EC2 instance type
+    Type: String
+    Default: t2.micro
+Mappings: # Optional
+  RegionMap:
+    us-west-1:
+      AMI: ami-0abcdef1234567890
+    eu-central-1:
+      AMI: ami-1234567890abcdef0
+Conditions: # Optional
+  CreateProdResources:
+    Fn::Equals:
+      - Ref: EnvType
+      - prod
+Transform: # Optional
+  Name: 'AWS::Include'
+  Parameters:
+    Location: 's3://my-bucket/my-transform-macro.yml'
+Resources: # Required - Main part of the template
+  MyEC2Instance:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: !Ref InstanceType
+      ImageId: !FindInMap [RegionMap, !Ref 'AWS::Region', AMI]
+Outputs: # Optional
+  InstanceId:
+    Description: The Instance ID
+    Value: !Ref MyEC2Instance
+```
+
+## Day 3 - Module 03-4: AWS CDK (Cloud Development Kit)
+
+### What is CDK?
+The AWS Cloud Development Kit (CDK) is a development framework for defining AWS cloud infrastructure in software code manner and provisioning it through CloudFormation.
+
+![AWS CDK](aws-cdk.jpg "AWS CDK")
+
+### CDK Supports:
+- TypeScript
+- JavaScript
+- Python
+- Java
+- C#/.Net
+- Go
+
+### Why Use CDK?
+- **Compress Template-Code**: Generate CloudFormation templates with less code.
+- **Logical Expressions**: Use if-statements, loops, and other logical expressions.
+- **Modular Approach**: Object-oriented programming structure to model infrastructure.
+- **High-Level Abstractions**: Simplify the definition of cloud resources.
+- **Shareable & Reusable Code**: Create readable and reusable code libraries.
+- **Testing**: Apply industry-standard protocols to test infrastructure code.
+- **Code Reviews**: Improve code quality through reviews.
+- **Language Independence**: Use familiar programming languages without needing to learn new ones.
+
+### CDK Concepts:
+- **Constructs**: Basic building blocks representing resources.
+- **Apps**: Root construct initiating other constructs.
+- **Stacks**: Unit of deployment within a specific scope.
+- **Environments**: Target AWS account and region for deployment.
+- **Identifiers & Tokens**: Unique identifiers and placeholders for resources.
+- **Parameters & Tagging**: Deployment-time variables and resource management tags.
+- **Assets**: Local files and Docker images for deployment.
+- **Permissions**: Access and permission management through IAM.
+- **Context & Feature Flags**: Key-value pairs for additional information and backward compatibility.
+- **Aspects & Escape Hatches**: Operations on constructs and integration of unsupported features.
+- **Bootstrapping**: Preparing a CDK environment with necessary resources.
