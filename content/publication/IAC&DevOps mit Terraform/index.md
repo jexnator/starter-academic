@@ -73,7 +73,7 @@ slides: ""
 ---
 # DevOps and Automation Module
 
-## Day 1 - Module 01: Introduction to DevOps
+## Introduction to DevOps
 
 ### What is DevOps?
 DevOps merges cultural philosophies, practices, and tools to enhance an organization's ability to deliver applications and services at high velocity, outpacing organizations with traditional development and infrastructure management processes. This synergy of development and operations aims for a continuous delivery model emphasizing repeatability, reliability, stability, resilience, and security, alongside operational efficiency improvements.
@@ -102,7 +102,7 @@ Key components include:
 ![Components DevOps](components-devops.jpg "Components of DevOps Practise")
 
 
-## Day 2 - Module 02: Infrastructure as Code (IaC) Overview
+## Infrastructure as Code (IaC) Overview
 
 ### Understanding IaC
 Infrastructure as Code is a paradigm that manages and provisions infrastructure through code rather than manual processes, promoting reliability, reproducibility, and documentation. IaC tools range from ad hoc scripts for single-use tasks to configuration management tools like Chef, Puppet, Ansible, and SaltStack, which automate software installation on servers.
@@ -156,8 +156,6 @@ Declarative languages: Terraform, Cloudformation, SaltStack, Puppet and OpenStac
 
 ![Difference between procedural and declarative Approach](procedural-declarative.jpg "Difference between procedural and declarative Approach")
 
-# CloudFormation and AWS CDK Overview
-
 ## CloudFormation
 
 CloudFormation is a service provided by AWS that automates the provisioning and management of a wide range of AWS resources. It allows users to use programming languages or simple text files to model and provision, in an automated and secure manner, all the resources needed for their applications across all regions and accounts.
@@ -184,7 +182,7 @@ Nested Stacks allow you to organize your CloudFormation templates into reusable,
 
 ![Nested Stack](nested-stack.jpg "Nested Stack")
 
-## Day 3 - Module 03-4: Understanding CloudFormation Template Syntax
+## Understanding CloudFormation Template Syntax
 
 CloudFormation templates can be written in JSON or YAML format. They consist of five main sections: Parameters, Mappings, Conditions, Resources, and Outputs.
 
@@ -284,7 +282,7 @@ Outputs: # Optional
     Value: !Ref MyEC2Instance
 ```
 
-## Day 3 - Module 03-4: AWS CDK (Cloud Development Kit)
+## AWS CDK (Cloud Development Kit)
 
 ### What is CDK?
 The AWS Cloud Development Kit (CDK) is a development framework for defining AWS cloud infrastructure in software code manner and provisioning it through CloudFormation.
