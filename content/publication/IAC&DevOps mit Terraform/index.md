@@ -178,7 +178,7 @@ StackSets extend the functionality of CloudFormation stacks by enabling you to c
 ![Stack Set](stack-sets.jpg "Stack Set")
 
 ### Nested Stacks
-Nested Stacks allow you to organize your CloudFormation templates into reusable, manageable components. A nested stack is a stack that you create within another stack by using the AWS::CloudFormation::Stack resource. This modular approach simplifies the management of complex systems by allowing you to build layers of abstraction.
+Nested Stacks allow you to organize your CloudFormation templates into reusable, manageable components. A nested stack is a stack that you create within another stack by using the AWS::CloudFormation::Stack resource. This "modular" approach simplifies the management of greater systems by allowing you to build layers of abstraction.
 
 ![Nested Stack](nested-stack.jpg "Nested Stack")
 
@@ -285,7 +285,7 @@ Outputs: # Optional
 ## AWS CDK (Cloud Development Kit)
 
 ### What is CDK?
-The AWS Cloud Development Kit (CDK) is a development framework for defining AWS cloud infrastructure in software code manner and provisioning it through CloudFormation.
+The AWS Cloud Development Kit (CDK) is a development framework for defining AWS cloud infrastructure in software like coding manner and provisioning it through CloudFormation.
 
 ![AWS CDK](aws-cdk.jpg "AWS CDK")
 
@@ -297,7 +297,7 @@ The AWS Cloud Development Kit (CDK) is a development framework for defining AWS 
 - C#/.Net
 - Go
 
-### Why Use CDK?
+### Why CDK?
 - **Compress Template-Code**: Generate CloudFormation templates with less code.
 - **Logical Expressions**: Use if-statements, loops, and other logical expressions.
 - **Modular Approach**: Object-oriented programming structure to model infrastructure.
@@ -319,3 +319,117 @@ The AWS Cloud Development Kit (CDK) is a development framework for defining AWS 
 - **Context & Feature Flags**: Key-value pairs for additional information and backward compatibility.
 - **Aspects & Escape Hatches**: Operations on constructs and integration of unsupported features.
 - **Bootstrapping**: Preparing a CDK environment with necessary resources.
+
+## Terraform Overview
+
+### Introduction to Terraform
+Terraform is a powerful tool designed for building, changing, and versioning infrastructure safely and efficiently. As an open-source project initiated by HashiCorp in 2014, it has rapidly become a key player in the infrastructure as code (IaC) paradigm.
+
+- **Infrastructure as Code (IaC)**: Terraform enables the management of infrastructure through code to automate the setup and maintenance of hardware components.
+- **Open Source Project**: It is maintained as an open-source project, fostering a broad community of contributors and users.
+- **Project Origin**: The project's development began in 2014, aiming to provide a universal tool for managing diverse cloud services. [Terraform on GitHub](https://github.com/hashicorp/terraform)
+
+### Terraform's Capabilities
+- **Virtual Server Lifecycle Management**: Supports a variety of providers such as AWS, VMware, Azure, and GCP, managing the lifecycle of virtual servers.
+- **Supporting Services Management**: Capable of managing specific services such as DNS and email systems.
+- **System Services Management**: Facilitates the management of system-level services like MySQL and PostgreSQL databases.
+
+### Configuration and Design
+- **Config Files**: Terraform uses HCL or JSON for its configuration files (.tf), offering a user-friendly syntax for declaring infrastructure components.
+- **HashiCorp**: As a HashiCorp creation, Terraform joins a suite of tools like Vagrant, designed to enhance and simplify the management of development environments.
+- **Direct API Use**: Unlike tools such as AWS CloudFormation, Terraform communicates directly with the provider's API, enabling more granular control and flexibility in managing resources across different cloud platforms.
+
+### Top Level Keywords
+- **provider**: Specifies a plugin that Terraform uses to interact with cloud providers, services, and other APIs. It defines the necessary information to connect to a service, like AWS or Google Cloud, such as credentials and region.
+
+- **variable**: Variables in Terraform are placeholders for values that can be set at runtime. They allow for customization of Terraform configurations without altering the code.
+
+- **resource**: A resource block defines a piece of infrastructure, like a virtual machine, network, or database. Terraform uses these definitions to create, manage, and update infrastructure components.
+
+- **output**: Output values are like return values for a Terraform module. They can be used to extract information about the infrastructure, such as IPs, hostnames, and IDs, which can be used elsewhere or displayed to the user.
+
+- **module**: Modules are containers for multiple resources that are used together. A module can be reused across different projects to create predefined sets of resources.
+
+- **data**: Data sources allow Terraform to use information defined outside of Terraform, or defined by another separate Terraform configuration.
+
+- **terraform**: A special block where you define Terraform settings, such as required Terraform version, backend configuration, etc.
+
+- **locals**: Locals are named values that you can use to simplify or avoid repetition in your Terraform code. Unlike variables, locals are not user input but are more like constants within a module.
+
+### EXAMPLE.TF
+```terraform
+resource "aws_instance" "web" {
+  ami           = "ami-0375ca3842950ade6"
+  instance_type = "t2.micro"
+}
+
+resource "dnsimple_record" "web" {
+  domain = "hashicorp.com"
+  name   = "web"
+  ttl    = "3600"
+  type   = "A"
+  value  = aws_instance.web.public_ip
+}
+```
+
+### Terraform's internal Structure
+Core <-> Plugins <-> Upstream APIs
+
+### Core Concepts
+- **Config**: Target Reality
+- **State**: Current Reality
+- **Diff**:[Config - State]
+- **Plan**: Presents Diff
+- **Apply**: Resolves Diff
+
+### Terraform CLI
+- All interactions with terraform occur via CLI
+- TF is a local tool (runs on current machine)
+- ecosystem with different providers of cloud services and module repo
+
+- `terraform init` to initialize new working directory containing .tf config files
+- `terraform fmt` for canonical formatting + reporting syntax errors
+
+![Terraform Commands](terraform-commands.jpg "Terraform Commands")
+
+### Terraform Deployment Lifecycle
+![Terraform Deployment Lifecycle](tf-deployment-lifecycle.jpg "Terraform Deployment Lifecycle")
+
+Mache mir eine sehr gute Zusammenfassung über "terraform plan" in english in MD (nur H3) aus den nachfolgenden Informationen. Bitte so kompakt, übersichtlich und prägnant wie möglich!
+
+### Command: terraform plan
+- The terraform plan command is used to create an execution plan. Terraform performs a refresh, unless explicitly disabled, and then determines what actions are necessary to achieve the desired state specified in the configuration files
+- Computes the desired state of the configuration
+
+#### Options
+- **-destroy** - If set, generates a plan to destroy all the known resources.
+- **-input=true** - Ask for input for variables if not directly set.
+- **-out=path** - The path to save the generated execution plan. This plan can then be used with terraform apply to be certain that only the changes shown in this plan are applied.
+- **-var 'foo=bar'** - Set a variable in the Terraform configuration
+
+#### Diff symbols
+- **+** resource will be created
+- **-** resource will be deleted
+- **~** resource will be updated in place
+- **-/+** resource(s) will be destroyed and re-created
+ 
+ ### Command: terraform plan
+ - The terraform apply command is used to apply the changes required to reach the desired state of the configuration, or the pre-determined set of actions generated by a terraform plan execution plan.
+ - Executes all differences between current state and configured state
+
+#### Options
+- **-input=true** - Ask for input for variables if not directly set
+- **-var 'foo=bar'** - Set a variable in the Terraform configuration.
+- **-auto-approve** - Apply plan without confirmation
+- …
+
+ ### Command: terraform show
+- The terraform show command is used to provide human-readable output from a state or plan file.
+- Inspect your infrastructure 
+
+#### Options
+- **-module-depth=n** - Specifies the depth of modules to show in the output.
+
+ ### Command: terraform state
+
+ 
