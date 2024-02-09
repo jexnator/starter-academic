@@ -71,10 +71,9 @@ projects: []
 #   Otherwise, set `slides: ""`.
 slides: ""
 ---
-# DevOps and Automation Module
-
 {{< toc >}}
 
+# DevOps and Automation Module
 ## Introduction to DevOps
 
 ### What is DevOps?
