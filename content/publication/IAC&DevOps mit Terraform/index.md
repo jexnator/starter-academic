@@ -475,9 +475,9 @@ Terraform stores its state locally in terraform.tfstate (not encrypted) by defau
 - **Types**: IaaS (e.g., AWS), PaaS (e.g., Heroku), SaaS (e.g., Terraform Enterprise).
 
 ### Provider for AWS
-- **Access**: Requires AWS account details.
-- **Interaction**: Defines how Terraform interacts with AWS API.
-- **Configuration**:
+**Access**: Requires AWS account details.
+**Interaction**: Defines how Terraform interacts with AWS API.
+**Configuration**:
   - Minimal: `provider "aws" {}`
   - Detailed:
     ```hcl
@@ -487,17 +487,17 @@ Terraform stores its state locally in terraform.tfstate (not encrypted) by defau
       secret_key = "asecretkey" 
     }
     ```
-- **Credentials**:
+**Credentials**:
   - Set via environment variables, not in `providers.tf`.
   - Use a shared credentials file or assume a role for security.
 
 ### Best Practices
-- **File Structure**: Define all providers in `providers.tf`.
-- **Security**: Never hardcode access keys; use environment variables or config files.
-- **Aliases**: Use aliases for handling multiple provider instances.
+**File Structure**: Define all providers in `providers.tf`.
+**Security**: Never hardcode access keys; use environment variables or config files.
+**Aliases**: Use aliases for handling multiple provider instances.
   - Default provider has no alias.
   - Additional providers require an alias.
-- **Explicit Use**: Resources can specify which provider to use with the `provider` setting.
+**Explicit Use**: Resources can specify which provider to use with the `provider` setting.
 
 ### Example with Alias
 ```hcl
