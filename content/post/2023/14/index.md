@@ -1,14 +1,14 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Calendar week 48"
+title: "27/11/2023 - 30/11/2023"
 subtitle: ""
 summary: "Trainee diary"
 authors: [Xavier Jeiziner]
 tags: []
 categories: []
-date: 2023-12-01
-lastmod: 2023-12-01
+date: 2023-11-30
+lastmod: 2023-11-30
 featured: false
 draft: false
 
