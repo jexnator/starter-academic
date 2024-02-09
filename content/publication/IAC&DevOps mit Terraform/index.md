@@ -73,6 +73,8 @@ slides: ""
 ---
 # DevOps and Automation Module
 
+{{< toc >}}
+
 ## Introduction to DevOps
 
 ### What is DevOps?
