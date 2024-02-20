@@ -41,14 +41,14 @@ I was able to develop myself further this week, be it in contact with external p
 On the whole, I am satisfied with my progress over the last few weeks, especially in the area of scheduling. However, I would like to spend more time working on the internal modules over the next few weeks, as I really want to make progress in this area. Target: 80% Internal modules / 20% other tasks.
 
 <br>
-<div style="padding: 20px; padding-top: 10px; color: #eee; background-color: #333; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-  <h2 style="text-align: center; color: #ccc;">Work Distribution Last Week</h2>
+<div style="padding: 18px; padding-top: 10px; color: #eee; background-color: #333; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <h2 style="text-align: center; color: #ccc;">Work distribution this week</h2>
   <div style="background-color: #454545; padding: 15px; margin-bottom: 20px; border-radius: 8px; color: #eee; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);">
-    <strong>Internal Modules (35%)</strong>
+    <strong>internal modules (35%)</strong>
     <div style="width: 35%; height: 30px; background: linear-gradient(to right, #607D8B 0%, #B0BEC5 100%); border-radius: 5px; margin-top: 10px;"></div>
   </div>
   <div style="background-color: #454545; padding: 15px; border-radius: 8px; color: #eee; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);">
-    <strong>Other Tasks (65%)</strong>
+    <strong>other tasks (65%)</strong>
     <div style="width: 65%; height: 30px; background: linear-gradient(to right, #FF5722 0%, #FFCCBC 100%); border-radius: 5px; margin-top: 10px;"></div>
   </div>
 </div>
