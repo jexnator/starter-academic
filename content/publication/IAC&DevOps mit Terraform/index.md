@@ -511,4 +511,4 @@ resource "aws_vpn_gateway" "vpn_gw" {
 }
 ```
 
-###### Continue on slide 79
+###### Continue on slide  79
