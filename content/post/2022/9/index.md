@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "28/11 - 09/12/2022"
+title: "28/11/2022 - 09/12/2022"
 subtitle: ""
 summary: "Trainee diary"
 authors: [Xavier Jeiziner]

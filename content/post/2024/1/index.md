@@ -1,14 +1,14 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Start into 2023"
+title: "01/01/2024 - 19/01/2024"
 subtitle: ""
 summary: "Trainee diary"
 authors: [Xavier Jeiziner]
 tags: []
 categories: []
-date: 2023-12-01
-lastmod: 2023-12-01
+date: 2024-01-01
+lastmod: 2024-01-01
 featured: false
 draft: false
 

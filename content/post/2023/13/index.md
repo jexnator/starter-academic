@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Monthly Review 21/08/2023 - 29/09/2023"
+title: "21/08/2023 - 29/09/2023"
 subtitle: ""
 summary: "Trainee diary"
 authors: [Xavier Jeiziner]
