@@ -40,9 +40,7 @@ I was able to develop myself further this week, be it in contact with external p
 ## What will I do different from now?
 On the whole, I am satisfied with my progress over the last few weeks, especially in the area of scheduling. However, I would like to spend more time working on the internal modules over the next few weeks, as I really want to make progress in this area. Target: 80% Internal modules / 20% other tasks.
 
-</p><br>
-<p></p>
-
+<br>
 <div style="padding: 20px; padding-top: 10px; color: #eee; background-color: #333; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
   <h2 style="text-align: center; color: #ccc;">Work Distribution Last Week</h2>
   <div style="background-color: #454545; padding: 15px; margin-bottom: 20px; border-radius: 8px; color: #eee; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);">
