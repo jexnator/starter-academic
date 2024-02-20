@@ -40,20 +40,6 @@ I was able to develop myself further this week, be it in contact with external p
 #### What will I do different from now?
 On the whole, I am satisfied with my progress over the last few weeks, especially in the area of scheduling. However, I would like to spend more time working on the internal modules over the next few weeks, as I really want to make progress in this area. Target: 80% training / 20% other tasks.
 
-<div style="padding: 20px;">
-  <h2 style="color: #666;">Work Distribution Last Week</h2>
-  <div style="background-color: #e0e0e0; padding: 10px; margin-bottom: 10px; color: #333;">
-    <strong>Internal Modules (35%)</strong>
-    <div style="width: 35%; height: 20px; background-color: #757575;"></div>
-  </div>
-  <div style="background-color: #e0e0e0; padding: 10px; margin-bottom: 10px; color: #333;">
-    <strong>Other Tasks (65%)</strong>
-    <div style="width: 65%; height: 20px; background-color: #9e9e9e;"></div>
-  </div>
-</div>
-
-x
-
 <div style="padding: 20px; color: #333; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <h2 style="text-align: center; color: #666;">Work Distribution Last Week</h2>
   <div style="background-color: #f5f5f5; padding: 15px; margin-bottom: 20px; border-radius: 8px; color: #333; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);">
@@ -63,5 +49,19 @@ x
   <div style="background-color: #f5f5f5; padding: 15px; border-radius: 8px; color: #333; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);">
     <strong>Other Tasks (65%)</strong>
     <div style="width: 65%; height: 30px; background: linear-gradient(to right, #FF5722 0%, #FFCCBC 100%); border-radius: 5px; margin-top: 10px;"></div>
+  </div>
+</div>
+
+x
+
+<div style="padding: 20px; color: #333; background-color: #fff; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.1); transition: box-shadow 0.3s ease;">
+  <h2 style="text-align: center; color: #666;">Work Distribution Last Week</h2>
+  <div style="background-color: #f5f5f5; padding: 20px; margin-bottom: 20px; border-radius: 8px; color: #333; box-shadow: inset 0 4px 8px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='inset 0 4px 8px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='inset 0 4px 8px rgba(0,0,0,0.05)';">
+    <strong>Internal Modules (35%)</strong>
+    <div style="width: 35%; height: 30px; background: linear-gradient(to right, #607D8B 0%, #B0BEC5 100%); border-radius: 5px; margin-top: 10px; transition: background 0.3s ease;" onmouseover="this.style.background='linear-gradient(to right, #455A64 0%, #90A4AE 100%)';" onmouseout="this.style.background='linear-gradient(to right, #607D8B 0%, #B0BEC5 100%)';"></div>
+  </div>
+  <div style="background-color: #f5f5f5; padding: 20px; border-radius: 8px; color: #333; box-shadow: inset 0 4px 8px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='inset 0 4px 8px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='inset 0 4px 8px rgba(0,0,0,0.05)';">
+    <strong>Other Tasks (65%)</strong>
+    <div style="width: 65%; height: 30px; background: linear-gradient(to right, #FF5722 0%, #FFCCBC 100%); border-radius: 5px; margin-top: 10px; transition: background 0.3s ease;" onmouseover="this.style.background='linear-gradient(to right, #E64A19 0%, #FFAB91 100%)';" onmouseout="this.style.background='linear-gradient(to right, #FF5722 0%, #FFCCBC 100%)';"></div>
   </div>
 </div>
