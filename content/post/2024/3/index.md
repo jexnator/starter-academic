@@ -65,3 +65,91 @@ x
     <div style="width: 65%; height: 30px; background: linear-gradient(to right, #FF5722 0%, #FFCCBC 100%); border-radius: 5px; margin-top: 10px; transition: background 0.3s ease;" onmouseover="this.style.background='linear-gradient(to right, #E64A19 0%, #FFAB91 100%)';" onmouseout="this.style.background='linear-gradient(to right, #FF5722 0%, #FFCCBC 100%)';"></div>
   </div>
 </div>
+
+
+<style>
+  .container {
+    padding: 20px; 
+    color: #333; 
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+    transition: box-shadow 0.3s ease;
+    text-align: center;
+  }
+
+  .bar {
+    height: 30px; 
+    border-radius: 5px; 
+    margin-top: 10px; 
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .bar:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(120deg, rgba(255,255,255,0.2), rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.2));
+    z-index: 1;
+    transform: translateX(-100%);
+    animation: shine 1.5s infinite;
+  }
+
+  @keyframes shine {
+    to {
+      transform: translateX(100%);
+    }
+  }
+
+  .bar-inner {
+    height: 100%;
+    position: relative;
+    z-index: 0;
+    border-radius: 5px;
+  }
+
+  .internal-modules {
+    width: 35%; 
+    background: linear-gradient(to right, #607D8B, #B0BEC5); 
+  }
+
+  .other-tasks {
+    width: 65%; 
+    background: linear-gradient(to right, #FF5722, #FFCCBC); 
+  }
+
+  .task-label {
+    padding: 15px; 
+    margin-bottom: 20px; 
+    border-radius: 8px; 
+    color: #333; 
+    background-color: #f5f5f5; 
+    box-shadow: inset 0 4px 8px rgba(0,0,0,0.05); 
+    transition: all 0.3s ease;
+  }
+
+  .task-label:hover .bar {
+    transform: scale(1.05);
+  }
+</style>
+
+<div class="container">
+  <h2>Work Distribution Last Week</h2>
+  <div class="task-label">
+    <strong>Internal Modules (35%)</strong>
+    <div class="bar internal-modules">
+      <div class="bar-inner"></div>
+    </div>
+  </div>
+  <div class="task-label">
+    <strong>Other Tasks (65%)</strong>
+    <div class="bar other-tasks">
+      <div class="bar-inner"></div>
+    </div>
+  </div>
+</div>
