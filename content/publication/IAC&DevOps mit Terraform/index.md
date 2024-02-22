@@ -513,3 +513,107 @@ resource "aws_vpn_gateway" "vpn_gw" {
 ```
 
 ## Variables in Terraform
+- Variables in Terraform resemble those in programming languages.
+- They replace hardcoded values with flexible parameters in configurations.
+- Variables enhance clarity and reusability of configurations.
+- Every variable must be assigned a value; none are optional, though default values can be set.
+
+Types: Most common types are strings, numbers, lists and maps. Other accepted types are booleans, sets, objects and tuples. If omitted, the type is inferred from the default value. If the type and the default value is missing, it's assumed to be a string.
+
+```hcl
+# Variable declaration with string type
+variable "image_id" {
+  type = string
+}
+
+# Variable with a default list value
+variable "availability_zone_names" {
+  type    = list(string)
+  default = ["us-west-1a"]
+}
+
+# Variable declaration for a map
+variable "tags" {
+  type = map(string)
+}
+
+# Usage of string interpolation
+resource "aws_instance" "example" {
+  ami           = var.image_id
+  instance_type = "t2.micro"
+
+  # Interpolate variable into a string
+  tags = {
+    Name = "Server-${var.image_id}"
+  }
+}
+
+# Multiline string with heredoc syntax
+resource "aws_security_group" "example" {
+  name = "security_group_name"
+  description = <<EOF
+This is a multiline description
+that spans several lines
+using heredoc syntax.
+EOF
+}
+
+# Numeric values, including hex
+resource "aws_ebs_volume" "example" {
+  size = 10 # base 10 integer
+  # Hexadecimal value for the number of IOPS
+  iops = 0x100 
+}
+
+# Boolean value
+resource "aws_instance" "example_with_condition" {
+  ami           = var.image_id
+  instance_type = "t2.micro"
+  monitoring    = true # Boolean value
+}
+
+# List value
+resource "aws_autoscaling_group" "example" {
+  availability_zones = var.availability_zone_names
+  min_size           = 1
+  max_size           = 5
+}
+
+# Map value
+resource "aws_instance" "example_with_tags" {
+  ami           = var.image_id
+  instance_type = "t2.micro"
+
+  # Map variable usage
+  tags = var.tags
+}
+
+# Conditional expression
+resource "aws_elb" "example" {
+  name               = "foobar-terraform-elb"
+  availability_zones = var.availability_zone_names
+
+  # Conditional example - if instance is production, use 5 instances, else use 1
+  instances = var.environment == "production" ? [aws_instance.production.*.id] : [aws_instance.development.id]
+}
+```
+
+{{% callout warning %}}
+Never put secret values, like passwords or access tokens in .tf files or other files that are checked into source control!
+{{% /callout %}}
+
+## Locals in Terraform
+In Terraform, `locals` are used to simplify and reuse expressions within a module. Think of it as a local variable within a function in Python that can only be addressed within the function.
+
+Example:
+
+```hcl
+locals {
+  # Define a local value
+  service_name = "my-service"
+}
+
+resource "aws_s3_bucket" "example" {
+  # Use the local value
+  bucket = "${local.service_name}-data"
+}
