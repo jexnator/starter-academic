@@ -499,9 +499,10 @@ Terraform stores its state locally in terraform.tfstate (not encrypted) by defau
   - Additional providers require an alias.
 **Explicit Use**: Resources can specify which provider to use with the `provider` setting.
 
-### Example with Alias
+### Example with Alias & Versioning
 ```hcl
-provider "aws" { 
+provider "aws" {
+  version = ">= 1.19.0"
   alias = "providerAlias"
   region = "${var.region}" 
 }
@@ -511,4 +512,4 @@ resource "aws_vpn_gateway" "vpn_gw" {
 }
 ```
 
-###### Continue on slide  79
+## Variables in Terraform
