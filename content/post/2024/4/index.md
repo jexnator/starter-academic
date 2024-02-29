@@ -43,7 +43,7 @@ I've been thinking about the best way to structure my day. The idea is to set wo
 ## How did I improve this week?
 Looking back at the goals I set myself last week, I was able to improve in the area of planning. I try to consistently add new tasks I receive to Microsoft ToDo, schedule and prioritize them and remind myself. I have also added recursive weekly tasks for AWS cost management, writing this blog and Tempus. 
 
-## What will I do differently from now on?
+### What will I do differently from now on?
 Reflecting on this week's improvements and goals, I realize how important it is to structure your daily routine, as I think there is a lot of context switching in IT. In the future, I want to allocate specific blocks of time for intensive work and minimize distractions to become more efficient. This approach will help me achieve my technical goals and ensure that I have enough time in the evenings for school, personal development and leisure.
 
 <br>
