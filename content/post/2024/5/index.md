@@ -2,7 +2,7 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "27/02/2024 - 01/03/2023"
-subtitle: "WP sucks"
+subtitle: "Why do Java developers wear glasses? Because they can't C#."
 summary: "Trainee diary"
 authors: [Xavier Jeiziner]
 tags: []
