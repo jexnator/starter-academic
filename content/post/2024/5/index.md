@@ -46,11 +46,11 @@ Reflecting on the past week has shown me that I can improve my approach to tasks
 <div style="padding: 18px; padding-top: 10px; color: #eee; background-color: #3c3c3c; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
   <h2 style="text-align: center; color: #ccc;">Work distribution this week</h2>
   <div style="background-color: #505050; padding: 15px; margin-bottom: 20px; border-radius: 8px; color: #eee; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);">
-    <strong>internal modules (35%)</strong>
-    <div style="width: 35%; height: 30px; background: linear-gradient(to right, #607D8B 0%, #B0BEC5 100%); border-radius: 5px; margin-top: 10px;"></div>
+    <strong>internal modules (10%)</strong>
+    <div style="width: 10%; height: 30px; background: linear-gradient(to right, #607D8B 0%, #B0BEC5 100%); border-radius: 5px; margin-top: 10px;"></div>
   </div>
   <div style="background-color: #505050; padding: 15px; border-radius: 8px; color: #eee; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);">
-    <strong>other tasks (65%)</strong>
-    <div style="width: 65%; height: 30px; background: linear-gradient(to right, #FF5722 0%, #FFCCBC 100%); border-radius: 5px; margin-top: 10px;"></div>
+    <strong>other tasks (90%)</strong>
+    <div style="width: 90%; height: 30px; background: linear-gradient(to right, #FF5722 0%, #FFCCBC 100%); border-radius: 5px; margin-top: 10px;"></div>
   </div>
 </div>
