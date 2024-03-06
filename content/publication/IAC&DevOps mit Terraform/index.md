@@ -702,3 +702,83 @@ module "my_module" {
   # Additional configurations ...
 }
 ```
+
+## Terraform Provisioners
+
+### Definition and Usage
+
+Provisioners in Terraform are used to execute scripts on a local or remote machine as part of resource creation or destruction.
+
+```hcl
+resource "aws_instance" "example" {
+  ami           = "ami-275f631"
+  instance_type = "t2.micro"
+
+  provisioner "local-exec" {
+    command = "echo ${aws_instance.example.private_ip} >> inventory.txt"
+  }
+}
+```
+
+### Types of Provisioners
+
+- **Creation-Time Provisioners**: These are run only during the creation of the resource, not during updating or any other lifecycle event. They are designed for initial resource setup.
+- **Destroy-Time Provisioners**: These run when the resource is being destroyed, if specified with `when = "destroy"`.
+
+### Provisioning Best Practices
+
+- **Good**: Automating the creation of infrastructure and instance initialization with `user_data` or AWS `cloud-init`.
+- **Better**: Using `remote-exec` provisioner on a base AMI to run a few commands upon instance creation.
+- **Best**: Building AMIs with Packer to ensure minimal configuration is needed during provisioning.
+
+## Terraform Data Sources and Outputs
+
+### Data Sources
+
+Data sources in Terraform are used to fetch or compute data for use elsewhere in your Terraform configuration. They allow a Terraform configuration to build on information defined outside of Terraform or defined by another separate Terraform configuration. For most AWS Resources, there is an equivalent Data Source available for querying data.
+
+Example of a Data Source configuration:
+
+```hcl
+data "aws_ami" "web" {
+  filter {
+    name   = "state"
+    values = ["available"]
+  }
+
+  filter {
+    name   = "tag:Component"
+    values = ["web"]
+  }
+
+  most_recent = true
+}
+
+cluster_id = data.terraform_remote_state.base.iac_ecs_cluster.ecs_cluster_id
+```
+
+### Outputs
+
+Outputs in Terraform are used to output important data from your Terraform configuration that you want to easily access or use in other configurations. This data can be outputted when Terraform apply is called and can be queried using the Terraform output command.
+
+Outputs are particularly useful for displaying computed values like IP addresses, DNS names, and resource IDs. They can be consumed by other Terraform configurations or modules.
+
+Example of defining an output:
+
+```hcl
+output "public_ip" {
+  value = aws_instance.web.public_ip
+}
+
+output "public_dns" {
+  value = aws_instance.web.public_dns
+}
+```
+
+Example of querying an output:
+
+```shell
+> terraform output
+public_dns = ec2-34-222-156-11.us-west-2.compute.amazonaws.com
+public_ip = 34.222.156.11
+```
