@@ -973,3 +973,166 @@ The `terraform refresh` command updates the state file with the real-world infra
 This is useful for ensuring that Terraform's state matches the actual infrastructure and for detecting drift. 
 
 The `terraform state list` command will then list the updated resources known to the state file.
+
+## Terraform Workspaces
+
+### Understanding Terraform Workspaces
+
+Terraform Workspaces are used to manage multiple states within the same Terraform configuration, allowing for parallel management of different environments such as development, staging, and production. Each workspace encapsulates a set of infrastructure with its state and variables, enabling changes to be applied without affecting other environments.
+
+### Advantages of Workspaces
+
+- **Isolation**: Workspaces keep state and variables separate, reducing the risk of cross-environment changes.
+- **Environment Specific Configuration**: Resources can be tailored for specific workspaces using conditional logic within Terraform code.
+- **Backend Support**: Workspaces are typically backed by remote state storage like S3, which helps with state sharing and locking.
+
+### Best Practices with Workspaces
+
+- **Automation**: Integrate workspace management into CI/CD pipelines for consistency and reliability.
+- **Switching Context**: Always ensure you are operating in the correct workspace to prevent unintended changes.
+
+### Working with Workspaces in Terraform
+
+#### Initializing and Selecting a Workspace
+
+```shell
+terraform workspace new <workspace_name>
+terraform workspace select <workspace_name>
+```
+
+#### Example Workspace Configuration
+
+Local values and provider configuration can be adapted based on the workspace:
+
+```hcl
+    locals {
+      environment   = terraform.workspace == "default" ? "development" : terraform.workspace
+      // Other local variables mapped per environment...
+    }
+
+    provider "aws" {
+      region             = "us-west-1"
+      allowed_account_ids = [local.allowed_account_ids]
+      // Assume role if necessary...
+    }
+```
+
+#### Conditional Resource Creation
+
+Resources can be conditionally created based on the workspace:
+
+```hcl
+    resource "aws_instance" "example" {
+      count = terraform.workspace == "prod" ? 1 : 0
+      // Other configuration...
+    }
+```
+
+#### CI/CD Pipeline Integration
+
+Automating workspace operations through a CI/CD pipeline is recommended for safety and efficiency:
+
+```yaml
+# CI/CD pipeline example for Terraform
+build:
+  commands:
+    - terraform init
+    - terraform validate
+    - terraform workspace select ${WORKSPACE_NAME} || terraform workspace new ${WORKSPACE_NAME}
+    - terraform plan
+    - terraform apply
+```
+
+### Handling Multiple Workspaces
+- **Visibility**: Tools or conventions should be used for clear visibility of workspaces and their corresponding infrastructure.
+- **Safety**: Care should be taken to avoid applying changes to the wrong workspace.
+- **Maintenance**: Regular review of workspaces and their resources ensures they remain aligned with their purpose.
+
+## Utilizing `for_each` in Terraform
+
+### Creating Multiple IAM Users
+
+```hcl
+    variable "user_names" {
+      description = "Create IAM users with these names"
+      type        = list(string)
+      default     = ["neo", "trinity", "morpheus"]
+    }
+
+    resource "aws_iam_user" "example" {
+      for_each = toset(var.user_names)
+      name     = each.value
+    }
+
+    output "all_arns" {
+      value = values(aws_iam_user.example)[*].arn
+    }
+```
+
+This example creates IAM users for each name in the `user_names` list and outputs their ARNs after `terraform apply`.
+
+### Looping Over Inline Blocks in Resources
+
+```hcl
+    resource "aws_autoscaling_group" "example" {
+      # (...)
+
+      dynamic "tag" {
+        for_each = var.custom_tags
+
+        content {
+          key                 = tag.key
+          value               = tag.value
+          propagate_at_launch = true
+        }
+      }
+    }
+```
+
+The `dynamic` block with `for_each` loops over `custom_tags` and creates tags for the autoscaling group.
+
+### Using `for_each` with Expressions
+
+```hcl
+    variable "names" {
+      description = "A list of names"
+      type        = list(string)
+      default     = ["neo", "trinity", "morpheus"]
+    }
+
+    output "upper_names" {
+      value = [for name in var.names : upper(name)]
+    }
+
+    output "short_upper_names" {
+      value = [for name in var.names : upper(name) if length(name) <= 5]
+    }
+```
+
+The first output transforms all names to uppercase, while the second output includes only names with 5 or fewer characters in uppercase.
+
+### Conditionals with `for_each`
+
+```hcl
+    dynamic "tag" {
+      for_each = {
+        for key, value in var.custom_tags :
+        key => upper(value) if key != "Name"
+      }
+
+      content {
+        key                 = tag.key
+        value               = tag.value
+        propagate_at_launch = true
+      }
+    }
+```
+
+This dynamic block uses a `for` expression with a conditional to exclude certain tags.
+
+### Limitations and Capabilities
+
+- Cannot use `count` and `for_each` within the same resource block.
+- From Terraform 0.13 and up, it's possible to use `for_each` and `count` together within module definitions.
+
+The `for_each` argument allows Terraform to create multiple instances of a resource or module. It loops over a given collection and creates one instance per item. Conditionals can be used to filter or modify the collection. The outputs can then collect the attributes of the created resources.
