@@ -28,19 +28,16 @@ image:
 projects: []
 ---
 ## What are my actual goals?
-Refining my goals from last week is still a priority. My focus is on improving efficiency in structuring and completing technical tasks and my time management.
+Refining my goals from last week is still a priority. My focus is on improving efficiency in structuring and completing technical tasks and on my time management.
 
 ## What did I do this week?
-I successfully patched the Bitnami LAMP stack on AWS Lightsail for the Amanox website and migrated WordPress.
-There was a setback when updating WordPress. Despite several approaches - updating via the GUI, manually updating via SFTP by swapping core folders, and attempting to update on the VM via the WP-CLI in a gradual version increment - the update failed. This experience was frustrating, and showed me that sometimes software can still be crap, despite being the market leader.
-Now I've agreed with our Creative Strategist Oliver Blaum that he will update Wordpress via a special staging plugin.
-My involvement in these tasks limited the time available to work on the internal module, which was both an unintended and tedious consequence of the WP Jazz.
+I successfully patched the Bitnami LAMP stack on AWS Lightsail for the Amanox website and migrated WordPress. There was one setback when updating WordPress. Despite several approaches - updating via the GUI, manually updating via SFTP by swapping core folders and attempting to update on the VM via the WP-CLI in a gradual version jump - the update failed. This experience was frustrating and showed me that despite market leadership, software can sometimes be crap. Now I have agreed with our creative strategist Oliver Blaum that he will update Wordpress via a special staging plugin, where he has a license. My involvement in these tasks limited the time available to work on the internal module, which was an unintended and annoying consequence of the WP-Jazz.
 
 ## How did I improve this week?
-In a Teams call with Dino about a school project, I was able to convey to him about my progress and the challenges I was facing both internally and academically. This interaction was valuable for me.
+In a Teams call with Dino about a school project, I was able to share with him my progress and the challenges I was facing both internally and in school. This interaction was very valuable for me.
 
 ## What will I do different from now?
-Reflecting on the past week has shown me that I can improve my approach to tasks. I tend to spend an inordinate amount of time perfecting details, being stubborn or misjudging the prioritization of tasks. While this perfectionism is sometimes beneficial, it can also lead to inefficiency, as evidenced by the effort I put into the unsuccessful WordPress update. In future, I would like to improve my decision-making process with regard to prioritizing tasks and know when I need to delegate or get help.
+Reflecting on the past week has shown me that I can improve my approach to tasks. I sometimes tend to spend too much time on details and I lose power over prioritizing tasks because I care about completing tasks successfully. While this attention to detail is sometimes beneficial, it can also lead to inefficiency. In the future, I want to improve my decision-making process in terms of prioritizing tasks and knowing when to delegate, inform or get help.
 
 <br>
 <div style="padding: 18px; padding-top: 10px; color: #eee; background-color: #3c3c3c; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
