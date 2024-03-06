@@ -617,6 +617,7 @@ resource "aws_s3_bucket" "example" {
   # Use the local value
   bucket = "${local.service_name}-data"
 }
+```
 
 ## Terraform Resource Configuration
 
