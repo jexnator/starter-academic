@@ -815,3 +815,103 @@ Example of S3 backend configuration:
 ```
 
 In this example, the S3 backend is configured to store the Terraform state in a specified S3 bucket. The path to the state key and the bucket's region are specified. This configuration allows multiple users to manage the state consistently and carry out operations securely and efficiently.
+
+## Terraform Modules Overview
+
+### Initial Setup with Modules
+
+- Start with everything in `main.tf`.
+- Basic AWS provider configuration and a VPC resource with output:
+
+```hcl
+    provider "aws" {
+      region = "eu-west-1"
+    }
+
+    resource "aws_vpc" "this" {
+      cidr_block           = "10.10.0.0/16"
+      enable_dns_hostnames = true
+    }
+
+    output "this_vpc_id" {
+      value = "${aws_vpc.this.id}"
+    }
+```
+
+### When to Use Modules
+
+As the project grows (20+ resources and data sources), issues arise:
+  - Increasing code size.
+  - Complicated dependencies between resources.
+  - Large impact on `terraform apply`.
+
+Modules solve these issues by organizing Terraform configurations into folders.
+
+### Types of Modules
+
+**Resource modules** (`terraform-aws-modules`), used for:
+  - Creating resources.
+  - Minimal inter-module dependencies.
+  - High flexibility.
+
+**Infrastructure modules** incorporate:
+  - Specific versions of resource modules.
+  - Company-wide standards (e.g., tagging conventions).
+
+### Module Implementation Example
+
+**Resource Module Example**:
+
+```hcl
+    module "atlantis_alb_sg" {
+      source  = "terraform-aws-modules/security-group/aws//modules/https-443"
+      version = "v2.0.0"
+
+      name        = "atlantis-alb"
+      vpc_id      = "vpc-12345678"
+      description = "Security group with HTTPS ports open for everybody (IPv4 CIDR)"
+      ingress_cidr_blocks = ["0.0.0.0/0"]
+    }
+```
+
+**Infrastructure Module Example**:
+
+```hcl
+    module "atlantis" {
+      source = "terraform-aws-modules/atlantis/aws"
+
+      name   = "atlantis"
+      # VPC
+      cidr            = "10.20.0.0/20"
+      azs             = ["eu-west-1a", "eu-west-1b", "eu-west-1c"]
+      private_subnets = ["10.20.1.0/24", "10.20.2.0/24", "10.20.3.0/24"]
+      public_subnets  = ["10.20.101.0/24", "10.20.102.0/24", "10.20.103.0/24"]
+      # DNS
+      route53_zone_name = "terraform-aws-modules.modules.tf"
+      # Atlantis app
+      atlantis_github_user       = "atlantis-bot"
+      atlantis_github_user_token = "examplegithubtoken"
+    }
+```
+
+### Organizing Modules
+
+Categorize by function:
+  - **Front-end Services**: Websites, mobile back-end.
+  - **Back-end Services**: Search, payments, reviews.
+  - **Shared Services**: CRM databases, monitoring.
+  - **Base Network**: VPCs, IGWs, VPNs, NATs.
+  - **Identity**: IAM policies, users, groups.
+
+### Tips and Best Practices
+
+Utilize the **Terraform Module Registry** for discovering and using community modules.
+- Good Terraform modules have:
+  - Clean code.
+  - Rich features.
+  - Sensible defaults.
+  - Tests, examples, documentation.
+  - Security, versioning, lifecycle-readiness.
+
+### Module References Storage
+`.terraform` directory stores module references, allowing immediate access to module changes. Use `tree` or `ls -1` to view the `.terraform` directory contents for modules and plugins.
