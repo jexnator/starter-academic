@@ -357,20 +357,20 @@ Terraform is a powerful tool designed for building, changing, and versioning inf
 
 - **locals**: Locals are named values that you can use to simplify or avoid repetition in your Terraform code. Unlike variables, locals are not user input but are more like constants within a module.
 
-### EXAMPLE.TF
+### example.tf
 ```terraform
-resource "aws_instance" "web" {
-  ami           = "ami-0375ca3842950ade6"
-  instance_type = "t2.micro"
-}
+  resource "aws_instance" "web" {
+    ami           = "ami-0375ca3842950ade6"
+    instance_type = "t2.micro"
+  }
 
-resource "dnsimple_record" "web" {
-  domain = "hashicorp.com"
-  name   = "web"
-  ttl    = "3600"
-  type   = "A"
-  value  = aws_instance.web.public_ip
-}
+  resource "dnsimple_record" "web" {
+    domain = "hashicorp.com"
+    name   = "web"
+    ttl    = "3600"
+    type   = "A"
+    value  = aws_instance.web.public_ip
+  }
 ```
 
 ### Terraform's internal Structure
