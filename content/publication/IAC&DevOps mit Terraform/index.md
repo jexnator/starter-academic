@@ -359,18 +359,18 @@ Terraform is a powerful tool designed for building, changing, and versioning inf
 
 ### example.tf
 ```terraform
-  resource "aws_instance" "web" {
-    ami           = "ami-0375ca3842950ade6"
-    instance_type = "t2.micro"
-  }
+    resource "aws_instance" "web" {
+      ami           = "ami-0375ca3842950ade6"
+      instance_type = "t2.micro"
+    }
 
-  resource "dnsimple_record" "web" {
-    domain = "hashicorp.com"
-    name   = "web"
-    ttl    = "3600"
-    type   = "A"
-    value  = aws_instance.web.public_ip
-  }
+    resource "dnsimple_record" "web" {
+      domain = "hashicorp.com"
+      name   = "web"
+      ttl    = "3600"
+      type   = "A"
+      value  = aws_instance.web.public_ip
+    }
 ```
 
 ### Terraform's internal Structure
@@ -481,11 +481,11 @@ Terraform stores its state locally in terraform.tfstate (not encrypted) by defau
   - Minimal: `provider "aws" {}`
   - Detailed:
     ```hcl
-    provider "aws" { 
-      region = "us-west-2" 
-      access_key = "anaccesskey" 
-      secret_key = "asecretkey" 
-    }
+        provider "aws" { 
+          region = "us-west-2" 
+          access_key = "anaccesskey" 
+          secret_key = "asecretkey" 
+        }
     ```
 **Credentials**:
   - Set via environment variables, not in `providers.tf`.
@@ -501,15 +501,15 @@ Terraform stores its state locally in terraform.tfstate (not encrypted) by defau
 
 ### Example with Alias & Versioning
 ```hcl
-provider "aws" {
-  version = ">= 1.19.0"
-  alias = "providerAlias"
-  region = "${var.region}" 
-}
-resource "aws_vpn_gateway" "vpn_gw" { 
-  provider = "aws.providerAlias"
-  vpc_id = "vpc_123456gw"  
-}
+    provider "aws" {
+      version = ">= 1.19.0"
+      alias = "providerAlias"
+      region = "${var.region}" 
+    }
+    resource "aws_vpn_gateway" "vpn_gw" { 
+      provider = "aws.providerAlias"
+      vpc_id = "vpc_123456gw"  
+    }
 ```
 
 ## Variables in Terraform
@@ -521,81 +521,81 @@ resource "aws_vpn_gateway" "vpn_gw" {
 Types: Most common types are strings, numbers, lists and maps. Other accepted types are booleans, sets, objects and tuples. If omitted, the type is inferred from the default value. If the type and the default value is missing, it's assumed to be a string.
 
 ```hcl
-# Variable declaration with string type
-variable "image_id" {
-  type = string
-}
+    # Variable declaration with string type
+    variable "image_id" {
+      type = string
+    }
 
-# Variable with a default list value
-variable "availability_zone_names" {
-  type    = list(string)
-  default = ["us-west-1a"]
-}
+    # Variable with a default list value
+    variable "availability_zone_names" {
+      type    = list(string)
+      default = ["us-west-1a"]
+    }
 
-# Variable declaration for a map
-variable "tags" {
-  type = map(string)
-}
+    # Variable declaration for a map
+    variable "tags" {
+      type = map(string)
+    }
 
-# Usage of string interpolation
-resource "aws_instance" "example" {
-  ami           = var.image_id
-  instance_type = "t2.micro"
+    # Usage of string interpolation
+    resource "aws_instance" "example" {
+      ami           = var.image_id
+      instance_type = "t2.micro"
 
-  # Interpolate variable into a string
-  tags = {
-    Name = "Server-${var.image_id}"
-  }
-}
+      # Interpolate variable into a string
+      tags = {
+        Name = "Server-${var.image_id}"
+      }
+    }
 
-# Multiline string with heredoc syntax
-resource "aws_security_group" "example" {
-  name = "security_group_name"
-  description = <<EOF
-This is a multiline description
-that spans several lines
-using heredoc syntax.
-EOF
-}
+    # Multiline string with heredoc syntax
+    resource "aws_security_group" "example" {
+      name = "security_group_name"
+      description = <<EOF
+    This is a multiline description
+    that spans several lines
+    using heredoc syntax.
+    EOF
+    }
 
-# Numeric values, including hex
-resource "aws_ebs_volume" "example" {
-  size = 10 # base 10 integer
-  # Hexadecimal value for the number of IOPS
-  iops = 0x100 
-}
+    # Numeric values, including hex
+    resource "aws_ebs_volume" "example" {
+      size = 10 # base 10 integer
+      # Hexadecimal value for the number of IOPS
+      iops = 0x100 
+    }
 
-# Boolean value
-resource "aws_instance" "example_with_condition" {
-  ami           = var.image_id
-  instance_type = "t2.micro"
-  monitoring    = true # Boolean value
-}
+    # Boolean value
+    resource "aws_instance" "example_with_condition" {
+      ami           = var.image_id
+      instance_type = "t2.micro"
+      monitoring    = true # Boolean value
+    }
 
-# List value
-resource "aws_autoscaling_group" "example" {
-  availability_zones = var.availability_zone_names
-  min_size           = 1
-  max_size           = 5
-}
+    # List value
+    resource "aws_autoscaling_group" "example" {
+      availability_zones = var.availability_zone_names
+      min_size           = 1
+      max_size           = 5
+    }
 
-# Map value
-resource "aws_instance" "example_with_tags" {
-  ami           = var.image_id
-  instance_type = "t2.micro"
+    # Map value
+    resource "aws_instance" "example_with_tags" {
+      ami           = var.image_id
+      instance_type = "t2.micro"
 
-  # Map variable usage
-  tags = var.tags
-}
+      # Map variable usage
+      tags = var.tags
+    }
 
-# Conditional expression
-resource "aws_elb" "example" {
-  name               = "foobar-terraform-elb"
-  availability_zones = var.availability_zone_names
+    # Conditional expression
+    resource "aws_elb" "example" {
+      name               = "foobar-terraform-elb"
+      availability_zones = var.availability_zone_names
 
-  # Conditional example - if instance is production, use 5 instances, else use 1
-  instances = var.environment == "production" ? [aws_instance.production.*.id] : [aws_instance.development.id]
-}
+      # Conditional example - if instance is production, use 5 instances, else use 1
+      instances = var.environment == "production" ? [aws_instance.production.*.id] : [aws_instance.development.id]
+    }
 ```
 
 {{% callout warning %}}
@@ -608,15 +608,15 @@ In Terraform, `locals` are used to simplify and reuse expressions within a modul
 Example:
 
 ```hcl
-locals {
-  # Define a local value
-  service_name = "my-service"
-}
+    locals {
+      # Define a local value
+      service_name = "my-service"
+    }
 
-resource "aws_s3_bucket" "example" {
-  # Use the local value
-  bucket = "${local.service_name}-data"
-}
+    resource "aws_s3_bucket" "example" {
+      # Use the local value
+      bucket = "${local.service_name}-data"
+    }
 ```
 
 ## Terraform Resource Configuration
@@ -626,13 +626,13 @@ resource "aws_s3_bucket" "example" {
 The AWS provider facilitates interactions with the many resources supported by AWS. Resources are defined as follows:
 
 ```hcl
-resource "TYPE" "NAME" {
-  CONFIG ...
-  [for_each = FOR_EACH]
-  [count = COUNT]
-  [depends_on = [NAME, ...]]
-  [provider = PROVIDER]
-}
+    resource "TYPE" "NAME" {
+      CONFIG ...
+      [for_each = FOR_EACH]
+      [count = COUNT]
+      [depends_on = [NAME, ...]]
+      [provider = PROVIDER]
+    }
 ```
 
 ### Resource Configuration Example
@@ -640,10 +640,10 @@ resource "TYPE" "NAME" {
 A basic resource configuration for an AWS instance might look like this:
 
 ```hcl
-resource "aws_instance" "example" {
-  ami           = "ami-275f631"
-  instance_type = "t2.micro"
-}
+    resource "aws_instance" "example" {
+      ami           = "ami-275f631"
+      instance_type = "t2.micro"
+    }
 ```
 
 ### Using `for_each` and `count`
@@ -656,17 +656,17 @@ resource "aws_instance" "example" {
 Examples:
 
 ```hcl
-# for_each
-resource "aws_subnet" "public_subnet" {
-  for_each = var.subnet_numbers
-  # Additional configurations ...
-}
+    # for_each
+    resource "aws_subnet" "public_subnet" {
+      for_each = var.subnet_numbers
+      # Additional configurations ...
+    }
 
-# count
-resource "aws_subnet" "public_subnet" {
-  count = 4
-  # Additional configurations ...
-}
+    # count
+    resource "aws_subnet" "public_subnet" {
+      count = 4
+      # Additional configurations ...
+    }
 ```
 
 ### Lifecycle and Timeouts
@@ -677,18 +677,18 @@ Lifecycle policies and timeouts can be configured to control resource behavior o
 - `timeouts` define how long Terraform should wait for a resource to be created or deleted.
 
 ```hcl
-resource "aws_instance" "example" {
-  # Configurations ...
-  lifecycle {
-    ignore_changes = [ami]
-    prevent_destroy = true
-  }
+    resource "aws_instance" "example" {
+      # Configurations ...
+      lifecycle {
+        ignore_changes = [ami]
+        prevent_destroy = true
+      }
 
-  timeouts {
-    create = "60m"
-    delete = "2h"
-  }
-}
+      timeouts {
+        create = "60m"
+        delete = "2h"
+      }
+    }
 ```
 
 ### Best Practices
@@ -697,11 +697,11 @@ resource "aws_instance" "example" {
 - Use modules instead of a complex file structure as the infrastructure grows.
 
 ```hcl
-# Example for a resource file
-module "my_module" {
-  source = "./modules/my_module"
-  # Additional configurations ...
-}
+    # Example for a resource file
+    module "my_module" {
+      source = "./modules/my_module"
+      # Additional configurations ...
+    }
 ```
 
 ## Terraform Provisioners
@@ -711,14 +711,14 @@ module "my_module" {
 Provisioners in Terraform are used to execute scripts on a local or remote machine as part of resource creation or destruction.
 
 ```hcl
-resource "aws_instance" "example" {
-  ami           = "ami-275f631"
-  instance_type = "t2.micro"
+    resource "aws_instance" "example" {
+      ami           = "ami-275f631"
+      instance_type = "t2.micro"
 
-  provisioner "local-exec" {
-    command = "echo ${aws_instance.example.private_ip} >> inventory.txt"
-  }
-}
+      provisioner "local-exec" {
+        command = "echo ${aws_instance.example.private_ip} >> inventory.txt"
+      }
+    }
 ```
 
 ### Types of Provisioners
@@ -741,21 +741,21 @@ Data sources in Terraform are used to fetch or compute data for use elsewhere in
 Example of a Data Source configuration:
 
 ```hcl
-data "aws_ami" "web" {
-  filter {
-    name   = "state"
-    values = ["available"]
-  }
+    data "aws_ami" "web" {
+      filter {
+        name   = "state"
+        values = ["available"]
+      }
 
-  filter {
-    name   = "tag:Component"
-    values = ["web"]
-  }
+      filter {
+        name   = "tag:Component"
+        values = ["web"]
+      }
 
-  most_recent = true
-}
+      most_recent = true
+    }
 
-cluster_id = data.terraform_remote_state.base.iac_ecs_cluster.ecs_cluster_id
+    cluster_id = data.terraform_remote_state.base.iac_ecs_cluster.ecs_cluster_id
 ```
 
 ### Outputs
@@ -767,19 +767,19 @@ Outputs are particularly useful for displaying computed values like IP addresses
 Example of defining an output:
 
 ```hcl
-output "public_ip" {
-  value = aws_instance.web.public_ip
-}
+    output "public_ip" {
+      value = aws_instance.web.public_ip
+    }
 
-output "public_dns" {
-  value = aws_instance.web.public_dns
-}
+    output "public_dns" {
+      value = aws_instance.web.public_dns
+    }
 ```
 
 Example of querying an output:
 
 ```shell
-> terraform output
-public_dns = ec2-34-222-156-11.us-west-2.compute.amazonaws.com
-public_ip = 34.222.156.11
+    > terraform output
+    public_dns = ec2-34-222-156-11.us-west-2.compute.amazonaws.com
+    public_ip = 34.222.156.11
 ```
