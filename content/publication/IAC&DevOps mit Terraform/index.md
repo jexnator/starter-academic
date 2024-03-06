@@ -783,3 +783,35 @@ Example of querying an output:
     public_dns = ec2-34-222-156-11.us-west-2.compute.amazonaws.com
     public_ip = 34.222.156.11
 ```
+
+## Backends in Terraform
+Backends in Terraform are configuration elements that determine where and how the infrastructure state is stored, crucial for collaboration in teams and managing remote operations.
+
+### Functions of a Backend:
+- **State Storage:** Backends allow storing the state in a remote environment like AWS S3 instead of locally on the disk. This promotes collaboration as the team can access the same state.
+  
+- **Locking Mechanism:** To prevent state corruption, some backends, such as Terraform Cloud or Enterprise, offer locking mechanisms that block concurrent state modifications.
+
+- **Sensitive Information:** By using backends like S3, sensitive information is not stored on the local disk, enhancing security.
+
+- **Remote Operations:** For large infrastructures or specific changes, `terraform apply` operations can take a long time. Backends enable these operations to be executed remotely, allowing you to turn off your computer in the meantime.
+
+### Initialization:
+The `terraform init` command must be called whenever a new environment is set up or any change to the backend configuration is made, to initialize or update the backend.
+
+### Configuration:
+A backend's configuration is done directly in Terraform files within the `terraform` block.
+
+Example of S3 backend configuration:
+
+```hcl
+    terraform {
+      backend "s3" {
+        bucket = "mybucket"
+        key    = "path/to/my/key"
+        region = "us-east-1"
+      }
+    }
+```
+
+In this example, the S3 backend is configured to store the Terraform state in a specified S3 bucket. The path to the state key and the bucket's region are specified. This configuration allows multiple users to manage the state consistently and carry out operations securely and efficiently.
