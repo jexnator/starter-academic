@@ -617,3 +617,88 @@ resource "aws_s3_bucket" "example" {
   # Use the local value
   bucket = "${local.service_name}-data"
 }
+
+## Terraform Resource Configuration
+
+### AWS Provider and Resources
+
+The AWS provider facilitates interactions with the many resources supported by AWS. Resources are defined as follows:
+
+```hcl
+resource "TYPE" "NAME" {
+  CONFIG ...
+  [for_each = FOR_EACH]
+  [count = COUNT]
+  [depends_on = [NAME, ...]]
+  [provider = PROVIDER]
+}
+```
+
+### Resource Configuration Example
+
+A basic resource configuration for an AWS instance might look like this:
+
+```hcl
+resource "aws_instance" "example" {
+  ami           = "ami-275f631"
+  instance_type = "t2.micro"
+}
+```
+
+### Using `for_each` and `count`
+
+`for_each` and `count` are used to create multiple instances of a resource:
+
+- `for_each` is used to iterate over a map or set of values, creating one resource per item.
+- `count` is used to create a specified number of instances of a resource.
+
+Examples:
+
+```hcl
+# for_each
+resource "aws_subnet" "public_subnet" {
+  for_each = var.subnet_numbers
+  # Additional configurations ...
+}
+
+# count
+resource "aws_subnet" "public_subnet" {
+  count = 4
+  # Additional configurations ...
+}
+```
+
+### Lifecycle and Timeouts
+
+Lifecycle policies and timeouts can be configured to control resource behavior on changes:
+
+- `lifecycle` can be used to ignore certain changes or prevent resource destruction.
+- `timeouts` define how long Terraform should wait for a resource to be created or deleted.
+
+```hcl
+resource "aws_instance" "example" {
+  # Configurations ...
+  lifecycle {
+    ignore_changes = [ami]
+    prevent_destroy = true
+  }
+
+  timeouts {
+    create = "60m"
+    delete = "2h"
+  }
+}
+```
+
+### Best Practices
+
+- Create a file for a bundle of resources that belong together.
+- Use modules instead of a complex file structure as the infrastructure grows.
+
+```hcl
+# Example for a resource file
+module "my_module" {
+  source = "./modules/my_module"
+  # Additional configurations ...
+}
+```
