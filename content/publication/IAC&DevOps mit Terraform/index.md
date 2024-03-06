@@ -915,3 +915,61 @@ Utilize the **Terraform Module Registry** for discovering and using community mo
 
 ### Module References Storage
 `.terraform` directory stores module references, allowing immediate access to module changes. Use `tree` or `ls -1` to view the `.terraform` directory contents for modules and plugins.
+
+## Terraform Troubleshooting
+
+### Potential Issues
+
+Mismanagement of resources in the cloud can lead to critical issues:
+- Accidental deletion of resources.
+- Unauthorized addition of critical resources.
+- Configuration drift from the intended state.
+
+### Commands for Troubleshooting
+
+Terraform provides a series of commands to help manage and troubleshoot resources:
+
+#### Listing Current State
+To see the current state of resources as known by Terraform:
+
+```shell
+    terraform state list
+```
+
+#### Detecting Configuration Drift
+To actively query the current state of the resources and detect any changes:
+
+```shell
+    terraform plan
+```
+
+#### Applying Corrections
+To apply the necessary changes to reach the desired state configuration:
+
+```shell
+    terraform apply
+```
+
+#### Importing Resources
+If a resource exists in the cloud but not in Terraform's state, it can be imported:
+
+```shell
+    terraform import <ADDRESS> <ID>
+```
+
+For example, to import an AWS instance:
+
+```shell
+    terraform import aws_instance.example i-abcd1234
+```
+
+#### Reconciling State
+The `terraform refresh` command updates the state file with the real-world infrastructure:
+
+```shell
+    terraform refresh
+```
+
+This is useful for ensuring that Terraform's state matches the actual infrastructure and for detecting drift. 
+
+The `terraform state list` command will then list the updated resources known to the state file.
