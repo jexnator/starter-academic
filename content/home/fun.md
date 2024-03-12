@@ -17,3 +17,12 @@ subtitle:
     <img src="/amanox.svg" class="amanox" alt="Axians Amanox AG">
   </a>
 </div>
+
+<style>
+@media (prefers-color-scheme: light) {
+  .amanox {
+    filter: invert(1);
+  }
+}
+</style>
+
