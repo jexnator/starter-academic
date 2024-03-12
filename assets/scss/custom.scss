@@ -69,7 +69,6 @@
 }
 
 .amanox {
-    filter: invert(100%) !important;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -93,6 +92,7 @@
   // Anpassungen für den Light Mode
 @media (prefers-color-scheme: light) {
     .amanox {
-        filter: invert(100%); // Macht das Logo komplett schwarz
+        filter: invert(100%) !important;
+
     }
 }
