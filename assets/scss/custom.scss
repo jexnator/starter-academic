@@ -68,6 +68,12 @@
     }
 }
 
+@media (prefers-color-scheme: light) {
+    .amanox {
+        filter: invert(100%); // Macht das Logo komplett schwarz
+    }
+}
+
 .amanox {
     position: relative;
     left: 50%;
