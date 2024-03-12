@@ -68,22 +68,17 @@
     }
 }
 
-  .amanox {
-    display: block;
+.amanox {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: 50%; // oder eine feste Breite in Pixel, wenn du das bevorzugst
-    height: auto; // oder eine feste Höhe in Pixel
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
+    width: 50%;
     animation-duration: 3s;
     animation-name: amanox;
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
   }
-
+  
   @keyframes amanox {
     from {
       transform: translateX(0%) scale(0.2);
@@ -93,16 +88,3 @@
       transform: translateX(-50%) scale(1.0);
     }
   }  
-
-  @media (prefers-color-scheme: light) {
-    .amanox {
-      background-image: url('/static/amanox-light.svg'); // Pfad zum hellen Logo für Light Mode
-    }
-  }
-  
-  @media (prefers-color-scheme: dark) {
-    .amanox {
-      background-image: url('/stactic/amanox.svg'); // Pfad zum dunklen Logo für Dark Mode
-    }
-  }
-  
