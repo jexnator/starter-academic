@@ -1,25 +1,25 @@
 :root {
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
-    --primary: #1565c0;
-    --secondary: #6c757d;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
+    --blue: #8ca6db; // Ein sanftes Blau
+    --indigo: #5f5f97; // Ein gedämpftes Indigo
+    --purple: #9f7fea; // Ein weiches Violett, inspiriert von Terraform
+    --pink: #d294c4; // Ein zurückhaltendes Pink
+    --red: #bf616a; // Ein mattes Rot
+    --orange: #d08770; // Ein warmes Orange
+    --yellow: #ebcb8b; // Ein freundliches Gelb
+    --green: #a3be8c; // Ein gedämpftes Grün
+    --teal: #96b5b4; // Ein ruhiges Türkis
+    --cyan: #88c0d0; // Ein helles Cyan
+    --white: #f5f5f5; // Ein helles Grau für den Light Mode
+    --gray: #bcbcbc; // Ein mittleres Grau
+    --gray-dark: #434c5e; // Ein dunkleres Grau für Text und wichtige Elemente
+    --primary: #8fa1b3; // Ein neutraleres Blau als primäre Farbe
+    --secondary: #bcbcbc; // Grau als sekundäre Farbe
+    --success: #a3be8c; // Wiederverwendung von Grün für Erfolgsmeldungen
+    --info: #88c0d0; // Wiederverwendung von Cyan für Informationsmeldungen
+    --warning: #ebcb8b; // Wiederverwendung von Gelb für Warnungen
+    --danger: #bf616a; // Wiederverwendung von Rot für Gefahren
+    --light: #eceff4; // Ein sehr helles Grau für Hintergründe im Light Mode
+    --dark: #2e3440; // Ein dunkles Grau für den Dark Mode, nicht zu weit von Schwarz entfernt
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;
