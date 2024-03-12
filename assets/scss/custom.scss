@@ -70,7 +70,6 @@
 
 .fun {
     height: 30px;
-    position: center;
 }
 
 .amanox {
@@ -84,12 +83,12 @@
   
   @keyframes amanox {
     from {
-      margin-left: 50%;
+      margin-left: auto;
       width: 10%;
     }
   
     to {
-      margin-left: 0%;
+      margin-left: auto;
       width: 50%;
     }
   }
