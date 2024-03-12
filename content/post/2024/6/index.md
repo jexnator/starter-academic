@@ -2,7 +2,7 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "04/03/2024 - 08/03/2024"
-subtitle: "Why do Java developers wear glasses? Because they can't C#."
+subtitle: "Ski weekend @Amanox"
 summary: "Trainee diary"
 authors: [Xavier Jeiziner]
 tags: []
