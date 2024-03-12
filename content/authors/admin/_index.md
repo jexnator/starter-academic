@@ -38,7 +38,7 @@ education:
 superuser: true
 highlight_name: false
 title: Xavier Jeiziner
-email: "xavier.jeiziner@axians.com"
+email: "xavier.jeiziner@hotmail.com"
 ---
 Xavier Jeiziner is a third-year IT student at Axians Amanox AG in Switzerland. He studies according to a study method called practice-integrated bachelor's degree, which is carried out at Axians Amanox for the first time. The main goal of this new concept is to combine the learned theory from the distance learning university (FFHS) with the practice at the work in a 40/60% ratio. He would like to bring in his skills in the Public Cloud Team.
 
