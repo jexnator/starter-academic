@@ -14,6 +14,6 @@ subtitle:
 ---
 <div class="fun">
   <a href="https://www.amanox.ch/">
-    <img src="/amanox.svg" class="amanox" alt="Amanox Solutions">
+    <img src="/amanox.svg" class="amanox" alt="Axians Amanox AG">
   </a>
 </div>

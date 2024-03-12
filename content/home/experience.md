@@ -22,18 +22,18 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: 'Computer Science PiBS-Student'
-    company: 'Amanox Solutions AG'
+  - title: 'Cloud Engineer Trainee & PiBS-Student'
+    company: 'Axians Amanox AG'
     company_url: 'https://www.amanox.ch'
     company_logo: amanox-logo
     location: 'Bern'
     date_start: '2021-08-02'
     date_end: ''
     description: |2-
-        Responsibilities include:
+        Achievements to be acquired:
         
-        * Trainee in the Public Cloud Team
-        * Cloud Solutions
+        * Complete a BSc in Computer Science @FFHS
+        * Gain in-depth knowledge in the area of public and private cloud.
 
         
   - title: 'CNC-Programmer'
