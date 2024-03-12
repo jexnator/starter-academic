@@ -69,13 +69,13 @@
 }
 
 .fun {
-    height: 60px;
+    height: 135px;
 }
 
 .amanox {
     position: center;
-    width: 50%;
-    animation-duration: 3s;
+    width: 100%;
+    animation-duration: 4s;
     animation-name: amanox;
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
@@ -83,12 +83,12 @@
   
   @keyframes amanox {
     from {
-      margin-left: 50%;
+      margin-left: 100%;
       width: 10%;
     }
   
     to {
       margin-left: 0%;
-      width: 50%;
+      width: 100%;
     }
   }
