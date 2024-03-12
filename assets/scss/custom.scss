@@ -69,6 +69,7 @@
 }
 
 .amanox {
+    filter: invert(100%) !important;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
