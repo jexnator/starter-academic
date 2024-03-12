@@ -96,13 +96,13 @@
 
   @media (prefers-color-scheme: light) {
     .amanox {
-      background-image: url('/amanox-light.svg'); // Pfad zum hellen Logo für Light Mode
+      background-image: url('/static/amanox-light.svg'); // Pfad zum hellen Logo für Light Mode
     }
   }
   
   @media (prefers-color-scheme: dark) {
     .amanox {
-      background-image: url('/amanox.svg'); // Pfad zum dunklen Logo für Dark Mode
+      background-image: url('/stactic/amanox.svg'); // Pfad zum dunklen Logo für Dark Mode
     }
   }
   
