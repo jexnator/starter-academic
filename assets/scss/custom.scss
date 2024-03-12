@@ -68,12 +68,6 @@
     }
 }
 
-@media (prefers-color-scheme: light) {
-    .amanox {
-        filter: invert(100%); // Macht das Logo komplett schwarz
-    }
-}
-
 .amanox {
     position: relative;
     left: 50%;
@@ -94,3 +88,10 @@
       transform: translateX(-50%) scale(1.0);
     }
   }  
+
+  // Anpassungen für den Light Mode
+@media (prefers-color-scheme: light) {
+    .amanox {
+        filter: invert(100%); // Macht das Logo komplett schwarz
+    }
+}
