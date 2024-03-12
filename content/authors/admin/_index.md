@@ -5,7 +5,7 @@ title: Xavier Jeiziner
 # Is this the primary user of the site?
 superuser: true
 role: PiBS student @Axians Amanox / FFHS
-avatar_filename: https://gravatar.com/xavierjeiziner
+avatar_filename: https://0.gravatar.com/avatar/9f576acbb050698aa6f4f51e62d161255adfb822819662f4462b10ce76a1690d?size=256
 bio:
 interests:
   - Cloud Solutions
