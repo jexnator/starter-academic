@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "19/02/2024 - 23/02/2023"
+title: "19/02/2024 - 23/02/2024"
 subtitle: "Why was the computer tired when it got home? Because it had a hard drive."
 summary: "Trainee diary"
 authors: [Xavier Jeiziner]

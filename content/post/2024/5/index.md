@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "27/02/2024 - 01/03/2023"
+title: "27/02/2024 - 01/03/2024"
 subtitle: "Why do Java developers wear glasses? Because they can't C#."
 summary: "Trainee diary"
 authors: [Xavier Jeiziner]
@@ -34,7 +34,7 @@ Refining my goals from last week is still a priority. My focus is on improving e
 I successfully patched the Bitnami LAMP stack on AWS Lightsail for the Amanox website and migrated WordPress. There was one setback when updating WordPress. Despite several approaches - updating via the GUI, manually updating via SFTP by swapping core folders and attempting to update on the VM via the WP-CLI in a gradual version jump - the update failed. This experience was frustrating and showed me that despite market leadership, software can sometimes be crap. Now I have agreed with our creative strategist Oliver Blaum that he will update Wordpress via a special staging plugin, where he has a license. My involvement in these tasks limited the time available to work on the internal module, which was an unintended and annoying consequence of the WP-Jazz.
 
 ## How did I improve this week?
-In a Teams call with Dino about a school project, I was able to share with him my progress and the challenges I was facing both internally and in school. This interaction was very valuable for me.
+In a Teams call with Dino about a school project, I was able to share with him my progress and the challenges I was facing both internally and in school. This interaction was very valuable for me. We discussed together the serverless architecture of our Texas hold'em Poker school project. Therefore we went through every component and discussed what's the suitabelest AWS services and how the implementation should look like What the implementation should roughly look like.
 
 ## What will I do different from now?
 Reflecting on the past week has shown me that I can improve my approach to tasks. Sometimes I tend to spend too much time on details and I lose prioritization of tasks because I personally care about finishing mine, to get things done. While this attention to detail is sometimes beneficial, it can also lead to inefficiency. In the future, I want to improve my decision making in terms of prioritizing tasks and knowing when to delegate, inform or get help from others.
