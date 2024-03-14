@@ -69,7 +69,7 @@
 }
 
 .amanox {
-    filter: invert(100%) !important; // Macht das Logo komplett schwarz
+    filter: invert(100%); // Macht das Logo komplett schwarz
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -90,7 +90,6 @@
     }
   }  
 
-// Setze das Logo für den Dark Mode zurück
+// Anpassungen für den Dark Mode unter Verwendung der Theme-spezifischen .dark Klasse
 body.dark .amanox, .dark .amanox {
-    filter: invert(0%);
-}  
+    filter: none; // Entfernt die Invertierung im Dark Mode
