@@ -68,8 +68,8 @@
     }
 }
 
-.amanox {
-    filter: invert(100%); // Macht das Logo komplett schwarz
+/* Allgemeine Stile für die Logos, unabhängig vom Modus */
+.amanox-dark-mode, .amanox-light-mode {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -80,16 +80,32 @@
     animation-iteration-count: 1;
   }
   
+  /* Anfangszustand der Animation */
   @keyframes amanox {
     from {
       transform: translateX(0%) scale(0.2);
     }
-  
     to {
       transform: translateX(-50%) scale(1.0);
     }
-  }  
-
-// Anpassungen für den Dark Mode unter Verwendung der Theme-spezifischen .dark Klasse
-body.dark .amanox, .dark .amanox {
-    filter: none; // Entfernt die Invertierung im Dark Mode
+  }
+  
+  /* Standardmäßig das dunkle Logo für den Light Mode anzeigen */
+  .amanox-dark-mode {
+    display: block;
+  }
+  
+  /* Standardmäßig das helle Logo für den Dark Mode anzeigen */
+  .amanox-light-mode {
+    display: none;
+  }
+  
+  /* Umkehrung im Dark Mode */
+  body.dark .amanox-dark-mode {
+    display: none;
+  }
+  
+  body.dark .amanox-light-mode {
+    display: block;
+  }
+  

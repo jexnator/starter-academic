@@ -15,5 +15,9 @@ subtitle:
 <div class="fun">
   <a href="https://www.amanox.ch/">
     <img src="/amanox.svg" class="amanox" alt="Axians Amanox AG">
+    <!-- Dunkles Logo für den Light Mode -->
+    <img src="/amanox-dark-mode.svg" class="amanox-dark-mode" alt="Amanox Logo dark mode">
+    <!-- Helles Logo für den Dark Mode -->
+    <img src="/amanox-light-mode.svg" class="amanox-light-mode" alt="Amanox Logo light mode">
   </a>
 </div>
