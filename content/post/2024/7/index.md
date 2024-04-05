@@ -44,7 +44,7 @@ I also created the presentation at the end of the presentation and then gave it 
 ## How did I improve?
 I was able to expand my skills in the Terraform area. I now have a more detailed understanding of DNS administration, the different record types, SSL / TLS termination and generally deploying cloud resources via IaC.
 
-## What went wromg / will I do different from now?
+## What went wromg or will I do different from now?
 I failed at the presentation. I wasn't prepared enough, I read off too much, I couldn't get the topic across as intended, the use of the available media wasn't convincing and I couldn't impress with my body language. Next week I will look at these points again and come up with solutions/strategies that I can use to improve and progress personally in these areas.
 
 <br>
