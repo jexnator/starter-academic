@@ -37,7 +37,7 @@ I successfully patched the Bitnami LAMP stack on AWS Lightsail for the Amanox we
 In a Teams call with Dino about a school project, I was able to share with him my progress and the challenges I was facing both internally and in school. This interaction was very valuable for me. We discussed together the serverless architecture of our Texas hold'em Poker school project. Therefore we went through every component and discussed what's the suitabelest AWS services and how the implementation should look like What the implementation should roughly look like.
 
 ## What will I do different from now?
-Reflecting on the past week has shown me that I can improve my approach to tasks. Sometimes I tend to spend too much time on details and I lose prioritization of tasks because I personally care about finishing mine, to get things done. While this attention to detail is sometimes beneficial, it can also lead to inefficiency. In the future, I want to improve my decision making in terms of prioritizing tasks and knowing when to delegate, inform or get help from others.
+Reflecting on the past week has shown me that I can improve my approach to tasks. Sometimes I tend to spend too much time on details and I lose prioritization of tasks because I personally care about finishing mine, to get things done. While this attention to detail is sometimes beneficial, it can also lead to inefficiency. In the future, I want to improve my decision making in terms of prioritizing tasks and knowing when to delegate, inform or get help from others!
 
 <br>
 <div style="padding: 18px; padding-top: 10px; color: #eee; background-color: #3c3c3c; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">

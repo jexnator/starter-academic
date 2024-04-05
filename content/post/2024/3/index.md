@@ -35,7 +35,7 @@ This semester I want to continue to develop in the area of cloud computing, both
 This week, I completed some internal IT tasks, such as decommissioning ZEP and archiving the data. On Friday, I was then able to help our Creative Strategist Oliver Blaum with the revision of our website. He then had a few more tasks that I was able to clarify/initiate for him. These included configuring the new SMTP for sending Amanox Noreply mails, correcting the DNS records (so that our website can be reached via the root domain amanox.ch again) and troubleshooting the 504 gateway timeout, which occurs undesirably after a certain runtime of the Lightsail instance and requires a reboot. In the meantime, I continued working on the second slide deck of the IaC & DevOps module.
 
 ## How did I improve this week?
-I was able to develop myself further this week, be it in contact with external people/service providers, in polishing up my chmod, DNS & AWS Lightsail knowledge or in creating EasyVista tickets and the associated intercultural communication. :-D
+I was able to develop myself further this week, be it in contact with external people/service providers, in polishing up my chmod, DNS & AWS Lightsail knowledge or in creating EasyVista tickets and the associated intercultural communication.
 
 ## What will I do different from now?
 On the whole, I am satisfied with my progress over the last few weeks, especially in the area of scheduling. However, I would like to spend more time working on the internal modules over the next few weeks, as I really want to make progress in this area. Target: 80% Internal modules / 20% other tasks.

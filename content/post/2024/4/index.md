@@ -36,7 +36,6 @@ I worked with John-Nathan to fix an SMTP issue for our website and got some valu
 Together with Fäbl, I was also able to solve our website's DNS issue that had been occurring since our domain was transferred to the parent company. By working through the problem and getting input from Fäbl, I was able to refresh my DNS knowledge, which is a positive side effect for me.
 
 Another task was to set up an AWS test account for a customer project + an OpenAI account, as the GPT4 API is needed in the application.
-
 In the internal IaC and DevOps module, I was able to finish the second slide deck.
 
 ## How did I improve this week?

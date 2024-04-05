@@ -1,14 +1,14 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "04/03/2024 - 15/03/2024"
+title: "04/03/2024 - 21/03/2024"
 subtitle: "Ski weekend @Amanox"
 summary: "Trainee diary"
 authors: [Xavier Jeiziner]
 tags: []
 categories: []
 date: 2024-03-14
-lastmod: 2024-02-14
+lastmod: 2024-03-14
 featured: false
 draft: false
 

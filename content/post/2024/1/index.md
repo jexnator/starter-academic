@@ -49,7 +49,7 @@ In retrospect, we managed the assembly without any major problems and can be sum
 
 All in all, it was a very cool experience to be able to assemble a high-end gaming PC. Thanks to Fäbs for the trust!
 
-Looking back, the first 3 weeks of the new year were very instructive. I was able to improve my skills in various areas and I'm happy with that.
+Looking back, the first 3 weeks of the new year were very instructive. I was able to improve my skills in various areas and I'm happy with that!
 
 ![Beautiful Hardware](IMG_7077.jpg)
 ![Beautiful Hardware](IMG_7074.jpg)
