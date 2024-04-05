@@ -396,8 +396,6 @@ Core <-> Plugins <-> Upstream APIs
 ### Terraform Deployment Lifecycle
 ![Terraform Deployment Lifecycle](tf-deployment-lifecycle.jpg "Terraform Deployment Lifecycle")
 
-Mache mir eine sehr gute Zusammenfassung über "terraform plan" in english in MD (nur H3) aus den nachfolgenden Informationen. Bitte so kompakt, übersichtlich und prägnant wie möglich!
-
 ### Command: terraform plan
 - The terraform plan command is used to create an execution plan. Terraform performs a refresh, unless explicitly disabled, and then determines what actions are necessary to achieve the desired state specified in the configuration files
 - Computes the desired state of the configuration
