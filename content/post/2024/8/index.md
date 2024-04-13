@@ -58,9 +58,9 @@ I have observed Sämi several times during his presentations and noticed that he
 
 ## What did I do?
 
-Diese Woche habe ich mit dem IaaS Modul von John angefangen. Das Modul ist sehr Tasklastig im Gegensatz zu anderen Autoren, was ich für den Kontext Hands-on sehr gut finde, jedoch gewisse Zeit in Anspruch nimmt. Gleichermassen gilt zu erwähnen, dass das vordere Modul "IaC & DevOps" sehr sehr wertvoll ist, da die Tasks in diesem Modul alle in Terraform implementiert werden müssen. Dadurch habe ich eine gute Basis und komme gut voran.
+This week I started with John's IaaS module. The module is very task-heavy in contrast to other authors, which I find very good for the hands-on context, but takes some time. It should also be mentioned that the front module "IaC & DevOps" is very valuable, as the tasks in this module all have to be implemented in Terraform. This gives me a good basis and I'm making good progress.
 
-Die bereits erledigten Tasks könnt ihr bei Bedarf im meinem Repo auf Github einsehen. Ich habe @PiBS - Alle auf das Repo berechtigt.
+You can view the tasks that have already been completed in my repo on Github if required. I have authorized "@PiBS - Alle" to the repo.
 
 <br>
 <div style="padding: 18px; padding-top: 10px; color: #eee; background-color: #3c3c3c; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
