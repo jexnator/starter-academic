@@ -61,6 +61,7 @@ I have observed Sämi several times during his presentations and noticed that he
 This week I started with John's IaaS module. The module is very task-heavy in contrast to other authors, which I find very good for the hands-on context, but takes some time. It should also be mentioned that the front module "IaC & DevOps" is very valuable, as the tasks in this module all have to be implemented in Terraform. This gives me a good basis and I'm making good progress.
 
 You can view the tasks that have already been completed in my repo on Github if required. I have authorized "@PiBS - Alle" to the repo.
+https://github.com/JEX-98/aws
 
 <br>
 <div style="padding: 18px; padding-top: 10px; color: #eee; background-color: #3c3c3c; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
