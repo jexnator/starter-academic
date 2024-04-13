@@ -116,4 +116,86 @@ An EC2 Instance can have 7 different states:
 
 - 3 are stable
 - 4 are transition states which change to stable
+
   ![EC2 Lifecycle](ec2-lifecycle.jpg "EC2 Instance Lifecycle")
+
+## AMI (Amazon Machine Image)
+
+An AMI is a pre-configured image maintained by AWS for EC2 Instances.
+
+- **Purpose**: Serves as a base configuration for launching new instances.
+- **Access Control**: Can be public, explicit (defined access), or implicit (owner only).
+- **Source**: Can be self-created, provided by third parties, or AWS.
+- **Utility**: Essential for disposable infrastructure, enabling multiple instances with the same setup.
+- **Compatibility**: Works seamlessly with Auto-Scaler functionality.
+- **Components**: Includes Amazon EBS snapshots or templates for root volumes, launch permissions, and block device mappings for instance launches.
+
+## Metadata & Userdata on an instance
+
+### Metadata
+
+- Technical information about an EC2 instance.
+- Includes instance details such as IP address, instance type, security groups, and metrics...
+
+## Userdata
+
+- Custom configuration data for an EC2 instance
+  Used to execute scripts, commands, or configuration details upon instance startup, such as installations or configurations
+
+## Instance Types
+
+AWS instances come in various types for specific workload requirements:
+
+- **General Purpose**:
+
+  - Provide a balance of compute, memory, and networking resources.
+  - Examples include M-, T-, and Mac1 instances.
+
+- **Compute Optimized**:
+
+  - Ideal for compute-bound applications needing high-performance processors.
+  - Examples include C- and HPC instances.
+
+- **Memory Optimized**:
+
+  - Designed for fast performance with large data sets processed in memory.
+  - Examples include R-, U-, X-, and Z-instances.
+
+- **Storage Optimized**:
+
+  - Geared towards workloads requiring high, sequential read/write access to large data sets on local storage.
+  - Examples include D-, H-, and I-instances.
+
+- **Accelerated Computing**:
+  - Utilize hardware accelerators or co-processors for tasks like floating-point calculations, graphics processing, or data pattern matching.
+  - Examples include dl-, f-, g-, inf-, p-, and vt-instances.
+
+### Use cases
+
+### General purpose instances
+
+**Web applications**: Optimal for delivering static or dynamic web content and handling user requests.
+**Development environments**: Supports code compilation, deployment, testing & use of CI/CD.
+M, T instances provide balance between compute, memory & storage.
+
+### Compute Optimized Instances\*\*: Optimized instances
+
+**High Performance Computing (HPC)**: Used in scientific simulations, financial models & engineering (e.g. digitization in mechanical engineering).
+**Batch processing**: Ideal for frequently repetitive scenarios such as data analysis & processing with large volumes of data.
+
+HPC instances significantly optimize execution time in contrast to general purpose instances. C instances in turn promote the parallelization of tasks.
+
+### Memory-optimized instances
+
+**Big data analysis**: The large data sets in memory, reduce latency, crucial for analytics.
+**In-Memory Databases**: High throughput, low latency for transaction management and query operations. R, X instances increase database performance.
+
+### Memory-optimized instances
+
+**OLTP**: Transaction systems where many transactions take place simultaneously, i.e. concurrently.
+**Big Data Processing**: Suitable for Hadoop, data warehousing. D, I instances provide high throughput, IOPS.
+
+### Accelerated compute instances
+
+**Machine learning**: P instances utilize GPUs for efficient algorithm processing, improve training and inference phases.
+**Graphics rendering**: Accelerate high-resolution graphics processing & rendering.
