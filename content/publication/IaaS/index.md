@@ -134,41 +134,40 @@ An AMI is a pre-configured image maintained by AWS for EC2 Instances.
 
 #### Metadata
 
-- Technical information about an EC2 instance.
-- Includes instance details such as IP address, instance type, security groups, and metrics...
+Technical information about an EC2 instance. This includes instance details such as IP address, instance type, security groups, and metrics.
 
-### Userdata
+#### Userdata
 
-- Custom configuration data for an EC2 instance
-  Used to execute scripts, commands, or configuration details upon instance startup, such as installations or configurations
+Custom configuration data for an EC2 instance. Used to execute scripts, commands, or configuration details upon instance startup, such as installations or configurations
 
 ### Instance Types
 
 AWS instances come in various types for specific workload requirements:
 
-- **General Purpose**:
+**General Purpose**:
 
-  - Provide a balance of compute, memory, and networking resources.
-  - Examples include M-, T-, and Mac1 instances.
+- Provide a balance of compute, memory, and networking resources.
+- Examples include M-, T-, and Mac1 instances.
 
-- **Compute Optimized**:
+**Compute Optimized**:
 
-  - Ideal for compute-bound applications needing high-performance processors.
-  - Examples include C- and HPC instances.
+- Ideal for compute-bound applications needing high-performance processors.
+- Examples include C- and HPC instances.
 
-- **Memory Optimized**:
+**Memory Optimized**:
 
-  - Designed for fast performance with large data sets processed in memory.
-  - Examples include R-, U-, X-, and Z-instances.
+- Designed for fast performance with large data sets processed in memory.
+- Examples include R-, U-, X-, and Z-instances.
 
-- **Storage Optimized**:
+**Storage Optimized**:
 
-  - Geared towards workloads requiring high, sequential read/write access to large data sets on local storage.
-  - Examples include D-, H-, and I-instances.
+- Geared towards workloads requiring high, sequential read/write access to large data sets on local storage.
+- Examples include D-, H-, and I-instances.
 
-- **Accelerated Computing**:
-  - Utilize hardware accelerators or co-processors for tasks like floating-point calculations, graphics processing, or data pattern matching.
-  - Examples include dl-, f-, g-, inf-, p-, and vt-instances.
+**Accelerated Computing**:
+
+- Utilize hardware accelerators or co-processors for tasks like floating-point calculations, graphics processing, or data pattern matching.
+- Examples include dl-, f-, g-, inf-, p-, and vt-instances.
 
 #### Task: Use cases
 
