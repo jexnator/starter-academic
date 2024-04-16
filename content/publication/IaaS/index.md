@@ -207,7 +207,7 @@ HPC instances significantly optimize execution time in contrast to general purpo
 
 ### AWS EC2 Instance Pricing Models
 
-#### 1. On-Demand Instances
+#### On-Demand Instances
 
 - Pay by hour or second, depending on the instance type (Most expensive EC2 pricing model).
 - Best for applications with short-term, spiky, or unpredictable workloads that cannot be interrupted.
@@ -217,7 +217,7 @@ HPC instances significantly optimize execution time in contrast to general purpo
 
 Imagine managing an e-commerce platform's web servers in EC2 during Black Friday or Cyber Week. On-demand instances would be perfect, as you don't have to make a long-term commitment and therefore have the ability to scale flexibly at any time.
 
-#### 2. Reserved Instances
+#### Reserved Instances
 
 - Significant discount over On-Demand rates, in exchange for a commitment to use the instance for a 1 or 3-year term (Less expensive EC2 pricing model).
 - Ideal for applications with steady state or predictable usage.
@@ -227,7 +227,7 @@ Imagine managing an e-commerce platform's web servers in EC2 during Black Friday
 
 Imagine you manage a bank's back-end infrastructure for financial transactions in EC2. The servers must be stable and run for several years. The reserved instances would be available to the bank at a cheaper and more predictable hourly rate due to the long-term commitment and are constantly available.
 
-#### 3. Spot Instances
+#### Spot Instances
 
 - Purchase unused EC2 capacity at significantly lower rates than On-Demand (Cheapest EC2 pricing model).
 - Suitable for fault-tolerant applications such as big data, containerized workloads, and CI/CD pipelines that can tolerate interruptions.
@@ -239,17 +239,18 @@ Imagine you want to batch process the inventory of your ecommerse website as che
 
 ### AWS Regions & Availability Zones (AZ)
 
-**Regions:**
+#### Regions
 
 - **Definition:** Geographic areas like different countries, each region consists of a network of several Availability Zones.
 - **Variability:** The software and services available can differ from one region to another.
 
-**Availability Zones (AZ):**
+#### Availability Zones (AZ)
 
 - **Relation to Regions:** Each AZ belongs to a region but is geographically distant enough (approximately 100 km apart) to ensure that ideally only one AZ is affected in the event of a disaster.
 - **Consistency:** Within the same region, different AZs generally offer the same software and services.
 
-**Availability of AZs**
+#### Availability of AZs
+
 By utilizing more than one Availability Zone, you can guarantee higher availability. In case one AZ fails, others can provide a backup.
 
 ![Regions & AZs](region-az.png "Regions & AZs")
