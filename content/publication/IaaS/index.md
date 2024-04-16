@@ -53,7 +53,7 @@ url_video: ""
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: "Image credit: [**DALL-E**](https://chat.openai.com)"
+  caption: ""
   focal_point: ""
   preview_only: false
 
@@ -76,7 +76,7 @@ slides: ""
 
 # IaaS
 
-## Definition
+### Definition
 
 IaaS (Infrastructure as a service) is a cloud computing service model that enables the provision of fundamental IT infrastructure, such as computing power, storage capacity and network resources, via the Internet.
 
@@ -88,29 +88,29 @@ In AWS, various services fall under IaaS. The most important ones are listed bel
 - RDS (Relational Databas Service)
 - EBS (Elastic Block Storage)
 
-## EC2 - What belongs all to that service
+### EC2 - What belongs all to that service
 
-### Virtual Machines
+#### Virtual Machines
 
 Instances with your preferred operating system AMI (based on MacOS, Linux or Windows)
 
-### VPC (Virtual Private Cloud)
+#### VPC (Virtual Private Cloud)
 
 Networking in the cloud (including Security Groups, Subnets, Route Tables, Gateways, VPC Peering, VPN, ACL's, etc.)
 
-### Load balancing
+#### Load balancing
 
 Network and Application Load Balancer which can handle traffic distribution between instances. A positive side effect: load balancers also simplify TLS termination and certificate management in combnination with ACM.
 
-### Auto Scaling
+#### Auto Scaling
 
 Increasing and decreasing of compute-capacity automatically based on traffic volume or behavior.
 
-### Allocation
+#### Allocation
 
 All the components mentioned above (and more) belong to EC2. But in general, when someone talks about EC2, instances are meant.
 
-## EC2 Instance Lifecycle
+### EC2 Instance Lifecycle
 
 An EC2 Instance can have 7 different states:
 
@@ -119,7 +119,7 @@ An EC2 Instance can have 7 different states:
 
   ![EC2 Lifecycle](ec2-lifecycle.jpg "EC2 Instance Lifecycle")
 
-## AMI (Amazon Machine Image)
+### AMI (Amazon Machine Image)
 
 An AMI is a pre-configured image maintained by AWS for EC2 Instances.
 
@@ -130,19 +130,19 @@ An AMI is a pre-configured image maintained by AWS for EC2 Instances.
 - **Compatibility**: Works seamlessly with Auto-Scaler functionality.
 - **Components**: Includes Amazon EBS snapshots or templates for root volumes, launch permissions, and block device mappings for instance launches.
 
-## Metadata & Userdata on an instance
+### Metadata & Userdata on an instance
 
-### Metadata
+#### Metadata
 
 - Technical information about an EC2 instance.
 - Includes instance details such as IP address, instance type, security groups, and metrics...
 
-## Userdata
+### Userdata
 
 - Custom configuration data for an EC2 instance
   Used to execute scripts, commands, or configuration details upon instance startup, such as installations or configurations
 
-## Instance Types
+### Instance Types
 
 AWS instances come in various types for specific workload requirements:
 
@@ -170,69 +170,74 @@ AWS instances come in various types for specific workload requirements:
   - Utilize hardware accelerators or co-processors for tasks like floating-point calculations, graphics processing, or data pattern matching.
   - Examples include dl-, f-, g-, inf-, p-, and vt-instances.
 
-### Task: Use cases
+#### Task: Use cases
 
-### General purpose instances
+##### General purpose instances
 
 **Web applications**: Optimal for delivering static or dynamic web content and handling user requests.
+
 **Development environments**: Supports code compilation, deployment, testing & use of CI/CD.
 M, T instances provide balance between compute, memory & storage.
 
-### Compute Optimized Instances
+##### Compute Optimized Instances
 
 **High Performance Computing (HPC)**: Used in scientific simulations, financial models & engineering (e.g. digitization in mechanical engineering).
+
 **Batch processing**: Ideal for frequently repetitive scenarios such as data analysis & processing with large volumes of data.
 
 HPC instances significantly optimize execution time in contrast to general purpose instances. C instances in turn promote the parallelization of tasks.
 
-### Memory-optimized instances
+##### Memory-optimized instances
 
 **Big data analysis**: The large data sets in memory, reduce latency, crucial for analytics.
+
 **In-Memory Databases**: High throughput, low latency for transaction management and query operations. R, X instances increase database performance.
 
-### Memory-optimized instances
+##### Memory-optimized instances
 
 **OLTP**: Transaction systems where many transactions take place simultaneously, i.e. concurrently.
+
 **Big Data Processing**: Suitable for Hadoop, data warehousing. D, I instances provide high throughput, IOPS.
 
-### Accelerated compute instances
+##### Accelerated compute instances
 
 **Machine learning**: P instances utilize GPUs for efficient algorithm processing, improve training and inference phases.
+
 **Graphics rendering**: Accelerate high-resolution graphics processing & rendering.
 
-## AWS EC2 Instance Pricing Models
+### AWS EC2 Instance Pricing Models
 
-### 1. On-Demand Instances
+#### 1. On-Demand Instances
 
 - Pay by hour or second, depending on the instance type (Most expensive EC2 pricing model).
 - Best for applications with short-term, spiky, or unpredictable workloads that cannot be interrupted.
 - No long-term commitment or upfront payment required.
 
-#### Task: On-Demand Instances: Dynamic Auto-Scaling During Sales Events
+##### Task: On-Demand Instances: Dynamic Auto-Scaling During Sales Events
 
 Imagine managing an e-commerce platform's web servers in EC2 during Black Friday or Cyber Week. On-demand instances would be perfect, as you don't have to make a long-term commitment and therefore have the ability to scale flexibly at any time.
 
-### 2. Reserved Instances
+#### 2. Reserved Instances
 
 - Significant discount over On-Demand rates, in exchange for a commitment to use the instance for a 1 or 3-year term (Less expensive EC2 pricing model).
 - Ideal for applications with steady state or predictable usage.
 - Upfront payment and long-term commitment (1 or 3 years) required.
 
-#### Task: Reserved Instances: Backend for Financial Transactions
+##### Task: Reserved Instances: Backend for Financial Transactions
 
 Imagine you manage a bank's back-end infrastructure for financial transactions in EC2. The servers must be stable and run for several years. The reserved instances would be available to the bank at a cheaper and more predictable hourly rate due to the long-term commitment and are constantly available.
 
-### 3. Spot Instances
+#### 3. Spot Instances
 
 - Purchase unused EC2 capacity at significantly lower rates than On-Demand (Cheapest EC2 pricing model).
 - Suitable for fault-tolerant applications such as big data, containerized workloads, and CI/CD pipelines that can tolerate interruptions.
 - No long-term commitment: price is based on supply & demand + instances can be interrupted within a short time when EC2 reclaims capacity.
 
-#### Task: Spot Instances: Overnight Batch Processing
+##### Task: Spot Instances: Overnight Batch Processing
 
 Imagine you want to batch process the inventory of your ecommerse website as cheaply as possible and at off-peak times on your backend. Using spot instances would be optimal as it minimizes costs by using unused EC2 capacity during off-peak hours to make important updates based on daily sales and inventory changes.
 
-## AWS Regions & Availability Zones (AZ)
+### AWS Regions & Availability Zones (AZ)
 
 **Regions:**
 
