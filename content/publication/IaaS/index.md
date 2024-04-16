@@ -246,3 +246,5 @@ Imagine you want to batch process the inventory of your ecommerse website as che
 
 **Availability of AZs**
 By utilizing more than one Availability Zone, you can guarantee higher availability. In case one AZ fails, others can provide a backup.
+
+![Regions & AZs](region-az.png "Regions & AZs")
