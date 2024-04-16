@@ -170,7 +170,7 @@ AWS instances come in various types for specific workload requirements:
   - Utilize hardware accelerators or co-processors for tasks like floating-point calculations, graphics processing, or data pattern matching.
   - Examples include dl-, f-, g-, inf-, p-, and vt-instances.
 
-### Use cases
+### Task: Use cases
 
 ### General purpose instances
 
@@ -178,7 +178,7 @@ AWS instances come in various types for specific workload requirements:
 **Development environments**: Supports code compilation, deployment, testing & use of CI/CD.
 M, T instances provide balance between compute, memory & storage.
 
-### Compute Optimized Instances\*\*: Optimized instances
+### Compute Optimized Instances
 
 **High Performance Computing (HPC)**: Used in scientific simulations, financial models & engineering (e.g. digitization in mechanical engineering).
 **Batch processing**: Ideal for frequently repetitive scenarios such as data analysis & processing with large volumes of data.
@@ -199,3 +199,50 @@ HPC instances significantly optimize execution time in contrast to general purpo
 
 **Machine learning**: P instances utilize GPUs for efficient algorithm processing, improve training and inference phases.
 **Graphics rendering**: Accelerate high-resolution graphics processing & rendering.
+
+## AWS EC2 Instance Pricing Models
+
+### 1. On-Demand Instances
+
+- Pay by hour or second, depending on the instance type (Most expensive EC2 pricing model).
+- Best for applications with short-term, spiky, or unpredictable workloads that cannot be interrupted.
+- No long-term commitment or upfront payment required.
+
+#### Task: On-Demand Instances: Dynamic Auto-Scaling During Sales Events
+
+Imagine managing an e-commerce platform's web servers in EC2 during Black Friday or Cyber Week. On-demand instances would be perfect, as you don't have to make a long-term commitment and therefore have the ability to scale flexibly at any time.
+
+### 2. Reserved Instances
+
+- Significant discount over On-Demand rates, in exchange for a commitment to use the instance for a 1 or 3-year term (Less expensive EC2 pricing model).
+- Ideal for applications with steady state or predictable usage.
+- Upfront payment and long-term commitment (1 or 3 years) required.
+
+#### Task: Reserved Instances: Backend for Financial Transactions
+
+Imagine you manage a bank's back-end infrastructure for financial transactions in EC2. The servers must be stable and run for several years. The reserved instances would be available to the bank at a cheaper and more predictable hourly rate due to the long-term commitment and are constantly available.
+
+### 3. Spot Instances
+
+- Purchase unused EC2 capacity at significantly lower rates than On-Demand (Cheapest EC2 pricing model).
+- Suitable for fault-tolerant applications such as big data, containerized workloads, and CI/CD pipelines that can tolerate interruptions.
+- No long-term commitment: price is based on supply & demand + instances can be interrupted within a short time when EC2 reclaims capacity.
+
+#### Task: Spot Instances: Overnight Batch Processing
+
+Imagine you want to batch process the inventory of your ecommerse website as cheaply as possible and at off-peak times on your backend. Using spot instances would be optimal as it minimizes costs by using unused EC2 capacity during off-peak hours to make important updates based on daily sales and inventory changes.
+
+## AWS Regions & Availability Zones (AZ)
+
+**Regions:**
+
+- **Definition:** Geographic areas like different countries, each region consists of a network of several Availability Zones.
+- **Variability:** The software and services available can differ from one region to another.
+
+**Availability Zones (AZ):**
+
+- **Relation to Regions:** Each AZ belongs to a region but is geographically distant enough (approximately 100 km apart) to ensure that ideally only one AZ is affected in the event of a disaster.
+- **Consistency:** Within the same region, different AZs generally offer the same software and services.
+
+**Availability of AZs**
+By utilizing more than one Availability Zone, you can guarantee higher availability. In case one AZ fails, others can provide a backup.
