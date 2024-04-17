@@ -253,3 +253,11 @@ Imagine you want to batch process the inventory of your ecommerse website as che
 By utilizing more than one Availability Zone, you can guarantee higher availability. In case one AZ fails, others can provide a backup.
 
 ![Regions & AZs](region-az.png "Regions & AZs")
+
+### EC2 Fleet
+
+EC2 Fleets makes it possible to launch multiple ec2 instances with different pricing models (on-demand, reserved & spot) across multiple availability zones.
+
+#### Task: Use-Cases Batch Processing
+
+EC2 allows the configuration of fleets using a combination of Spot Instances and On-Demand Instances. For batch processing tasks that are not time-sensitive and primarily run overnight, Spot Instances can be utilized to minimize costs. The fleet can be set to use Spot Instances until a predefined price cap is reached. If Spot prices rise above this cap, EC2 Fleet automatically supplements the fleet with On-Demand Instances to ensure continuous processing without manual intervention.
