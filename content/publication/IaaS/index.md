@@ -261,3 +261,36 @@ EC2 Fleets makes it possible to launch multiple ec2 instances with different pri
 #### Task: Use-Cases Batch Processing
 
 EC2 allows the configuration of fleets using a combination of Spot Instances and On-Demand Instances. For batch processing tasks that are not time-sensitive and primarily run overnight, Spot Instances can be utilized to minimize costs. The fleet can be set to use Spot Instances until a predefined price cap is reached. If Spot prices rise above this cap, EC2 Fleet automatically supplements the fleet with On-Demand Instances to ensure continuous processing without manual intervention.
+
+### Elastic Network Interface (ENI)
+
+An Elastic Network Interface (ENI) is a virtual network card used to attach to instances in Amazon Web Services (AWS) within a Virtual Private Cloud (VPC).
+
+When an instance is launched within a VPC, or more specifically within a subnet of a VPC, an ENI is automatically attached to it. For example, if you launch an EC2 instance in a VPC subnet, the instance will have an ENI with a primary private IPv4 address assigned from the subnet’s IP range. Additional secondary private IPv4 addresses can be attached to the same ENI. Instances can have multiple ENIs attached, known as primary and secondary ENIs, which can be used for network and security management tasks within the VPC. Each ENI can also be assigned an Elastic IP address, and supports source/destination checking, which controls whether it can route network traffic.
+
+### VPC Overview
+
+A Virtual Private Cloud (VPC) is a virtual network designed to provide the same level of functionality as a traditional network. It operates as an isolated environment within an AWS account.
+A VPC allows subnetting, allocation of IP ranges, and spans across all Availability Zones (AZs) within a single region. Each subnet in a VPC is belonging to one AZ.
+
+#### Default and Nondefault VPCs
+
+Each region provides a default VPC, which is free of charge (Account creation after 12/04/2013). This VPC includes a default subnet in each AZ and supports all the functionality of EC2-VPC. EC2 Instances with no VPC specifications get launched into the default VPC.
+
+Users have also the possibility to create their own VPCs, known as nondefault VPCs, to meet specific network configurations. Any subnets created within a nondefault VPC or added to the default VPC are referred to as nondefault subnets.
+
+![VPC](vpc.png "VPC")
+
+### Subnets and Route Tables in VPC
+
+#### Subnets
+
+Subnets are subdivisions of a VPC and are used to segment and manage network traffic within different portions of a VPC. Each subnet is associated with a specific Availability Zone and can have its security and routing policies.
+
+#### Route Tables
+
+Route tables within a VPC define the paths for network traffic. Each subnet must be associated with a route table, which determines where network traffic is directed. Route tables control the routing between subnets, to the internet via an Internet Gateway, and to other AWS services.
+
+#### Management and Configuration
+
+Route tables can be customized to direct traffic based on the origin and destination. This includes routes for local networking within the VPC and routes that allow subnets to communicate with external networks.
