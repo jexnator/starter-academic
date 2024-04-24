@@ -287,10 +287,46 @@ Users have also the possibility to create their own VPCs, known as nondefault VP
 
 Subnets are subdivisions of a VPC and are used to segment and manage network traffic within different portions of a VPC. Each subnet is associated with a specific Availability Zone and can have its security and routing policies.
 
+##### Public Subnet
+
+A public subnet in AWS allows instances to access and be accessed from the internet. This is enabled by a route in its route table pointing to an Internet Gateway (IGW). Instances in public subnets typically have public IP addresses.
+
+##### Private Subnet
+
+A private subnet does not have a route to the IGW and cannot directly access the internet. It is designed for internal-only traffic and uses a NAT Gateway for internet access, which restricts incoming connections.
+
 #### Route Tables
 
-Route tables within a VPC define the paths for network traffic. Each subnet must be associated with a route table, which determines where network traffic is directed. Route tables control the routing between subnets, to the internet via an Internet Gateway, and to other AWS services.
-
-#### Management and Configuration
+Route tables within a VPC define the paths for network traffic. Each subnet must be associated with a route table, which determines where network traffic is directed. Route tables control the routing between subnets, for example to the internet via an Internet Gateway, and to other AWS services.
 
 Route tables can be customized to direct traffic based on the origin and destination. This includes routes for local networking within the VPC and routes that allow subnets to communicate with external networks.
+
+### Gateways for VPC
+
+#### Internet Gateway
+
+An Internet Gateway enables communication between instances in a VPC and the internet. It supports both inbound and outbound traffic but only connects with public subnets.
+
+##### Configuration
+
+For a subnet to communicate through the Internet Gateway, its routing table must contain an entry for this gateway. Subnets without an entry for the Internet Gateway in their routing table, typically private subnets, do not have direct internet access through this gateway.
+
+##### Communication Requirements
+
+Instances in public subnets can communicate with the internet if they meet specific conditions: they must either have a public IPv4 address or an Elastic IP address associated with a private IPv4 address.
+
+#### NAT Gateway
+
+A Network Address Translation (NAT) Gateway allows instances in private subnets to access the internet, AWS services, and private data centers, supporting only outbound (egress) traffic.
+
+#### Transit Gateway
+
+Transit Gateways facilitate network traffic routing between VPCs and private data centers. They handle both incoming and outgoing traffic and are designed for use with private subnets.
+
+#### VPN and Direct Connect Gateway
+
+These gateways provide a secure, private connection between AWS and networks outside from AWS or private data centers. They support traffic in both directions (ingress and egress) and can be used from any subnet within a VPC.
+
+#### VPC Peering
+
+VPC Peering allows direct network connectivity between different VPCs, facilitating bidirectional traffic flow from any subnet within the VPCs involved. This connection is used exclusively for internal AWS traffic. You could for example peer your default VPC within a region with the underlying VPC of your AWS Lightsail infrastructure. This allows you to connect other AWS services (outside of Lighsail) with you Lightsail instances.
