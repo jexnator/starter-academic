@@ -293,7 +293,9 @@ A public subnet in AWS allows instances to access and be accessed from the inter
 
 #### Private Subnet
 
-A private subnet does not have a route to the IGW and cannot directly access the internet. It is designed for internal-only traffic and uses a NAT Gateway for internet access, which restricts incoming connections.
+A private subnet does not have a route to an IGW and therefore cannot directly access the internet. It is designed for internal-only traffic and uses for example a NAT Gateway for internet access, which restricts incoming connections.
+
+![Private & public subnets](subnets.png "Subnets")
 
 ### Route Tables
 
@@ -319,14 +321,70 @@ Instances in public subnets can communicate with the internet if they meet speci
 
 A Network Address Translation (NAT) Gateway allows instances in private subnets to access the internet, AWS services, and private data centers, supporting only outbound (egress) traffic.
 
-### Transit Gateway
+#### Public NAT Gateway
 
-Transit Gateways facilitate network traffic routing between VPCs and private data centers. They handle both incoming and outgoing traffic and are designed for use with private subnets.
+A Public NAT Gateway is deployed in a public subnet, using an Elastic IP address for internet communication. It enables instances in private subnets to initiate outbound connections to the internet while preventing inbound traffic.
 
-### VPN and Direct Connect Gateway
+#### Private NAT Gateway
 
-These gateways provide a secure, private connection between AWS and networks outside from AWS or private data centers. They support traffic in both directions (ingress and egress) and can be used from any subnet within a VPC.
+A Private NAT Gateway, while less common, refers to a configuration where NAT services are restricted within private network environments, such as between different private subnets within the same VPC. This setup is typically used to control and isolate internal network traffic without exposure to external networks.
+
+![IGW & NAT-GW](subnets.png "IGW & NAT-GW")
+
+### Transit Gateways and Usage
+
+AWS Transit Gateway acts as a network hub that simplifies connectivity between VPCs, AWS Direct Connect, and VPN connections. It centralizes the management of interconnectivity and routing policies, reducing the complexity of managing multiple network connections.
+
+- **Centralized Hub:** Simplifies the network architecture by acting as a central point to manage routing and connections across multiple VPCs and external connections.
+- **Scalable Connectivity:** Supports thousands of VPC and VPN connections within one transit gateway.
+- **Routing Control:** Provides flexible routing options, including dynamic and static routes.
+
+### Centralized Router
+
+- **Usage:** Configure your transit gateway as a centralized router that connects all of your VPCs, AWS Direct Connect, and AWS Site-to-Site VPN connections.
+
+### Isolated VPCs
+
+- **Usage:** Configure your transit gateway to function as multiple isolated routers (not limited to one routetable; one rt per connection). This is the same as using multiple transit gateways but offers more flexibility in scenarios where routes and attachments might change.
+
+### Isolated VPCs with Shared Services
+
+- **Usage:** Set up your transit gateway as multiple isolated routers that utilize a shared service. Similar to the isolated VPCs scenario, this provides additional flexibility in cases where routes and attachments are subject to modification.
+
+![Transit Gateway](transit-gateway.png "AWS Transit Gateway")
+
+### Direct Connect Gateway
+
+AWS Direct Connect provides a dedicated network connection from an on-premise network to AWS. Unlike internet-based VPNs, Direct Connect offers a private, consistent, and low-latency connection that bypasses the public internet. This service is particularly advantageous for applications requiring stable, high-throughput, or real-time network performance.
+
+- **Dedicated Connection:** Provides a physical connection between the customer’s network and AWS, ensuring consistent network performance.
+- **Reduced Bandwidth Costs:** Potentially lowers network costs by reducing bandwidth charges typically associated with high-volume data transfers over the internet.
+- **Compatibility with AWS Services:** Integrates with other AWS services, such as Amazon VPC, AWS Transit Gateway, and AWS VPN solutions.
+
+![Direct Connect](direct-connect-tgw.png "AWS Direct Connect")
 
 ### VPC Peering
 
-VPC Peering allows direct network connectivity between different VPCs, facilitating bidirectional traffic flow from any subnet within the VPCs involved. This connection is used exclusively for internal AWS traffic. You could for example peer your default VPC within a region with the underlying VPC of your AWS Lightsail infrastructure. This allows you to connect other AWS services (outside of Lighsail) with you Lightsail instances.
+VPC Peering allows direct network connectivity between different VPCs, facilitating bidirectional traffic flow from any subnet within the VPCs involved. This connection is used exclusively for internal AWS traffic. You could for example peer your default VPC within a region with the underlying VPC of your AWS Lightsail infrastructure. This allows you to connect other AWS services (outside of Lighsail) with your Lightsail components.
+
+![VPC Peering](vpc-peering.png "VPC Peering")
+
+## Possible VPN Options in AWS
+
+### AWS Site-to-Site VPN
+
+AWS Site-to-Site VPN establishes secure IPsec connections between an on-premise network and AWS VPCs. This service encrypts data transmitted over the internet, ensuring secure communication between corporate data centers and the AWS cloud. It supports static and dynamic routing options, suitable for extending data centers or for disaster recovery setups.
+
+![AWS Site-to-Site VPN](site-to-site.png "AWS Site-to-Site VPN")
+
+### AWS Client VPN
+
+AWS Client VPN is a managed client-based VPN service that allows secure access to AWS networks and on-premise environments from any location. Supporting OpenVPN clients, it enables seamless connectivity across various platforms, ensuring end-to-end encryption and fine-grained access control through integration with AWS Identity and Access Management (IAM).
+
+![AWS Client VPN](client-vpn.png "AWS Client VPN")
+
+### AWS VPN CloudHub
+
+Designed for organizations with multiple branch offices, AWS VPN CloudHub uses a hub-and-spoke model to connect each branch to AWS via a virtual private gateway. This setup supports secure communication across the branches, leveraging the AWS network backbone for optimized and encrypted data flow.
+
+![AWS VPN CloudHub](vpn-cloudhub.png "AWS VPN CloudHub")
