@@ -34,7 +34,7 @@ The completion of the internal modules is now definitely the focus of my interes
 
 ## What did I do?
 
-This week I worked almost exclusively on the IaaS module and dealt with the module tasks, which I continuously build up using Terraform, test and store in the [GitHub repo](https://github.com/JEX-98/aws/tree/main/Iaas) after completion. Since the theory of the module covers a lot of principles and components within EC2 and VPC, I am creating a summary of the most important aspects in the [IaaS publication]({{< relref "/publication/IaaS" >}}) in parallel to studying the slides, which will also help me to create the presentation at the end of the module.
+This week I worked almost exclusively on the IaaS module and dealt with the module tasks, which I continuously build up using Terraform, test and store in my [GitHub](https://github.com/JEX-98/aws/tree/main/Iaas) repository after completion. Since the theory of the module covers a lot of principles and components within EC2 and VPC, I am creating a summary of the most important aspects in the [IaaS publication]({{< relref "/publication/IaaS" >}}) in parallel to studying the slides, which will also help me to create the presentation at the end of the module.
 
 ## How did I improve?
 
