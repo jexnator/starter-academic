@@ -30,20 +30,21 @@ projects: []
 
 ## What are my actual goals?
 
-This week I am focusing on completing the planning phase of my transfer report (2 semesters). The goal is to complete the final planning and get approval from the university and supervisors. I am also continuing to work on the goals I mentioned last week regarding my internal training.
+This week I am focusing on completing the planning phase of my transfer report (2 semesters). The goal is to complete the final planning and get approval from the university and supervisors. I am also continuing to work on the goals I mentioned last week regarding my internal apprenticeship.
 
 ## What did I do?
 
 Just like last week, I spent most of the week working on the IaaS module. On Thursday morning, I invested some additional time in preparing for the scheduling meeting, which took place in the afternoon. I would like to take this opportunity to thank my supervisors once again for their time and valuable feedback.
 
 [GitHub](https://github.com/JEX-98/aws/tree/main/Iaas)
+
 [IaaS publication]({{< relref "/publication/IaaS" >}})
 
-Unfortunately, it was mentioned at this week's service delivery meeting that four very important key players will be leaving us, which is of course a great pity for Amanox, but understandable given their personal plans. Three of these people were and are a great support to me in my training and I was able to learn a lot from them along the way. Thank you for that and all the best for your plans. <3
+Unfortunately, it was mentioned at this week's service delivery meeting that four very important key players will be leaving us, which is of course a great pity for Amanox, but understandable given their personal plans. Three of these people were and are a great support to me in my apprenticeship to date and I was able to learn a lot from them along the way. Thank you for that and all the best for your plans. <3
 
 ## How did I improve?
 
-Looking back on this week, I tried to improve myself, for example by taking more time to prepare for the scheduling interview and going through a PPTX presentation during the interview to keep the thread running and work through all the points together with the supervisors.
+Looking back on this week, I tried to improve myself, for example by taking more time to prepare for the scheduling interview and going through a PPTX presentation during this interview to keep the common thread and work through all the points together with my mentors.
 
 <br>
 <div style="padding: 18px; padding-top: 10px; color: #eee; background-color: #3c3c3c; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
