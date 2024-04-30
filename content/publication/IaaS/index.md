@@ -388,3 +388,5 @@ AWS Client VPN is a managed client-based VPN service that allows secure access t
 Designed for organizations with multiple branch offices, AWS VPN CloudHub uses a hub-and-spoke model to connect each branch to AWS via a virtual private gateway. This setup supports secure communication across the branches, leveraging the AWS network backbone for optimized and encrypted data flow.
 
 ![AWS VPN CloudHub](vpn-cloudhub.png "AWS VPN CloudHub")
+
+
