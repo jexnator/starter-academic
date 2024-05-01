@@ -30,7 +30,7 @@ projects: []
 
 ## What are my actual goals?
 
-This week I am focusing on completing the planning phase of my transfer report (2 semesters). The goal is to complete the final planning and get approval from the university and supervisors. I am also continuing to work on the goals I mentioned last week regarding my internal apprenticeship.
+This week I am focusing on completing the planning phase of my transfer report (over 2 semesters). The goal is to complete the final planning and get approval from the university and supervisors. I am also continuing to work on the goals I mentioned last week regarding my internal apprenticeship.
 
 ## What did I do?
 
