@@ -389,4 +389,6 @@ Designed for organizations with multiple branch offices, AWS VPN CloudHub uses a
 
 ![AWS VPN CloudHub](vpn-cloudhub.png "AWS VPN CloudHub")
 
+## VPC Peering Task
 
+![Base Infrastructure](vpc-peering.png "Base Infrastructure")
