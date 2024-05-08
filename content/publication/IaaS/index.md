@@ -407,9 +407,9 @@ The basic infrastructure includes two Virtual Private Clouds (VPCs) that are pee
 **Original VPC**
 
 - **Subnets**: Includes one private and one public subnet with one route table each.
-- **Internet Gateway (IGW)**: Connected to the public subnet to allow outbound internet access.
-- **NAT Gateway (NAT-G)**: Placed within the public subnet; it provides internet access to instances in the private subnet.
-- **Security Groups**: Configured for both public and private instances to allow SSH and ICMP protocols.
+- **Internet Gateway (IGW)**: Connected to the public subnet to allow in- & egress traffic to the internet.
+- **NAT Gateway (NAT-G)**: Placed within the public subnet; it provides egress internet access to instances in the private subnet.
+- **Security Groups**: Configured for both public and private instances to allow SSH and ICMP.
 - **EC2 Instances**: Ubuntu instances deployed in both the public and private subnets.
 
 **Duplicate VPC**
