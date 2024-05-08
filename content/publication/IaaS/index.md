@@ -416,12 +416,11 @@ The basic infrastructure includes two Virtual Private Clouds (VPCs) that are pee
   ![Base Infrastructure](vpc-peering-base.png "Base Infrastructure")
 
 > 3.  Test Connectivity between VPCs
-
-- Ping from VPC1 public subnet to VPC2 public subnet.
-- Ping from VPC1 public subnet to VPC2 private subnet.
-- Ping from VPC1 private subnet to VPC2 public subnet.
-- Ping from VPC1 private subnet to VPC2 private subnet.
-- Repeat tests from VPC2 to VPC1.
+>
+> - Ping from VPC1 public subnet to VPC2 public subnet.
+> - Ping from VPC1 private subnet to VPC2 public subnet.
+> - Ping from VPC1 private subnet to VPC2 private subnet.
+> - Repeat tests from VPC2 to VPC1.
 
 > 4.  Record observations and modify settings to enable all eight possible connections:
 >     **Findings**:
