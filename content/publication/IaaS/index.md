@@ -391,9 +391,7 @@ Designed for organizations with multiple branch offices, AWS VPN CloudHub uses a
 
 ## VPC Peering Task
 
-### Task
-
-Duplicate your existing VPC from the task before, including all subnets and instances, but without adding any gateways. Establish a VPC peering connection between the original and the new VPC.
+> Duplicate your existing VPC from the task before, including all subnets and instances, but without adding any gateways. Establish a VPC peering connection between the original and the new VPC.
 
 > **Steps**:
 >
