@@ -434,9 +434,11 @@ The VPC peering connection between the two VPCs is available in the basic infras
 - VPC1 & 2: Create routes between VPC Peering Connection and private & public subnets
 
 **Findings after extension**:
-Since the customization I can reach any other instance from all 4 instances via ping.
+Since the routes have been properly defined, all 8 connections between the VPCs are possible.
+
+![Revised infrastructure](vpc-peering-solution.png "Revised infrastructure")
 
 > 5.  Once you managed that all 8 possible connections happened, check if VPC2 can access the internet – It should not.
 >     Instead of hooking it up to a new Internet Gateway OR the existing one – Try to figure a way for both (VPC2 private and public) to connect to the internet via VPC1 public subnet.
 
-**Findings** Ich habe mir überlegt die beiden Subnets aus dem VPC2 mit dem NAT-Gatewas
+**Findings**
