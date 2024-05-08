@@ -441,3 +441,6 @@ Since the routes have been properly defined, all 8 connections between the VPCs 
 >     Instead of hooking it up to a new Internet Gateway OR the existing one – Try to figure a way for both (VPC2 private and public) to connect to the internet via VPC1 public subnet.
 
 **Findings**
+With VPC peering, resources in VPC2 cannot use the IGW of VPC1 to access the internet. This is because VPC peering establishes a private connection between the two VPCs, and does not provide any internet access capabilities ([Docs AWS - VPC peering limitations](https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-basics.html#vpc-peering-limitations)).
+
+However, an alternative would be to use a transit gateway instead of a VPC peering connection.
