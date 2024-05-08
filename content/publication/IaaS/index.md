@@ -397,15 +397,40 @@ Duplicate your existing VPC from the task before, including all subnets and inst
 
 **Steps**:
 
-1. Create a copy of the original VPC along with its private and public subnets and instances. Ensure the new VPC does not include any gateways.
-2. Connect both VPCs (VPC1 and VPC2) via VPC peering.
-3. Test Connectivity between VPCs
-   - Ping from VPC1 public subnet to VPC2 public subnet.
-   - Ping from VPC1 public subnet to VPC2 private subnet.
-   - Ping from VPC1 private subnet to VPC2 public subnet.
-   - Ping from VPC1 private subnet to VPC2 private subnet.
-   - Repeat tests from VPC2 to VPC1.
-4. Record observations and modify settings to enable all eight possible connections.
-5. Ensure VPC2 does not access the internet directly. Configure VPC2 (both subnets) to access the internet through VPC1's public subnet.
+- Create a copy of the original VPC along with its private and public subnets and instances. Ensure the new VPC does not include any gateways.
+- Connect both VPCs (VPC1 and VPC2) via VPC peering:
+
+#### Components
+
+The basic infrastructure includes two Virtual Private Clouds (VPCs) that are peered together.
+
+**Original VPC**
+
+- **Subnets**: Includes one private and one public subnet with one route table each.
+- **Internet Gateway (IGW)**: Connected to the public subnet to allow outbound internet access.
+- **NAT Gateway (NAT-G)**: Placed within the public subnet; it provides internet access to instances in the private subnet.
+- **Security Groups**: Configured for both public and private instances to allow SSH and ICMP protocols.
+- **EC2 Instances**: Ubuntu instances deployed in both the public and private subnets.
+
+**Duplicate VPC**
+
+- **Subnets**: Includes one private and one public subnet.
+- **Security Groups**: Similar setup as the original VPC, allowing SSH and ICMP.
+- **EC2 Instances**: Ubuntu instances located in both the public and private subnets.
+- **Gateways**: None are present as specified.
 
 ![Base Infrastructure](vpc-peering-base.png "Base Infrastructure")
+
+- Test Connectivity between VPCs
+  - Ping from VPC1 public subnet to VPC2 public subnet.
+  - Ping from VPC1 public subnet to VPC2 private subnet.
+  - Ping from VPC1 private subnet to VPC2 public subnet.
+  - Ping from VPC1 private subnet to VPC2 private subnet.
+  - Repeat tests from VPC2 to VPC1.
+- Record observations and modify settings to enable all eight possible connections:
+  **Erkenntnisse**:
+
+1. Mit der aktuellen Konfiguration ist es nicht möglich zwischen den beiden VPCs zu kommunizieren. Dementsprechend habe ich auch keinen SSH-Access zu den public und private Instanzen in VPC2.
+2. Innerhalb VPC1 zwischen Private und Public Subnet ist die Kommunikation möglich.
+
+- Ensure VPC2 does not access the internet directly. Configure VPC2 (both subnets) to access the internet through VPC1's public subnet.
