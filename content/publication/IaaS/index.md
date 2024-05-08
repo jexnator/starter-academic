@@ -395,15 +395,12 @@ Designed for organizations with multiple branch offices, AWS VPN CloudHub uses a
 
 Duplicate your existing VPC from the task before, including all subnets and instances, but without adding any gateways. Establish a VPC peering connection between the original and the new VPC.
 
-**Steps**:
-
-- Create a copy of the original VPC along with its private and public subnets and instances. Ensure the new VPC does not include any gateways.
-- Connect both VPCs (VPC1 and VPC2) via VPC peering:
-
-#### Components
+> **Steps**:
+>
+> 1.  Create a copy of the original VPC along with its private and public subnets and instances. Ensure the new VPC does not include any gateways.
+> 2.  Connect both VPCs (VPC1 and VPC2) via VPC peering.
 
 The basic infrastructure includes two Virtual Private Clouds (VPCs) that are peered together.
-
 **Original VPC**
 
 - **Subnets**: Includes one private and one public subnet with one route table each.
@@ -418,19 +415,30 @@ The basic infrastructure includes two Virtual Private Clouds (VPCs) that are pee
 - **Security Groups**: Similar setup as the original VPC, allowing SSH and ICMP.
 - **EC2 Instances**: Ubuntu instances located in both the public and private subnets.
 - **Gateways**: None are present as specified.
+  ![Base Infrastructure](vpc-peering-base.png "Base Infrastructure")
 
-![Base Infrastructure](vpc-peering-base.png "Base Infrastructure")
+> 3.  Test Connectivity between VPCs
 
-- Test Connectivity between VPCs
-  - Ping from VPC1 public subnet to VPC2 public subnet.
-  - Ping from VPC1 public subnet to VPC2 private subnet.
-  - Ping from VPC1 private subnet to VPC2 public subnet.
-  - Ping from VPC1 private subnet to VPC2 private subnet.
-  - Repeat tests from VPC2 to VPC1.
-- Record observations and modify settings to enable all eight possible connections:
-  **Erkenntnisse**:
+- Ping from VPC1 public subnet to VPC2 public subnet.
+- Ping from VPC1 public subnet to VPC2 private subnet.
+- Ping from VPC1 private subnet to VPC2 public subnet.
+- Ping from VPC1 private subnet to VPC2 private subnet.
+- Repeat tests from VPC2 to VPC1.
 
-1. Mit der aktuellen Konfiguration ist es nicht möglich zwischen den beiden VPCs zu kommunizieren. Dementsprechend habe ich auch keinen SSH-Access zu den public und private Instanzen in VPC2.
-2. Innerhalb VPC1 zwischen Private und Public Subnet ist die Kommunikation möglich.
+> 4.  Record observations and modify settings to enable all eight possible connections:
+>     **Findings**:
+>     With the current configuration it is not possible to communicate between the two VPCs. Accordingly, I also have no SSH access to the public and private instances in VPC2. Within VPC1 between private and public subnet, communication between the Ubuntu instances is possible (important: ICMP must be specified in Security Group).
 
-- Ensure VPC2 does not access the internet directly. Configure VPC2 (both subnets) to access the internet through VPC1's public subnet.
+**Solution**:
+The VPC peering connection between the two VPCs is available in the basic infrastructure. However, specific routes between the subnets of both VPCs and the VPC peering connection are still required in order to enable successful traffic between the two VPCs, i.e. to enable communication between the instances. The basic infrastructure has been extended as follows:
+
+- VP2: Add and associate route tables to the public and private subnet
+- VPC1 & 2: Create routes between VPC Peering Connection and private & public subnets
+
+**Findings after extension**:
+Since the customization I can reach any other instance from all 4 instances via ping.
+
+> 5.  Once you managed that all 8 possible connections happened, check if VPC2 can access the internet – It should not.
+>     Instead of hooking it up to a new Internet Gateway OR the existing one – Try to figure a way for both (VPC2 private and public) to connect to the internet via VPC1 public subnet.
+
+**Findings** Ich habe mir überlegt die beiden Subnets aus dem VPC2 mit dem NAT-Gatewas
