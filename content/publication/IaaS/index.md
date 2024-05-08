@@ -444,3 +444,12 @@ Since the routes have been properly defined, all 8 connections between the VPCs 
 With VPC peering, resources in VPC2 cannot use the IGW of VPC1 to access the internet. This is because VPC peering establishes a private connection between the two VPCs, and does not provide any internet access capabilities ([Docs AWS - VPC peering limitations](https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-basics.html#vpc-peering-limitations)).
 
 However, an alternative would be to use a transit gateway instead of a VPC peering connection.
+
+## Storage for your Architecture
+| **Storage Type** | **Structure** | **Functionality** | **Organization Method** |
+|-----------------|----------------|--------------------|------------------------|
+| **Block Storage** | Consists of fixed-size storage blocks (typically ranging from 512 bytes to 64 kilobytes) each with a unique address. | Operating systems interact with block storage by requesting data blocks via interfaces like iSCSI or Fibre Channel. This allows fast, low-latency access, often used for performance-intensive applications such as databases. | Blocks are organized on physical storage media like HDDs or SSDs and can be aggregated through volume manager software into larger logical units. |
+| **File Storage** | Organizes data in a hierarchical structure of files and directories, similar to the file system on a conventional computer. | Users and applications interact with file storage via standardized protocols like NFS or SMB/CIFS to read, write, and manage files. | Files are stored in a directory tree, allowing data to be organized and searched by name and path. File storage systems manage metadata such as access rights and timestamps. |
+| **Object Storage** | Stores data as objects, which consist of three main components: the data content itself, metadata, and a unique ID (object ID). | Objects are accessed independently of a hierarchical file system via APIs (e.g., RESTful HTTP), enabling scalable and flexible storage solutions well-suited for cloud applications and big data analytics. | Objects are stored in a flat address space environment where each object is accessible via its ID. Object storage can extend metadata, facilitating detailed categorization and management of stored data. |
+
+![Different Storage types](types-storage.png "Different Storage types")
