@@ -391,4 +391,21 @@ Designed for organizations with multiple branch offices, AWS VPN CloudHub uses a
 
 ## VPC Peering Task
 
-![Base Infrastructure](vpc-peering.png "Base Infrastructure")
+### Task
+
+Duplicate your existing VPC from the task before, including all subnets and instances, but without adding any gateways. Establish a VPC peering connection between the original and the new VPC.
+
+**Steps**:
+
+1. Create a copy of the original VPC along with its private and public subnets and instances. Ensure the new VPC does not include any gateways.
+2. Connect both VPCs (VPC1 and VPC2) via VPC peering.
+3. Test Connectivity between VPCs
+   - Ping from VPC1 public subnet to VPC2 public subnet.
+   - Ping from VPC1 public subnet to VPC2 private subnet.
+   - Ping from VPC1 private subnet to VPC2 public subnet.
+   - Ping from VPC1 private subnet to VPC2 private subnet.
+   - Repeat tests from VPC2 to VPC1.
+4. Record observations and modify settings to enable all eight possible connections.
+5. Ensure VPC2 does not access the internet directly. Configure VPC2 (both subnets) to access the internet through VPC1's public subnet.
+
+![Base Infrastructure](vpc-peering-base.png "Base Infrastructure")
