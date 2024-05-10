@@ -453,3 +453,35 @@ However, an alternative would be to use a transit gateway instead of a VPC peeri
 | **Object Storage** | Stores data as objects, which consist of three main components: the data content itself, metadata, and a unique ID (object ID). | Objects are accessed independently of a hierarchical file system via APIs (e.g., RESTful HTTP), enabling scalable and flexible storage solutions well-suited for cloud applications and big data analytics. | Objects are stored in a flat address space environment where each object is accessible via its ID. Object storage can extend metadata, facilitating detailed categorization and management of stored data. |
 
 ![Different Storage types](types-storage.png "Different Storage types")
+
+### EC2 Storage - Overview
+
+In EC2 you can make use all types of storage mentioned above (Block, File & Object Storage).
+
+- **Block**: Amazon EBS, Amazon EC2 Instance Storage
+- **File**: Amazon EFS
+- **Oject**: Amazon S3 & Glacier
+
+#### EC2 Instance Storage - Block Storage
+
+- **Temporary Storage:** Specifically for EC2 instances, if the instance is wiped, the storage is also wiped.
+- **Attachment:** Storage can only be attached to running instances and is neither detachable nor sharable between instances.
+- **Location and Use:** Resides on the same physical host as the instance, ideal for caching and temporary data.
+- **Volume Types:** Supports multiple volumes per instance, with options like HDD, SSD, or NVMe.
+
+![EC2 Instance Storage](eis.png "EC2 Instance Storage")
+
+#### EBS (Elastic Block Storage) – Block Storage
+
+- **Raw Block Devices:** Presented as unformatted devices that require formatting by the user.
+- **Persistence:** Provides persistent storage that remains even if the instance is stopped.
+- **Configurations:** Allows data deletion on detachment or instance termination; default setting.
+- **Snapshots and Replication:** Enables snapshot creation, stored on S3, and can be restored to a new volume. Automatically replicated within its Availability Zone to enhance data security.
+- **Multi-Instance Attachment:** Features EBS Multi-Attach for using a single volume on multiple instances.
+- **Physical Storage:** Unlike instance storage, EBS is located on an external storage device, not on the host computer.
+
+![EBS](ebs.png "EBS")
+
+#### Storage Types EBS
+
+![EC2 Instance Storage](eis.png "EC2 Instance Storage")
