@@ -482,6 +482,23 @@ In EC2 you can make use all types of storage mentioned above (Block, File & Obje
 
 ![EBS](ebs.png "EBS")
 
-#### Storage Types EBS
+##### Storage Types EBS
 
 ![EC2 Instance Storage](eis.png "EC2 Instance Storage")
+
+#### EFS (Elastic File System) – File Storage
+
+- **Service Overview:** Amazon EFS offers a simple, serverless, elastic file system for AWS Cloud and on-premises resources, operating as a Platform-as-a-Service (PaaS).
+- **Scalability:** Automatically scales to petabytes without disrupting applications, adjusting as files are added or removed.
+- **Compatibility:** Supports NFSv4 protocol.
+- **Performance Modes:**
+  - _General Purpose:_ Best for latency-sensitive applications like web servers.
+  - _Max I/O:_ Scales to higher throughput and operations per second, with increased latencies.
+- **Throughput Modes:**
+  - _Bursting Throughput:_ Throughput increases as file system size grows.
+  - _Provisioned Throughput:_ Allows specification of throughput independent of data volume.
+- **Storage Classes:**
+  - _Standard:_ Offers multi-AZ resilience (EFS Standard and EFS Standard–IA).
+  - _One Zone:_ For cost savings, stores data in a single AZ (EFS One Zone and EFS One Zone–IA).
+
+![EFS](efs.png "EC2 Instance Storage")
