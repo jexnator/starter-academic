@@ -502,3 +502,18 @@ In EC2 you can make use all types of storage mentioned above (Block, File & Obje
   - _One Zone:_ For cost savings, stores data in a single AZ (EFS One Zone and EFS One Zone–IA).
 
 ![EFS](efs.png "EC2 Instance Storage")
+
+#### S3 (Simple Storage Service) – Object Storage
+
+- **Functionality:** Provides object storage where files are stored as complete units.
+- **Service Type:** Operates as a Platform-as-a-Service (PaaS), not Infrastructure-as-a-Service (IaaS).
+- **Archival Storage:**
+  - _Glacier:_ A lower-cost archival storage solution within S3 for long-term data retention.
+  - _Cost Efficiency:_ Cheaper per GB stored compared to standard S3.
+  - _Retrieval Cost and Time:_ Retrieval is more expensive and slower, with latencies extending to hours.
+- **Integration and Durability:**
+  - _Serverless:_ Ready-to-use at setup, integrates with EC2 for storing EBS snapshots.
+  - _Mounting:_ S3 buckets can be mounted to EC2 instances.
+  - _Durability:_ Offers high durability, globally accessible, not confined to specific regions.
+
+![S3](s3.png "S3")
