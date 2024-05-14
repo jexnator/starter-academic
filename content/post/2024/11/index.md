@@ -46,7 +46,7 @@ I was able to make good progress in the IaaS module. Although the tasks are inst
 
 Looking back, the Mental Health Workshop has once again made me, like probably others, aware of the 4 areas (personal values, performance, relationships & body) on which our mental health depends and how one can determine or influence the current status in these areas. Over the last few months, I've caught myself saying a few times that I don't have enough time for physical balance/fitness at the moment. However, thanks to this workshop, I was able to realize that you can't have too little time, but that you simply have to make time for this balance. I have now made a personal agreement with myself that I will do a sporting activity at least once a week to compensate for this, which I have already been able to do in the last 2 weeks with 2 slackline sessions in Steinhölzli near Weissenbühl. I also set myself the goal in the area of personal values of being able to say "no" from time to time instead of politely saying "yes" to everything, both professionally and privately.
 
-![Life balance model according Trappitsch](life-balance.jpg "Life balance model according Trappitsch")
+![Life balance model according Trappitsch](life-balance.jpg "Life Balance Model according Trappitsch")
 
 <br>
 <div style="padding: 18px; padding-top: 10px; color: #eee; background-color: #3c3c3c; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
