@@ -473,16 +473,14 @@ In EC2 you can make use all types of storage mentioned above (Block, File & Obje
 
 #### EBS (Elastic Block Storage) – Block Storage
 
+![EBS](ebs.png "EBS")
+
 - **Raw Block Devices:** Presented as unformatted devices that require formatting by the user.
 - **Persistence:** Provides persistent storage that remains even if the instance is stopped.
 - **Configurations:** Allows data deletion on detachment or instance termination; default setting.
 - **Snapshots and Replication:** Enables snapshot creation, stored on S3, and can be restored to a new volume. Automatically replicated within its Availability Zone to enhance data security.
 - **Multi-Instance Attachment:** Features EBS Multi-Attach for using a single volume on multiple instances.
 - **Physical Storage:** Unlike instance storage, EBS is located on an external storage device, not on the host computer.
-
-![EBS](ebs.png "EBS")
-
-##### Storage Types EBS
 
 ![EC2 Instance Storage](eis.png "EC2 Instance Storage")
 
@@ -517,3 +515,63 @@ In EC2 you can make use all types of storage mentioned above (Block, File & Obje
   - _Durability:_ Offers high durability, globally accessible, not confined to specific regions.
 
 ![S3](s3.png "S3")
+
+### VPC Flow Logs
+
+VPC Flow Logs capturing information about the IP traffic to and from network interfaces in a Virtual Private Cloud (VPC). These logs can be published to CloudWatch or S3 for further analysis and monitoring.
+
+**Key Points:**
+
+- Activated at the VPC or subnet level.
+- Monitors all network interfaces within the specified scope.
+- Logs can be stored in CloudWatch or S3.
+
+#### Fields in VPC Flow Logs (Version 1 fields)
+
+Each VPC Flow Log record is a string with fields separated by spaces. The fields provide information about the network traffic.
+
+| Field Name   | Description                                            | Data Type |
+| ------------ | ------------------------------------------------------ | --------- |
+| version      | Version of the flow log format.                        | STRING    |
+| account-id   | AWS account ID associated with the flow log.           | STRING    |
+| interface-id | ID of the network interface.                           | STRING    |
+| srcaddr      | Source IP address.                                     | STRING    |
+| dstaddr      | Destination IP address.                                | STRING    |
+| srcport      | Source port.                                           | INT       |
+| dstport      | Destination port.                                      | INT       |
+| protocol     | Protocol of the traffic (e.g., TCP, UDP).              | INT       |
+| packets      | Number of packets in the flow.                         | INT       |
+| bytes        | Number of bytes in the flow.                           | INT       |
+| start        | Start time of the flow (Unix timestamp).               | INT       |
+| end          | End time of the flow (Unix timestamp).                 | INT       |
+| action       | Action associated with the traffic (ACCEPT or REJECT). | STRING    |
+| log-status   | Status of the log (OK, NODATA, SKIPDATA).              | STRING    |
+
+#### Advanced fields in VPC Flow Logs (Version 2 fields)
+
+| Field Name          | Description                                                                                   | Data Type |
+| ------------------- | --------------------------------------------------------------------------------------------- | --------- |
+| flow-direction      | Direction of the flow (ingress or egress).                                                    | STRING    |
+| traffic-path        | Path taken by the egress traffic (e.g., through an internet gateway, VPC peering connection). | STRING    |
+| pkt-src-aws-service | Source AWS service if the source IP address belongs to an AWS service.                        | STRING    |
+| pkt-dst-aws-service | Destination AWS service if the destination IP address belongs to an AWS service.              | STRING    |
+
+#### Customizing Flow Logs
+
+You can create custom formats for your Flow Logs. The default format includes all version 2 fields. Custom formats allow for the inclusion or exclusion of specific fields to tailor the logs to your needs.
+
+**Example Custom Format:**
+
+```
+${version} ${account-id} ${interface-id} ${srcaddr} ${dstaddr} ${srcport} ${dstport} ${protocol} ${packets} ${bytes} ${start} ${end} ${action} ${log-status}
+```
+
+This example includes only the most essential fields, which can be expanded based on specific requirements.
+
+#### Usage and Benefits
+
+Enabling VPC Flow Logs can help with:
+
+- **Security Monitoring**: Identifying suspicious activity and verifying security group and NACL rules.
+- **Network Troubleshooting**: Diagnosing connectivity issues within the VPC.
+- **Cost and Performance Optimization**: Analyzing data transfer costs and performance bottlenecks.
