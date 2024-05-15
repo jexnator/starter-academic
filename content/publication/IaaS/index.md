@@ -575,3 +575,52 @@ Enabling VPC Flow Logs can help with:
 - **Security Monitoring**: Identifying suspicious activity and verifying security group and NACL rules.
 - **Network Troubleshooting**: Diagnosing connectivity issues within the VPC.
 - **Cost and Performance Optimization**: Analyzing data transfer costs and performance bottlenecks.
+
+### Network ACL (Access Control List)
+
+A network access control list (ACL) is an optional layer of security on VPC and acts as a firewall for controlling traffic in and out of one or more subnets. You define rules like Source/Destination or Protocol that are allowed/denied. Default NACL is configured to allow all traffic In- and Egress.
+
+![NACL](nacl.png "NACL")
+
+### Security Groups (SG)
+
+Security groups act as virtual firewalls, controlling the incoming (ingress) and outgoing (egress) traffic for the resources they are associated with.
+
+**Default Security Group:**
+
+- **Ingress Rule**: By default, the default security group allows inbound traffic only from other resources that are associated with the same security group.
+- **Egress Rule**: The default security group allows all outbound traffic, making it permissive for any destination outside the instances.
+
+**Attaching Security Groups:**
+
+Security groups are attached to individual resources within the VPC, such as EC2 instances, rather than being attached directly to the VPC itself.
+
+### Best Practice – Security Groups (SG) & NACL
+
+**ACLs should not be used to control the traffic of your instance alone:**
+
+- They should be used occasionally where you have specific compliance requirements, such as "We never allow SQL Ports from Subnet XYZ." Instead of configuring multiple security groups to block SQL, ensure it is covered in the NACL.
+
+**NACL is complementary to Security Groups:**
+
+- Define use-case specific rules inside your security groups.
+- Only general, critical compliance rules that need to be consistently applied should be set inside the NACL.
+- This approach ensures coverage of essential rules that might be overlooked in a specific security group.
+
+**Security Groups should handle most traffic control:**
+
+- Security groups should be the primary method for controlling traffic.
+
+### Reachability Analyzer
+
+**Complexity with NACL and SGs:**
+
+- The more you mix NACLs and SGs, the more complex it gets to troubleshoot.
+
+**Tools for Troubleshooting:**
+
+- To troubleshoot, you have certain tools – one of them is the Reachability Analyzer.
+- For it, you need to have all VPC Flow Logs enabled.
+- There you can define where traffic starts, where it turns, and where it ends.
+- If any traffic was blocked on the way or something needs to be troubleshooted for other reasons, you'll see it inside the Analyzer.
+- This way, you don't need to double-check SGs and NACLs if something's not working as intended. Instead, the Analyzer tells you where the issue resides.
