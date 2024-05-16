@@ -828,3 +828,72 @@ AWS Certificate Manager (ACM) simplifies the management of digital certificates,
 ### Comprehensive Encryption Strategy
 
 Using AWS KMS, CloudHSM, and ACM, customers can implement a comprehensive encryption strategy for data at rest and in transit, ensuring consistent security for data across the AWS ecosystem.
+
+## Task: Data Encryption Concept for AWS Infrastructure
+
+We are working with the basic infrastructure implemented in Tasks 10-13. Currently, there is no encryption configured for the root EBS volume, additional EBS volumes, EFS, or S3 bucket. This concept aims to change that by implementing encryption. With EBS and EFS, the options for encryption are AWS managed (KMS abstracted) or via KMS itself. With S3 you have 3 different options:
+
+- SSE-C: Server-side encryption with customer-provided keys.
+- SSE-S3: Server-side encryption with Amazon S3-managed keys.
+- SSE-KMS: Server-side encryption with AWS KMS keys.
+  I decided to go with the ABS managed approach for all three services.
+
+### Encryption Considerations
+
+#### Encryption in Transit
+
+Encryption in transit is essential to protect data as it moves between clients, services, and AWS infrastructure. It prevents the interception and manipulation of data by ensuring the security of data during transmission over the network.
+
+In this context, encryption in transit should be applied to:
+
+- Data transfers between EC2 instances and EFS
+- Data transfers between EC2 instances and S3 buckets
+
+#### Encryption at Rest
+
+Encryption at rest protects data stored on AWS services. It ensures data is unreadable to unauthorized users and complies with regulatory requirements.
+
+In this context, encryption at rest should be applied to:
+
+- Root EBS volume
+- Additional EBS volumes
+- EFS
+- S3 buckets
+
+### Encryption Concept
+
+#### Root EBS Volume Encryption
+
+| Aspect          | Description                                                                     |
+| --------------- | ------------------------------------------------------------------------------- |
+| Service         | EBS                                                                             |
+| Encryption Type | AWS managed (using default KMS keys)                                            |
+| Implementation  | Configure during instance launch, ensure root volume is encrypted               |
+| Data Protection | Ensures sensitive data on the root volume is protected from unauthorized access |
+
+#### Additional EBS Volume Encryption
+
+| Aspect          | Description                                                           |
+| --------------- | --------------------------------------------------------------------- |
+| Service         | EBS                                                                   |
+| Encryption Type | AWS managed (using default KMS keys)                                  |
+| Implementation  | Configure during volume creation, attach encrypted volume to instance |
+| Data Protection | Protects data stored on additional volumes from unauthorized access   |
+
+#### EFS Encryption
+
+| Aspect          | Description                                                                            |
+| --------------- | -------------------------------------------------------------------------------------- |
+| Service         | EFS                                                                                    |
+| Encryption Type | AWS managed (using default KMS keys)                                                   |
+| Implementation  | Enable encryption during EFS creation, configure mount target                          |
+| Data Protection | Ensures data on the file system is encrypted at rest, protecting sensitive information |
+
+#### S3 Bucket Encryption
+
+| Aspect          | Description                                                                                              |
+| --------------- | -------------------------------------------------------------------------------------------------------- |
+| Service         | S3                                                                                                       |
+| Encryption Type | AWS managed (S3 default encryption using S3-managed keys or KMS keys)                                    |
+| Implementation  | Enable default encryption on the S3 bucket                                                               |
+| Data Protection | Ensures all objects stored in the bucket are encrypted at rest, protecting data from unauthorized access |
