@@ -516,7 +516,7 @@ In EC2 you can make use all types of storage mentioned above (Block, File & Obje
 
 ![S3](s3.png "S3")
 
-### VPC Flow Logs
+## VPC Flow Logs
 
 VPC Flow Logs capturing information about the IP traffic to and from network interfaces in a Virtual Private Cloud (VPC). These logs can be published to CloudWatch or S3 for further analysis and monitoring.
 
@@ -526,7 +526,7 @@ VPC Flow Logs capturing information about the IP traffic to and from network int
 - Monitors all network interfaces within the specified scope.
 - Logs can be stored in CloudWatch or S3.
 
-#### Fields in VPC Flow Logs (Version 1 fields)
+### Fields in VPC Flow Logs (Version 1 fields)
 
 Each VPC Flow Log record is a string with fields separated by spaces. The fields provide information about the network traffic.
 
@@ -547,7 +547,7 @@ Each VPC Flow Log record is a string with fields separated by spaces. The fields
 | action       | Action associated with the traffic (ACCEPT or REJECT). | STRING    |
 | log-status   | Status of the log (OK, NODATA, SKIPDATA).              | STRING    |
 
-#### Advanced fields in VPC Flow Logs (Version 2 fields)
+### Advanced fields in VPC Flow Logs (Version 2 fields)
 
 | Field Name          | Description                                                                                   | Data Type |
 | ------------------- | --------------------------------------------------------------------------------------------- | --------- |
@@ -556,7 +556,7 @@ Each VPC Flow Log record is a string with fields separated by spaces. The fields
 | pkt-src-aws-service | Source AWS service if the source IP address belongs to an AWS service.                        | STRING    |
 | pkt-dst-aws-service | Destination AWS service if the destination IP address belongs to an AWS service.              | STRING    |
 
-#### Customizing Flow Logs
+### Customizing Flow Logs
 
 You can create custom formats for your Flow Logs. The default format includes all version 2 fields. Custom formats allow for the inclusion or exclusion of specific fields to tailor the logs to your needs.
 
@@ -568,7 +568,7 @@ ${version} ${account-id} ${interface-id} ${srcaddr} ${dstaddr} ${srcport} ${dstp
 
 This example includes only the most essential fields, which can be expanded based on specific requirements.
 
-#### Usage and Benefits
+### Usage and Benefits
 
 Enabling VPC Flow Logs can help with:
 
@@ -576,13 +576,13 @@ Enabling VPC Flow Logs can help with:
 - **Network Troubleshooting**: Diagnosing connectivity issues within the VPC.
 - **Cost and Performance Optimization**: Analyzing data transfer costs and performance bottlenecks.
 
-### Network ACL (Access Control List)
+## Network ACL (Access Control List)
 
 A network access control list (ACL) is an optional layer of security on VPC and acts as a firewall for controlling traffic in and out of one or more subnets. You define rules like Source/Destination or Protocol that are allowed/denied. Default NACL is configured to allow all traffic In- and Egress.
 
 ![NACL](nacl.png "NACL")
 
-### Security Groups (SG)
+## Security Groups (SG)
 
 Security groups act as virtual firewalls, controlling the incoming (ingress) and outgoing (egress) traffic for the resources they are associated with.
 
@@ -595,7 +595,7 @@ Security groups act as virtual firewalls, controlling the incoming (ingress) and
 
 Security groups are attached to individual resources within the VPC, such as EC2 instances, rather than being attached directly to the VPC itself.
 
-### Best Practice – Security Groups (SG) & NACL
+## Best Practice – Security Groups (SG) & NACL
 
 **ACLs should not be used to control the traffic of your instance alone:**
 
@@ -611,7 +611,7 @@ Security groups are attached to individual resources within the VPC, such as EC2
 
 - Security groups should be the primary method for controlling traffic.
 
-### Reachability Analyzer
+## Reachability Analyzer
 
 **Complexity with NACL and SGs:**
 
@@ -625,7 +625,7 @@ Security groups are attached to individual resources within the VPC, such as EC2
 - If any traffic was blocked on the way or something needs to be troubleshooted for other reasons, you'll see it inside the Analyzer.
 - This way, you don't need to double-check SGs and NACLs if something's not working as intended. Instead, the Analyzer tells you where the issue resides.
 
-### Task 15 Network Security: Documenting the Reachability Analyzer Findings and Fixes
+## Task 15 Network Security: Documenting the Reachability Analyzer Findings and Fixes
 
 > With Terraform:
 > Create a Security Group that allows SSH traffic from one public subnet instance to another – Ingress and Egress
@@ -635,7 +635,7 @@ Security groups are attached to individual resources within the VPC, such as EC2
 > Check with the Reachability Analyzer the SSH communication
 > Document inside your blog the behavior. Now fix the issue showed by the Analyzer. Either NACL or the SG should now be appended and the other > issue should be still open. What happens now, if you analyze the same call? Document and fix it. Retry again.
 
-#### Initial Basic Infrastructure from Earlier Task
+### Initial Basic Infrastructure from Earlier Task
 
 Used base infrastructure from an earlier task, which included the following components:
 
@@ -652,7 +652,7 @@ Used base infrastructure from an earlier task, which included the following comp
   - Deployed an EC2 instance in the public subnet (act as a bastion (jump host) with SSH access.)
   - Deployed an EC2 instance in the private subnet.
 
-#### Initial Setup
+### Initial Setup
 
 - **Security Groups:**
 
@@ -662,7 +662,7 @@ Used base infrastructure from an earlier task, which included the following comp
 - **Network ACL (NACL):**
   - Configured a NACL allowing all traffic except for denying SSH traffic.
 
-#### Reachability Analyzer Results
+### Reachability Analyzer Results
 
 **Step 1: Initial Analysis**
 
@@ -736,8 +736,95 @@ Used base infrastructure from an earlier task, which included the following comp
 
 ![Final Reachability Analysis](ra3.jpg "Final Reachability Analysis")
 
-#### Summary
+### Summary
 
 - Initially, both the NACL and the private instance's security group were blocking SSH communication.
 - After adjusting the private instance's security group to allow SSH ingress, only the NACL was blocking the traffic.
 - Finally, after adjusting the NACL to allow SSH traffic from cidr's public and private subnet, communication was successfully established.
+
+## Data In Transit vs. Data At Rest
+
+### Data In Transit
+
+Data in transit, or data in motion, refers to data actively moving from one location to another, such as across the internet or through a private network. Protecting data in transit involves securing this data while it's traveling between networks or being transferred from local storage to cloud storage. Effective data protection measures are critical during transit as data is often considered less secure while in motion.
+
+### Data At Rest
+
+Data at rest is data that is not actively moving from device to device or network to network. This includes data stored on hard drives, laptops, flash drives, or archived in other ways. Data protection at rest aims to secure inactive data stored on any device or network. Although data at rest is sometimes viewed as less vulnerable, it is often a more valuable target for attackers.
+
+### The Role of Encryption
+
+Data can be exposed to risks both in transit and at rest, requiring protection in both states. Encryption is a major tool for securing data in both conditions. For data in transit, encryption methods like HTTPS, SSL, TLS, and FTPS are used. For data at rest, sensitive files can be encrypted before storage, or entire storage drives can be encrypted.
+
+### Best Practices for Data Protection
+
+Effective data protection methods include:
+
+1. **Encryption**: Essential for both data in transit and at rest.
+2. **Network Security Controls**: Use firewalls and network access control to protect data in transit.
+3. **Proactive Security Measures**: Identify at-risk data and apply effective protection strategies.
+4. **Data Protection Solutions**: Implement policies for user prompting, blocking, or automatic encryption.
+5. **Data Classification Policies**: Categorize and classify company data to ensure appropriate protection measures.
+6. **Cloud Vendor Evaluation**: Assess security measures offered by cloud providers, including access controls, encryption, and backup frequency.
+
+### Risk Profiles
+
+The risk profiles for data in transit and data at rest depend on the security measures in place. While attackers may target valuable data in either state, a proactive approach including data classification and context-aware security protocols is most effective for comprehensive data protection.
+
+### Frequently Asked Questions
+
+#### What is the difference between data at rest and data in transit?
+
+Data at rest is stationary, stored on a device, while data in transit is actively moving between locations over a network. Data in transit is more vulnerable to interception and should be encrypted.
+
+#### What is an example of data in transit?
+
+An example of data in transit is information transferred between a remote user’s mobile device and a cloud-based application. Encryption is crucial to protect such data from malicious actors.
+
+#### Is data encrypted in transit and at rest?
+
+Data can be encrypted in both states. Encryption is not inherent and must be applied to protect data from unauthorized access.
+
+#### What are some data at rest examples?
+
+Examples include spreadsheet files on a laptop's hard drive, videos on a mobile device, employment records in corporate HR applications, and sales data in company databases.
+
+## AWS: Encrypting Data-at-Rest and Data-in-Transit
+
+### Overview
+
+AWS recommends encryption as an additional access control to complement identity, resource, and network-oriented controls. AWS provides features for easy data encryption and key management. All AWS services offer encryption capabilities for data at rest and in transit, integrating with AWS Key Management Service (KMS) to control key lifecycle and permissions.
+
+### Data-at-Rest Encryption
+
+AWS services use server-side encryption to ensure consistent and correct encryption application. Customers control data decryption, managing access through AWS KMS policies. This creates logical separation between data and key access. Customers can also use client-side encryption with AWS KMS for application-level encryption, ensuring consistent security across architectures, whether on AWS, on-premises, or hybrid.
+
+#### Hardware Security Modules (HSMs)
+
+AWS KMS uses HSMs to protect customer keys. These HSMs are FIPS 140-2 validated and prevent unauthorized use of plaintext keys. Customer keys are isolated and can only be used within the AWS region where they were created. All AWS KMS actions are logged to AWS CloudTrail for auditing.
+
+#### AWS CloudHSM
+
+For direct HSM management, AWS CloudHSM offers dedicated, FIPS 140-2 Level 3 validated HSMs. CloudHSM supports integration via PKCS#11, JCE, and CNG APIs, allowing key export for hybrid architectures. AWS automates administrative tasks, while customers manage scaling and crypto accounts within the HSM.
+
+### Data-in-Transit Encryption
+
+AWS encrypts network traffic at multiple levels:
+
+- **Physical Layer**: Encryption between AWS data centers.
+- **Network Layer**: Encryption within VPCs and peered VPCs using supported EC2 instances.
+- **Application Layer**: Encryption using protocols like TLS, with all AWS endpoints supporting TLS for secure HTTPS connections.
+
+#### Terminating TLS Connections
+
+AWS provides options for terminating TLS connections:
+
+- **Load Balancing Services**: Elastic Load Balancing, Network Load Balancer, Application Load Balancer.
+- **Amazon CloudFront**: Content delivery network.
+- **Amazon API Gateway**: Secure API requests.
+
+AWS Certificate Manager (ACM) simplifies the management of digital certificates, providing publicly trusted certificates at no cost and offering a private certificate authority for internal communication.
+
+### Comprehensive Encryption Strategy
+
+Using AWS KMS, CloudHSM, and ACM, customers can implement a comprehensive encryption strategy for data at rest and in transit, ensuring consistent security for data across the AWS ecosystem.
