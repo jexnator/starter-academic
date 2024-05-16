@@ -834,9 +834,9 @@ Using AWS KMS, CloudHSM, and ACM, customers can implement a comprehensive encryp
 We are working with the basic infrastructure implemented in Tasks 10-13. Currently, there is no encryption configured for the root EBS volume, additional EBS volumes, EFS, or S3 bucket. This concept aims to change that by implementing encryption. With EBS and EFS, the options for encryption are AWS managed (KMS abstracted) or via KMS itself. With S3 you have 3 different options:
 
 - SSE-C: Server-side encryption with customer-provided keys.
-- SSE-S3: Server-side encryption with Amazon S3-managed keys.
+- SSE-S3: Server-side encryption with Amazon S3-managed keys (default).
 - SSE-KMS: Server-side encryption with AWS KMS keys.
-  I decided to go with the ABS managed approach for all three services.
+  I decided to go with the AWS managed approach for all three services.
 
 ### Encryption Considerations
 
@@ -846,8 +846,8 @@ Encryption in transit is essential to protect data as it moves between clients, 
 
 In this context, encryption in transit should be applied to:
 
-- Data transfers between EC2 instances and EFS
-- Data transfers between EC2 instances and S3 buckets
+- Data transfers between EC2 instance and EFS (TLS protected, configured during mount)
+- Data transfers between EC2 instance and S3 bucket (here via awscli [aws s3 sync] -> https protected, that means via SSL/TLS)
 
 #### Encryption at Rest
 
@@ -864,12 +864,11 @@ In this context, encryption at rest should be applied to:
 
 #### Root EBS Volume Encryption
 
-| Aspect          | Description                                                                     |
-| --------------- | ------------------------------------------------------------------------------- |
-| Service         | EBS                                                                             |
-| Encryption Type | AWS managed (using default KMS keys)                                            |
-| Implementation  | Configure during instance launch, ensure root volume is encrypted               |
-| Data Protection | Ensures sensitive data on the root volume is protected from unauthorized access |
+| Aspect          | Description                                                       |
+| --------------- | ----------------------------------------------------------------- |
+| Service         | EBS                                                               |
+| Encryption Type | AWS managed (using default KMS keys)                              |
+| Implementation  | Configure during instance launch, ensure root volume is encrypted |
 
 #### Additional EBS Volume Encryption
 
@@ -878,22 +877,59 @@ In this context, encryption at rest should be applied to:
 | Service         | EBS                                                                   |
 | Encryption Type | AWS managed (using default KMS keys)                                  |
 | Implementation  | Configure during volume creation, attach encrypted volume to instance |
-| Data Protection | Protects data stored on additional volumes from unauthorized access   |
 
 #### EFS Encryption
 
-| Aspect          | Description                                                                            |
-| --------------- | -------------------------------------------------------------------------------------- |
-| Service         | EFS                                                                                    |
-| Encryption Type | AWS managed (using default KMS keys)                                                   |
-| Implementation  | Enable encryption during EFS creation, configure mount target                          |
-| Data Protection | Ensures data on the file system is encrypted at rest, protecting sensitive information |
+| Aspect          | Description                                                   |
+| --------------- | ------------------------------------------------------------- |
+| Service         | EFS                                                           |
+| Encryption Type | AWS managed (using default KMS keys)                          |
+| Implementation  | Enable encryption during EFS creation, configure mount target |
 
 #### S3 Bucket Encryption
 
-| Aspect          | Description                                                                                              |
-| --------------- | -------------------------------------------------------------------------------------------------------- |
-| Service         | S3                                                                                                       |
-| Encryption Type | AWS managed (S3 default encryption using S3-managed keys or KMS keys)                                    |
-| Implementation  | Enable default encryption on the S3 bucket                                                               |
-| Data Protection | Ensures all objects stored in the bucket are encrypted at rest, protecting data from unauthorized access |
+| Aspect          | Description                                                           |
+| --------------- | --------------------------------------------------------------------- |
+| Service         | S3                                                                    |
+| Encryption Type | AWS managed (S3 default encryption using S3-managed keys or KMS keys) |
+| Implementation  | Enable default encryption on the S3 bucket                            |
+
+####
+
+#### Implementation of Encryption
+
+See in `task-16-data-encryption` in files `efs-and-s3` & `instance-and-ebs`.
+
+## What is a Container
+
+### Definition
+
+“A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another” – Docker.
+
+### Key Concepts
+
+- **Abstraction**: Containers eliminate the need for hypervisors and operating systems (OSs) by encapsulating the application and its dependencies. This allows running applications designed for one OS on another OS (e.g., a Windows application on Linux).
+- **Configuration**: Containers allow you to configure the container image once and run it anywhere, ensuring consistent behavior across different environments.
+
+### Container Image Components
+
+- **Code**: The application code.
+- **Runtime**: The environment where the code runs.
+- **System Tools**: Utilities required for the application.
+- **System Libraries**: Libraries that the application depends on.
+- **Settings**: Configuration settings for the application.
+
+### Tools for Managing Containers
+
+- **Docker**: A widely used platform for developing, shipping, and running applications inside containers.
+- **Packer**: A tool for creating machine and container images for multiple platforms from a single source configuration.
+- **Windows Containers**: Containers designed to run Windows applications, enabling the use of containers on Windows OS.
+
+### Benefits
+
+- **Portability**: Applications can run consistently across various environments without modification.
+- **Efficiency**: Containers share the host OS kernel, making them more lightweight and efficient compared to traditional virtual machines (VMs).
+- **Scalability**: Containers can be quickly scaled up or down to meet demand.
+
+container.png
+![VM's vs Container](container.png "VM's vs Container")
