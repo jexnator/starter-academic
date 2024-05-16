@@ -933,3 +933,31 @@ See in `task-16-data-encryption` in files `efs-and-s3` & `instance-and-ebs`.
 
 container.png
 ![VM's vs Container](container.png "VM's vs Container")
+
+## Amazon Elastic Container Registry (Amazon ECR)
+
+### Overview
+
+Amazon Elastic Container Registry (Amazon ECR) is a managed container image registry service provided by AWS. It supports private repositories with resource-based permissions using AWS IAM.
+
+| Feature                 | Description                                                                                   |
+| ----------------------- | --------------------------------------------------------------------------------------------- |
+| **Compatibility**       | Supports Docker images, Open Container Initiative (OCI) images, and OCI compatible artifacts. |
+| **CLI Support**         | Allows use of preferred CLI tools for managing images.                                        |
+| **Public Repositories** | Supports public container image repositories as well.                                         |
+
+### Usage
+
+- **Pushing Images**: Use CLI tools to push Docker and OCI images to Amazon ECR.
+- **Pulling Images**: Retrieve images from Amazon ECR for local development or deployment.
+- **Integration**: Integrate Amazon ECR images with Amazon ECS and Amazon EKS for container orchestration.
+
+### Components of Amazon ECR
+
+| Component               | Description                                                                                                                              |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| **Registry**            | Each AWS account gets a private registry for creating multiple repositories to store container images.                                   |
+| **Authorization Token** | Clients authenticate to private registries as AWS users to push and pull images.                                                         |
+| **Repository**          | Contains Docker images, OCI images, and OCI compatible artifacts.                                                                        |
+| **Repository Policy**   | Controls access to repositories and their contents.                                                                                      |
+| **Image**               | Container images can be pushed and pulled for local development or use in Amazon ECS task definitions and Amazon EKS pod specifications. |
