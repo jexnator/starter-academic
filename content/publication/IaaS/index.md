@@ -624,3 +624,120 @@ Security groups are attached to individual resources within the VPC, such as EC2
 - There you can define where traffic starts, where it turns, and where it ends.
 - If any traffic was blocked on the way or something needs to be troubleshooted for other reasons, you'll see it inside the Analyzer.
 - This way, you don't need to double-check SGs and NACLs if something's not working as intended. Instead, the Analyzer tells you where the issue resides.
+
+### Task 15 Network Security: Documenting the Reachability Analyzer Findings and Fixes
+
+> With Terraform:
+> Create a Security Group that allows SSH traffic from one public subnet instance to another – Ingress and Egress
+> Create a Security Goup that does not specify SSH traffic for Ingress, only Egress
+> Now we should have one side being able to communicate and the other not
+> Create a NACL that allows all traffic (basic config) but denies ssh traffic
+> Check with the Reachability Analyzer the SSH communication
+> Document inside your blog the behavior. Now fix the issue showed by the Analyzer. Either NACL or the SG should now be appended and the other > issue should be still open. What happens now, if you analyze the same call? Document and fix it. Retry again.
+
+#### Initial Basic Infrastructure from Earlier Task
+
+Used base infrastructure from an earlier task, which included the following components:
+
+- **VPC**: Created a Virtual Private Cloud (VPC).
+- **Subnets**: Configured a public subnet and a private subnet within the VPC.
+- **Internet Gateway (IGW)**: Attached an IGW to the VPC to allow internet access for the public subnet.
+- **NAT Gateway**: Set up a NAT Gateway in the public subnet to enable instances in the private subnet to access the internet without exposing them directly.
+- **Route Tables**: Created route tables to manage traffic between subnets, IGW, and NAT Gateway.
+  - Public subnet route table included a route to the IGW.
+  - Private subnet route table included a route to the NAT Gateway.
+- **Security Groups**:
+  - Initial security group allowing SSH access to instances in both public and private subnets.
+- **Instances**:
+  - Deployed an EC2 instance in the public subnet (act as a bastion (jump host) with SSH access.)
+  - Deployed an EC2 instance in the private subnet.
+
+#### Initial Setup
+
+- **Security Groups:**
+
+  - Created a security group (`allow_ssh`) allowing SSH traffic from one public subnet instance to another (ingress and egress).
+  - Created a security group (`restrict_ssh`) that does not specify SSH traffic for ingress, only egress.
+
+- **Network ACL (NACL):**
+  - Configured a NACL allowing all traffic except for denying SSH traffic.
+
+#### Reachability Analyzer Results
+
+**Step 1: Initial Analysis**
+
+- **Source:**
+
+  - Instance: `i-03c1b6950b17edb3a` (public instance)
+  - Security Group: `sg-00a3cb7eb355877bb` (allow_ssh_icmp_public)
+
+- **Destination:**
+
+  - Instance: `i-02c51466e6b22fe50` (private instance)
+  - Security Group: `sg-0a1dbe3f7777c9dc9` (restrict_ssh)
+
+- **NACL:**
+  - NACL ID: `acl-01b3ec78dbc35d579` denies SSH traffic inbound.
+
+**Findings:**
+
+- Both the NACL and the private instance's security group were blocking SSH communication.
+
+![Initial Reachability Analysis](ra1.png "Initial Reachability Analysis")
+
+**Step 2: Adjusting Security Group**
+
+- Added ingress rule to private instance security group to allow SSH traffic:
+  ```hcl
+  ingress {
+      description = "SSH"
+      from_port   = 22
+      to_port     = 22
+      protocol    = "tcp"
+      cidr_blocks = ["0.0.0.0/0"]
+  }
+  ```
+
+**New Findings:**
+
+- Only the NACL was blocking SSH communication.
+
+![Reachability Analysis After SG Adjustment](ra2.jpg "Reachability Analysis After SG Adjustment")
+
+**Step 3: Adjusting NACL**
+
+- Added ingress rules to NACL to allow SSH traffic:
+
+  ```hcl
+  # Allow SSH from public to private subnet
+  ingress {
+    rule_no    = 101
+    protocol   = "tcp"
+    action     = "allow"
+    cidr_block = aws_subnet.my-subnet-public.cidr_block
+    from_port  = 22
+    to_port    = 22
+  }
+
+  # Allow SSH from private to public subnet
+  ingress {
+    rule_no    = 102
+    protocol   = "tcp"
+    action     = "allow"
+    cidr_block = aws_subnet.my-subnet-private.cidr_block
+    from_port  = 22
+    to_port    = 22
+  }
+  ```
+
+**Final Findings:**
+
+- SSH communication was successfully established between the instances.
+
+![Final Reachability Analysis](ra3.jpg "Final Reachability Analysis")
+
+#### Summary
+
+- Initially, both the NACL and the private instance's security group were blocking SSH communication.
+- After adjusting the private instance's security group to allow SSH ingress, only the NACL was blocking the traffic.
+- Finally, after adjusting the NACL to allow SSH traffic from cidr's public and private subnet, communication was successfully established.
