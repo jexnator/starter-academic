@@ -961,3 +961,34 @@ Amazon Elastic Container Registry (Amazon ECR) is a managed container image regi
 | **Repository**          | Contains Docker images, OCI images, and OCI compatible artifacts.                                                                        |
 | **Repository Policy**   | Controls access to repositories and their contents.                                                                                      |
 | **Image**               | Container images can be pushed and pulled for local development or use in Amazon ECS task definitions and Amazon EKS pod specifications. |
+
+## Amazon Elastic Container Service (ECS)
+
+### Overview
+
+Amazon Elastic Container Service (ECS) is a service that runs containers on AWS. It provides two options for managing and running containers: using EC2 instances or the serverless Fargate platform.
+
+### ECS Options
+
+| Option      | Description                                       | When to Use                                  |
+| ----------- | ------------------------------------------------- | -------------------------------------------- |
+| **EC2**     | Configure and launch containers on EC2 instances. | - High CPU and memory usage                  |
+|             |                                                   | - Large workloads optimized for price        |
+|             |                                                   | - Applications needing persistent storage    |
+|             |                                                   | - Direct infrastructure management           |
+| **Fargate** | Serverless solution to launch containers.         | - Large workloads optimized for low overhead |
+|             |                                                   | - Small workloads with occasional bursts     |
+|             |                                                   | - Tiny workloads                             |
+|             |                                                   | - Batch workloads                            |
+
+### Details
+
+#### EC2
+
+- **Configuration**: You configure and manage the EC2 instances where the containers run.
+- **Use Cases**: Suitable for workloads with consistent high CPU and memory usage, large workloads needing cost optimization, applications requiring persistent storage, and scenarios where direct infrastructure management is preferred.
+
+#### Fargate
+
+- **Serverless**: AWS manages the infrastructure, and you only need to define and manage the containers.
+- **Use Cases**: Ideal for large workloads optimized for low overhead, small workloads with occasional bursts, tiny workloads, and batch processing tasks.
