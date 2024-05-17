@@ -40,7 +40,7 @@ I was able to make good progress in the IaaS module. Although the tasks are inst
 
 I was able to complete the IaaS module this week with a presentation. I tried to improve on the individual topics compared to last time. I paid special attention to the slides. I tried to work as much as possible with graphs or diagrams, without a lot of text, which I think has already paid off. Thank you for your feedback Dominik and Fäbl and your time. :-)
 
-| Description      | Link                                                   |
+|                  |                                                        |
 | ---------------- | ------------------------------------------------------ |
 | GitHub           | [GitHub](https://github.com/JEX-98/aws/tree/main/Iaas) |
 | IaaS Publikation | [IaaS Publikation]({{< relref "/publication/IaaS" >}}) |
