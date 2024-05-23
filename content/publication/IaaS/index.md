@@ -983,12 +983,12 @@ Amazon Elastic Container Service (ECS) is a service that runs containers on AWS.
 
 ### {{< hl >}}<b>Details</b>{{< /hl >}}<br>
 
-#### {{< hl >}}<b>EC2</b>{{< /hl >}}<br>
+#### {{< hl >}}<b>ECS with EC2</b>{{< /hl >}}<br>
 
 - **Configuration**: You configure and manage the EC2 instances where the containers run.
 - **Use Cases**: Suitable for workloads with consistent high CPU and memory usage, large workloads needing cost optimization, applications requiring persistent storage, and scenarios where direct infrastructure management is preferred.
 
-#### {{< hl >}}<b>Fargate</b>{{< /hl >}}<br>
+#### {{< hl >}}<b>ECS with Fargate</b>{{< /hl >}}<br>
 
 - **Serverless**: AWS manages the infrastructure, and you only need to define and manage the containers.
 - **Use Cases**: Ideal for large workloads optimized for low overhead, small workloads with occasional bursts, tiny workloads, and batch processing tasks.
