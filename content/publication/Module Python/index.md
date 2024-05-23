@@ -2,10 +2,10 @@
 title: "Module Python"
 
 # Authors
-# If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
+# If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-- admin
+  - admin
 
 # Author notes (optional)
 author_notes: ""
@@ -41,19 +41,19 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: ''
-url_code: ''
-url_dataset: ''
-url_poster: ''
-url_project: ''
-url_slides: ''
-url_source: ''
-url_video: ''
+url_pdf: ""
+url_code: ""
+url_dataset: ""
+url_poster: ""
+url_project: ""
+url_slides: ""
+url_source: ""
+url_video: ""
 
 # Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
+# To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Image credit: [**Unsplash: Chris Ried**](https://unsplash.com/photos/ieic5Tq8YMk)'
+  caption: "Image credit: [**Unsplash: Chris Ried**](https://unsplash.com/photos/ieic5Tq8YMk)"
   focal_point: ""
   preview_only: false
 
@@ -71,10 +71,17 @@ projects: []
 #   Otherwise, set `slides: ""`.
 slides: ""
 ---
+
+{{< toc >}}
+
 ## {{< hl >}}<b>Get Started with Python</b>{{< /hl >}}<br>
+
 In this module I will learn how to code with Python. You will find several tasks about Python in this publication.<br>
+
 > Write a Hello World-Program<br>
+
 ##### Input<br>
+
 ```python
 # Hello World-Programm
 print("Hello World")
@@ -83,30 +90,39 @@ response = "Hello Back"
 
 print(response)
 ```
+
 ##### Output<br>
+
 ```
 Hello World
 Hello Back
 ```
+
 <p></p><br>
 
 ### {{< hl >}}<b>Different types of comments</b>{{< /hl >}}<br>
+
 In Python you have the possibility to write single-line comments or multi-line comments.<br>
+
 ```python
 # I'm a single-line comment
 
 """
 I'm
-a 
+a
 multi-line
 comment
 """
 ```
+
 <p></p><br>
 
 ### {{< hl >}}<b>Primitive Types</b>{{< /hl >}}<br>
+
 > Assign each primitive Type to a variable<br>
+
 ##### Input<br>
+
 ```python
 #This is an integer Variable
 integerVariable = 1
@@ -130,19 +146,26 @@ print(typeOfFloatVariable)
 print(typeOfStringVariable)
 print(typeOfBooleanVariable)
 ```
+
 ##### Output<br>
+
 ```
 <class 'int'>
 <class 'float'>
 <class 'str'>
 <class 'bool'>
 ```
+
 <p></p><br>
 
 ### {{< hl >}}<b>String-Methods</b>{{< /hl >}}<br>
+
 > Use different methods on a string
+
 ### `❯ capitalize()`<br>
+
 ##### Input<br>
+
 ```python
 #define a string and capitalize the first letter
 a = "hello world"
@@ -150,14 +173,19 @@ a = a.capitalize()
 
 print(a)
 ```
+
 ##### Output<br>
+
 ```
 Hello world
 ```
+
 <p></p><br>
 
 ### `❯ count()`<br>
+
 ##### Input<br>
+
 ```python
 #define a string variable and count the number of a specific value
 brand = ["Opel", "Toyota", "Audi", "Opel", "Kia"]
@@ -166,14 +194,19 @@ pieces = " times"
 
 print (str(tot)+pieces)
 ```
+
 ##### Output<br>
+
 ```
 2 times
 ```
+
 <p></p><br>
 
 ### `❯ endswith()`<br>
+
 ##### Input<br>
+
 ```python
 #define a string Variable and analyze the end with method endswith()
 message = "Hello, my name is Python."
@@ -181,14 +214,19 @@ x = message.endswith(".")
 
 print(x)
 ```
+
 ##### Output<br>
+
 ```
 True
 ```
+
 <p></p><br>
 
 ### `❯ find()`<br>
+
 ##### Input<br>
+
 ```python
 #define a string and find a specific value with method find()
 message = "Hello, my name is Python."
@@ -197,14 +235,19 @@ position = "Position "
 
 print(position+str(x))
 ```
+
 ##### Output<br>
+
 ```
 Position 19
 ```
+
 <p></p><br>
 
 ### `❯ lower()`<br>
+
 ##### Input<br>
+
 ```python
 #define a string and change uppercase letters to lowercase with method lower()
 message = "Hello, my name is Python."
@@ -212,14 +255,19 @@ x = message.lower()
 
 print(x)
 ```
+
 ##### Output<br>
+
 ```
 hello, my name is python.
 ```
+
 <p></p><br>
 
 ### `❯ replace()`<br>
+
 ##### Input<br>
+
 ```python
 #define a string and replace a specific value with method replace()
 message = "Hello, my name is Python."
@@ -227,14 +275,19 @@ x = message.replace("Python", "Xavier")
 
 print(x)
 ```
+
 ##### Output<br>
+
 ```
 Hello, my name is Xavier
 ```
+
 <p></p><br>
 
 ### `❯ split()`<br>
+
 ##### Input<br>
+
 ```python
 #define a string and split up with method split()
 message= "Hello, my name is Python."
@@ -242,14 +295,19 @@ x = message.split()
 
 print(x)
 ```
+
 ##### Output<br>
+
 ```
 ['Hello,', 'my', 'name', 'is', 'Python.']
 ```
+
 <p></p><br>
 
 ### `❯ startswith()`<br>
+
 ##### Input<br>
+
 ```python
 #define a string Variable and analyze the start with method startswith()
 message = "Hello, my name is Python."
@@ -257,14 +315,19 @@ x = message.startswith("Salut")
 
 print(x)
 ```
+
 ##### Output<br>
+
 ```
 False
 ```
+
 <p></p><br>
 
 ### `❯ strip()`<br>
+
 ##### Input<br>
+
 ```python
 #define a string and insert a strip with method strip()
 dish = "spaghetti code"
@@ -272,14 +335,19 @@ x = dish.strip()
 
 print("Of all dishes", x, "is my favorite")
 ```
+
 ##### Output<br>
+
 ```
 Of all dishes spaghetti code is my favorite.
 ```
+
 <p></p><br>
 
 ### `❯ upper()`
+
 ##### Input<br>
+
 ```python
 #define a string and change lowercase letters to uppercase with method upper()
 dish = "spaghetti carbonara"
@@ -287,18 +355,25 @@ x = dish.upper()
 
 print(x)
 ```
+
 ##### Output<br>
+
 ```
 SPAGHETTI CARBONARA
 ```
+
 <p></p><br>
 
 ### {{< hl >}}<b>Non-Primitive Types</b>{{< /hl >}}<br>
+
 ### Lists<br>
+
 > ● Implement a List<br>
-● The list should contain: an Integer, a String and a nested list<br>
-● Make a second list and merge both.<br>
+> ● The list should contain: an Integer, a String and a nested list<br>
+> ● Make a second list and merge both.<br>
+
 ##### Input<br>
+
 ```python
 #define two lists and merge them together
 firstList = [1, "Python", [2, "I'm a nested list"]]
@@ -306,16 +381,22 @@ secondList = [3, "Keyboard", 3.1]
 
 print(firstList+secondList)
 ```
+
 ##### Output<br>
+
 ```
 [1, 'Python', [2, "I'm a nested list"], 3, 'Keyboard', 3.1]
 ```
+
 <p></p><br>
 
 ### Arrays<br>
+
 > ● Make two numpy-Arrays with numbers.<br>
-● Sum those arrays together.<br>
+> ● Sum those arrays together.<br>
+
 ##### Input<br>
+
 ```python
 #define two numpy arrays and sum those together
 numpy1 = [1, 2, 3, 4, 5]
@@ -323,15 +404,21 @@ numpy2 = [5, 4, 3, 2, 1]
 
 print(sum(numpy1 + numpy2))
 ```
+
 ##### Output<br>
+
 ```
 30
 ```
+
 <p></p><br>
 
 ### List- & Array-Methods<br>
+
 ### `❯ append()`<br>
+
 ##### Input<br>
+
 ```python
 #define a list and append an element with append()
 elements = [1, "Python"]
@@ -339,14 +426,19 @@ elements.append(2)
 
 print(elements)
 ```
+
 ##### Output<br>
+
 ```
 [1, 'Python', 2]
 ```
+
 <p></p><br>
 
 ### `❯ clear()`<br>
+
 ##### Input<br>
+
 ```python
 #define a list and clear all eith method clear()
 fruits = ["strawberry", "apple", "orange"]
@@ -355,14 +447,19 @@ fruits.clear()
 
 print(fruits)
 ```
+
 ##### Output<br>
+
 ```
 []
 ```
+
 <p></p><br>
 
 ### `❯ copy()`<br>
+
 ##### Input<br>
+
 ```python
 #define a list and copy the elements in an other var with method copy()
 fruits = ["strawbery", "apple", "orange"]
@@ -371,14 +468,19 @@ a = fruits.copy()
 
 print(a)
 ```
+
 ##### Output<br>
+
 ```
 ['strawbery', 'apple', 'orange']
 ```
+
 <p></p><br>
 
 ### `❯ count()`<br>
+
 ##### Input<br>
+
 ```python
 #define a list and count a specific element with count()
 fruits = ["orange" , "lime", "orange", "apple", "orange"]
@@ -388,14 +490,19 @@ a = fruits.count("orange")
 
 print (str(a)+pieces)
 ```
+
 ##### Output<br>
+
 ```
 3 times
 ```
+
 <p></p><br>
 
 ### `❯ extend()`<br>
+
 ##### Input<br>
+
 ```python
 #define a list an extend with an other list with method extend()
 fruits = ["orange" , "lime", "orange", "apple", "orange"]
@@ -405,14 +512,19 @@ fruits.extend(otherFruits)
 
 print (fruits)
 ```
+
 ##### Output<br>
+
 ```
 ['orange', 'lime', 'orange', 'apple', 'orange', 'papaya', 'melon']
 ```
+
 <p></p><br>
 
 ### `❯ index()`<br>
+
 ##### Input<br>
+
 ```python
 #define a list and find the index of a specific element with method index()
 fruits = ["orange" , "lime", "orange", "apple", "orange"]
@@ -421,14 +533,19 @@ position = "Position "
 
 print (position+str(c))
 ```
+
 ##### Output<br>
+
 ```
 Position 3
 ```
+
 <p></p><br>
 
 ### `❯ insert()`<br>
+
 ##### Input<br>
+
 ```python
 #define a list and insert an element with method insert()
 fruits = ["orange" , "lime", "orange", "apple", "orange"]
@@ -436,14 +553,19 @@ fruits.insert(0, "apple")
 
 print (fruits)
 ```
+
 ##### Output<br>
+
 ```
 ['apple', 'orange', 'lime', 'orange', 'apple', 'orange']
 ```
+
 <p></p><br>
 
 ### `❯ pop()`<br>
+
 ##### Input<br>
+
 ```python
 #define a list and delete a specific element with method pop()
 fruits = ["orange" , "lime"]
@@ -451,14 +573,19 @@ fruits.pop(0)
 
 print (fruits)
 ```
+
 ##### Output<br>
+
 ```
 ['lime']
 ```
+
 <p></p><br>
 
 ### `❯ remove()`<br>
+
 ##### Input<br>
+
 ```python
 #define a list and remove an element with method remove()
 fruits = ["orange" , "lime"]
@@ -466,14 +593,19 @@ fruits.remove("lime")
 
 print (fruits)
 ```
+
 ##### Output<br>
+
 ```
 ['orange']
 ```
+
 <p></p><br>
 
 ### `❯ reverse()`<br>
+
 ##### Input<br>
+
 ```python
 #define a list and reverse the order with method reverse()
 fruits = ["orange" , "lime"]
@@ -481,14 +613,19 @@ fruits.reverse()
 
 print (fruits)
 ```
+
 ##### Output<br>
+
 ```
 ['lime', 'orange']
 ```
+
 <p></p><br>
 
 ### `❯ sort()`<br>
+
 ##### Input<br>
+
 ```python
 #define a list and sort alphabetically with method sort()
 brands = ['Mercedes', 'Jeep', 'Audi','Kia']
@@ -496,29 +633,38 @@ brands.sort()
 
 print(brands)
 ```
+
 ##### Output<br>
+
 ```
 ['Audi', 'Jeep', 'Kia', 'Mercedes']
 ```
+
 <p></p><br>
 
 ### Tuples<br>
+
 > ● Implement a Tuple with 3 elements<br>
-● Change the tuple to a 4 elements structure. Add a 4th element.<br>
-● Join two Tuples.<br>
-● Explain a case where tuples are better than lists as a comment or demonstrate with an example<br>
-● Use all existing methods and demonstrate the usage. Explain the different parameters if they have params.<br>
+> ● Change the tuple to a 4 elements structure. Add a 4th element.<br>
+> ● Join two Tuples.<br>
+> ● Explain a case where tuples are better than lists as a comment or demonstrate with an example<br>
+> ● Use all existing methods and demonstrate the usage. Explain the different parameters if they have params.<br>
+
 ##### Input<br>
+
 ```python
 #define a tuple with 3 elements
 thisTuple = ("lime", "orange", "banana")
 
 print(thisTuple)
 ```
+
 ##### Output<br>
+
 ```
 ('lime', 'orange', 'banana')
 ```
+
 <p></p><br>
 <p></p><br>
 {{% callout warning %}}
@@ -526,6 +672,7 @@ You can't insert new elements in created tuples because they have an immutable p
 {{% /callout %}}<br>
 
 ##### Input<br>
+
 ```python
 #define serveral tuples and join them
 thisTuple = ("lime", "orange", "banana")
@@ -535,15 +682,21 @@ joinTuple = thisTuple + nextTuple
 
 print(joinTuple)
 ```
+
 ##### Output<br>
+
 ```
 ('lime', 'orange', 'banana', 'papaya', 'apple')
 ```
+
 <p></p><br>
 
 ### Tuple-Methods<br>
+
 ### `❯ count()`<br>
+
 ##### Input<br>
+
 ```python
 #define a tuple and count a specific element with method count()
 anothertuple = (2, 2, 2, 2, 3, 4, 5)
@@ -553,14 +706,19 @@ times = " times"
 
 print(str(u)+times)
 ```
+
 ##### Output<br>
+
 ```
 4 times
 ```
+
 <p></p><br>
 
 ### `❯ index()`<br>
+
 ##### Input<br>
+
 ```python
 #define a tuple and find the index of a specific element with method index()
 fruits = ("orange" , "lime", "orange", "apple", "orange")
@@ -570,20 +728,27 @@ position = "Position "
 print (position+str(c))
 
 ```
+
 ##### Output<br>
+
 ```
 Position 3
 ```
+
 Whenever, we need to make sure that the data remains unchanged and write protected, then a tuple is the best option in Python.<br>
+
 <p></p><br>
 
 ### Sets<br>
+
 > ● Implement a Set with 3 elements<br>
-● Add a duplicate value and then print the content. Explain what happens.<br>
-● Join two sets into one with .union()<br>
-● Explain a case where sets are better than lists as a comment or demonstrate with an example<br>
-● Use all existing methods and demonstrate the usage. Explain the different parameters if they have params.<br>
+> ● Add a duplicate value and then print the content. Explain what happens.<br>
+> ● Join two sets into one with .union()<br>
+> ● Explain a case where sets are better than lists as a comment or demonstrate with an example<br>
+> ● Use all existing methods and demonstrate the usage. Explain the different parameters if they have params.<br>
+
 ##### Input<br>
+
 ```python
 # 1. define a set with 3 elements + one similar
 # 2. Join two sets into one with .union()
@@ -596,18 +761,25 @@ unionSet = thisSet.union(nextSet)
 print(thisSet)
 print(unionSet)
 ```
+
 ##### Output<br>
+
 ```
 {'lime', 'orange', 'banana'}
 {'unordered', 'banana', 'hello', "I'm", 'lime', 'orange'}
 ```
+
 Sets cannot contain duplicates, and they will simply disappear. That's why we see the element "lime" only one time in the printout.
 Processing a set is faster than processing a list, because each element can only occur once. This allows us to use the hash function.<br>
+
 <p></p><br>
 
 ### Set-Methods<br>
+
 ### `❯ All methods`<br>
+
 ##### Input<br>
+
 ```python
 #define a set and add an element with method add()
 tuple1 = {"mouse", "rat", "cat"}
@@ -684,7 +856,7 @@ print(z)
 #method issubset()
 a = {1, 2, 3}
 b = {4, 5, 6, 3, 2, 0}
-c = a.issubset(b) 
+c = a.issubset(b)
 
 print(c)
 
@@ -721,8 +893,8 @@ c = a.symmetric_difference(b)
 print(c)
 
 
-#define two sets and remove from the first set all elements which 
-#are present in both setsand add the remaining elements from the 
+#define two sets and remove from the first set all elements which
+#are present in both setsand add the remaining elements from the
 #second set with method symmetric_difference_update
 a = {1, 2, 3, 4, 5, 6}
 b = {3, 2, 1, 7, 8, 9, 10}
@@ -748,7 +920,9 @@ brandsmixedwiththings.update(things)
 
 print(brandsmixedwiththings)
 ```
+
 ##### Output<br>
+
 ```
 {'mouse', 'rat', 'dog', 'cat'}
 set()
@@ -768,17 +942,21 @@ True
 {'Puma', 'Nike', 'car', 'bicycle', 'helmet', 'DC'}
 {'Nike', 'bicycle', 'car', 'Puma', 'helmet', 'DC'}
 ```
+
 <p></p><br>
 
 ### Dictionaries<br>
+
 > ● Implement a Dictionary that contains a key called “persons” with an empty list as value<br>
-● Call the list via the key. It should be empty<br>
-● Join two sets into one with .union()<br>
-● Call the list inside the dict and fill the embedded list it with new dictionaries. Each new dict should contain the following keys: “Name”, “Firstname” and “Age”. <br>
-● Create a second dict that contains a new key and a different value. Join the first dict with the new one.<br>
-● Explain a case where dicts are better than lists as a comment or demonstrate with an example<br>
-● Use all existing methods for dicts and demonstrate the usage. Explain the different parameters if they have params.<br>
+> ● Call the list via the key. It should be empty<br>
+> ● Join two sets into one with .union()<br>
+> ● Call the list inside the dict and fill the embedded list it with new dictionaries. Each new dict should contain the following keys: “Name”, “Firstname” and “Age”. <br>
+> ● Create a second dict that contains a new key and a different value. Join the first dict with the new one.<br>
+> ● Explain a case where dicts are better than lists as a comment or demonstrate with an example<br>
+> ● Use all existing methods for dicts and demonstrate the usage. Explain the different parameters if they have params.<br>
+
 ##### Input<br>
+
 ```python
 #define a dictionary that contains a key called
 #"person" with an empty list as value
@@ -800,18 +978,25 @@ dict2 = {'animal': [{'Name': 'Lennox',
 dict1.update(dict2)
 print(dict1)
 ```
+
 ##### Output<br>
+
 ```
 []
 {'person': [{'Name': 'Jeiziner', 'Firstname': 'Xavier', 'Age': 22}],
  'animal': [{'Name': 'Lennox', 'sex': 'male', 'age': 1}]}
 ```
+
 Processing a dictionary is faster than processing a list, because each key can only occur once. In a list the elements are accessed via indices, while in a dictionary the elements are accessed via key-values. This allows us to use the hash function.<br>
+
 <p></p><br>
 
 ### Dictionary-Methods<br>
+
 ### `❯ All methods`<br>
+
 ##### Input<br>
+
 ```python
 #define a dictionary and clear the content with method clear()
 dream = {
@@ -879,7 +1064,7 @@ dream = {
     "brand": "Audi",
     "model": "RS3",
     "year": 2016,
-    "Motorcode": "BAM" 
+    "Motorcode": "BAM"
     }
 
 dream.popitem()
@@ -891,7 +1076,7 @@ print(dream)
 dream = {
     "brand": "Audi",
     "model": "RS3",
-    "year": 2016 
+    "year": 2016
     }
 
 model = dream.setdefault("model", "S3")
@@ -919,7 +1104,9 @@ dream = {
 
 print(dream.values())
 ```
+
 ##### Output<br>
+
 ```
 {}
 {'brand': 'Audi', 'model': 'RS3', 'year': 2016}
@@ -932,11 +1119,15 @@ RS3
 {'brand': 'Audi', 'model': 'RS3', 'year': 2016, 'Motorcode': 'BAM'}
 dict_values(['Audi', 'RS3', 2016])
 ```
+
 <p></p><br>
 
 ### Files<br>
+
 > ● Demonstrate on a file all modes.<br>
+
 ##### Input<br>
+
 ```python
 #different modes on files
 #1. create a file
@@ -972,17 +1163,22 @@ import os
 os.remove("demofile.txt")
 os.remove("demofile1.txt")
 ```
+
 ##### Output<br>
+
 ```
 I'm a new written textfile
 []
 ```
+
 <p></p><br>
 
 > ● Explain or show the difference between: -f = open("demofile.txt", "rt") / -f = open("demofile.txt", "rb")<br>
 
 The "t" means that python reads the demofile.txt as a text. If you use the character "b", then the demofile.txt is read as binary code. See below 🠗<br>
+
 ##### Input<br>
+
 ```python
 #binary
 #1. create a file
@@ -1005,17 +1201,21 @@ f.close()
 import os
 os.remove("demofile.txt")
 ```
+
 ##### Output<br>
+
 ```
 b'\x05\n\x0f\x14\x19'
 ```
+
 <p></p><br>
 
 > ● Create a new file with "hello" as text inside the file<br>
-● Edit the file, read its content and the rewrite it to "Hello World"<br>
-● Delete the file as a last action.<br>
+> ● Edit the file, read its content and the rewrite it to "Hello World"<br>
+> ● Delete the file as a last action.<br>
 
 ##### Input<br>
+
 ```python
 #1. create a file
 f = open("HelloWorld.txt", "x")
@@ -1045,16 +1245,22 @@ f.close()
 import os
 os.remove("HelloWorld.txt")
 ```
+
 ##### Output<br>
+
 ```
 Hello
 Hello World
 ```
+
 <p></p><br>
 
 ### {{< hl >}}<b>Arithmetic Operators</b>{{< /hl >}}<br>
+
 > Test all operators on an integer, float, string, boolean <br>
+
 ##### Input<br>
+
 ```python
 #operators --> Integer
 a = 2 + 2
@@ -1103,7 +1309,9 @@ b = [1.0, 3.0, True, False]
 
 print(a + b)
 ```
+
 ##### Output<br>
+
 ```
 4, 2, 20.0, 2, 3, 8, 9
 4.0, 2.0, 20.0, 2.0, 3.0, 8.0, 9.0
@@ -1111,23 +1319,32 @@ AB
 2, 0, 1.0, 1.0, 1.0, 4.0, 2.0,
 [1, 3.0, 'String', 1.0, 3.0, True, False]
 ```
+
 <p></p><br>
 
-> What happens if you use combine datatypes? For example 5 * “lol”
+> What happens if you use combine datatypes? For example 5 \* “lol”
+
 ##### Input<br>
+
 ```python
 # Concatenation * 5
 print(5 * "lol")
 ```
+
 ##### Output<br>
+
 ```
 lollollollollol
 ```
+
 <p></p><br>
 
 ### {{< hl >}}<b>Relational Operators</b>{{< /hl >}}<br>
+
 > Demonstrate all relational operators on different data-types<br>
+
 ##### Input<br>
+
 ```python
 #relational operators --> Integer
 a = 2 < 3
@@ -1174,7 +1391,9 @@ b = [1.0, 3.0, True, False]
 
 print(a == b)
 ```
+
 ##### Output<br>
+
 ```
 True, True, False, True, 3, False, False
 True, True, False, True, 3.0, False, False
@@ -1182,11 +1401,15 @@ False
 True
 False
 ```
+
 <p></p><br>
 
 ### {{< hl >}}<b>Assignment Operators</b>{{< /hl >}}<br>
+
 > Demonstrate all assignment operators<br>
+
 ##### Input<br>
+
 ```python
 #Operator +=
 x = 5
@@ -1271,7 +1494,9 @@ x <<= 3
 
 print(x)
 ```
+
 ##### Output<br>
+
 ```
 8
 2
@@ -1286,10 +1511,13 @@ print(x)
 0
 40
 ```
+
 <p></p><br>
 
 > Demonstrate assignment operators on different Datatypes<br>
+
 ##### Input<br>
+
 ```python
 #assignment operators --> integer
 a = 1
@@ -1358,7 +1586,9 @@ b = [1.0, 3.0, True, False]
 a += b
 print(a)
 ```
+
 ##### Output<br>
+
 ```
 3
 2
@@ -1378,24 +1608,32 @@ AB
 1
 [1, 3.0, 'String', 1.0, 3.0, True, False]
 ```
+
 <p></p><br>
 
 > Prove if the same cross-data-type operations work with assignment or not.
+
 ```python
 #cross-data-type operations work with assignment
 a = "ha"
 a *= 5
 print(a)
 ```
+
 ##### Output<br>
+
 ```
 hahahahaha
 ```
+
 <p></p><br>
 
 ### {{< hl >}}<b>Assignment Operators</b>{{< /hl >}}<br>
+
 > Demonstrate all assignment operators<br>
+
 ##### Input<br>
+
 ```python
 #Operator +=
 x = 5
@@ -1480,7 +1718,9 @@ x <<= 3
 
 print(x)
 ```
+
 ##### Output<br>
+
 ```
 8
 2
@@ -1495,11 +1735,15 @@ print(x)
 0
 40
 ```
+
 <p></p><br>
 
 ### {{< hl >}}<b> Logical Operators</b>{{< /hl >}}<br>
+
 > Show the difference between 3 != 3 and not 3 == 3<br>
+
 ##### Input<br>
+
 ```python
 #Difference between 3 != 3 and 3 == 3
 a = 3 != 3
@@ -1508,19 +1752,24 @@ b = 3 == 3
 print(a, b)
 print(a and b)
 ```
+
 ##### Output<br>
+
 ```
 False True
 False
 ```
+
 <p></p><br>
 
 > Create the following statement<br>
--> 3 is bigger than 7 or 7 is bigger than 3<br>
--> additional type ('5') equals str<br>
--> or give true out if 7 equals 3<br>
--> The result of this one condition should be True<br>
+> -> 3 is bigger than 7 or 7 is bigger than 3<br>
+> -> additional type ('5') equals str<br>
+> -> or give true out if 7 equals 3<br>
+> -> The result of this one condition should be True<br>
+
 ##### Input<br>
+
 ```python
 #Logical operators statement
 a = 3 > 7
@@ -1530,19 +1779,24 @@ d = 7 == 3
 
 print((a or b) or c or d)
 ```
+
 ##### Output<br>
+
 ```
 True
 ```
+
 <p></p><br>
 
 ### {{< hl >}}<b>For- & While-Loops</b>{{< /hl >}}<br>
+
 > Task:<br>
--> For-loop that doubles each number beginning from 1 to 100<br>
--> Create a while-loop that does the same<br>
--> Save the file in the usual place<br>
+> -> For-loop that doubles each number beginning from 1 to 100<br>
+> -> Create a while-loop that does the same<br>
+> -> Save the file in the usual place<br>
 
 ##### Input<br>
+
 ```python
 # For-loop that doubles the number until the value 100
 a = 1
@@ -1559,7 +1813,9 @@ while a < 64:
     a += a
     print(a)
 ```
+
 ##### Output<br>
+
 ```
 2
 4
@@ -1574,4 +1830,5 @@ while a < 64:
 32
 64
 ```
+
 <p></p><br>

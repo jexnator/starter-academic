@@ -2,10 +2,10 @@
 title: "Module Server Administration and Networks"
 
 # Authors
-# If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
+# If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-- admin
+  - admin
 
 # Author notes (optional)
 author_notes: ""
@@ -41,19 +41,19 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: ''
-url_code: ''
-url_dataset: ''
-url_poster: ''
-url_project: ''
-url_slides: ''
-url_source: ''
-url_video: ''
+url_pdf: ""
+url_code: ""
+url_dataset: ""
+url_poster: ""
+url_project: ""
+url_slides: ""
+url_source: ""
+url_video: ""
 
 # Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
+# To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Image credit: [**Unsplash: Teng Yuhong**](https://unsplash.com/photos/qMehmIyaXvY)'
+  caption: "Image credit: [**Unsplash: Teng Yuhong**](https://unsplash.com/photos/qMehmIyaXvY)"
   focal_point: ""
   preview_only: false
 
@@ -71,8 +71,13 @@ projects: []
 #   Otherwise, set `slides: ""`.
 slides: ""
 ---
+
+{{< toc >}}
+
 ## {{< hl >}}<b>Get Started with Linux</b>{{< /hl >}}<br>
+
 In this module I will learn how to administrate servers and networks with Linux. Here you will find several tasks about the topic.<br>
+
 > Write a definition for virtualization.
 
 Virtualization allows multiple resources or environments to be configured on a single hardware system. The different environments and resources can be referred to as virtual machines, which act independently of each other. Therefore you need a hypervisor. The hypervisor is software that manages the various VM containers. It divides the machine resources optimally between the different VMs.<br>
@@ -80,6 +85,7 @@ Virtualization allows multiple resources or environments to be configured on a s
 > Complete the definition with advantages and disadvantages of virtualization.
 
 `Advantages of virtualization:`<br>
+
 - Exploiting the potential of your own hardware
 - Cost savings / Energy saving, because less hardware is needed
 - more flexibility
@@ -87,6 +93,7 @@ Virtualization allows multiple resources or environments to be configured on a s
 - Through virtualization, custom labs can be implemented to test environments in advance.
 
 `Disadvantages of virtualization:`<br>
+
 - In the event of a hardware failure, all virtual machines are affected.
 - Higher response times with many VM's on one hardware
 - Performance degradation as the hypervisor also requires resources
