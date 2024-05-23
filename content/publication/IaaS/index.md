@@ -74,9 +74,9 @@ slides: ""
 
 {{< toc >}}
 
-# IaaS
+# {{< hl >}}<b>IaaS</b>{{< /hl >}}<br>
 
-## Definition
+## {{< hl >}}<b>Definition</b>{{< /hl >}}<br>
 
 IaaS (Infrastructure as a service) is a cloud computing service model that enables the provision of fundamental IT infrastructure, such as computing power, storage capacity and network resources, via the Internet.
 
@@ -88,13 +88,13 @@ In AWS, various services fall under IaaS. The most important ones are listed bel
 - RDS (Relational Databas Service)
 - EBS (Elastic Block Storage)
 
-## EC2 - What belongs all to that service
+## {{< hl >}}<b>EC2 - What belongs all to that service</b>{{< /hl >}}<br>
 
-### Virtual Machines
+### {{< hl >}}<b>Virtual Machines</b>{{< /hl >}}<br>
 
 Instances with your preferred operating system AMI (based on MacOS, Linux or Windows)
 
-### VPC (Virtual Private Cloud)
+### {{< hl >}}<b>VPC (Virtual Private Cloud)</b>{{< /hl >}}<br>
 
 Networking in the cloud (including Security Groups, Subnets, Route Tables, Gateways, VPC Peering, VPN, ACL's, etc.)
 
