@@ -273,7 +273,7 @@ When an instance is launched within a VPC, or more specifically within a subnet 
 A Virtual Private Cloud (VPC) is a virtual network designed to provide the same level of functionality as a traditional network. It operates as an isolated environment within an AWS account.
 A VPC allows subnetting, allocation of IP ranges, and spans across all Availability Zones (AZs) within a single region. Each subnet in a VPC is belonging to one AZ.
 
-### Default and Nondefault VPCs</b>{{< /hl >}}<br>
+### {{< hl >}}<b>Default and Nondefault VPCs</b>{{< /hl >}}<br>
 
 Each region provides a default VPC, which is free of charge (Account creation after 12/04/2013). This VPC includes a default subnet in each AZ and supports all the functionality of EC2-VPC. EC2 Instances with no VPC specifications get launched into the default VPC.
 
