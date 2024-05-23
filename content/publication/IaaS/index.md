@@ -88,41 +88,29 @@ In AWS, various services fall under IaaS. The most important ones are listed bel
 - RDS (Relational Databas Service)
 - EBS (Elastic Block Storage)
 
-<br>
-
 ## {{< hl >}}<b>EC2 - What belongs all to that service</b>{{< /hl >}}<br>
 
 ### {{< hl >}}<b>Virtual Machines</b>{{< /hl >}}<br>
 
 Instances with your preferred operating system AMI (based on MacOS, Linux or Windows)
 
-<br>
-
 ### {{< hl >}}<b>VPC (Virtual Private Cloud)</b>{{< /hl >}}<br>
 
 Networking in the cloud (including Security Groups, Subnets, Route Tables, Gateways, VPC Peering, VPN, ACL's, etc.)
 
-<br>
-
-### Load balancing
+### {{< hl >}}<b>Load balancing</b>{{< /hl >}}<br>
 
 Network and Application Load Balancer which can handle traffic distribution between instances. A positive side effect: load balancers also simplify TLS termination and certificate management in combnination with ACM.
 
-<br>
-
-### Auto Scaling
+### {{< hl >}}<b>Auto Scaling</b>{{< /hl >}}<br>
 
 Increasing and decreasing of compute-capacity automatically based on traffic volume or behavior.
 
-<br>
-
-### Allocation
+### {{< hl >}}<b>Allocation</b>{{< /hl >}}<br>
 
 All the components mentioned above (and more) belong to EC2. But in general, when someone talks about EC2, instances are meant.
 
-<br>
-
-## EC2 Instance Lifecycle
+## {{< hl >}}<b>EC2 Instance Lifecycle</b>{{< /hl >}}<br>
 
 An EC2 Instance can have 7 different states:
 
@@ -131,9 +119,7 @@ An EC2 Instance can have 7 different states:
 
   ![EC2 Lifecycle](ec2-lifecycle.jpg "EC2 Instance Lifecycle")
 
-  <br>
-
-## AMI (Amazon Machine Image)
+## {{< hl >}}<b>AMI (Amazon Machine Image)</b>{{< /hl >}}<br>
 
 An AMI is a pre-configured image maintained by AWS for EC2 Instances.
 
@@ -144,23 +130,17 @@ An AMI is a pre-configured image maintained by AWS for EC2 Instances.
 - **Compatibility**: Works seamlessly with Auto-Scaler functionality.
 - **Components**: Includes Amazon EBS snapshots or templates for root volumes, launch permissions, and block device mappings for instance launches.
 
-<br>
+## {{< hl >}}<b>Metadata & Userdata on an instance</b>{{< /hl >}}<br>
 
-## Metadata & Userdata on an instance
-
-### Metadata
+### {{< hl >}}<b>Metadata</b>{{< /hl >}}<br>
 
 Technical information about an EC2 instance. This includes instance details such as IP address, instance type, security groups, and metrics.
 
-<br>
-
-### Userdata
+### {{< hl >}}<b>Userdata</b>{{< /hl >}}<br>
 
 Custom configuration data for an EC2 instance. Used to execute scripts, commands, or configuration details upon instance startup, such as installations or configurations
 
-<br>
-
-## Instance Types
+## {{< hl >}}<b>Instance Types</b>{{< /hl >}}<br>
 
 AWS instances come in various types for specific workload requirements:
 
@@ -189,20 +169,16 @@ AWS instances come in various types for specific workload requirements:
 - Utilize hardware accelerators or co-processors for tasks like floating-point calculations, graphics processing, or data pattern matching.
 - Examples include dl-, f-, g-, inf-, p-, and vt-instances.
 
-<br>
+### {{< hl >}}<b>Task: Use cases</b>{{< /hl >}}<br>
 
-### Task: Use cases
-
-#### General purpose instances
+#### {{< hl >}}<b>General purpose instances</b>{{< /hl >}}<br>
 
 **Web applications**: Optimal for delivering static or dynamic web content and handling user requests.
 
 **Development environments**: Supports code compilation, deployment, testing & use of CI/CD.
 M, T instances provide balance between compute, memory & storage.
 
-<br>
-
-#### Compute Optimized Instances
+#### {{< hl >}}<b>Compute Optimized Instances</b>{{< /hl >}}<br>
 
 **High Performance Computing (HPC)**: Used in scientific simulations, financial models & engineering (e.g. digitization in mechanical engineering).
 
@@ -210,127 +186,94 @@ M, T instances provide balance between compute, memory & storage.
 
 HPC instances significantly optimize execution time in contrast to general purpose instances. C instances in turn promote the parallelization of tasks.
 
-<br>
-
-#### Memory-optimized instances
+#### {{< hl >}}<b>Memory-optimized instances</b>{{< /hl >}}<br>
 
 **Big data analysis**: The large data sets in memory, reduce latency, crucial for analytics.
 
 **In-Memory Databases**: High throughput, low latency for transaction management and query operations. R, X instances increase database performance.
 
-<br>
-
-#### Memory-optimized instances
+#### {{< hl >}}<b>Memory-optimized instances</b>{{< /hl >}}<br>
 
 **OLTP**: Transaction systems where many transactions take place simultaneously, i.e. concurrently.
 
 **Big Data Processing**: Suitable for Hadoop, data warehousing. D, I instances provide high throughput, IOPS.
 
-<br>
-
-#### Accelerated compute instances
+#### {{< hl >}}<b>Accelerated compute instances</b>{{< /hl >}}<br>
 
 **Machine learning**: P instances utilize GPUs for efficient algorithm processing, improve training and inference phases.
 
 **Graphics rendering**: Accelerate high-resolution graphics processing & rendering.
 
-<br>
+## {{< hl >}}<b>AWS EC2 Instance Pricing Models</b>{{< /hl >}}<br>
 
-## AWS EC2 Instance Pricing Models
-
-### On-Demand Instances
+### {{< hl >}}<b>On-Demand Instances</b>{{< /hl >}}<br>
 
 - Pay by hour or second, depending on the instance type (Most expensive EC2 pricing model).
 - Best for applications with short-term, spiky, or unpredictable workloads that cannot be interrupted.
 - No long-term commitment or upfront payment required.
 
-<br>
-
-#### Task: On-Demand Instances: Dynamic Auto-Scaling During Sales Events
+#### {{< hl >}}<b>Task: On-Demand Instances: Dynamic Auto-Scaling During Sales Events</b>{{< /hl >}}<br>
 
 Imagine managing an e-commerce platform's web servers in EC2 during Black Friday or Cyber Week. On-demand instances would be perfect, as you don't have to make a long-term commitment and therefore have the ability to scale flexibly at any time.
 
-<br>
-
-### Reserved Instances
+### {{< hl >}}<b>Reserved Instances</b>{{< /hl >}}<br>
 
 - Significant discount over On-Demand rates, in exchange for a commitment to use the instance for a 1 or 3-year term (Less expensive EC2 pricing model).
 - Ideal for applications with steady state or predictable usage.
 - Upfront payment and long-term commitment (1 or 3 years) required.
 
-<br>
-
-#### Task: Reserved Instances: Backend for Financial Transactions
+#### {{< hl >}}<b>Task: Reserved Instances: Backend for Financial Transactions</b>{{< /hl >}}<br>
 
 Imagine you manage a bank's back-end infrastructure for financial transactions in EC2. The servers must be stable and run for several years. The reserved instances would be available to the bank at a cheaper and more predictable hourly rate due to the long-term commitment and are constantly available.
 
-<br>
-
-### Spot Instances
+### {{< hl >}}<b>Spot Instances</b>{{< /hl >}}<br>
 
 - Purchase unused EC2 capacity at significantly lower rates than On-Demand (Cheapest EC2 pricing model).
 - Suitable for fault-tolerant applications such as big data, containerized workloads, and CI/CD pipelines that can tolerate interruptions.
 - No long-term commitment: price is based on supply & demand + instances can be interrupted within a short time when EC2 reclaims capacity.
 
-<br>
-
-#### Task: Spot Instances: Overnight Batch Processing
+#### {{< hl >}}<b>Task: Spot Instances: Overnight Batch Processing</b>{{< /hl >}}<br>
 
 Imagine you want to batch process the inventory of your ecommerse website as cheaply as possible and at off-peak times on your backend. Using spot instances would be optimal as it minimizes costs by using unused EC2 capacity during off-peak hours to make important updates based on daily sales and inventory changes.
 
-<br>
+## {{< hl >}}<b>AWS Regions & Availability Zones (AZ)</b>{{< /hl >}}<br>
 
-## AWS Regions & Availability Zones (AZ)
-
-### Regions
+### {{< hl >}}<b>Regions</b>{{< /hl >}}<br>
 
 - **Definition:** Geographic areas like different countries, each region consists of a network of several Availability Zones.
 - **Variability:** The software and services available can differ from one region to another.
 
-<br>
-
-### Availability Zones (AZ)
+### {{< hl >}}<b>Availability Zones (AZ)</b>{{< /hl >}}<br>
 
 - **Relation to Regions:** Each AZ belongs to a region but is geographically distant enough (approximately 100 km apart) to ensure that ideally only one AZ is affected in the event of a disaster.
 - **Consistency:** Within the same region, different AZs generally offer the same software and services.
 
-<br>
-
-### Availability of AZs
+### {{< hl >}}<b>Availability of AZs</b>{{< /hl >}}<br>
 
 By utilizing more than one Availability Zone, you can guarantee higher availability. In case one AZ fails, others can provide a backup.
 
 ![Regions & AZs](region-az.png "Regions & AZs")
 
-<br>
-
-## EC2 Fleet
+## {{< hl >}}<b>EC2 Fleet</b>{{< /hl >}}<br>
 
 EC2 Fleets makes it possible to launch multiple ec2 instances with different pricing models (on-demand, reserved & spot) across multiple availability zones.
 
-<br>
-
-### Task: Use-Cases Batch Processing
+### {{< hl >}}<b>Task: Use-Cases Batch Processing</b>{{< /hl >}}<br>
 
 EC2 allows the configuration of fleets using a combination of Spot Instances and On-Demand Instances. For batch processing tasks that are not time-sensitive and primarily run overnight, Spot Instances can be utilized to minimize costs. The fleet can be set to use Spot Instances until a predefined price cap is reached. If Spot prices rise above this cap, EC2 Fleet automatically supplements the fleet with On-Demand Instances to ensure continuous processing without manual intervention.
 
-<br>
-
-## Elastic Network Interface (ENI)
+## {{< hl >}}<b>Elastic Network Interface (ENI)</b>{{< /hl >}}<br>
 
 An Elastic Network Interface (ENI) is a virtual network card used to attach to instances in Amazon Web Services (AWS) within a Virtual Private Cloud (VPC).
 
 When an instance is launched within a VPC, or more specifically within a subnet of a VPC, an ENI is automatically attached to it. For example, if you launch an EC2 instance in a VPC subnet, the instance will have an ENI with a primary private IPv4 address assigned from the subnet’s IP range. Additional secondary private IPv4 addresses can be attached to the same ENI. Instances can have multiple ENIs attached, known as primary and secondary ENIs, which can be used for network and security management tasks within the VPC. Each ENI can also be assigned an Elastic IP address, and supports source/destination checking, which controls whether it can route network traffic.
 
-<br>
-
-## VPC Overview
+## {{< hl >}}<b>VPC Overview</b>{{< /hl >}}<br>
 
 A Virtual Private Cloud (VPC) is a virtual network designed to provide the same level of functionality as a traditional network. It operates as an isolated environment within an AWS account.
 A VPC allows subnetting, allocation of IP ranges, and spans across all Availability Zones (AZs) within a single region. Each subnet in a VPC is belonging to one AZ.
 
-<br>
-### Default and Nondefault VPCs
+### Default and Nondefault VPCs</b>{{< /hl >}}<br>
 
 Each region provides a default VPC, which is free of charge (Account creation after 12/04/2013). This VPC includes a default subnet in each AZ and supports all the functionality of EC2-VPC. EC2 Instances with no VPC specifications get launched into the default VPC.
 
@@ -338,79 +281,57 @@ Users have also the possibility to create their own VPCs, known as nondefault VP
 
 ![VPC](vpc.png "VPC")
 
-<br>
+## {{< hl >}}<b>Subnets and Route Tables in VPC</b>{{< /hl >}}<br>
 
-## Subnets and Route Tables in VPC
-
-### Subnets
+### {{< hl >}}<b>Subnets</b>{{< /hl >}}<br>
 
 Subnets are subdivisions of a VPC and are used to segment and manage network traffic within different portions of a VPC. Each subnet is associated with a specific Availability Zone and can have its security and routing policies.
 
-<br>
-
-#### Public Subnet
+#### {{< hl >}}<b>Public Subnet</b>{{< /hl >}}<br>
 
 A public subnet in AWS allows instances to access and be accessed from the internet. This is enabled by a route in its route table pointing to an Internet Gateway (IGW). Instances in public subnets typically have public IP addresses.
 
-<br>
-
-#### Private Subnet
+#### {{< hl >}}<b>Private Subnet</b>{{< /hl >}}<br>
 
 A private subnet does not have a route to an IGW and therefore cannot directly access the internet. It is designed for internal-only traffic and uses for example a NAT Gateway for internet access, which restricts incoming connections.
 
 ![Private & public subnets](subnets.png "Subnets")
 
-<br>
-
-### Route Tables
+### {{< hl >}}<b>Route Tables</b>{{< /hl >}}<br>
 
 Route tables within a VPC define the paths for network traffic. Each subnet must be associated with a route table, which determines where network traffic is directed. Route tables control the routing between subnets, for example to the internet via an Internet Gateway, and to other AWS services.
 
 Route tables can be customized to direct traffic based on the origin and destination. This includes routes for local networking within the VPC and routes that allow subnets to communicate with external networks.
 
-<br>
+## {{< hl >}}<b>Gateways for VPC</b>{{< /hl >}}<br>
 
-## Gateways for VPC
-
-### Internet Gateway
+### {{< hl >}}<b>Internet Gateway</b>{{< /hl >}}<br>
 
 An Internet Gateway enables communication between instances in a VPC and the internet. It supports both inbound and outbound traffic but only connects with public subnets.
 
-<br>
-
-#### Configuration
+#### {{< hl >}}<b>Configuration</b>{{< /hl >}}<br>
 
 For a subnet to communicate through the Internet Gateway, its routing table must contain an entry for this gateway. Subnets without an entry for the Internet Gateway in their routing table, typically private subnets, do not have direct internet access through this gateway.
 
-<br>
-
-#### Communication Requirements
+#### {{< hl >}}<b>Communication Requirements</b>{{< /hl >}}<br>
 
 Instances in public subnets can communicate with the internet if they meet specific conditions: they must either have a public IPv4 address or an Elastic IP address associated with a private IPv4 address.
 
-<br>
-
-### NAT Gateway
+### {{< hl >}}<b>NAT Gateway</b>{{< /hl >}}<br>
 
 A Network Address Translation (NAT) Gateway allows instances in private subnets to access the internet, AWS services, and private data centers, supporting only outbound (egress) traffic.
 
-<br>
-
-#### Public NAT Gateway
+#### {{< hl >}}<b>Public NAT Gateway</b>{{< /hl >}}<br>
 
 A Public NAT Gateway is deployed in a public subnet, using an Elastic IP address for internet communication. It enables instances in private subnets to initiate outbound connections to the internet while preventing inbound traffic.
 
-<br>
-
-#### Private NAT Gateway
+#### {{< hl >}}<b>Private NAT Gateway</b>{{< /hl >}}<br>
 
 A Private NAT Gateway, while less common, refers to a configuration where NAT services are restricted within private network environments, such as between different private subnets within the same VPC. This setup is typically used to control and isolate internal network traffic without exposure to external networks.
 
 ![IGW & NAT-GW](subnets.png "IGW & NAT-GW")
 
-<br>
-
-### Transit Gateways and Usage
+### {{< hl >}}<b>Transit Gateways and Usage</b>{{< /hl >}}<br>
 
 AWS Transit Gateway acts as a network hub that simplifies connectivity between VPCs, AWS Direct Connect, and VPN connections. It centralizes the management of interconnectivity and routing policies, reducing the complexity of managing multiple network connections.
 
@@ -418,29 +339,21 @@ AWS Transit Gateway acts as a network hub that simplifies connectivity between V
 - **Scalable Connectivity:** Supports thousands of VPC and VPN connections within one transit gateway.
 - **Routing Control:** Provides flexible routing options, including dynamic and static routes.
 
-<br>
-
-### Centralized Router
+### {{< hl >}}<b>Centralized Router</b>{{< /hl >}}<br>
 
 - **Usage:** Configure your transit gateway as a centralized router that connects all of your VPCs, AWS Direct Connect, and AWS Site-to-Site VPN connections.
 
-<br>
-
-### Isolated VPCs
+### {{< hl >}}<b>Isolated VPCs</b>{{< /hl >}}<br>
 
 - **Usage:** Configure your transit gateway to function as multiple isolated routers (not limited to one routetable; one rt per connection). This is the same as using multiple transit gateways but offers more flexibility in scenarios where routes and attachments might change.
 
-<br>
-
-### Isolated VPCs with Shared Services
+### {{< hl >}}<b>Isolated VPCs with Shared Services</b>{{< /hl >}}<br>
 
 - **Usage:** Set up your transit gateway as multiple isolated routers that utilize a shared service. Similar to the isolated VPCs scenario, this provides additional flexibility in cases where routes and attachments are subject to modification.
 
 ![Transit Gateway](transit-gateway.png "AWS Transit Gateway")
 
-<br>
-
-### Direct Connect Gateway
+### {{< hl >}}<b>Direct Connect Gateway</b>{{< /hl >}}<br>
 
 AWS Direct Connect provides a dedicated network connection from an on-premise network to AWS. Unlike internet-based VPNs, Direct Connect offers a private, consistent, and low-latency connection that bypasses the public internet. This service is particularly advantageous for applications requiring stable, high-throughput, or real-time network performance.
 
@@ -450,43 +363,33 @@ AWS Direct Connect provides a dedicated network connection from an on-premise ne
 
 ![Direct Connect](direct-connect-tgw.png "AWS Direct Connect")
 
-<br>
-
-### VPC Peering
+### {{< hl >}}<b>VPC Peering</b>{{< /hl >}}<br>
 
 VPC Peering allows direct network connectivity between different VPCs, facilitating bidirectional traffic flow from any subnet within the VPCs involved. This connection is used exclusively for internal AWS traffic. You could for example peer your default VPC within a region with the underlying VPC of your AWS Lightsail infrastructure. This allows you to connect other AWS services (outside of Lighsail) with your Lightsail components.
 
 ![VPC Peering](vpc-peering.png "VPC Peering")
 
-<br>
+## {{< hl >}}<b>Possible VPN Options in AWS</b>{{< /hl >}}<br>
 
-## Possible VPN Options in AWS
-
-### AWS Site-to-Site VPN
+### {{< hl >}}<b>AWS Site-to-Site VPN</b>{{< /hl >}}<br>
 
 AWS Site-to-Site VPN establishes secure IPsec connections between an on-premise network and AWS VPCs. This service encrypts data transmitted over the internet, ensuring secure communication between corporate data centers and the AWS cloud. It supports static and dynamic routing options, suitable for extending data centers or for disaster recovery setups.
 
 ![AWS Site-to-Site VPN](site-to-site.png "AWS Site-to-Site VPN")
 
-<br>
-
-### AWS Client VPN
+### {{< hl >}}<b>AWS Client VPN</b>{{< /hl >}}<br>
 
 AWS Client VPN is a managed client-based VPN service that allows secure access to AWS networks and on-premise environments from any location. Supporting OpenVPN clients, it enables seamless connectivity across various platforms, ensuring end-to-end encryption and fine-grained access control through integration with AWS Identity and Access Management (IAM).
 
 ![AWS Client VPN](client-vpn.png "AWS Client VPN")
 
-<br>
-
-### AWS VPN CloudHub
+### {{< hl >}}<b>AWS VPN CloudHub</b>{{< /hl >}}<br>
 
 Designed for organizations with multiple branch offices, AWS VPN CloudHub uses a hub-and-spoke model to connect each branch to AWS via a virtual private gateway. This setup supports secure communication across the branches, leveraging the AWS network backbone for optimized and encrypted data flow.
 
 ![AWS VPN CloudHub](vpn-cloudhub.png "AWS VPN CloudHub")
 
-<br>
-
-## VPC Peering Task
+## {{< hl >}}<b>VPC Peering Task</b>{{< /hl >}}<br>
 
 > Duplicate your existing VPC from the task before, including all subnets and instances, but without adding any gateways. Establish a VPC peering connection between the original and the new VPC.
 
@@ -542,9 +445,7 @@ With VPC peering, resources in VPC2 cannot use the IGW of VPC1 to access the int
 
 However, an alternative would be to use a transit gateway instead of a VPC peering connection.
 
-<br>
-
-## Storage for your Architecture
+## {{< hl >}}<b>Storage for your Architecture</b>{{< /hl >}}<br>
 | **Storage Type** | **Structure** | **Functionality** | **Organization Method** |
 |-----------------|----------------|--------------------|------------------------|
 | **Block Storage** | Consists of fixed-size storage blocks (typically ranging from 512 bytes to 64 kilobytes) each with a unique address. | Operating systems interact with block storage by requesting data blocks via interfaces like iSCSI or Fibre Channel. This allows fast, low-latency access, often used for performance-intensive applications such as databases. | Blocks are organized on physical storage media like HDDs or SSDs and can be aggregated through volume manager software into larger logical units. |
@@ -553,9 +454,7 @@ However, an alternative would be to use a transit gateway instead of a VPC peeri
 
 ![Different Storage types](types-storage.png "Different Storage types")
 
-<br>
-
-### EC2 Storage - Overview
+### {{< hl >}}<b>EC2 Storage - Overview</b>{{< /hl >}}<br>
 
 In EC2 you can make use all types of storage mentioned above (Block, File & Object Storage).
 
@@ -563,9 +462,7 @@ In EC2 you can make use all types of storage mentioned above (Block, File & Obje
 - **File**: Amazon EFS
 - **Oject**: Amazon S3 & Glacier
 
-<br>
-
-#### EC2 Instance Storage - Block Storage
+#### {{< hl >}}<b>EC2 Instance Storage - Block Storage</b>{{< /hl >}}<br>
 
 - **Temporary Storage:** Specifically for EC2 instances, if the instance is wiped, the storage is also wiped.
 - **Attachment:** Storage can only be attached to running instances and is neither detachable nor sharable between instances.
@@ -574,9 +471,7 @@ In EC2 you can make use all types of storage mentioned above (Block, File & Obje
 
 ![EC2 Instance Storage](eis.png "EC2 Instance Storage")
 
-<br>
-
-#### EBS (Elastic Block Storage) – Block Storage
+#### {{< hl >}}<b>EBS (Elastic Block Storage) – Block Storage</b>{{< /hl >}}<br>
 
 ![EBS](ebs.png "EBS")
 
@@ -589,9 +484,7 @@ In EC2 you can make use all types of storage mentioned above (Block, File & Obje
 
 ![EC2 Instance Storage](eis.png "EC2 Instance Storage")
 
-<br>
-
-#### EFS (Elastic File System) – File Storage
+#### {{< hl >}}<b>EFS (Elastic File System) – File Storage</b>{{< /hl >}}<br>
 
 - **Service Overview:** Amazon EFS offers a simple, serverless, elastic file system for AWS Cloud and on-premises resources, operating as a Platform-as-a-Service (PaaS).
 - **Scalability:** Automatically scales to petabytes without disrupting applications, adjusting as files are added or removed.
@@ -608,9 +501,7 @@ In EC2 you can make use all types of storage mentioned above (Block, File & Obje
 
 ![EFS](efs.png "EC2 Instance Storage")
 
-<br>
-
-#### S3 (Simple Storage Service) – Object Storage
+#### {{< hl >}}<b>S3 (Simple Storage Service) – Object Storage</b>{{< /hl >}}<br>
 
 - **Functionality:** Provides object storage where files are stored as complete units.
 - **Service Type:** Operates as a Platform-as-a-Service (PaaS), not Infrastructure-as-a-Service (IaaS).
@@ -625,9 +516,7 @@ In EC2 you can make use all types of storage mentioned above (Block, File & Obje
 
 ![S3](s3.png "S3")
 
-<br>
-
-## VPC Flow Logs
+## {{< hl >}}<b>VPC Flow Logs</b>{{< /hl >}}<br>
 
 VPC Flow Logs capturing information about the IP traffic to and from network interfaces in a Virtual Private Cloud (VPC). These logs can be published to CloudWatch or S3 for further analysis and monitoring.
 
@@ -637,9 +526,7 @@ VPC Flow Logs capturing information about the IP traffic to and from network int
 - Monitors all network interfaces within the specified scope.
 - Logs can be stored in CloudWatch or S3.
 
-<br>
-
-### Fields in VPC Flow Logs (Version 1 fields)
+### {{< hl >}}<b>Fields in VPC Flow Logs (Version 1 fields)</b>{{< /hl >}}<br>
 
 Each VPC Flow Log record is a string with fields separated by spaces. The fields provide information about the network traffic.
 
@@ -660,9 +547,7 @@ Each VPC Flow Log record is a string with fields separated by spaces. The fields
 | action       | Action associated with the traffic (ACCEPT or REJECT). | STRING    |
 | log-status   | Status of the log (OK, NODATA, SKIPDATA).              | STRING    |
 
-<br>
-
-### Advanced fields in VPC Flow Logs (Version 2 fields)
+### {{< hl >}}<b>Advanced fields in VPC Flow Logs (Version 2 fields)</b>{{< /hl >}}<br>
 
 | Field Name          | Description                                                                                   | Data Type |
 | ------------------- | --------------------------------------------------------------------------------------------- | --------- |
@@ -671,9 +556,7 @@ Each VPC Flow Log record is a string with fields separated by spaces. The fields
 | pkt-src-aws-service | Source AWS service if the source IP address belongs to an AWS service.                        | STRING    |
 | pkt-dst-aws-service | Destination AWS service if the destination IP address belongs to an AWS service.              | STRING    |
 
-<br>
-
-### Customizing Flow Logs
+### {{< hl >}}<b>Customizing Flow Logs</b>{{< /hl >}}<br>
 
 You can create custom formats for your Flow Logs. The default format includes all version 2 fields. Custom formats allow for the inclusion or exclusion of specific fields to tailor the logs to your needs.
 
@@ -685,9 +568,7 @@ ${version} ${account-id} ${interface-id} ${srcaddr} ${dstaddr} ${srcport} ${dstp
 
 This example includes only the most essential fields, which can be expanded based on specific requirements.
 
-<br>
-
-### Usage and Benefits
+### {{< hl >}}<b>Usage and Benefits</b>{{< /hl >}}<br>
 
 Enabling VPC Flow Logs can help with:
 
@@ -695,17 +576,13 @@ Enabling VPC Flow Logs can help with:
 - **Network Troubleshooting**: Diagnosing connectivity issues within the VPC.
 - **Cost and Performance Optimization**: Analyzing data transfer costs and performance bottlenecks.
 
-<br>
-
-## Network ACL (Access Control List)
+## {{< hl >}}<b>Network ACL (Access Control List)</b>{{< /hl >}}<br>
 
 A network access control list (ACL) is an optional layer of security on VPC and acts as a firewall for controlling traffic in and out of one or more subnets. You define rules like Source/Destination or Protocol that are allowed/denied. Default NACL is configured to allow all traffic In- and Egress.
 
 ![NACL](nacl.png "NACL")
 
-<br>
-
-## Security Groups (SG)
+## {{< hl >}}<b>Security Groups (SG)</b>{{< /hl >}}<br>
 
 Security groups act as virtual firewalls, controlling the incoming (ingress) and outgoing (egress) traffic for the resources they are associated with.
 
@@ -718,9 +595,7 @@ Security groups act as virtual firewalls, controlling the incoming (ingress) and
 
 Security groups are attached to individual resources within the VPC, such as EC2 instances, rather than being attached directly to the VPC itself.
 
-<br>
-
-## Best Practice – Security Groups (SG) & NACL
+## {{< hl >}}<b>Best Practice – Security Groups (SG) & NACL</b>{{< /hl >}}<br>
 
 **ACLs should not be used to control the traffic of your instance alone:**
 
@@ -736,9 +611,7 @@ Security groups are attached to individual resources within the VPC, such as EC2
 
 - Security groups should be the primary method for controlling traffic.
 
-<br>
-
-## Reachability Analyzer
+## {{< hl >}}<b>Reachability Analyzer</b>{{< /hl >}}<br>
 
 **Complexity with NACL and SGs:**
 
@@ -752,9 +625,7 @@ Security groups are attached to individual resources within the VPC, such as EC2
 - If any traffic was blocked on the way or something needs to be troubleshooted for other reasons, you'll see it inside the Analyzer.
 - This way, you don't need to double-check SGs and NACLs if something's not working as intended. Instead, the Analyzer tells you where the issue resides.
 
-<br>
-
-## Task 15 Network Security: Documenting the Reachability Analyzer Findings and Fixes
+## {{< hl >}}<b>Task 15 Network Security: Documenting the Reachability Analyzer Findings and Fixes</b>{{< /hl >}}<br>
 
 > With Terraform:
 > Create a Security Group that allows SSH traffic from one public subnet instance to another – Ingress and Egress
@@ -764,9 +635,7 @@ Security groups are attached to individual resources within the VPC, such as EC2
 > Check with the Reachability Analyzer the SSH communication
 > Document inside your blog the behavior. Now fix the issue showed by the Analyzer. Either NACL or the SG should now be appended and the other > issue should be still open. What happens now, if you analyze the same call? Document and fix it. Retry again.
 
-<br>
-
-### Initial Basic Infrastructure from Earlier Task
+### {{< hl >}}<b>Initial Basic Infrastructure from Earlier Task</b>{{< /hl >}}<br>
 
 Used base infrastructure from an earlier task, which included the following components:
 
@@ -784,9 +653,7 @@ Used base infrastructure from an earlier task, which included the following comp
   - Deployed an EC2 instance in the public subnet (act as a bastion (jump host) with SSH access.)
   - Deployed an EC2 instance in the private subnet.
 
-  <br>
-
-### Initial Setup
+### {{< hl >}}<b>Initial Setup</b>{{< /hl >}}<br>
 
 - **Security Groups:**
 
@@ -797,9 +664,7 @@ Used base infrastructure from an earlier task, which included the following comp
 
   - Configured a NACL allowing all traffic except for denying SSH traffic.
 
-  <br>
-
-### Reachability Analyzer Results
+### {{< hl >}}<b>Reachability Analyzer Results</b>{{< /hl >}}<br>
 
 **Step 1: Initial Analysis**
 
@@ -873,37 +738,27 @@ Used base infrastructure from an earlier task, which included the following comp
 
 ![Final Reachability Analysis](ra3.jpg "Final Reachability Analysis")
 
-<br>
-
-### Summary
+### {{< hl >}}<b>Summary</b>{{< /hl >}}<br>
 
 - Initially, both the NACL and the private instance's security group were blocking SSH communication.
 - After adjusting the private instance's security group to allow SSH ingress, only the NACL was blocking the traffic.
 - Finally, after adjusting the NACL to allow SSH traffic from cidr's public and private subnet, communication was successfully established.
 
-<br>
+## {{< hl >}}<b>Data In Transit vs. Data At Rest</b>{{< /hl >}}<br>
 
-## Data In Transit vs. Data At Rest
-
-### Data In Transit
+### {{< hl >}}<b>Data In Transit</b>{{< /hl >}}<br>
 
 Data in transit, or data in motion, refers to data actively moving from one location to another, such as across the internet or through a private network. Protecting data in transit involves securing this data while it's traveling between networks or being transferred from local storage to cloud storage. Effective data protection measures are critical during transit as data is often considered less secure while in motion.
 
-<br>
-
-### Data At Rest
+### {{< hl >}}<b>Data At Rest</b>{{< /hl >}}<br>
 
 Data at rest is data that is not actively moving from device to device or network to network. This includes data stored on hard drives, laptops, flash drives, or archived in other ways. Data protection at rest aims to secure inactive data stored on any device or network. Although data at rest is sometimes viewed as less vulnerable, it is often a more valuable target for attackers.
 
-<br>
-
-### The Role of Encryption
+### {{< hl >}}<b>The Role of Encryption</b>{{< /hl >}}<br>
 
 Data can be exposed to risks both in transit and at rest, requiring protection in both states. Encryption is a major tool for securing data in both conditions. For data in transit, encryption methods like HTTPS, SSL, TLS, and FTPS are used. For data at rest, sensitive files can be encrypted before storage, or entire storage drives can be encrypted.
 
-<br>
-
-### Best Practices for Data Protection
+### {{< hl >}}<b>Best Practices for Data Protection</b>{{< /hl >}}<br>
 
 Effective data protection methods include:
 
@@ -914,67 +769,47 @@ Effective data protection methods include:
 5. **Data Classification Policies**: Categorize and classify company data to ensure appropriate protection measures.
 6. **Cloud Vendor Evaluation**: Assess security measures offered by cloud providers, including access controls, encryption, and backup frequency.
 
-<br>
-
-### Risk Profiles
+### {{< hl >}}<b>Risk Profiles</b>{{< /hl >}}<br>
 
 The risk profiles for data in transit and data at rest depend on the security measures in place. While attackers may target valuable data in either state, a proactive approach including data classification and context-aware security protocols is most effective for comprehensive data protection.
 
-<br>
+### {{< hl >}}<b>Frequently Asked Questions</b>{{< /hl >}}<br>
 
-### Frequently Asked Questions
-
-#### What is the difference between data at rest and data in transit?
+#### {{< hl >}}<b>What is the difference between data at rest and data in transit?</b>{{< /hl >}}<br>
 
 Data at rest is stationary, stored on a device, while data in transit is actively moving between locations over a network. Data in transit is more vulnerable to interception and should be encrypted.
 
-<br>
-
-#### What is an example of data in transit?
+#### {{< hl >}}<b>What is an example of data in transit?</b>{{< /hl >}}<br>
 
 An example of data in transit is information transferred between a remote user’s mobile device and a cloud-based application. Encryption is crucial to protect such data from malicious actors.
 
-<br>
-
-#### Is data encrypted in transit and at rest?
+#### {{< hl >}}<b>Is data encrypted in transit and at rest?</b>{{< /hl >}}<br>
 
 Data can be encrypted in both states. Encryption is not inherent and must be applied to protect data from unauthorized access.
 
-<br>
-
-#### What are some data at rest examples?
+#### {{< hl >}}<b>What are some data at rest examples?</b>{{< /hl >}}<br>
 
 Examples include spreadsheet files on a laptop's hard drive, videos on a mobile device, employment records in corporate HR applications, and sales data in company databases.
 
-<br>
+## {{< hl >}}<b>AWS: Encrypting Data-at-Rest and Data-in-Transit</b>{{< /hl >}}<br>
 
-## AWS: Encrypting Data-at-Rest and Data-in-Transit
-
-### Overview
+### {{< hl >}}<b>Overview</b>{{< /hl >}}<br>
 
 AWS recommends encryption as an additional access control to complement identity, resource, and network-oriented controls. AWS provides features for easy data encryption and key management. All AWS services offer encryption capabilities for data at rest and in transit, integrating with AWS Key Management Service (KMS) to control key lifecycle and permissions.
 
-<br>
-
-### Data-at-Rest Encryption
+### {{< hl >}}<b>Data-at-Rest Encryption</b>{{< /hl >}}<br>
 
 AWS services use server-side encryption to ensure consistent and correct encryption application. Customers control data decryption, managing access through AWS KMS policies. This creates logical separation between data and key access. Customers can also use client-side encryption with AWS KMS for application-level encryption, ensuring consistent security across architectures, whether on AWS, on-premises, or hybrid.
 
-<br>
-
-#### Hardware Security Modules (HSMs)
+#### {{< hl >}}<b>Hardware Security Modules (HSMs)</b>{{< /hl >}}<br>
 
 AWS KMS uses HSMs to protect customer keys. These HSMs are FIPS 140-2 validated and prevent unauthorized use of plaintext keys. Customer keys are isolated and can only be used within the AWS region where they were created. All AWS KMS actions are logged to AWS CloudTrail for auditing.
 
-<br>
-
-#### AWS CloudHSM
+#### {{< hl >}}<b>AWS CloudHSM</b>{{< /hl >}}<br>
 
 For direct HSM management, AWS CloudHSM offers dedicated, FIPS 140-2 Level 3 validated HSMs. CloudHSM supports integration via PKCS#11, JCE, and CNG APIs, allowing key export for hybrid architectures. AWS automates administrative tasks, while customers manage scaling and crypto accounts within the HSM.
 
-<br>
-
-### Data-in-Transit Encryption
+### {{< hl >}}<b>Data-in-Transit Encryption</b>{{< /hl >}}<br>
 
 AWS encrypts network traffic at multiple levels:
 
@@ -982,9 +817,7 @@ AWS encrypts network traffic at multiple levels:
 - **Network Layer**: Encryption within VPCs and peered VPCs using supported EC2 instances.
 - **Application Layer**: Encryption using protocols like TLS, with all AWS endpoints supporting TLS for secure HTTPS connections.
 
-<br>
-
-#### Terminating TLS Connections
+#### {{< hl >}}<b>Terminating TLS Connections</b>{{< /hl >}}<br>
 
 AWS provides options for terminating TLS connections:
 
@@ -994,15 +827,11 @@ AWS provides options for terminating TLS connections:
 
 AWS Certificate Manager (ACM) simplifies the management of digital certificates, providing publicly trusted certificates at no cost and offering a private certificate authority for internal communication.
 
-<br>
-
-### Comprehensive Encryption Strategy
+### {{< hl >}}<b>Comprehensive Encryption Strategy</b>{{< /hl >}}<br>
 
 Using AWS KMS, CloudHSM, and ACM, customers can implement a comprehensive encryption strategy for data at rest and in transit, ensuring consistent security for data across the AWS ecosystem.
 
-<br>
-
-## Task: Data Encryption Concept for AWS Infrastructure
+## {{< hl >}}<b>Task: Data Encryption Concept for AWS Infrastructure</b>{{< /hl >}}<br>
 
 We are working with the basic infrastructure implemented in Tasks 10-13. Currently, there is no encryption configured for the root EBS volume, additional EBS volumes, EFS, or S3 bucket. This concept aims to change that by implementing encryption. With EBS and EFS, the options for encryption are AWS managed (KMS abstracted) or via KMS itself. With S3 you have 3 different options:
 
@@ -1011,11 +840,9 @@ We are working with the basic infrastructure implemented in Tasks 10-13. Current
 - SSE-KMS: Server-side encryption with AWS KMS keys.
   I decided to go with the AWS managed approach for all three services.
 
-  <br>
+### {{< hl >}}<b>Encryption Considerations</b>{{< /hl >}}<br>
 
-### Encryption Considerations
-
-#### Encryption in Transit
+#### {{< hl >}}<b>Encryption in Transit</b>{{< /hl >}}<br>
 
 Encryption in transit is essential to protect data as it moves between clients, services, and AWS infrastructure. It prevents the interception and manipulation of data by ensuring the security of data during transmission over the network.
 
@@ -1024,9 +851,7 @@ In this context, encryption in transit should be applied to:
 - Data transfers between EC2 instance and EFS (TLS protected, configured during mount)
 - Data transfers between EC2 instance and S3 bucket (here via awscli [aws s3 sync] -> https protected, that means via SSL/TLS)
 
-<br>
-
-#### Encryption at Rest
+#### {{< hl >}}<b>Encryption at Rest</b>{{< /hl >}}<br>
 
 Encryption at rest protects data stored on AWS services. It ensures data is unreadable to unauthorized users and complies with regulatory requirements.
 
@@ -1037,11 +862,9 @@ In this context, encryption at rest should be applied to:
 - EFS
 - S3 buckets
 
-<br>
+### {{< hl >}}<b>Encryption Concept</b>{{< /hl >}}<br>
 
-### Encryption Concept
-
-#### Root EBS Volume Encryption
+#### {{< hl >}}<b>Root EBS Volume Encryption</b>{{< /hl >}}<br>
 
 | Aspect          | Description                                                       |
 | --------------- | ----------------------------------------------------------------- |
@@ -1049,9 +872,7 @@ In this context, encryption at rest should be applied to:
 | Encryption Type | AWS managed (using default KMS keys)                              |
 | Implementation  | Configure during instance launch, ensure root volume is encrypted |
 
-<br>
-
-#### Additional EBS Volume Encryption
+#### {{< hl >}}<b>Additional EBS Volume Encryption</b>{{< /hl >}}<br>
 
 | Aspect          | Description                                                           |
 | --------------- | --------------------------------------------------------------------- |
@@ -1059,9 +880,7 @@ In this context, encryption at rest should be applied to:
 | Encryption Type | AWS managed (using default KMS keys)                                  |
 | Implementation  | Configure during volume creation, attach encrypted volume to instance |
 
-<br>
-
-#### EFS Encryption
+#### {{< hl >}}<b>EFS Encryption</b>{{< /hl >}}<br>
 
 | Aspect          | Description                                                   |
 | --------------- | ------------------------------------------------------------- |
@@ -1069,9 +888,7 @@ In this context, encryption at rest should be applied to:
 | Encryption Type | AWS managed (using default KMS keys)                          |
 | Implementation  | Enable encryption during EFS creation, configure mount target |
 
-<br>
-
-#### S3 Bucket Encryption
+#### {{< hl >}}<b>S3 Bucket Encryption</b>{{< /hl >}}<br>
 
 | Aspect          | Description                                                           |
 | --------------- | --------------------------------------------------------------------- |
@@ -1079,30 +896,22 @@ In this context, encryption at rest should be applied to:
 | Encryption Type | AWS managed (S3 default encryption using S3-managed keys or KMS keys) |
 | Implementation  | Enable default encryption on the S3 bucket                            |
 
-<br>
-
-#### Implementation of Encryption
+#### {{< hl >}}<b>Implementation of Encryption</b>{{< /hl >}}<br>
 
 See in `task-16-data-encryption` in files `efs-and-s3` & `instance-and-ebs`.
 
-<br>
+## {{< hl >}}<b>What is a Container</b>{{< /hl >}}<br>
 
-## What is a Container
-
-### Definition
+### {{< hl >}}<b>Definition</b>{{< /hl >}}<br>
 
 “A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another” – Docker.
 
-<br>
-
-### Key Concepts
+### {{< hl >}}<b>Key Concepts</b>{{< /hl >}}<br>
 
 - **Abstraction**: Containers eliminate the need for hypervisors and operating systems (OSs) by encapsulating the application and its dependencies. This allows running applications designed for one OS on another OS (e.g., a Windows application on Linux).
 - **Configuration**: Containers allow you to configure the container image once and run it anywhere, ensuring consistent behavior across different environments.
 
-<br>
-
-### Container Image Components
+### {{< hl >}}<b>Container Image Components</b>{{< /hl >}}<br>
 
 - **Code**: The application code.
 - **Runtime**: The environment where the code runs.
@@ -1110,17 +919,13 @@ See in `task-16-data-encryption` in files `efs-and-s3` & `instance-and-ebs`.
 - **System Libraries**: Libraries that the application depends on.
 - **Settings**: Configuration settings for the application.
 
-<br>
-
-### Tools for Managing Containers
+### {{< hl >}}<b>Tools for Managing Containers</b>{{< /hl >}}<br>
 
 - **Docker**: A widely used platform for developing, shipping, and running applications inside containers.
 - **Packer**: A tool for creating machine and container images for multiple platforms from a single source configuration.
 - **Windows Containers**: Containers designed to run Windows applications, enabling the use of containers on Windows OS.
 
-<br>
-
-### Benefits
+### {{< hl >}}<b>Benefits</b>{{< /hl >}}<br>
 
 - **Portability**: Applications can run consistently across various environments without modification.
 - **Efficiency**: Containers share the host OS kernel, making them more lightweight and efficient compared to traditional virtual machines (VMs).
@@ -1129,11 +934,9 @@ See in `task-16-data-encryption` in files `efs-and-s3` & `instance-and-ebs`.
 container.png
 ![VM's vs Container](container.png "VM's vs Container")
 
-<br>
+## {{< hl >}}<b>Amazon Elastic Container Registry (Amazon ECR)</b>{{< /hl >}}<br>
 
-## Amazon Elastic Container Registry (Amazon ECR)
-
-### Overview
+### {{< hl >}}<b>Overview
 
 Amazon Elastic Container Registry (Amazon ECR) is a managed container image registry service provided by AWS. It supports private repositories with resource-based permissions using AWS IAM.
 
@@ -1143,17 +946,13 @@ Amazon Elastic Container Registry (Amazon ECR) is a managed container image regi
 | **CLI Support**         | Allows use of preferred CLI tools for managing images.                                        |
 | **Public Repositories** | Supports public container image repositories as well.                                         |
 
-<br>
-
-### Usage
+### {{< hl >}}<b>Usage</b>{{< /hl >}}<br>
 
 - **Pushing Images**: Use CLI tools to push Docker and OCI images to Amazon ECR.
 - **Pulling Images**: Retrieve images from Amazon ECR for local development or deployment.
 - **Integration**: Integrate Amazon ECR images with Amazon ECS and Amazon EKS for container orchestration.
 
-<br>
-
-### Components of Amazon ECR
+### {{< hl >}}<b>Components of Amazon ECR</b>{{< /hl >}}<br>
 
 | Component               | Description                                                                                                                              |
 | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1163,17 +962,13 @@ Amazon Elastic Container Registry (Amazon ECR) is a managed container image regi
 | **Repository Policy**   | Controls access to repositories and their contents.                                                                                      |
 | **Image**               | Container images can be pushed and pulled for local development or use in Amazon ECS task definitions and Amazon EKS pod specifications. |
 
-<br>
+## {{< hl >}}<b>Amazon Elastic Container Service (ECS)</b>{{< /hl >}}<br>
 
-## Amazon Elastic Container Service (ECS)
-
-### Overview
+### {{< hl >}}<b>Overview</b>{{< /hl >}}<br>
 
 Amazon Elastic Container Service (ECS) is a service that runs containers on AWS. It provides two options for managing and running containers: using EC2 instances or the serverless Fargate platform.
 
-<br>
-
-### ECS Options
+### {{< hl >}}<b>ECS Options</b>{{< /hl >}}<br>
 
 | Option      | Description                                       | When to Use                                  |
 | ----------- | ------------------------------------------------- | -------------------------------------------- |
@@ -1186,20 +981,14 @@ Amazon Elastic Container Service (ECS) is a service that runs containers on AWS.
 |             |                                                   | - Tiny workloads                             |
 |             |                                                   | - Batch workloads                            |
 
-<br>
+### {{< hl >}}<b>Details</b>{{< /hl >}}<br>
 
-### Details
-
-#### EC2
+#### {{< hl >}}<b>EC2</b>{{< /hl >}}<br>
 
 - **Configuration**: You configure and manage the EC2 instances where the containers run.
 - **Use Cases**: Suitable for workloads with consistent high CPU and memory usage, large workloads needing cost optimization, applications requiring persistent storage, and scenarios where direct infrastructure management is preferred.
 
-<br>
-
-#### Fargate
+#### {{< hl >}}<b>Fargate</b>{{< /hl >}}<br>
 
 - **Serverless**: AWS manages the infrastructure, and you only need to define and manage the containers.
 - **Use Cases**: Ideal for large workloads optimized for low overhead, small workloads with occasional bursts, tiny workloads, and batch processing tasks.
-
-<br>
