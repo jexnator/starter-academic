@@ -936,7 +936,7 @@ container.png
 
 ## {{< hl >}}<b>Amazon Elastic Container Registry (Amazon ECR)</b>{{< /hl >}}<br>
 
-### {{< hl >}}<b>Overview
+### {{< hl >}}<b>Overview</b>{{< /hl >}}<br>
 
 Amazon Elastic Container Registry (Amazon ECR) is a managed container image registry service provided by AWS. It supports private repositories with resource-based permissions using AWS IAM.
 
