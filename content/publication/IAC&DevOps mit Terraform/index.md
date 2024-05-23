@@ -2,10 +2,10 @@
 title: "DevOps and Automation Module"
 
 # Authors
-# If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
+# If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-- admin
+  - admin
 
 # Author notes (optional)
 author_notes: ""
@@ -41,19 +41,19 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: ''
-url_code: ''
-url_dataset: ''
-url_poster: ''
-url_project: ''
-url_slides: ''
-url_source: ''
-url_video: ''
+url_pdf: ""
+url_code: ""
+url_dataset: ""
+url_poster: ""
+url_project: ""
+url_slides: ""
+url_source: ""
+url_video: ""
 
 # Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
+# To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Image credit: [**Adobe Stock: ArtemisDiana**](https://adobe.ly/3KWGRwp)'
+  caption: "Image credit: [**Adobe Stock: ArtemisDiana**](https://adobe.ly/3KWGRwp)"
   focal_point: ""
   preview_only: false
 
@@ -71,18 +71,23 @@ projects: []
 #   Otherwise, set `slides: ""`.
 slides: ""
 ---
+
 {{< toc >}}
 
-# DevOps and Automation Module
-## Introduction to DevOps
+# {{< hl >}}<b>DevOps and Automation Module</b>{{< /hl >}}<br>
 
-### What is DevOps?
+## {{< hl >}}<b>Introduction to DevOps
+
+### {{< hl >}}<b>What is DevOps?</b>{{< /hl >}}<br>
+
 DevOps merges cultural philosophies, practices, and tools to enhance an organization's ability to deliver applications and services at high velocity, outpacing organizations with traditional development and infrastructure management processes. This synergy of development and operations aims for a continuous delivery model emphasizing repeatability, reliability, stability, resilience, and security, alongside operational efficiency improvements.
 
 ![DevOps](devops.jpg "DevOps")
 
-#### DevOps Culture
+#### {{< hl >}}<b>DevOps Culture</b>{{< /hl >}}<br>
+
 The essence of DevOps culture lies in eliminating the barriers between development and operations teams, fostering an environment where both work in unison to amplify productivity and operational reliability. The movement's core values are encapsulated in the mantra "People over Process over Tools" and include:
+
 - Culture
 - Automation
 - Measurement
@@ -90,62 +95,72 @@ The essence of DevOps culture lies in eliminating the barriers between developme
 
 These values guide the practical benefits of DevOps principles, allowing for frequent code deployments and the creation of resilient, self-healing systems equipped with advanced monitoring and alerting capabilities.
 
-### Benefits of DevOps and AWS Tooling
+### {{< hl >}}<b>Benefits of DevOps and AWS Tooling</b>{{< /hl >}}<br>
+
 DevOps practices enable organizations to deploy code multiple times a day, significantly reducing outages and downtime through the use of resilient systems. AWS services further enhance DevOps practices by providing tools that support continuous integration and delivery, infrastructure automation, and a consistent approach across projects.
 
 ![DevOps Tooling by AWS](devops-tooling-aws.jpg "DevOps Tooling by AWS")
 
-#### Continuous Integration and Delivery Pipeline
+#### {{< hl >}}<b>Continuous Integration and Delivery Pipeline</b>{{< /hl >}}<br>
+
 Key components include:
+
 - **Continuous Integration (CI):** Regularly merging code changes into a central repository to run automated builds and tests.
 - **Automation:** Minimizing risks associated with manual processes by automating infrastructure management, which is achieved through Infrastructure as Code (IaC) and layered architecture designs.
 
 ![Components DevOps](components-devops.jpg "Components of DevOps Practise")
 
+## {{< hl >}}<b>Infrastructure as Code (IaC) Overview</b>{{< /hl >}}<br>
 
-## Infrastructure as Code (IaC) Overview
+### {{< hl >}}<b>Understanding IaC</b>{{< /hl >}}<br>
 
-### Understanding IaC
 Infrastructure as Code is a paradigm that manages and provisions infrastructure through code rather than manual processes, promoting reliability, reproducibility, and documentation. IaC tools range from ad hoc scripts for single-use tasks to configuration management tools like Chef, Puppet, Ansible, and SaltStack, which automate software installation on servers.
 
 Below is an overview of the different types of tools used in IaC.
 
-### Ad Hoc Scripts
+### {{< hl >}}<b>Ad Hoc Scripts</b>{{< /hl >}}<br>
+
 Ad hoc scripts are simple, often improvised commands or sets of commands that are used to perform a specific task on one or more servers. They are the most basic form of automation, providing a quick and easy way to get things done without the need for more complex tooling. However, they can become difficult to manage and scale as infrastructure grows and changes.
 
 ![Ad Hoc Scripts](ad-hoc-scripts.jpg "Ad Hoc Scripts")
 
-### Configuration Management Tools
+### {{< hl >}}<b>Configuration Management Tools</b>{{< /hl >}}<br>
+
 Configuration management tools automate the process of controlling and tracking changes in the software, and ensuring that it is consistent and maintains its integrity over time. They can install and manage software on existing servers, enforce desired states, and automate routine tasks.
 
 ![Configuration Management Tools](conf-manage-tools.jpg "Configuration Management Tools")
 
-#### Examples of Configuration Management Tools:
+#### {{< hl >}}<b>Examples of Configuration Management Tools:</b>{{< /hl >}}<br>
+
 - **Chef**: A powerful automation platform that transforms infrastructure into code, allowing servers to be automatically set up and managed across a network.
 - **Puppet**: Puppet manages infrastructure as code, automating the configuration and management of machines and the software running on them.
 - **Ansible**: A simple, yet powerful, server and configuration management tool with a focus on simplicity and ease of use. It uses playbooks to describe automation jobs, and SSH for communication with servers.
 - **SaltStack**: SaltStack is designed for IT automation, system and configuration management, and orchestrating complex software-defined data center environments.
 
-### Server Templating Tools
+### {{< hl >}}<b>Server Templating Tools</b>{{< /hl >}}<br>
+
 Server templating tools are used to create images of server configurations, which can be rapidly deployed. This allows for the creation of consistent, repeatable server setups that can be quickly spun up or down as needed.
 
 ![Server Templating Tools](server-templating.jpg "Server Templating Tools")
 
-#### Examples of Server Templating Tools:
+#### {{< hl >}}<b>Examples of Server Templating Tools:</b>{{< /hl >}}<br>
+
 - **Docker**: Docker packages software into standardized units called containers that have everything the software needs to run including libraries, system tools, code, and runtime.
 - **Packer**: Packer automates the creation of any type of machine image. It embraces modern configuration management by encouraging you to use automated scripts to install and configure the software within your Packer-made images.
 - **Vagrant**: Vagrant provides easy to configure, reproducible, and portable work environments built on top of industry-standard technology and controlled by a single consistent workflow to help maximize productivity and flexibility.
 
-### Server Provisioning Tools
+### {{< hl >}}<b>Server Provisioning Tools</b>{{< /hl >}}<br>
+
 Server provisioning tools are responsible for the initial setup of servers. They can create servers, install operating systems, and then hand them off to configuration management tools for further setup.
 
 ![Server Provisioning Tools](server-provisioning-tools.jpg "Server Provisioning Tools")
 
-#### Examples of Server Provisioning Tools:
+#### {{< hl >}}<b>Examples of Server Provisioning Tools:</b>{{< /hl >}}<br>
+
 - **Terraform**: Terraform is an open-source infrastructure as code software tool created by HashiCorp. It enables users to define and provision a data center infrastructure using a declarative configuration language.
 - **CloudFormation**: AWS CloudFormation provides a common language for you to model and provision AWS and third-party application resources in your cloud environment.
 
-### Procedural Language vs. Declarative Language Definition
+### {{< hl >}}<b>Procedural Language vs. Declarative Language Definition</b>{{< /hl >}}<br>
 
 Procedural languages are characterized by their focus on the sequence of operations to perform a task. They do not inherently capture the complete state of the infrastructure, making it difficult to understand the deployment's current state without knowing the order in which scripts or templates were executed. This sequential nature also limits the reusability of procedural code, as adjustments must often be made based on the infrastructure's existing state.
 
@@ -157,11 +172,12 @@ Declarative languages: Terraform, Cloudformation, SaltStack, Puppet and OpenStac
 
 ![Difference between procedural and declarative Approach](procedural-declarative.jpg "Difference between procedural and declarative Approach")
 
-## CloudFormation
+## {{< hl >}}<b>CloudFormation</b>{{< /hl >}}<br>
 
 CloudFormation is a service provided by AWS that automates the provisioning and management of a wide range of AWS resources. It allows users to use programming languages or simple text files to model and provision, in an automated and secure manner, all the resources needed for their applications across all regions and accounts.
 
-### Architecture Concepts
+### {{< hl >}}<b>Architecture Concepts</b>{{< /hl >}}<br>
+
 In advanced CloudFormation architecture, the focus is on designing scalable, resilient, and efficient infrastructure by leveraging the following concepts:
 
 - **Templates**: CloudFormation templates are the blueprints for creating AWS resources. They define the resources to be created and the properties for those resources. Templates can include variables (Parameters), conditions, resource configurations, mappings, and outputs to create reusable infrastructure architectures.
@@ -171,19 +187,21 @@ In advanced CloudFormation architecture, the focus is on designing scalable, res
 
 ![Architecture CloudFormation](architecture-cloudformation.jpg "Architecture CloudFormation")
 
-## CloudFormation StackSets & Nested Stacks
+## {{< hl >}}<b>CloudFormation StackSets & Nested Stacks</b>{{< /hl >}}<br>
 
-### StackSets
+### {{< hl >}}<b>StackSets</b>{{< /hl >}}<br>
+
 StackSets extend the functionality of CloudFormation stacks by enabling you to create, update, or delete stacks across multiple accounts and regions with a single operation. This is particularly useful for large-scale deployments where consistency and automation across accounts and regions are critical.
 
 ![Stack Set](stack-sets.jpg "Stack Set")
 
-### Nested Stacks
+### {{< hl >}}<b>Nested Stacks</b>{{< /hl >}}<br>
+
 Nested Stacks allow you to organize your CloudFormation templates into reusable, manageable components. A nested stack is a stack that you create within another stack by using the AWS::CloudFormation::Stack resource. This "modular" approach simplifies the management of greater systems by allowing you to build layers of abstraction.
 
 ![Nested Stack](nested-stack.jpg "Nested Stack")
 
-## Understanding CloudFormation Template Syntax
+## {{< hl >}}<b>Understanding CloudFormation Template Syntax</b>{{< /hl >}}<br>
 
 CloudFormation templates can be written in JSON or YAML format. They consist of five main sections: Parameters, Mappings, Conditions, Resources, and Outputs.
 
@@ -193,61 +211,70 @@ CloudFormation templates can be written in JSON or YAML format. They consist of 
 - **Resources**: The core section of the template, specifying the AWS resources to be created or managed.
 - **Outputs**: Define the output values that you can import into other stacks or return as results after the stack is created.
 
-### JSON Format CloudFormation Template
+### {{< hl >}}<b>JSON Format CloudFormation Template</b>{{< /hl >}}<br>
 
 ```json
 {
   "AWSTemplateFormatVersion": "2010-09-09", // Optional - Defines which CloudFormation Version is used
   "Description": "An example CloudFormation template.", // Optional
-  "Metadata": { // Optional - Additional Infos about template, to document in a tagging matter.
+  "Metadata": {
+    // Optional - Additional Infos about template, to document in a tagging matter.
     "Template": "BasicExample"
   },
-  "Parameters": { // Optional
+  "Parameters": {
+    // Optional
     "InstanceType": {
       "Description": "EC2 instance type",
       "Type": "String",
       "Default": "t2.micro"
     }
   },
-  "Mappings": { // Optional
+  "Mappings": {
+    // Optional
     "RegionMap": {
-      "us-west-1": {"AMI": "ami-0abcdef1234567890"},
-      "eu-central-1": {"AMI": "ami-1234567890abcdef0"}
+      "us-west-1": { "AMI": "ami-0abcdef1234567890" },
+      "eu-central-1": { "AMI": "ami-1234567890abcdef0" }
     }
   },
-  "Conditions": { // Optional
+  "Conditions": {
+    // Optional
     "CreateProdResources": {
-      "Fn::Equals": [{"Ref": "EnvType"}, "prod"]
+      "Fn::Equals": [{ "Ref": "EnvType" }, "prod"]
     }
   },
-  "Transform": { // Optional
+  "Transform": {
+    // Optional
     "Name": "AWS::Include",
     "Parameters": {
       "Location": "s3://my-bucket/my-transform-macro.yml"
     }
   },
-  "Resources": { // Required - Main part of the template
+  "Resources": {
+    // Required - Main part of the template
     "MyEC2Instance": {
       "Type": "AWS::EC2::Instance",
       "Properties": {
-        "InstanceType": {"Ref": "InstanceType"},
-        "ImageId": {"Fn::FindInMap": ["RegionMap", {"Ref": "AWS::Region"}, "AMI"]}
+        "InstanceType": { "Ref": "InstanceType" },
+        "ImageId": {
+          "Fn::FindInMap": ["RegionMap", { "Ref": "AWS::Region" }, "AMI"]
+        }
       }
     }
   },
-  "Outputs": { // Optional
+  "Outputs": {
+    // Optional
     "InstanceId": {
       "Description": "The Instance ID",
-      "Value": {"Ref": "MyEC2Instance"}
+      "Value": { "Ref": "MyEC2Instance" }
     }
   }
 }
 ```
 
-### YAML Format CloudFormation Template
+### {{< hl >}}<b>YAML Format CloudFormation Template</b>{{< /hl >}}<br>
 
 ```yaml
-AWSTemplateFormatVersion: '2010-09-09' # Optional - Defines which CloudFormation Version is used
+AWSTemplateFormatVersion: "2010-09-09" # Optional - Defines which CloudFormation Version is used
 Description: An example CloudFormation template. # Optional
 Metadata: # Optional - Additional Infos about template, to document in a tagging matter.
   Template: BasicExample
@@ -268,29 +295,31 @@ Conditions: # Optional
       - Ref: EnvType
       - prod
 Transform: # Optional
-  Name: 'AWS::Include'
+  Name: "AWS::Include"
   Parameters:
-    Location: 's3://my-bucket/my-transform-macro.yml'
+    Location: "s3://my-bucket/my-transform-macro.yml"
 Resources: # Required - Main part of the template
   MyEC2Instance:
-    Type: 'AWS::EC2::Instance'
+    Type: "AWS::EC2::Instance"
     Properties:
       InstanceType: !Ref InstanceType
-      ImageId: !FindInMap [RegionMap, !Ref 'AWS::Region', AMI]
+      ImageId: !FindInMap [RegionMap, !Ref "AWS::Region", AMI]
 Outputs: # Optional
   InstanceId:
     Description: The Instance ID
     Value: !Ref MyEC2Instance
 ```
 
-## AWS CDK (Cloud Development Kit)
+## {{< hl >}}<b>AWS CDK (Cloud Development Kit)</b>{{< /hl >}}<br>
 
-### What is CDK?
+### {{< hl >}}<b>What is CDK?</b>{{< /hl >}}<br>
+
 The AWS Cloud Development Kit (CDK) is a development framework for defining AWS cloud infrastructure in software like coding manner and provisioning it through CloudFormation.
 
 ![AWS CDK](aws-cdk.jpg "AWS CDK")
 
-### CDK Supports:
+### {{< hl >}}<b>CDK Supports:</b>{{< /hl >}}<br>
+
 - TypeScript
 - JavaScript
 - Python
@@ -298,7 +327,8 @@ The AWS Cloud Development Kit (CDK) is a development framework for defining AWS 
 - C#/.Net
 - Go
 
-### Why CDK?
+### {{< hl >}}<b>Why CDK?</b>{{< /hl >}}<br>
+
 - **Compress Template-Code**: Generate CloudFormation templates with less code.
 - **Logical Expressions**: Use if-statements, loops, and other logical expressions.
 - **Modular Approach**: Object-oriented programming structure to model infrastructure.
@@ -308,7 +338,8 @@ The AWS Cloud Development Kit (CDK) is a development framework for defining AWS 
 - **Code Reviews**: Improve code quality through reviews.
 - **Language Independence**: Use familiar programming languages without needing to learn new ones.
 
-### CDK Concepts:
+### {{< hl >}}<b>CDK Concepts:</b>{{< /hl >}}<br>
+
 - **Constructs**: Basic building blocks representing resources.
 - **Apps**: Root construct initiating other constructs.
 - **Stacks**: Unit of deployment within a specific scope.
@@ -321,26 +352,30 @@ The AWS Cloud Development Kit (CDK) is a development framework for defining AWS 
 - **Aspects & Escape Hatches**: Operations on constructs and integration of unsupported features.
 - **Bootstrapping**: Preparing a CDK environment with necessary resources.
 
-## Terraform Overview
+## {{< hl >}}<b>Terraform Overview</b>{{< /hl >}}<br>
 
-### Introduction to Terraform
+### {{< hl >}}<b>Introduction to Terraform</b>{{< /hl >}}<br>
+
 Terraform is a powerful tool designed for building, changing, and versioning infrastructure safely and efficiently. As an open-source project initiated by HashiCorp in 2014, it has rapidly become a key player in the infrastructure as code (IaC) paradigm.
 
 - **Infrastructure as Code (IaC)**: Terraform enables the management of infrastructure through code to automate the setup and maintenance of hardware components.
 - **Open Source Project**: It is maintained as an open-source project, fostering a broad community of contributors and users.
 - **Project Origin**: The project's development began in 2014, aiming to provide a universal tool for managing diverse cloud services. [Terraform on GitHub](https://github.com/hashicorp/terraform)
 
-### Terraform's Capabilities
+### {{< hl >}}<b>Terraform's Capabilities</b>{{< /hl >}}<br>
+
 - **Virtual Server Lifecycle Management**: Supports a variety of providers such as AWS, VMware, Azure, and GCP, managing the lifecycle of virtual servers.
 - **Supporting Services Management**: Capable of managing specific services such as DNS and email systems.
 - **System Services Management**: Facilitates the management of system-level services like MySQL and PostgreSQL databases.
 
-### Configuration and Design
+### {{< hl >}}<b>Configuration and Design</b>{{< /hl >}}<br>
+
 - **Config Files**: Terraform uses HCL or JSON for its configuration files (.tf), offering a user-friendly syntax for declaring infrastructure components.
 - **HashiCorp**: As a HashiCorp creation, Terraform joins a suite of tools like Vagrant, designed to enhance and simplify the management of development environments.
 - **Direct API Use**: Unlike tools such as AWS CloudFormation, Terraform communicates directly with the provider's API, enabling more granular control and flexibility in managing resources across different cloud platforms.
 
-### Top Level Keywords
+### {{< hl >}}<b>Top Level Keywords</b>{{< /hl >}}<br>
+
 - **provider**: Specifies a plugin that Terraform uses to interact with cloud providers, services, and other APIs. It defines the necessary information to connect to a service, like AWS or Google Cloud, such as credentials and region.
 
 - **variable**: Variables in Terraform are placeholders for values that can be set at runtime. They allow for customization of Terraform configurations without altering the code.
@@ -357,7 +392,8 @@ Terraform is a powerful tool designed for building, changing, and versioning inf
 
 - **locals**: Locals are named values that you can use to simplify or avoid repetition in your Terraform code. Unlike variables, locals are not user input but are more like constants within a module.
 
-### example.tf
+### {{< hl >}}<b>example.tf</b>{{< /hl >}}<br>
+
 ```terraform
     resource "aws_instance" "web" {
       ami           = "ami-0375ca3842950ade6"
@@ -373,17 +409,20 @@ Terraform is a powerful tool designed for building, changing, and versioning inf
     }
 ```
 
-### Terraform's internal Structure
+### {{< hl >}}<b>Terraform's internal Structure</b>{{< /hl >}}<br>
+
 Core <-> Plugins <-> Upstream APIs
 
-### Core Concepts
+### {{< hl >}}<b>Core Concepts</b>{{< /hl >}}<br>
+
 - **Config**: Target Reality
 - **State**: Current Reality
 - **Diff**:[Config - State]
 - **Plan**: Presents Diff
 - **Apply**: Resolves Diff
 
-## Terraform CLI and some important commands
+## {{< hl >}}<b>Terraform CLI and some important commands</b>{{< /hl >}}<br>
+
 - All interactions with terraform occur via CLI
 - TF is a local tool (runs on current machine)
 - ecosystem with different providers of cloud services and module repo
@@ -393,59 +432,72 @@ Core <-> Plugins <-> Upstream APIs
 
 ![Terraform Commands](terraform-commands.jpg "Terraform Commands")
 
-### Terraform Deployment Lifecycle
+### {{< hl >}}<b>Terraform Deployment Lifecycle</b>{{< /hl >}}<br>
+
 ![Terraform Deployment Lifecycle](tf-deployment-lifecycle.jpg "Terraform Deployment Lifecycle")
 
-### Command: terraform plan
+### {{< hl >}}<b>Command: terraform plan</b>{{< /hl >}}<br>
+
 - The terraform plan command is used to create an execution plan. Terraform performs a refresh, unless explicitly disabled, and then determines what actions are necessary to achieve the desired state specified in the configuration files
 - Computes the desired state of the configuration
 
-#### Options
+#### {{< hl >}}<b>Options</b>{{< /hl >}}<br>
+
 - **-destroy** - If set, generates a plan to destroy all the known resources.
 - **-input=true** - Ask for input for variables if not directly set.
 - **-out=path** - The path to save the generated execution plan. This plan can then be used with terraform apply to be certain that only the changes shown in this plan are applied.
 - **-var 'foo=bar'** - Set a variable in the Terraform configuration
 
-#### Diff symbols
+#### {{< hl >}}<b>Diff symbols</b>{{< /hl >}}<br>
+
 - **+** resource will be created
 - **-** resource will be deleted
 - **~** resource will be updated in place
 - **-/+** resource(s) will be destroyed and re-created
- 
-### Command: terraform apply
+
+### {{< hl >}}<b>Command: terraform apply</b>{{< /hl >}}<br>
+
 - The terraform apply command is used to apply the changes required to reach the desired state of the configuration, or the pre-determined set of actions generated by a terraform plan execution plan.
 - Executes all differences between current state and configured state
 
-#### Options
+#### {{< hl >}}<b>Options</b>{{< /hl >}}<br>
+
 - **-input=true** - Ask for input for variables if not directly set
 - **-var 'foo=bar'** - Set a variable in the Terraform configuration.
 - **-auto-approve** - Apply plan without confirmation
 - …
 
-### Command: terraform show
-- The terraform show command is used to provide human-readable output from a state or plan file.
-- Inspect your infrastructure 
+### {{< hl >}}<b>Command: terraform show</b>{{< /hl >}}<br>
 
-#### Options
+- The terraform show command is used to provide human-readable output from a state or plan file.
+- Inspect your infrastructure
+
+#### {{< hl >}}<b>Options</b>{{< /hl >}}<br>
+
 - **-module-depth=n** - Specifies the depth of modules to show in the output.
 
-### Command: terraform state
+### {{< hl >}}<b>Command: terraform state</b>{{< /hl >}}<br>
+
 - The terraform state list command is used to list resources within a Terraform state. You state list without any options shows up all resources. In addition you have the possibility to filter by module or resource.
 - Usage: terraform state list [options] [address…]
 
-### Command: terraform destroy
-The terraform destroy command is used to destroy the Terraform-managed infrastructure. 
+### {{< hl >}}<b>Command: terraform destroy</b>{{< /hl >}}<br>
+
+The terraform destroy command is used to destroy the Terraform-managed infrastructure.
 This will ask for confirmation before destroying
 
 Options: see terraform destroy --help
 
-### Rollback via version control
+### {{< hl >}}<b>Rollback via version control</b>{{< /hl >}}<br>
+
 Terraform only knows the configuration & state of your infrastructure. Use version control and revert to earlier version (of main.tf). Then run terraform apply on it.
 
-### Common Terraform folder structure
+### {{< hl >}}<b>Common Terraform folder structure</b>{{< /hl >}}<br>
+
 ![Common Terraform folder structure](tf-folder-structure.jpg "Common Terraform folder structure")
 
-## State
+## {{< hl >}}<b>State</b>{{< /hl >}}<br>
+
 Terraform stores the state of the infrastructure from the last time Terraform was run. The state is used to create plans and make changes to your infrastructure. It is critical that this state is maintained appropriately so future runs operate as expected. It's important to note that TF state files can contain sensitive data. Therefore it's recommended to not store the TF state in source control.
 
 - State: Awarness of what is deployed and what is configured
@@ -455,7 +507,7 @@ Terraform stores the state of the infrastructure from the last time Terraform wa
 
 Terraform stores its state locally in terraform.tfstate (not encrypted) by default, but for team collaboration, it allows to store the state remotly for example in Amazon S3, TF Cloud etc. to ensure consistency. Remote state encryption is backend-specific!
 
-## Meta-Arguments
+## {{< hl >}}<b>Meta-Arguments</b>{{< /hl >}}<br>
 
 - **Meta-Arguments**: Control Terraform's behavior, not directly linked to cloud resources.
 
@@ -467,50 +519,56 @@ Terraform stores its state locally in terraform.tfstate (not encrypted) by defau
 
 - **lifecycle**: Manage resource lifecycle rules, like prevention of destruction.
 
-## Providers in Terraform
+## {{< hl >}}<b>Providers in Terraform</b>{{< /hl >}}<br>
 
 - **Role**: Interact with APIs, expose resources.
 - **Types**: IaaS (e.g., AWS), PaaS (e.g., Heroku), SaaS (e.g., Terraform Enterprise).
 
-### Provider for AWS
+### {{< hl >}}<b>Provider for AWS</b>{{< /hl >}}<br>
+
 **Access**: Requires AWS account details.
 **Interaction**: Defines how Terraform interacts with AWS API.
 **Configuration**:
-  - Minimal: `provider "aws" {}`
-  - Detailed:
-    ```hcl
+
+- Minimal: `provider "aws" {}`
+- Detailed:
+  `hcl
         provider "aws" { 
           region = "us-west-2" 
           access_key = "anaccesskey" 
           secret_key = "asecretkey" 
         }
-    ```
-**Credentials**:
-  - Set via environment variables, not in `providers.tf`.
-  - Use a shared credentials file or assume a role for security.
+    `
+  **Credentials**:
+- Set via environment variables, not in `providers.tf`.
+- Use a shared credentials file or assume a role for security.
 
-### Best Practices
+### {{< hl >}}<b>Best Practices</b>{{< /hl >}}<br>
+
 **File Structure**: Define all providers in `providers.tf`.
 **Security**: Never hardcode access keys; use environment variables or config files.
 **Aliases**: Use aliases for handling multiple provider instances.
-  - Default provider has no alias.
-  - Additional providers require an alias.
-**Explicit Use**: Resources can specify which provider to use with the `provider` setting.
 
-### Example with Alias & Versioning
+- Default provider has no alias.
+- Additional providers require an alias.
+  **Explicit Use**: Resources can specify which provider to use with the `provider` setting.
+
+### {{< hl >}}<b>Example with Alias & Versioning</b>{{< /hl >}}<br>
+
 ```hcl
     provider "aws" {
       version = ">= 1.19.0"
       alias = "providerAlias"
-      region = "${var.region}" 
+      region = "${var.region}"
     }
-    resource "aws_vpn_gateway" "vpn_gw" { 
+    resource "aws_vpn_gateway" "vpn_gw" {
       provider = "aws.providerAlias"
-      vpc_id = "vpc_123456gw"  
+      vpc_id = "vpc_123456gw"
     }
 ```
 
-## Variables in Terraform
+## {{< hl >}}<b>Variables in Terraform</b>{{< /hl >}}<br>
+
 - Variables in Terraform resemble those in programming languages.
 - They replace hardcoded values with flexible parameters in configurations.
 - Variables enhance clarity and reusability of configurations.
@@ -560,7 +618,7 @@ Types: Most common types are strings, numbers, lists and maps. Other accepted ty
     resource "aws_ebs_volume" "example" {
       size = 10 # base 10 integer
       # Hexadecimal value for the number of IOPS
-      iops = 0x100 
+      iops = 0x100
     }
 
     # Boolean value
@@ -600,7 +658,8 @@ Types: Most common types are strings, numbers, lists and maps. Other accepted ty
 Never put secret values, like passwords or access tokens in .tf files or other files that are checked into source control!
 {{% /callout %}}
 
-## Locals in Terraform
+## {{< hl >}}<b>Locals in Terraform</b>{{< /hl >}}<br>
+
 In Terraform, `locals` are used to simplify and reuse expressions within a module. Think of it as a local variable within a function in Python that can only be addressed within the function.
 
 Example:
@@ -617,9 +676,9 @@ Example:
     }
 ```
 
-## Terraform Resource Configuration
+## {{< hl >}}<b>Terraform Resource Configuration</b>{{< /hl >}}<br>
 
-### AWS Provider and Resources
+### {{< hl >}}<b>AWS Provider and Resources</b>{{< /hl >}}<br>
 
 The AWS provider facilitates interactions with the many resources supported by AWS. Resources are defined as follows:
 
@@ -633,7 +692,7 @@ The AWS provider facilitates interactions with the many resources supported by A
     }
 ```
 
-### Resource Configuration Example
+### {{< hl >}}<b>Resource Configuration Example</b>{{< /hl >}}<br>
 
 A basic resource configuration for an AWS instance might look like this:
 
@@ -644,7 +703,7 @@ A basic resource configuration for an AWS instance might look like this:
     }
 ```
 
-### Using `for_each` and `count`
+### {{< hl >}}<b>Using `for_each` and `count`</b>{{< /hl >}}<br>
 
 `for_each` and `count` are used to create multiple instances of a resource:
 
@@ -667,7 +726,7 @@ Examples:
     }
 ```
 
-### Lifecycle and Timeouts
+### {{< hl >}}<b>Lifecycle and Timeouts</b>{{< /hl >}}<br>
 
 Lifecycle policies and timeouts can be configured to control resource behavior on changes:
 
@@ -689,7 +748,7 @@ Lifecycle policies and timeouts can be configured to control resource behavior o
     }
 ```
 
-### Best Practices
+### {{< hl >}}<b>Best Practices</b>{{< /hl >}}<br>
 
 - Create a file for a bundle of resources that belong together.
 - Use modules instead of a complex file structure as the infrastructure grows.
@@ -702,9 +761,9 @@ Lifecycle policies and timeouts can be configured to control resource behavior o
     }
 ```
 
-## Terraform Provisioners
+## {{< hl >}}<b>Terraform Provisioners</b>{{< /hl >}}<br>
 
-### Definition and Usage
+### {{< hl >}}<b>Definition and Usage</b>{{< /hl >}}<br>
 
 Provisioners in Terraform are used to execute scripts on a local or remote machine as part of resource creation or destruction.
 
@@ -719,20 +778,20 @@ Provisioners in Terraform are used to execute scripts on a local or remote machi
     }
 ```
 
-### Types of Provisioners
+### {{< hl >}}<b>Types of Provisioners</b>{{< /hl >}}<br>
 
 - **Creation-Time Provisioners**: These are run only during the creation of the resource, not during updating or any other lifecycle event. They are designed for initial resource setup.
 - **Destroy-Time Provisioners**: These run when the resource is being destroyed, if specified with `when = "destroy"`.
 
-### Provisioning Best Practices
+### {{< hl >}}<b>Provisioning Best Practices</b>{{< /hl >}}<br>
 
 - **Good**: Automating the creation of infrastructure and instance initialization with `user_data` or AWS `cloud-init`.
 - **Better**: Using `remote-exec` provisioner on a base AMI to run a few commands upon instance creation.
 - **Best**: Building AMIs with Packer to ensure minimal configuration is needed during provisioning.
 
-## Terraform Data Sources and Outputs
+## {{< hl >}}<b>Terraform Data Sources and Outputs</b>{{< /hl >}}<br>
 
-### Data Sources
+### {{< hl >}}<b>Data Sources</b>{{< /hl >}}<br>
 
 Data sources in Terraform are used to fetch or compute data for use elsewhere in your Terraform configuration. They allow a Terraform configuration to build on information defined outside of Terraform or defined by another separate Terraform configuration. For most AWS Resources, there is an equivalent Data Source available for querying data.
 
@@ -756,7 +815,7 @@ Example of a Data Source configuration:
     cluster_id = data.terraform_remote_state.base.iac_ecs_cluster.ecs_cluster_id
 ```
 
-### Outputs
+### {{< hl >}}<b>Outputs</b>{{< /hl >}}<br>
 
 Outputs in Terraform are used to output important data from your Terraform configuration that you want to easily access or use in other configurations. This data can be outputted when Terraform apply is called and can be queried using the Terraform output command.
 
@@ -782,22 +841,25 @@ Example of querying an output:
     public_ip = 34.222.156.11
 ```
 
-## Backends in Terraform
+## {{< hl >}}<b>Backends in Terraform</b>{{< /hl >}}<br>
+
 Backends in Terraform are configuration elements that determine where and how the infrastructure state is stored, crucial for collaboration in teams and managing remote operations.
 
-### Functions of a Backend:
+### {{< hl >}}<b>Functions of a Backend:</b>{{< /hl >}}<br>
+
 - **State Storage:** Backends allow storing the state in a remote environment like AWS S3 instead of locally on the disk. This promotes collaboration as the team can access the same state.
-  
 - **Locking Mechanism:** To prevent state corruption, some backends, such as Terraform Cloud or Enterprise, offer locking mechanisms that block concurrent state modifications.
 
 - **Sensitive Information:** By using backends like S3, sensitive information is not stored on the local disk, enhancing security.
 
 - **Remote Operations:** For large infrastructures or specific changes, `terraform apply` operations can take a long time. Backends enable these operations to be executed remotely, allowing you to turn off your computer in the meantime.
 
-### Initialization:
+### {{< hl >}}<b>Initialization:</b>{{< /hl >}}<br>
+
 The `terraform init` command must be called whenever a new environment is set up or any change to the backend configuration is made, to initialize or update the backend.
 
-### Configuration:
+### {{< hl >}}<b>Configuration:</b>{{< /hl >}}<br>
+
 A backend's configuration is done directly in Terraform files within the `terraform` block.
 
 Example of S3 backend configuration:
@@ -814,9 +876,9 @@ Example of S3 backend configuration:
 
 In this example, the S3 backend is configured to store the Terraform state in a specified S3 bucket. The path to the state key and the bucket's region are specified. This configuration allows multiple users to manage the state consistently and carry out operations securely and efficiently.
 
-## Terraform Modules Overview
+## {{< hl >}}<b>Terraform Modules Overview</b>{{< /hl >}}<br>
 
-### Initial Setup with Modules
+### {{< hl >}}<b>Initial Setup with Modules</b>{{< /hl >}}<br>
 
 - Start with everything in `main.tf`.
 - Basic AWS provider configuration and a VPC resource with output:
@@ -836,27 +898,30 @@ In this example, the S3 backend is configured to store the Terraform state in a 
     }
 ```
 
-### When to Use Modules
+### {{< hl >}}<b>When to Use Modules</b>{{< /hl >}}<br>
 
 As the project grows (20+ resources and data sources), issues arise:
-  - Increasing code size.
-  - Complicated dependencies between resources.
-  - Large impact on `terraform apply`.
+
+- Increasing code size.
+- Complicated dependencies between resources.
+- Large impact on `terraform apply`.
 
 Modules solve these issues by organizing Terraform configurations into folders.
 
-### Types of Modules
+### {{< hl >}}<b>Types of Modules</b>{{< /hl >}}<br>
 
 **Resource modules** (`terraform-aws-modules`), used for:
-  - Creating resources.
-  - Minimal inter-module dependencies.
-  - High flexibility.
+
+- Creating resources.
+- Minimal inter-module dependencies.
+- High flexibility.
 
 **Infrastructure modules** incorporate:
-  - Specific versions of resource modules.
-  - Company-wide standards (e.g., tagging conventions).
 
-### Module Implementation Example
+- Specific versions of resource modules.
+- Company-wide standards (e.g., tagging conventions).
+
+### {{< hl >}}<b>Module Implementation Example</b>{{< /hl >}}<br>
 
 **Resource Module Example**:
 
@@ -892,18 +957,20 @@ Modules solve these issues by organizing Terraform configurations into folders.
     }
 ```
 
-### Organizing Modules
+### {{< hl >}}<b>Organizing Modules</b>{{< /hl >}}<br>
 
 Categorize by function:
-  - **Front-end Services**: Websites, mobile back-end.
-  - **Back-end Services**: Search, payments, reviews.
-  - **Shared Services**: CRM databases, monitoring.
-  - **Base Network**: VPCs, IGWs, VPNs, NATs.
-  - **Identity**: IAM policies, users, groups.
 
-### Tips and Best Practices
+- **Front-end Services**: Websites, mobile back-end.
+- **Back-end Services**: Search, payments, reviews.
+- **Shared Services**: CRM databases, monitoring.
+- **Base Network**: VPCs, IGWs, VPNs, NATs.
+- **Identity**: IAM policies, users, groups.
+
+### {{< hl >}}<b>Tips and Best Practices</b>{{< /hl >}}<br>
 
 Utilize the **Terraform Module Registry** for discovering and using community modules.
+
 - Good Terraform modules have:
   - Clean code.
   - Rich features.
@@ -911,44 +978,50 @@ Utilize the **Terraform Module Registry** for discovering and using community mo
   - Tests, examples, documentation.
   - Security, versioning, lifecycle-readiness.
 
-### Module References Storage
+### {{< hl >}}<b>Module References Storage</b>{{< /hl >}}<br>
+
 `.terraform` directory stores module references, allowing immediate access to module changes. Use `tree` or `ls -1` to view the `.terraform` directory contents for modules and plugins.
 
-## Terraform Troubleshooting
+## {{< hl >}}<b>Terraform Troubleshooting</b>{{< /hl >}}<br>
 
-### Potential Issues
+### {{< hl >}}<b>Potential Issues</b>{{< /hl >}}<br>
 
 Mismanagement of resources in the cloud can lead to critical issues:
+
 - Accidental deletion of resources.
 - Unauthorized addition of critical resources.
 - Configuration drift from the intended state.
 
-### Commands for Troubleshooting
+### {{< hl >}}<b>Commands for Troubleshooting</b>{{< /hl >}}<br>
 
 Terraform provides a series of commands to help manage and troubleshoot resources:
 
-#### Listing Current State
+#### {{< hl >}}<b>Listing Current State</b>{{< /hl >}}<br>
+
 To see the current state of resources as known by Terraform:
 
 ```shell
     terraform state list
 ```
 
-#### Detecting Configuration Drift
+#### {{< hl >}}<b>Detecting Configuration Drift</b>{{< /hl >}}<br>
+
 To actively query the current state of the resources and detect any changes:
 
 ```shell
     terraform plan
 ```
 
-#### Applying Corrections
+#### {{< hl >}}<b>Applying Corrections</b>{{< /hl >}}<br>
+
 To apply the necessary changes to reach the desired state configuration:
 
 ```shell
     terraform apply
 ```
 
-#### Importing Resources
+#### {{< hl >}}<b>Importing Resources</b>{{< /hl >}}<br>
+
 If a resource exists in the cloud but not in Terraform's state, it can be imported:
 
 ```shell
@@ -961,44 +1034,45 @@ For example, to import an AWS instance:
     terraform import aws_instance.example i-abcd1234
 ```
 
-#### Reconciling State
+#### {{< hl >}}<b>Reconciling State</b>{{< /hl >}}<br>
+
 The `terraform refresh` command updates the state file with the real-world infrastructure:
 
 ```shell
     terraform refresh
 ```
 
-This is useful for ensuring that Terraform's state matches the actual infrastructure and for detecting drift. 
+This is useful for ensuring that Terraform's state matches the actual infrastructure and for detecting drift.
 
 The `terraform state list` command will then list the updated resources known to the state file.
 
-## Terraform Workspaces
+## {{< hl >}}<b>Terraform Workspaces</b>{{< /hl >}}<br>
 
-### Understanding Terraform Workspaces
+### {{< hl >}}<b>Understanding Terraform Workspaces</b>{{< /hl >}}<br>
 
 Terraform Workspaces are used to manage multiple states within the same Terraform configuration, allowing for parallel management of different environments such as development, staging, and production. Each workspace encapsulates a set of infrastructure with its state and variables, enabling changes to be applied without affecting other environments.
 
-### Advantages of Workspaces
+### {{< hl >}}<b>Advantages of Workspaces</b>{{< /hl >}}<br>
 
 - **Isolation**: Workspaces keep state and variables separate, reducing the risk of cross-environment changes.
 - **Environment Specific Configuration**: Resources can be tailored for specific workspaces using conditional logic within Terraform code.
 - **Backend Support**: Workspaces are typically backed by remote state storage like S3, which helps with state sharing and locking.
 
-### Best Practices with Workspaces
+### {{< hl >}}<b>Best Practices with Workspaces</b>{{< /hl >}}<br>
 
 - **Automation**: Integrate workspace management into CI/CD pipelines for consistency and reliability.
 - **Switching Context**: Always ensure you are operating in the correct workspace to prevent unintended changes.
 
-### Working with Workspaces in Terraform
+### {{< hl >}}<b>Working with Workspaces in Terraform</b>{{< /hl >}}<br>
 
-#### Initializing and Selecting a Workspace
+#### {{< hl >}}<b>Initializing and Selecting a Workspace</b>{{< /hl >}}<br>
 
 ```shell
 terraform workspace new <workspace_name>
 terraform workspace select <workspace_name>
 ```
 
-#### Example Workspace Configuration
+#### {{< hl >}}<b>Example Workspace Configuration</b>{{< /hl >}}<br>
 
 Local values and provider configuration can be adapted based on the workspace:
 
@@ -1015,7 +1089,7 @@ Local values and provider configuration can be adapted based on the workspace:
     }
 ```
 
-#### Conditional Resource Creation
+#### {{< hl >}}<b>Conditional Resource Creation</b>{{< /hl >}}<br>
 
 Resources can be conditionally created based on the workspace:
 
@@ -1026,7 +1100,7 @@ Resources can be conditionally created based on the workspace:
     }
 ```
 
-#### CI/CD Pipeline Integration
+#### {{< hl >}}<b>CI/CD Pipeline Integration</b>{{< /hl >}}<br>
 
 Automating workspace operations through a CI/CD pipeline is recommended for safety and efficiency:
 
@@ -1041,14 +1115,15 @@ build:
     - terraform apply
 ```
 
-### Handling Multiple Workspaces
+### {{< hl >}}<b>Handling Multiple Workspaces</b>{{< /hl >}}<br>
+
 - **Visibility**: Tools or conventions should be used for clear visibility of workspaces and their corresponding infrastructure.
 - **Safety**: Care should be taken to avoid applying changes to the wrong workspace.
 - **Maintenance**: Regular review of workspaces and their resources ensures they remain aligned with their purpose.
 
-## Utilizing `for_each` in Terraform
+## {{< hl >}}<b>Utilizing `for_each` in Terraform</b>{{< /hl >}}<br>
 
-### Creating Multiple IAM Users
+### {{< hl >}}<b>Creating Multiple IAM Users</b>{{< /hl >}}<br>
 
 ```hcl
     variable "user_names" {
@@ -1069,7 +1144,7 @@ build:
 
 This example creates IAM users for each name in the `user_names` list and outputs their ARNs after `terraform apply`.
 
-### Looping Over Inline Blocks in Resources
+### {{< hl >}}<b>Looping Over Inline Blocks in Resources</b>{{< /hl >}}<br>
 
 ```hcl
     resource "aws_autoscaling_group" "example" {
@@ -1089,7 +1164,7 @@ This example creates IAM users for each name in the `user_names` list and output
 
 The `dynamic` block with `for_each` loops over `custom_tags` and creates tags for the autoscaling group.
 
-### Using `for_each` with Expressions
+### {{< hl >}}<b>Using `for_each` with Expressions</b>{{< /hl >}}<br>
 
 ```hcl
     variable "names" {
@@ -1109,7 +1184,7 @@ The `dynamic` block with `for_each` loops over `custom_tags` and creates tags fo
 
 The first output transforms all names to uppercase, while the second output includes only names with 5 or fewer characters in uppercase.
 
-### Conditionals with `for_each`
+### {{< hl >}}<b>Conditionals with `for_each`</b>{{< /hl >}}<br>
 
 ```hcl
     dynamic "tag" {
@@ -1128,7 +1203,7 @@ The first output transforms all names to uppercase, while the second output incl
 
 This dynamic block uses a `for` expression with a conditional to exclude certain tags.
 
-### Limitations and Capabilities
+### {{< hl >}}<b>Limitations and Capabilities</b>{{< /hl >}}<br>
 
 - Cannot use `count` and `for_each` within the same resource block.
 - From Terraform 0.13 and up, it's possible to use `for_each` and `count` together within module definitions.
