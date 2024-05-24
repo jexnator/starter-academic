@@ -219,6 +219,40 @@ There are two primary consistency models to understand:
 
 ![PACELC](pacelc.png "PACELC-Theorem")
 
+## {{< hl >}}<b>Replication & Sharding</b>{{< /hl >}}<br>
+
+### {{< hl >}}<b>Definition</b>{{< /hl >}}<br>
+
+Replication and sharding are key strategies for data management in distributed systems, designed to improve performance and reliability.
+
+### {{< hl >}}<b>Sharding</b>{{< /hl >}}<br>
+
+Sharding involves splitting data across multiple nodes, often partitioned by a key. Key points include:
+
+1. **Partitioned Data**: Data is divided into distinct shards, each stored on different nodes.
+2. **Efficient Data Retrieval**: The system reads only the relevant partition, improving query efficiency.
+3. **Load Balancing**: Different users access different shards, automatically distributing the load.
+4. **Performance Enhancement**: Large datasets can be processed in parallel across multiple servers, enhancing performance.
+
+### {{< hl >}}<b>Replication</b>{{< /hl >}}<br>
+
+Replication involves copying the same data across multiple nodes. Key points include:
+
+1. **Data Redundancy**: Ensures that data remains available even if some nodes fail.
+2. **Improved Availability**: Multiple nodes can serve the same data to different users, reducing access times.
+3. **Load Distribution**: Balances the load by allowing multiple nodes to handle requests for the same data.
+
+### {{< hl >}}<b>Combined Use</b>{{< /hl >}}<br>
+
+Both replication and sharding can be used together or separately:
+
+1. **Strategic Implementation**: Combining both strategies can provide a robust solution but must be carefully planned to avoid excessive overhead.
+2. **Performance Optimization**: Over-sharding or over-replicating can decrease performance due to increased management complexity. A balanced approach is essential.
+
+Implementing these strategies effectively requires careful planning to determine the optimal number of shards and replications, ensuring improved performance without unnecessary overhead.
+
+![Replication & Sharding](replication-sharding.png "Replication & Sharding")
+
 </p><br>
 <p></p>
 ---
