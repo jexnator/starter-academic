@@ -1,14 +1,14 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "21/05/2024 - 17/05/2024"
+title: "21/05/2024 - 24/05/2024"
 subtitle: ""
 summary: "Trainee diary"
 authors: [Xavier Jeiziner]
 tags: []
 categories: []
-date: 2024-05-15
-lastmod: 2024-05-15
+date: 2024-05-24
+lastmod: 2024-05-24
 featured: false
 draft: false
 
