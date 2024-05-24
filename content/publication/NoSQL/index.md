@@ -153,6 +153,36 @@ NoSQL databases offer performance advantages in specific scenarios due to their 
 
 ![Comparison SQL vs. NoSQL](sql-nosql.png "Scaling")
 
+## {{< hl >}}<b>CAP-Theorem</b>{{< /hl >}}<br>
+
+### {{< hl >}}<b>Definition</b>{{< /hl >}}<br>
+
+The CAP-Theorem, relevant for NoSQL databases, provides a framework analogous to the ACID theorem for relational databases. ACID properties are not applicable to NoSQL databases, necessitating the use of the CAP theorem. CAP stands for:
+
+1. **Consistency**: Ensures that if one node has updated data (e.g., version v2), all other nodes should reflect this updated version.
+2. **Availability**: The system must always be operational, minimizing downtime and locks.
+3. **Partition Tolerance**: The system should continue to function even if parts of the network fail.
+
+### {{< hl >}}<b>Theoretical Limitations</b>{{< /hl >}}<br>
+
+In theory, a distributed system can only satisfy two of the three CAP properties simultaneously:
+
+1. **Consistency and Partition Tolerance (CP)**:
+
+   - The system maintains consistent data across nodes by locking nodes to ensure the same data version on all nodes.
+   - This approach sacrifices availability because multiple nodes may become unavailable during data synchronization.
+
+2. **Availability and Partition Tolerance (AP)**:
+
+   - The system remains operational and accessible on all nodes, ensuring minimal downtime.
+   - This approach sacrifices consistency, as there is no guarantee that all nodes will have the most recent data version.
+
+3. **Consistency and Availability (CA)**:
+   - This combination is only feasible in centralized systems.
+   - For distributed systems, achieving both consistency and availability without partition tolerance is impossible.
+
+![CAP](cap.png "CAP-Theorem")
+
 </p><br>
 <p></p>
 ---
