@@ -76,8 +76,6 @@ slides: ""
 
 # {{< hl >}}<b>NoSQL</b>{{< /hl >}}<br>
 
-## {{< hl >}}<b>Difference Between Distributed and Centralized Systems</b>{{< /hl >}}<br>
-
 ### {{< hl >}}Centralized Systems</b>{{< /hl >}}<br>
 
 Centralized systems operate with a single node (server) handling all tasks. Here are the key characteristics:
