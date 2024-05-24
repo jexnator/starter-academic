@@ -78,7 +78,7 @@ slides: ""
 
 ## {{< hl >}}<b>Difference Between Distributed and Centralized Systems</b>{{< /hl >}}<br>
 
-### # {{< hl >}}Centralized Systems</b>{{< /hl >}}<br>
+### {{< hl >}}Centralized Systems</b>{{< /hl >}}<br>
 
 Centralized systems operate with a single node (server) handling all tasks. Here are the key characteristics:
 
@@ -91,7 +91,7 @@ Centralized systems operate with a single node (server) handling all tasks. Here
    - All data must be scanned due to the absence of partitioning.
    - Access management becomes increasingly complex as data and users grow.
 
-### # {{< hl >}}Distributed Systems</b>{{< /hl >}}<br>
+### {{< hl >}}Distributed Systems</b>{{< /hl >}}<br>
 
 Distributed systems leverage multiple nodes to perform tasks. Key features include:
 
@@ -182,6 +182,42 @@ In theory, a distributed system can only satisfy two of the three CAP properties
    - For distributed systems, achieving both consistency and availability without partition tolerance is impossible.
 
 ![CAP](cap.png "CAP-Theorem")
+
+## {{< hl >}}<b>PACELC-Theorem</b>{{< /hl >}}<br>
+
+### {{< hl >}}<b>Definition</b>{{< /hl >}}<br>
+
+The PACELC-Theorem extends the CAP theorem by addressing system behavior not only during network partitioning (P) but also under normal operation conditions (E). It states:
+
+1. **During Partitioning (P)**: The system must choose between Availability (A) and Consistency (C), aligning with the CAP theorem.
+2. **Else (E)**: When there is no partition, the system must choose between Latency (L) and Consistency (C).
+
+### {{< hl >}}<b>Key Concepts</b>{{< /hl >}}<br>
+
+- **Latency vs. Consistency**:
+  - Increased consistency typically results in higher latency because nodes need to synchronize data, causing delays.
+  - Decreased latency can be achieved by sacrificing consistency, where responses are quicker but may not reflect the most recent data.
+
+### {{< hl >}}<b>Consistency Models</b>{{< /hl >}}<br>
+
+There are two primary consistency models to understand:
+
+1. **Strict Consistency (EC - Eventual Consistency)**:
+
+   - Guarantees the most recent data regardless of which node is accessed.
+   - Nodes may be locked when new data is available, causing temporary unavailability and increased latency.
+
+2. **Eventual Consistency (EL - Eventual Latency)**:
+   - Data may differ between nodes at any given moment (t = n).
+   - After a certain period (x seconds), all nodes will converge to the same data state.
+   - Nodes are not locked when new data is available, ensuring lower latency but with a temporary inconsistency.
+
+### {{< hl >}}<b>Practical Implications</b>{{< /hl >}}<br>
+
+- **AP or CP Systems**: While systems are often labeled as AP (Available and Partition-tolerant) or CP (Consistent and Partition-tolerant), they can still be fine-tuned for latency and consistency during normal operation.
+- **Tunable Consistency**: The trade-off between latency and consistency can be adjusted to meet specific application requirements.
+
+![PACELC](pacelc.png "PACELC-Theorem")
 
 </p><br>
 <p></p>
