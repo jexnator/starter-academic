@@ -161,6 +161,8 @@ The CAP-Theorem, relevant for NoSQL databases, provides a framework analogous to
 2. **Availability**: The system must always be operational, minimizing downtime and locks.
 3. **Partition Tolerance**: The system should continue to function even if parts of the network fail.
 
+![CAP](cap-short.png "CAP")
+
 ### {{< hl >}}<b>Theoretical Limitations</b>{{< /hl >}}<br>
 
 In theory, a distributed system can only satisfy two of the three CAP properties simultaneously:
