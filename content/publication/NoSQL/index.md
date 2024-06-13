@@ -181,6 +181,7 @@ In theory, a distributed system can only satisfy two of the three CAP properties
    - This combination is only feasible in centralized systems.
    - For distributed systems, achieving both consistency and availability without partition tolerance is impossible.
 
+![CAP](reworded-cap.png)
 ![CAP](cap.png "CAP-Theorem")
 
 ## {{< hl >}}<b>PACELC-Theorem</b>{{< /hl >}}<br>
