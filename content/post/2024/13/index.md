@@ -48,7 +48,7 @@ Currently, I haven't seen any improvements. The ongoing stress and excessive scr
 
 ## What will I do different from now?
 
-Regarding the school project, Fynn and I were too kind and naive in working with Lorenzo. Originally, it was just Fynn and me planning to implement a Blackjack game. Lorenzo, who hadn't found a group by the second PVA (Präsenzveranstaltung), asked to join us. We agreed out of kindness, but this decision led us to take on a more complex project, Texas Hold'em Poker. I should have anticipated issues based on previous group work experiences with Lorenzo, where he exhibited the same lack of contribution. This time, we informed the professor about the poor collaboration. Moving forward, I need to be more discerning and assertive, saying "no" when necessary and making decisions based on actions and facts, not out of sympathy and goodwill.
+Regarding the school project, Fynn and I were too kind and naive in working with Lorenzo. Originally, it was just Fynn and me planning to implement a Blackjack game. Lorenzo, who hadn't found a group by the second PVA (Präsenzveranstaltung), asked to join us. We agreed out of kindness, but this decision led us to take on a more complex project, a Texas Hold'em Poker. I should have anticipated issues based on previous group work experiences with Lorenzo, where he exhibited the same lack of contribution. This time, we informed the professor about the poor collaboration. Moving forward, I need to be more discerning and assertive, saying "no" when necessary and making decisions based on actions and facts, not out of sympathy and goodwill.
 
 <br>
 <div style="padding: 18px; padding-top: 10px; color: #eee; background-color: #3c3c3c; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
