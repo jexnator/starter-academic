@@ -252,7 +252,7 @@ Both replication and sharding can be used together or separately:
 
 Implementing these strategies effectively requires careful planning to determine the optimal number of shards and replications, ensuring improved performance without unnecessary overhead.
 
-![Replication](replication-sharding.png "Replication & Sharding")
+![Replication & Sharding](replication-sharding.png "Replication & Sharding")
 
 </p><br>
 <p></p>
