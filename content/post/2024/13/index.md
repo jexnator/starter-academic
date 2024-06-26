@@ -44,6 +44,8 @@ However, a problem arose with our school project. Despite Lorenzo having 2.5 wee
 
 Currently, I haven't seen any improvements. The ongoing stress and excessive screen time are affecting my productivity and overall well-being. The delay in the school project, combined with the additional workload of covering for Lorenzo and preparing for module exams, has put me behind schedule. On the other hand, I would also like to make progress with the internal modules, i.e. hold the dated presentations. I am looking forward to the break from classes, even though it is only a month compared to the two months at other universities of applied sciences. - Sorry that I can't report anything positive here in this chapter.
 
+![11/7](screentime.png "11/7")
+
 ## What will I do different from now?
 
 Regarding the school project, Fynn and I were too kind and naive in working with Lorenzo. Originally, it was just Fynn and me planning to implement a Blackjack game. Lorenzo, who hadn't found a group by the second PVA (Präsenzveranstaltung), asked to join us. We agreed out of kindness, but this decision led us to take on a more complex project, Texas Hold'em Poker. I should have anticipated issues based on previous group work experiences with Lorenzo, where he exhibited the same lack of contribution. This time, we informed the professor about the poor collaboration. Moving forward, I need to be more discerning and assertive, saying "no" when necessary and making decisions based on actions and facts, not out of sympathy and goodwill.
