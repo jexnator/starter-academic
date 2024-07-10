@@ -49,7 +49,7 @@ Sepp dropped by on Thursday for a Fifa and spent the rest of the day with us on 
 
 ## How did I improve
 
-I was able to refresh my knowledge of distributed systems this week. Particularly worth mentioning here were the CAP and PACELC theorems, which we had already looked at in one of the first semesters at our school, but at that time I couldn't imagine much about them due to a lack of specialist knowledge, which is different now.
+I was able to refresh my knowledge of distributed systems this week. Particularly worth mentioning here were the CAP and PACELC theorems, which we had already looked at in one of the first semesters at school, but at that time I couldn't imagine much about them due to a lack of basic knowledge, which is different now.
 
 You will hear from me again in 3 weeks. I'm spending the next two weeks on the island of Elba.
 Cheers and keep your chin up! ;-)
