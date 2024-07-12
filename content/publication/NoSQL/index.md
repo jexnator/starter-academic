@@ -290,7 +290,7 @@ This refresher on RDBMS highlights foundational concepts that are essential for 
 ## {{< hl >}}<b>Task 1&2 RDBMS Schema & NoSQL</b>{{< /hl >}}<br>
 
 ![RDBMS Schema](db-schema.png "RDBMS Schema")
-The full implementation of the tasks can be found in my [GitHub repo](https://github.com/JEX-98/aws/tree/main/NoSQLAndDistributedData/task-1-relational-db).
+The full implementation of the tasks can be found in my [GitHub repo](https://github.com/JEX-98/aws/tree/main/NoSQLAndDistributedData/task-1-%26-2).
 
 ## {{< hl >}}<b>Types of NoSQL Databases</b>{{< /hl >}}<br>
 
