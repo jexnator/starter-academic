@@ -254,6 +254,39 @@ Implementing these strategies effectively requires careful planning to determine
 
 ![Replication & Sharding](replication-sharding.png "Replication & Sharding")
 
+## {{< hl >}}<b>Refresher: RDBMS</b>{{< /hl >}}<br>
+
+### {{< hl >}}<b>Relational Approach, Schema, and Relationships</b>{{< /hl >}}<br>
+
+Relational Database Management Systems (RDBMS) store and organize data using a relational model. In this model, data is structured into tables (also called relations), which consist of rows and columns. Each table represents a specific entity type (such as customers or products), and each row represents a record, or instance, of that entity.
+
+**Schema** defines the structure of these tables in a database. It specifies the columns in each table, along with their data types, and sets the constraints like primary keys, foreign keys, and unique constraints that uphold data integrity.
+
+**Relationships** describe how tables relate to each other. The primary types of relationships are:
+
+- **One-to-Many (1:N)**: A record in one table can be associated with one or more records in another table. For example, a customer can have multiple orders.
+- **Many-to-One (N:1)**: Many records in one table are associated with a single record in another table. This is essentially the reverse of a one-to-many relationship.
+- **Many-to-Many (N:N)**: Records in one table can be associated with multiple records in another table and vice versa. This is typically implemented using a join table that includes foreign keys referencing the primary keys of the two tables being linked.
+
+### {{< hl >}}<b>Normalization (1NF, 2NF & 3NF)</b>{{< /hl >}}<br>
+
+**Normalization** is a process in database design to reduce redundancy and improve data integrity. It involves decomposing a table into smaller tables without losing data.
+
+- **First Normal Form (1NF)**: Requires that all table columns contain atomic and unique data, and values in each column are of the same data type.
+- **Second Normal Form (2NF)**: Achieved when it is in 1NF and all non-key attributes are fully functionally dependent on the primary key.
+- **Third Normal Form (3NF)**: Met when it is in 2NF and all the columns are only dependent on the primary key, not on any other non-key attributes.
+
+### {{< hl >}}<b>Joins</b>{{< /hl >}}<br>
+
+Joins are used to retrieve data from multiple tables based on logical relationships among them. Each type of join determines how rows from each table are combined and which rows are returned.
+
+- **LEFT JOIN**: Used to return all records from the left table and matched records from the right table. If there is no match, the result is NULL on the side of the right table.
+- **INNER JOIN**: Shows only those records that have matching values in both tables.
+- **RIGHT JOIN**: Returns all records from the right table, and the matched records from the left table. If there is no match, the result is NULL on the side of the left table.
+- **FULL OUTER JOIN**: Returns records when there is a match in either the left or right table. Records that do not match are also included, with NULLs in place where data is missing.
+
+This refresher on RDBMS highlights foundational concepts that are essential for managing data in relational databases effectively, ensuring data consistency and enabling efficient data retrieval and manipulation through SQL queries.
+
 </p><br>
 <p></p>
 ---
