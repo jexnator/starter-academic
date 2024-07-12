@@ -287,6 +287,70 @@ Joins are used to retrieve data from multiple tables based on logical relationsh
 
 This refresher on RDBMS highlights foundational concepts that are essential for managing data in relational databases effectively, ensuring data consistency and enabling efficient data retrieval and manipulation through SQL queries.
 
+## Types of NoSQL Databases
+
+NoSQL databases offer flexible schemas and are designed to handle a wide variety of data types. Unlike traditional relational databases, NoSQL databases do not rely on a fixed schema, making them suitable for unstructured and semi-structured data. Here are the four main types of NoSQL databases:
+
+### Column-Family Stores
+
+Column-family stores organize data into columns instead of rows. Each column family contains rows, and each row can have multiple columns. This structure allows for highly efficient read and write operations and is particularly useful for handling large volumes of data across distributed systems.
+
+- **Example**: Apache Cassandra, HBase
+- **Use Case**: Real-time data processing, time-series data
+
+### Key-Value Stores
+
+Key-value stores use a simple key-value pair mechanism to store data. Each key is unique and is used to retrieve the corresponding value. This type of database is highly performant and can handle massive amounts of data with minimal latency.
+
+- **Example**: Redis, DynamoDB
+- **Use Case**: Caching, session management, real-time analytics
+
+### Graph Databases
+
+Graph databases represent data in the form of nodes, edges, and properties. Nodes represent entities, edges represent relationships between entities, and properties store information about nodes and edges. Graph databases excel in scenarios where relationships between data points are as important as the data itself.
+
+- **Example**: Neo4j, Amazon Neptune
+- **Use Case**: Social networks, recommendation engines, fraud detection
+
+### Document Stores
+
+Document stores manage data in the form of documents, typically using formats like JSON, BSON, or XML. Each document is a self-contained unit, which can store complex nested structures. This allows for greater flexibility and easier mapping to object-oriented programming languages.
+
+- **Example**: MongoDB, CouchDB
+- **Use Case**: Content management systems, e-commerce applications, mobile app data storage
+
+## Relational vs. NoSQL Databases
+
+**Relational Databases:**  
+Store data in tables with rows and columns. Each row represents a record, and each column represents an attribute. In a row-oriented database, every row is scanned regardless of which columns are required.
+
+### Relational vs. Column-Based Databases
+
+**Column-Based Databases:**  
+Store each column separately, allowing for quicker scans when only a small number of columns are involved. This approach is beneficial for analytical queries where only specific columns are needed.
+
+**Key Differences:**  
+Relational databases are row-oriented, making them efficient for transaction processing where multiple attributes of a single record are accessed. Column-based databases allow for faster scans of individual columns, improving performance for analytical queries.
+
+### Relational vs. Key-Value-Based Databases
+
+**Key-Value-Based Databases:**  
+Store data as key-value pairs, where each key is unique and maps directly to a value. The value can be a simple data type or a complex object, enabling extremely fast lookups.
+
+**Key Differences:**  
+Relational databases are suitable for complex queries and transactions, such as those in banking systems. Key-value databases are ideal for quick access scenarios like caching and session management. Their simplicity makes them highly scalable and efficient for real-time analytics.
+
+### Relational vs. Graph-Based Databases
+
+**Graph-Based Databases:**  
+Designed to store and manage highly interconnected data. They consist of:
+
+- **Nodes**: Entities, such as people in a social network.
+- **Edges**: Relationships between entities, which have properties and can be directed. For example, an edge might indicate who follows whom and include properties like the date the relationship started.
+
+**Key Differences:**  
+Relational databases are suitable for structured data with complex queries and transactions. Graph databases excel in scenarios with highly interconnected data, such as social networks, scientific citations, or asset management. They efficiently store relationships with properties, allowing for fast and complex queries involving traversals and connections between entities.
+
 </p><br>
 <p></p>
 ---
