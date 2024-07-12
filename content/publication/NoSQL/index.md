@@ -295,6 +295,8 @@ NoSQL databases offer flexible schemas and are designed to handle a wide variety
 
 Column-family stores organize data into columns instead of rows. Each column family contains rows, and each row can have multiple columns. This structure allows for highly efficient read and write operations and is particularly useful for handling large volumes of data across distributed systems.
 
+![Column-Family Store](wide-column-data-store.png "Column-Family Store")
+
 - **Example**: Apache Cassandra, HBase
 - **Use Case**: Real-time data processing, time-series data
 
@@ -302,12 +304,20 @@ Column-family stores organize data into columns instead of rows. Each column fam
 
 Key-value stores use a simple key-value pair mechanism to store data. Each key is unique and is used to retrieve the corresponding value. This type of database is highly performant and can handle massive amounts of data with minimal latency.
 
+![Key-Value Stores](key-value-store.png "Key-Value Stores")
+
 - **Example**: Redis, DynamoDB
 - **Use Case**: Caching, session management, real-time analytics
 
 ### Graph Databases
 
-Graph databases represent data in the form of nodes, edges, and properties. Nodes represent entities, edges represent relationships between entities, and properties store information about nodes and edges. Graph databases excel in scenarios where relationships between data points are as important as the data itself.
+Graph databases are designed to efficiently store and query data that is highly interconnected. They represent data using three main components:
+
+- Nodes: These are the entities or data points. For example, in a social network, each person would be a node.
+- Edges: These are the relationships between the nodes. In a social network, an edge might represent a friendship or a follow relationship. Edges can also have properties and directions, indicating the type and nature of the relationship.
+- Properties: These are additional information associated with nodes and edges. For instance, a node representing a person might have properties like name and age, while an edge representing a friendship might have a property indicating the date the friendship started.
+
+![Graph-DB](graph-db.png "Graph-DB")
 
 - **Example**: Neo4j, Amazon Neptune
 - **Use Case**: Social networks, recommendation engines, fraud detection
@@ -315,6 +325,8 @@ Graph databases represent data in the form of nodes, edges, and properties. Node
 ### Document Stores
 
 Document stores manage data in the form of documents, typically using formats like JSON, BSON, or XML. Each document is a self-contained unit, which can store complex nested structures. This allows for greater flexibility and easier mapping to object-oriented programming languages.
+
+![Document Stores](document-database.png "Document Stores")
 
 - **Example**: MongoDB, CouchDB
 - **Use Case**: Content management systems, e-commerce applications, mobile app data storage
