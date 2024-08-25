@@ -28,7 +28,7 @@ image:
 projects: []
 ---
 
-## What are my actual goals?
+## What are my current goals?
 
 - Discuss the current apprenticeship status with the new PiBS lead, i.e. Andreas and Mergim, and plan the next steps.
 - Completion of internal NoSQL module by the end of calendar week 28.

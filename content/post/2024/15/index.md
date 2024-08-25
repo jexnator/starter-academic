@@ -7,8 +7,8 @@ summary: "Trainee diary"
 authors: [Xavier Jeiziner]
 tags: []
 categories: []
-date: 2024-07-10
-lastmod: 2024-07-10
+date: 2024-08-16
+lastmod: 2024-08-16
 featured: false
 draft: false
 
@@ -28,7 +28,7 @@ image:
 projects: []
 ---
 
-## What are my actual goals?
+## What are my current goals?
 
 - Finalize the engineering part of my transfer project (TA) by addressing SSH agent forwarding issues on Windows.
 - Start the new semester at FFHS after the summer break.
@@ -55,10 +55,10 @@ The issues I encountered with SSH agent forwarding on Windows highlighted the im
   <h2 style="text-align: center; color: #ccc;">Work distribution this weeks</h2>
   <div style="background-color: #505050; padding: 15px; margin-bottom: 20px; border-radius: 8px; color: #eee; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);">
     <strong>TA (70%)</strong>
-    <div style="width: 10%; height: 30px; background: linear-gradient(to right, #607D8B 0%, #B0BEC5 100%); border-radius: 5px; margin-top: 10px;"></div>
+    <div style="width: 70%; height: 30px; background: linear-gradient(to right, #607D8B 0%, #B0BEC5 100%); border-radius: 5px; margin-top: 10px;"></div>
   </div>
   <div style="background-color: #505050; padding: 15px; border-radius: 8px; color: #eee; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);">
     <strong>other tasks (30%)</strong>
-    <div style="width: 90%; height: 30px; background: linear-gradient(to right, #FF5722 0%, #FFCCBC 100%); border-radius: 5px; margin-top: 10px;"></div>
+    <div style="width: 30%; height: 30px; background: linear-gradient(to right, #FF5722 0%, #FFCCBC 100%); border-radius: 5px; margin-top: 10px;"></div>
   </div>
 </div>
