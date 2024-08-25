@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "12/08/2024 - 16/08/2024"
+title: "19/08/2024 - 23/08/2024"
 subtitle: ""
 summary: "Trainee diary"
 authors: [Xavier Jeiziner]
@@ -30,9 +30,9 @@ projects: []
 
 ## What are my current goals?
 
-Transition the automation tool for Windows users to a WSL approach due to limitations with SSH agent forwarding in Terraform's Remote Provisioner.
-Resolve the archival strategy for our old Microsoft 365 tenant's data in Rubrik RSC.
-Decommission the old Microsoft Entra ID tenant and Microsoft 365 services after finalizing the data archival plan.
+- Transition the automation tool for Windows users to a WSL approach due to limitations with SSH agent forwarding in Terraform's Remote Provisioner.
+- Resolve the archival strategy for our old Microsoft 365 tenant's data in Rubrik RSC.
+- Decommission the old Microsoft Entra ID tenant and Microsoft 365 services after finalizing the data archival plan.
 
 ## What did I do?
 
