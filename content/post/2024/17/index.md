@@ -46,7 +46,7 @@ On the academic side, I worked on finding a suitable project for my semester pap
 
 I also finalized my topic for the seminar paper in the Fall semester 2024 at FFHS. I would like to compare four different Infrastructure as Code (IaC) tools: Terraform, OpenTofu, Pulumi, and Ansible. The work will be divided into two parts: first, defining quantitative comparison criteria and reviewing existing literature; then, conducting the engineering phase, where I will implement the same example infrastructure with all four tools. Based on the results, I will create a guide highlighting the pros and cons of each tool.
 
-Parallel to these tasks, I continued writing the theoretical part of my transfer project. I completed chapters 2 (Previous Research) and 3 (Situation Analysis). Next, I will document the practical product I developed, focusing on the automation tool I created for AWS Lightsail.
+Parallel to these tasks, I continued writing the theoretical part of my transfer project. I completed chapters 2 (Previous Research) and 3 (Situation Analysis). Next, I will document the practical product I developed, focusing on the automation tool I created for WordPress in AWS Lightsail.
 
 ## How did I improve and what will I do differently from now?
 
