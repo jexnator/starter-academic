@@ -64,7 +64,7 @@ The AD workshop helped me to deepen my understanding of identity and access mana
 <div style="padding: 18px; padding-top: 10px; color: #eee; background-color: #3c3c3c; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
   <h2 style="text-align: center; color: #ccc;">Work distribution this weeks</h2>
   <div style="background-color: #505050; padding: 15px; margin-bottom: 20px; border-radius: 8px; color: #eee; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);">
-    <strong>TA, Sema & MCI Semester Work (60%)</strong>
+    <strong>Apprenticeship</strong>
     <div style="width: 60%; height: 30px; background: linear-gradient(to right, #607D8B 0%, #B0BEC5 100%); border-radius: 5px; margin-top: 10px;"></div>
   </div>
   <div style="background-color: #505050; padding: 15px; border-radius: 8px; color: #eee; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);">
