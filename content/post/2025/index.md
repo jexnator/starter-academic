@@ -7,8 +7,8 @@ summary: "Trainee diary"
 authors: [Xavier Jeiziner]
 tags: []
 categories: []
-date: 2024-09-13
-lastmod: 2024-09-13
+date: 2024-02-07
+lastmod: 2024-02-07
 featured: false
 draft: false
 
@@ -34,7 +34,7 @@ The new spring semester at FFHS is underway. I’m aiming for a good start in th
 
 ## What did I do?
 
-Last week, I met with Torsten to discuss my future at Amanox after finishing my PiBS studies. I’m currently in the Public Cloud team, but I expressed my wish to join Operations. I really enjoyed my time in the Public Cloud modules—especially the cool IaC and DevOps approaches. However, I'm more efficient with declarative tools like Terraform than with imperative programming, which can slow me down sometimes. At the same time, the Private Cloud side also fascinates me, particularly the Operations team. I noticed I like supporting others, so I can use that strength and gain my first full professional experience in IT. We agreed that once I’m done with the remaining PiBS modules and my thesis, I’ll join the Operations team.
+Last week, I met with Torsten to discuss my future at Amanox after finishing my PiBS studies. I’m currently in the Public Cloud team, but I expressed my wish to join Operations. I really enjoyed my time in the Public Cloud modules – especially the cool IaC and DevOps approaches. However, I'm more efficient with declarative tools like Terraform than with imperative programming, which can slow me down sometimes. At the same time, the Private Cloud side also fascinates me, particularly the Operations team. I noticed I like supporting others, so I can use that strength and gain my first full professional experience in IT. We agreed that once I’m done with the remaining PiBS modules and my thesis, I’ll join the Operations team.
 
 Classes at FFHS started, so I now have to juggle studying for IT-Sec Management and Mobile Communication, plus planning the upcoming Bachelor’s thesis. I’ll probably share more details about the thesis here soon.
 
