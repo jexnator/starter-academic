@@ -1,14 +1,14 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "10/03/2025 - 21/03/2025"
+title: "10/02/2025 - 21/02/2025"
 subtitle: ""
 summary: "Trainee diary"
 authors: [Xavier Jeiziner]
 tags: []
 categories: []
-date: 2025-03-21
-lastmod: 2025-03-21
+date: 2025-02-21
+lastmod: 2025-02-21
 featured: false
 draft: false
 
