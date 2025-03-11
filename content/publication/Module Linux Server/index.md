@@ -74,7 +74,7 @@ slides: ""
 
 {{< toc >}}
 
-## {{< hl >}}<b>Get Started with Linux</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>Get Started with Linux</b>{{< /highlight >}}<br>
 
 In this module I will learn how to administrate servers and networks with Linux. Here you will find several tasks about the topic.<br>
 

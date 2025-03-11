@@ -10,7 +10,7 @@ headless: true
 weight: 65
 
 title: Projects
-subtitle: ''
+subtitle: ""
 
 content:
   # Page type to display. E.g. project.
@@ -25,22 +25,21 @@ content:
   # To filter by a specific tag, set `tag` to an existing tag name.
   # To remove the toolbar, delete the entire `filter_button` block.
   filter_button:
-  - name: PiBS
-    tag: https://www.ffhs.ch/de/bachelor/praxisintegriertes-bachelor-studium-informatik-pibs
-  - name: Amanox
-    tag: https://www.amanox.ch
-
+    - name: PiBS
+      tag: https://www.ffhs.ch/de/bachelor/praxisintegriertes-bachelor-studium-informatik-pibs
+    - name: Amanox
+      tag: https://www.amanox.ch
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
-  columns: '2'
+  columns: "2"
 
   # Toggle between the various page layout types.
   #   1 = List
   #   2 = Compact
   #   3 = Card
   #   5 = Showcase
-  view: 2
+  layout: blocks/section
 
   # For Showcase view, flip alternate rows?
   flip_alt_rows: false

@@ -77,7 +77,7 @@ In this module I will learn about Cloud Security in AWS. Here you will find seve
 
 {{< toc >}}
 
-## {{< hl >}}<b>Section 1: Course Introduction</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>Section 1: Course Introduction</b>{{< /highlight >}}<br>
 
 Security is the practice of safeguarding intellectual property from unauthorized access, use, or modification.
 
@@ -89,14 +89,14 @@ The CIA triad is a fundamental concept in information security, comprising three
 
 The CIA triad faces challenges in modern IT environments due to the large volume of information to be protected, the diverse sources of data, and the variety of formats used.
 
-### {{< hl >}}<b>Security in the AWS cloud</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Security in the AWS cloud</b>{{< /highlight >}}<br>
 
 AWS tries to make security as familiar as what we are doing day by day. Security is of utmost importance, especially in a cloud environment.
 Existing security models used in on-premises environments can be applied to the cloud.
 AWS offers various services and tools to enhance security, providing <b>controllability</b>, <b>auditability</b>, and <b>visibility</b> into cloud resources and workloads.
 The ability to work in an <b>agile</b> way and <b>automate</b> processes is especially important for incident response.
 
-### {{< hl >}}<b>Security design principles</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Security design principles</b>{{< /highlight >}}<br>
 
 - least privilege
 - enable traceability
@@ -106,7 +106,7 @@ The ability to work in an <b>agile</b> way and <b>automate</b> processes is espe
 - prepare for security events
 - minimize attack surface
 
-### {{< hl >}}<b>AWS Well-Architected Framework</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>AWS Well-Architected Framework</b>{{< /highlight >}}<br>
 
 AWS follows the Shared Responsibility model (SRM), where responsibilities are divided between AWS and its customers.
 ![SRM](srm.jpg "<b> AWS Shared Responsibilty model |</b> Screenshot")
@@ -120,14 +120,14 @@ The division of responsibilities varies depending on the type of AWS services us
 <br>
 <br>
 
-## {{< hl >}}<b>Section 2: IaM</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>Section 2: IaM</b>{{< /highlight >}}<br>
 
-### {{< hl >}}<b>Authentication vs. Authorization</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Authentication vs. Authorization</b>{{< /highlight >}}<br>
 
 - Authentication is the process of identifying the users and validating who they claim to be.
 - Authorization is the process (after authentication) to give the user access to specific resources (mostly role-based)
 
-### {{< hl >}}<b>AWS Identity and Access Management (IaM) Recap</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>AWS Identity and Access Management (IaM) Recap</b>{{< /highlight >}}<br>
 
 AWS uses IaM for authentication and authorization in the cloud. The following entities are relevant:
 
@@ -137,7 +137,7 @@ AWS uses IaM for authentication and authorization in the cloud. The following en
 - Policies: An object in AWS that defines permissions (on AWS resources), can be attached to users, groups and roles
   <br>
 
-### {{< hl >}}<b>Amazon Cognito for Authentication</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Amazon Cognito for Authentication</b>{{< /highlight >}}<br>
 
 Amazon Cognito is a service from AWS that provides authentication, authorization, and user management for web and mobile applications. It consists of two main components: User Pools and Identity Pools.
 
@@ -156,29 +156,29 @@ An Identity Pool allows temporary AWS credentials to be assigned to users (authe
 
 <br>
 
-## {{< hl >}}<b>Section 3: Detective Controls</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>Section 3: Detective Controls</b>{{< /highlight >}}<br>
 
 ![Monitoring Overview](monitoring-overview.jpg "<b> AWS Monitoring Overview |</b> Screenshot")
 
-### {{< hl >}}<b>Amazon GuardDuty for Threat Detection</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Amazon GuardDuty for Threat Detection</b>{{< /highlight >}}<br>
 
 Amazon GuardDuty is an intelligent threat detection service for AWS accounts and workloads. It uses threat intelligence and machine learning to detect anomalies and suspicious activities, such as unauthorized deployments. When a threat is found, alerts are sent to the GuardDuty console and AWS CloudWatch Events for integration with existing services or systems.
 ![GuardDuty detection categories](detection-categories.jpg "<b> GuardDuty detection categories |</b> Screenshot")
 
-### {{< hl >}}<b>AWS Security Hub for Prioritizing Findings</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>AWS Security Hub for Prioritizing Findings</b>{{< /highlight >}}<br>
 
 AWS Security Hub is a consolidated view of security. It uses different AWS services as inputs (e.g. GuardDuty, Macie, Firewall Manager, etc.). It also support third party insights. In security hub you have the possibility to evaluate the security in the cloud with different securiry standards. The insights and findings can be forwarded to EventBridge for incident responses.
 ![AWS Security Hub](security-hub.jpg "<b> AWS Security Hub Overview |</b> Screenshot")
 
-### {{< hl >}}<b>Amazon Macie for Data Monitoring</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Amazon Macie for Data Monitoring</b>{{< /highlight >}}<br>
 
 Amazon Macie can be used to analyze S3 buckets for sensitive data such as names, addresses, and credit card numbers. It also evaluates whether an S3 bucket is publicly accessible and whether it is encrypted or not. The analyses are be performed as jobs. They can be shedulded on personal preferences. The results can be published to security hub or even to event bridge to take action in an automated way.
 ![Amazon Macie](macie.jpg "<b> Example workflow with Macie |</b> Screenshot")
 <br>
 
-## {{< hl >}}<b>Section 4: Infrastructure Protection</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>Section 4: Infrastructure Protection</b>{{< /highlight >}}<br>
 
-### {{< hl >}}<b>Securing Your Compute Resources</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Securing Your Compute Resources</b>{{< /highlight >}}<br>
 
 In AWS you have different opportunities to limit access to resources on the network level. The most common ways are:
 
@@ -190,7 +190,7 @@ In AWS you have different opportunities to limit access to resources on the netw
 - ...
   ![Securing compute resources on AWS](securing-resources.jpg "<b> Securing compute resources on AWS |</b> Screenshot")
 
-### {{< hl >}}<b>WAF for Traffic Filtering</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>WAF for Traffic Filtering</b>{{< /highlight >}}<br>
 
 A web application firewall operates at layer 7 and is capable of filtering the http protocol. The most common method of catching violations is to block requests or block them above a certain threshold. Possible filter rules are:
 
@@ -201,7 +201,7 @@ A web application firewall operates at layer 7 and is capable of filtering the h
 - IPs
 - http body (e.g. strings, size or SQL injection)
 
-### {{< hl >}}<b>AWS WAF</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>AWS WAF</b>{{< /highlight >}}<br>
 
 AWS WAF is a Web Application Firewall managed by AWS and is organized in Web Access Control Lists (Web ACLs). Web ACLs can be associated with different AWS services like:
 
@@ -212,24 +212,22 @@ AWS WAF is a Web Application Firewall managed by AWS and is organized in Web Acc
 
 After a WAF is associated, every request gets checked based on the configured rules.
 
-
-
-### {{< hl >}}<b>AWS Shield for DDoS Protection</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>AWS Shield for DDoS Protection</b>{{< /highlight >}}<br>
 
 AWS Shield is a managed DDoS protection service that safeguards web applications that run on AWS. AWS Shield provides always-on detection and automatic inline mitigations that minimize application downtime and latency.
 <br>
 <br>
 
-## {{< hl >}}<b>Section 5: Data Protection</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>Section 5: Data Protection</b>{{< /highlight >}}<br>
 
-### {{< hl >}}<b>Amazon S3 spotlight</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Amazon S3 spotlight</b>{{< /highlight >}}<br>
 
 Amazon S3 is an object storage service in AWS that enables storage, retrieval, and management of data in the cloud. It uses a flat namespace schema with buckets and keys and provides API access for CRUD operations. It is used for static websites, backups, archiving, and data analytics etc.
 -S3 data is fully private to an account, and public access is blocked by default
 
 - Ability to encrypt your data and have AWS manage the keys
 
-### {{< hl >}}<b>S3 Protection via resource-based policies</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>S3 Protection via resource-based policies</b>{{< /highlight >}}<br>
 
 <b>Default Privacy and Access Control:</b>
 Amazon S3 resources are private by default, only accessible by the owner. Access can be controlled through policies and Access Control Lists (ACLs).
@@ -260,9 +258,9 @@ IAM identity-based policies:
 
 - Manage permissions by creating users and groups and attaching policies
 
-### {{< hl >}}<b>Protection via encryption</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Protection via encryption</b>{{< /highlight >}}<br>
 
-#### {{< hl >}}<b>Encryption primer</b>{{< /hl >}}<br>
+#### {{< highlight go >}}<b>Encryption primer</b>{{< /highlight >}}<br>
 
 ![Encryption primer](encryption-primer.jpg "<b> Encryption primer |</b> Screenshot")
 
@@ -270,7 +268,7 @@ Data encryption is typically done using a symmetric data key generated by softwa
 
 To decrypt the data, the symmetric data key must be available to authorized users. It can't be stored with the encrypted data as it would compromise security. The best practice is to encrypt the symmetric data key with a KMS key, allowing it to be stored with the encrypted data in the same location, maintaining similar durability characteristics.
 
-#### {{< hl >}}<b>Supported Encryption by Amazon S3</b>{{< /hl >}}<br>
+#### {{< highlight go >}}<b>Supported Encryption by Amazon S3</b>{{< /highlight >}}<br>
 
 Amazon S3 supports Client-side encryption (CSE) and Server-side encryption (SSE). CSE means that the customer encrypts his data by self with an Encryption Software and then publish it to AWS. If you use Server-side encryption then AWS manages the encryption and decryption proccess. Each approach has its own advantages.
 
@@ -282,12 +280,12 @@ When selecting the right enryption solution for data in AWS then three question 
 
 ![Supported Enryption in AWS](s3-encryption.jpg "<b> Supported Enryption in AWS |</b> Screenshot")
 
-##### {{< hl >}}<b>S3 Client-side encryption</b>{{< /hl >}}<br>
+##### {{< highlight go >}}<b>S3 Client-side encryption</b>{{< /highlight >}}<br>
 
 Only the encrypted version of the data is stored in S3, ensuring that AWS never sees the unencrypted content. The client maintains the keys and ecrypts and decrypts the data with
 ![CSE](cse.jpg "<b> Client-Side encryption |</b> Screenshot")
 
-##### {{< hl >}}<b>S3 Server-side encryption: Three different approaches</b>{{< /hl >}}<br>
+##### {{< highlight go >}}<b>S3 Server-side encryption: Three different approaches</b>{{< /highlight >}}<br>
 
 With SSE-C in Amazon S3, you provide an encryption key for S3 to handle encryption and decryption. You manage only this key, not the encryption process. S3 doesn't store your key but keeps a salted HMAC value to validate requests. This HMAC can't decrypt data. If you lose the key, you lose access to the object.
 ![SSE-C](sse-c.jpg "<b> SSE-C |</b> Screenshot")
@@ -303,7 +301,7 @@ AWS KMS employs envelope encryption with two keys:
   This process enhances security against unauthorized access. With SSE-KMS, users get an audit trail of key usage in CloudTrail, the choice to create or use a default encryption key, and the ability to enforce key policies and import personal key material, granting more control than SSE-S3.
   ![SSE-KMS](sse-kms.jpg "<b> SSE-KMS |</b> Screenshot")
 
-##### {{< hl >}}<b>Best practices for protecting data in Amazon S3</b>{{< /hl >}}<br>
+##### {{< highlight go >}}<b>Best practices for protecting data in Amazon S3</b>{{< /highlight >}}<br>
 
 - Enforce encryption at rest.
 - Separate data based on different classification levels.
@@ -311,7 +309,7 @@ AWS KMS employs envelope encryption with two keys:
 - Define your data retention requirements.
 - Implement secure key management.
 
-### {{< hl >}}<b>AWS Key Management Service (KMS)</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>AWS Key Management Service (KMS)</b>{{< /highlight >}}<br>
 
 AWS KMS is a managed service that lets you create, control, and securely store encryption keys using FIPS 140-2 validated hardware. Integrated with most AWS services, it employs envelope encryption and a two-tiered key hierarchy. You can encrypt/decrypt data under keys you control, set key usage policies, and monitor usage through AWS CloudTrail. The key never leaves AWS KMS, minimizing data key compromise risks.
 
@@ -324,26 +322,26 @@ When hardware is FIPS 140-2 (Federal Information Processing Standard Publication
 3. A call is made to AWS KMS over SSL to decrypt the encrypted data key. AWS KMS identifies the CMK, makes an internal request to an HSA in the fleet to decrypt the data key, and returns the key back to the customer over the SSL session.
 4. The decrypted data key is stored in memory and used to encrypt and decrypt all data going to and from the attached EBS volume. Amazon EBS retains the encrypted data key for later use in case the data key in memory is no longer available.
 
-### {{< hl >}}<b>HTTPS - CA - SSL Certificate</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>HTTPS - CA - SSL Certificate</b>{{< /highlight >}}<br>
 
 ![CSR](ca.jpg "<b> CSR Workflow |</b> Screenshot")
 ![SSC](ssc.jpg "<b> self-signed certificate |</b> Screenshot")
 
-### {{< hl >}}<b>AWS Certificate Manager (ACM)</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>AWS Certificate Manager (ACM)</b>{{< /highlight >}}<br>
 
 AWS Certificate Manager (ACM) lets you easily provision, manage, and deploy public and private Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificates for use with AWS services and your internal connected resources. With ACM, you no longer need to spend time purchasing, uploading, and renewing SSL/TLS certificates manually. This makes it simpler to secure your applications and services with SSL/TLS encryption and ensures that your certificates are always up-to-date.
 ![ACM](acm.jpg "<b> AWS Certificate Manager |</b> Screenshot")
 
-### {{< hl >}}<b>AWS Secrets Manager for Credentials Management</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>AWS Secrets Manager for Credentials Management</b>{{< /highlight >}}<br>
 
-### {{< hl >}}<b>Secret management best practices</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Secret management best practices</b>{{< /highlight >}}<br>
 
 - Safely and securely store secrets in a central repository
 - Audit log for the use and misuse of secrets
 - Secrets rotation on a regular schedule
 - Access control of secrets
 
-### {{< hl >}}<b>AWS Secrets Manager for Credentials Management</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>AWS Secrets Manager for Credentials Management</b>{{< /highlight >}}<br>
 
 AWS Secrets Manager is an AWS tool designed for secure management of sensitive data like passwords and API keys. Users can centrally store, control access, and fetch these secrets, eliminating the need for hardcoded credentials in code. The service offers automatic secret rotation, enhancing security.
 
@@ -359,9 +357,9 @@ Choose AWS Secrets Manager for:
 <br>
 <br>
 
-## {{< hl >}}<b>Section 6: Application Security</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>Section 6: Application Security</b>{{< /highlight >}}<br>
 
-### {{< hl >}}<b>Amazon Inspector</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Amazon Inspector</b>{{< /highlight >}}<br>
 
 Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS. Amazon Inspector automatically assesses applications for vulnerabilities or deviations from best practices. After performing an assessment, Amazon Inspector produces a detailed list of security findings prioritized by level of severity. These findings can be reviewed directly or as part of detailed assessment reports which are available via the Amazon Inspector console or API. Amazon Inspector is an agent-based service where you deploy the Amazon Inspector agent on the Amazon EC2 Instances running the applications you want to assess.
 
@@ -377,7 +375,7 @@ An assessment template is a configuration that you create in Amazon Inspector to
 <br>
 <br>
 
-## {{< hl >}}<b>Section 7: Incident Response</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>Section 7: Incident Response</b>{{< /highlight >}}<br>
 
 What is an incident?
 
@@ -385,7 +383,7 @@ What is an incident?
 - Failure of a configuration item that has not yet affected a service
 - All incidents are events, but NOT all events are incidents
 
-### {{< hl >}}<b>Incident Response</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Incident Response</b>{{< /highlight >}}<br>
 
 Incident response is the methodology an organization uses to respond to and manage a security breach or cyberattack. It is an organized approach to addressing and managing the aftermath of an attack. Even with extremely mature preventive and detective controls, your organization should still put processes in place to respond to and mitigate the potential impact of security incidents.
 
@@ -394,7 +392,7 @@ Incident response is the methodology an organization uses to respond to and ma
 - Automate Security
 - Etablish control
 
-### {{< hl >}}<b>IR on AWS</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>IR on AWS</b>{{< /highlight >}}<br>
 
 Incident response in the AWS Cloud is more efficient in terms of cost, speed, effectiveness, and management. AWS enhances your capacity to detect, react, and recover. AWS offers unique capabilities for investigations:
 
@@ -406,7 +404,7 @@ Incident response in the AWS Cloud is more efficient in terms of cost, speed, ef
 
 - <b>Detailed Logging</b>: AWS offers detailed logs for specific services, highlighting actions like file access and changes, aiding in understanding incidents and informing remediation steps.
 
-### {{< hl >}}<b>AWS Config for Responding to Incidents</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>AWS Config for Responding to Incidents</b>{{< /highlight >}}<br>
 
 AWS Config continuously monitors and logs configuration changes of your resources. Upon detecting changes, it sends notifications and can even trigger an AWS Lambda function for automated responses. Furthermore, it integrates with other AWS services, ensuring streamlined remediation of issues.
 
@@ -425,9 +423,9 @@ Some managed rule examples include:
 For more tailored needs, you can craft custom AWS Config rules for example by using AWS Lambda Functions which can take actions when a specific incident appears.
 ![AWS Config Example Use Case](config-use.jpg "<b> AWS Config example usecase |</b> Screenshot")<br>
 
-## {{< hl >}}<b>Section 8: What’s Next</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>Section 8: What’s Next</b>{{< /highlight >}}<br>
 
-### {{< hl >}}<b>AWS Well-Architected Tool</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>AWS Well-Architected Tool</b>{{< /highlight >}}<br>
 
 The AWS Well-Architected Tool is a self-service tool that is designed to help customers review AWS workloads at any time, without the need for an AWS Solutions Architect. The Tool provides clear guidance to make architectural, design, and implementation decisions, increasing the security, efficiency and reliability of cloud implementations.
 

@@ -74,9 +74,9 @@ slides: ""
 
 {{< toc >}}
 
-# {{< hl >}}<b>NoSQL</b>{{< /hl >}}<br>
+# {{< highlight go >}}<b>NoSQL</b>{{< /highlight >}}<br>
 
-## {{< hl >}}Centralized Systems</b>{{< /hl >}}<br>
+## {{< highlight go >}}Centralized Systems</b>{{< /highlight >}}<br>
 
 Centralized systems operate with a single node (server) handling all tasks. Here are the key characteristics:
 
@@ -89,7 +89,7 @@ Centralized systems operate with a single node (server) handling all tasks. Here
    - All data must be scanned due to the absence of partitioning.
    - Access management becomes increasingly complex as data and users grow.
 
-## {{< hl >}}Distributed Systems</b>{{< /hl >}}<br>
+## {{< highlight go >}}Distributed Systems</b>{{< /highlight >}}<br>
 
 Distributed systems leverage multiple nodes to perform tasks. Key features include:
 
@@ -103,9 +103,9 @@ Distributed systems leverage multiple nodes to perform tasks. Key features inclu
    - Data is sharded and replicated across multiple servers, facilitating faster access and processing.
    - Access management can be simplified, depending on the consistency model chosen.
 
-## {{< hl >}}<b>Scaling</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>Scaling</b>{{< /highlight >}}<br>
 
-### {{< hl >}}<b>Vertical Scaling</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Vertical Scaling</b>{{< /highlight >}}<br>
 
 Vertical scaling involves enhancing the capacity of a single node by upgrading its hardware. Key points include:
 
@@ -113,7 +113,7 @@ Vertical scaling involves enhancing the capacity of a single node by upgrading i
 2. **Hardware Limitations**: There is a finite limit to vertical scaling, constrained by the most advanced available hardware.
 3. **Performance Boost**: Improves performance by increasing the node’s processing power, memory, or storage.
 
-### {{< hl >}}<b>Horizontal Scaling</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Horizontal Scaling</b>{{< /highlight >}}<br>
 
 Horizontal scaling involves adding more nodes to the system to distribute the workload. Important aspects are:
 
@@ -121,7 +121,7 @@ Horizontal scaling involves adding more nodes to the system to distribute the wo
 2. **Scalability**: There is no inherent limit to horizontal scaling; additional nodes can always be added.
 3. **Fault Tolerance and Load Balancing**: Enhances system reliability and efficiency by spreading the load across multiple nodes.
 
-### {{< hl >}}<b>Combined Scaling</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Combined Scaling</b>{{< /highlight >}}<br>
 
 Both vertical and horizontal scaling can be used together to optimize performance:
 
@@ -130,9 +130,9 @@ Both vertical and horizontal scaling can be used together to optimize performanc
 
 ![Scaling](scaling-v-h.png "Scaling")
 
-## {{< hl >}}<b>NoSQL Databases</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>NoSQL Databases</b>{{< /highlight >}}<br>
 
-### {{< hl >}}<b>Definition</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Definition</b>{{< /highlight >}}<br>
 
 NoSQL stands for "Not Only SQL." This designation highlights that while NoSQL databases may include query languages, they are distinct from traditional SQL databases. Key characteristics include:
 
@@ -141,7 +141,7 @@ NoSQL stands for "Not Only SQL." This designation highlights that while NoSQL da
 3. **Horizontal Scaling**: NoSQL databases inherently support horizontal scaling, enabling them to handle large-scale data efficiently.
 4. **Broad Categorization**: Any database that does not follow a relational model is categorized as NoSQL.
 
-### {{< hl >}}<b>Performance and Use Cases</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Performance and Use Cases</b>{{< /highlight >}}<br>
 
 NoSQL databases offer performance advantages in specific scenarios due to their consistency models and design optimizations:
 
@@ -151,9 +151,9 @@ NoSQL databases offer performance advantages in specific scenarios due to their 
 
 ![Comparison SQL vs. NoSQL](sql-nosql.png "Scaling")
 
-## {{< hl >}}<b>CAP-Theorem</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>CAP-Theorem</b>{{< /highlight >}}<br>
 
-### {{< hl >}}<b>Definition</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Definition</b>{{< /highlight >}}<br>
 
 The CAP-Theorem, relevant for NoSQL databases, provides a framework analogous to the ACID theorem for relational databases. ACID properties are not applicable to NoSQL databases, necessitating the use of the CAP theorem. CAP stands for:
 
@@ -163,7 +163,7 @@ The CAP-Theorem, relevant for NoSQL databases, provides a framework analogous to
 
 ![CAP](cap-short.png "CAP")
 
-### {{< hl >}}<b>Theoretical Limitations</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Theoretical Limitations</b>{{< /highlight >}}<br>
 
 In theory, a distributed system can only satisfy two of the three CAP properties simultaneously:
 
@@ -184,22 +184,22 @@ In theory, a distributed system can only satisfy two of the three CAP properties
 ![CAP](reworded-cap.png)
 ![CAP](cap.png "CAP-Theorem")
 
-## {{< hl >}}<b>PACELC-Theorem</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>PACELC-Theorem</b>{{< /highlight >}}<br>
 
-### {{< hl >}}<b>Definition</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Definition</b>{{< /highlight >}}<br>
 
 The PACELC-Theorem extends the CAP theorem by addressing system behavior not only during network partitioning (P) but also under normal operation conditions (E). It states:
 
 1. **During Partitioning (P)**: The system must choose between Availability (A) and Consistency (C), aligning with the CAP theorem.
 2. **Else (E)**: When there is no partition, the system must choose between Latency (L) and Consistency (C).
 
-### {{< hl >}}<b>Key Concepts</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Key Concepts</b>{{< /highlight >}}<br>
 
 - **Latency vs. Consistency**:
   - Increased consistency typically results in higher latency because nodes need to synchronize data, causing delays.
   - Decreased latency can be achieved by sacrificing consistency, where responses are quicker but may not reflect the most recent data.
 
-### {{< hl >}}<b>Consistency Models</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Consistency Models</b>{{< /highlight >}}<br>
 
 There are two primary consistency models to understand:
 
@@ -213,20 +213,20 @@ There are two primary consistency models to understand:
    - After a certain period (x seconds), all nodes will converge to the same data state.
    - Nodes are not locked when new data is available, ensuring lower latency but with a temporary inconsistency.
 
-### {{< hl >}}<b>Practical Implications</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Practical Implications</b>{{< /highlight >}}<br>
 
 - **AP or CP Systems**: While systems are often labeled as AP (Available and Partition-tolerant) or CP (Consistent and Partition-tolerant), they can still be fine-tuned for latency and consistency during normal operation.
 - **Tunable Consistency**: The trade-off between latency and consistency can be adjusted to meet specific application requirements.
 
 ![PACELC](pacelc.png "PACELC-Theorem")
 
-## {{< hl >}}<b>Replication & Sharding</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>Replication & Sharding</b>{{< /highlight >}}<br>
 
-### {{< hl >}}<b>Definition</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Definition</b>{{< /highlight >}}<br>
 
 Replication and sharding are key strategies for data management in distributed systems, designed to improve performance and reliability.
 
-### {{< hl >}}<b>Sharding</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Sharding</b>{{< /highlight >}}<br>
 
 Sharding involves splitting data across multiple nodes, often partitioned by a key. Key points include:
 
@@ -235,7 +235,7 @@ Sharding involves splitting data across multiple nodes, often partitioned by a k
 3. **Load Balancing**: Different users access different shards, automatically distributing the load.
 4. **Performance Enhancement**: Large datasets can be processed in parallel across multiple servers, enhancing performance.
 
-### {{< hl >}}<b>Replication</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Replication</b>{{< /highlight >}}<br>
 
 Replication involves copying the same data across multiple nodes. Key points include:
 
@@ -243,7 +243,7 @@ Replication involves copying the same data across multiple nodes. Key points inc
 2. **Improved Availability**: Multiple nodes can serve the same data to different users, reducing access times.
 3. **Load Distribution**: Balances the load by allowing multiple nodes to handle requests for the same data.
 
-### {{< hl >}}<b>Combined Use</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Combined Use</b>{{< /highlight >}}<br>
 
 Both replication and sharding can be used together or separately:
 
@@ -254,9 +254,9 @@ Implementing these strategies effectively requires careful planning to determine
 
 ![Replication & Sharding](replication-sharding.png "Replication & Sharding")
 
-## {{< hl >}}<b>Refresher: RDBMS</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>Refresher: RDBMS</b>{{< /highlight >}}<br>
 
-### {{< hl >}}<b>Relational Approach, Schema, and Relationships</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Relational Approach, Schema, and Relationships</b>{{< /highlight >}}<br>
 
 Relational Database Management Systems (RDBMS) store and organize data using a relational model. In this model, data is structured into tables (also called relations), which consist of rows and columns. Each table represents a specific entity type (such as customers or products), and each row represents a record, or instance, of that entity.
 
@@ -268,7 +268,7 @@ Relational Database Management Systems (RDBMS) store and organize data using a r
 - **Many-to-One (N:1)**: Many records in one table are associated with a single record in another table. This is essentially the reverse of a one-to-many relationship.
 - **Many-to-Many (N:N)**: Records in one table can be associated with multiple records in another table and vice versa. This is typically implemented using a join table that includes foreign keys referencing the primary keys of the two tables being linked.
 
-### {{< hl >}}<b>Normalization (1NF, 2NF & 3NF)</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Normalization (1NF, 2NF & 3NF)</b>{{< /highlight >}}<br>
 
 **Normalization** is a process in database design to reduce redundancy and improve data integrity. It involves decomposing a table into smaller tables without losing data.
 
@@ -276,7 +276,7 @@ Relational Database Management Systems (RDBMS) store and organize data using a r
 - **Second Normal Form (2NF)**: Achieved when it is in 1NF and all non-key attributes are fully functionally dependent on the primary key.
 - **Third Normal Form (3NF)**: Met when it is in 2NF and all the columns are only dependent on the primary key, not on any other non-key attributes.
 
-### {{< hl >}}<b>Joins</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Joins</b>{{< /highlight >}}<br>
 
 Joins are used to retrieve data from multiple tables based on logical relationships among them. Each type of join determines how rows from each table are combined and which rows are returned.
 
@@ -287,16 +287,16 @@ Joins are used to retrieve data from multiple tables based on logical relationsh
 
 This refresher on RDBMS highlights foundational concepts that are essential for managing data in relational databases effectively, ensuring data consistency and enabling efficient data retrieval and manipulation through SQL queries.
 
-## {{< hl >}}<b>Task 1&2 RDBMS Schema & NoSQL</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>Task 1&2 RDBMS Schema & NoSQL</b>{{< /highlight >}}<br>
 
 ![RDBMS Schema](db-schema.png "RDBMS Schema")
 The full implementation of the tasks can be found in my [GitHub repo](https://github.com/JEX-98/aws/tree/main/NoSQLAndDistributedData/task-1-%26-2).
 
-## {{< hl >}}<b>Types of NoSQL Databases</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>Types of NoSQL Databases</b>{{< /highlight >}}<br>
 
 NoSQL databases offer flexible schemas and are designed to handle a wide variety of data types. Unlike traditional relational databases, NoSQL databases do not rely on a fixed schema, making them suitable for unstructured and semi-structured data. Here are the four main types of NoSQL databases:
 
-### {{< hl >}}<b>Column-Family Stores</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Column-Family Stores</b>{{< /highlight >}}<br>
 
 Column-family stores organize data into columns instead of rows. Each column family contains rows, and each row can have multiple columns. This structure allows for highly efficient read and write operations and is particularly useful for handling large volumes of data across distributed systems.
 
@@ -305,7 +305,7 @@ Column-family stores organize data into columns instead of rows. Each column fam
 - **Example**: Apache Cassandra, HBase
 - **Use Case**: Real-time data processing, time-series data
 
-### {{< hl >}}<b>Key-Value Stores</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Key-Value Stores</b>{{< /highlight >}}<br>
 
 Key-value stores use a simple key-value pair mechanism to store data. Each key is unique and is used to retrieve the corresponding value. This type of database is highly performant and can handle massive amounts of data with minimal latency.
 
@@ -314,7 +314,7 @@ Key-value stores use a simple key-value pair mechanism to store data. Each key i
 - **Example**: Redis, DynamoDB
 - **Use Case**: Caching, session management, real-time analytics
 
-### {{< hl >}}<b>Graph Databases</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Graph Databases</b>{{< /highlight >}}<br>
 
 Graph databases are designed to efficiently store and query data that is highly interconnected. They represent data using three main components:
 
@@ -327,7 +327,7 @@ Graph databases are designed to efficiently store and query data that is highly 
 - **Example**: Neo4j, Amazon Neptune
 - **Use Case**: Social networks, recommendation engines, fraud detection
 
-### {{< hl >}}<b>Document Stores</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Document Stores</b>{{< /highlight >}}<br>
 
 Document stores manage data in the form of documents, typically using formats like JSON, BSON, or XML. Each document is a self-contained unit, which can store complex nested structures. This allows for greater flexibility and easier mapping to object-oriented programming languages.
 
@@ -336,12 +336,12 @@ Document stores manage data in the form of documents, typically using formats li
 - **Example**: MongoDB, CouchDB
 - **Use Case**: Content management systems, e-commerce applications, mobile app data storage
 
-## {{< hl >}}<b>Relational vs. NoSQL Databases</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>Relational vs. NoSQL Databases</b>{{< /highlight >}}<br>
 
 **Relational Databases:**  
 Store data in tables with rows and columns. Each row represents a record, and each column represents an attribute. In a row-oriented database, every row is scanned regardless of which columns are required.
 
-### {{< hl >}}<b>Relational vs. Column-Based Databases</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Relational vs. Column-Based Databases</b>{{< /highlight >}}<br>
 
 **Column-Based Databases:**  
 Store each column separately, allowing for quicker scans when only a small number of columns are involved. This approach is beneficial for analytical queries where only specific columns are needed.
@@ -349,7 +349,7 @@ Store each column separately, allowing for quicker scans when only a small numbe
 **Key Differences:**  
 Relational databases are row-oriented, making them efficient for transaction processing where multiple attributes of a single record are accessed. Column-based databases allow for faster scans of individual columns, improving performance for analytical queries.
 
-### {{< hl >}}<b>Relational vs. Key-Value-Based Databases</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Relational vs. Key-Value-Based Databases</b>{{< /highlight >}}<br>
 
 **Key-Value-Based Databases:**  
 Store data as key-value pairs, where each key is unique and maps directly to a value. The value can be a simple data type or a complex object, enabling extremely fast lookups.
@@ -357,7 +357,7 @@ Store data as key-value pairs, where each key is unique and maps directly to a v
 **Key Differences:**  
 Relational databases are suitable for complex queries and transactions, such as those in banking systems. Key-value databases are ideal for quick access scenarios like caching and session management. Their simplicity makes them highly scalable and efficient for real-time analytics.
 
-### {{< hl >}}<b>Relational vs. Graph-Based Databases</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Relational vs. Graph-Based Databases</b>{{< /highlight >}}<br>
 
 **Graph-Based Databases:**  
 Designed to store and manage highly interconnected data. They consist of:
@@ -368,7 +368,7 @@ Designed to store and manage highly interconnected data. They consist of:
 **Key Differences:**  
 Relational databases are suitable for structured data with complex queries and transactions. Graph databases excel in scenarios with highly interconnected data, such as social networks, scientific citations, or asset management. They efficiently store relationships with properties, allowing for fast and complex queries involving traversals and connections between entities.
 
-## {{< hl >}}<b>Task 3 LinkedIn Post</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>Task 3 LinkedIn Post</b>{{< /highlight >}}<br>
 
 Show how this LinkedIn Post would be stored in a Document-DB:
 ![LinkedIn Post](linkedin.png "LinkedIn Post")

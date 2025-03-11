@@ -113,38 +113,38 @@ slides: ""
 
 <p></p><br>
 
-## {{< hl >}}<b>My Notebook</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>My Notebook</b>{{< /highlight >}}<br>
 
 {{% callout note %}} 2. <b>Advanced questions about my notebook (ThinkPad X1):</b>
 {{% /callout %}}
 
-{{< hl >}}How fast (in GHz) is the CPU you are using right now?{{< /hl >}}<br>
+{{< highlight go >}}How fast (in GHz) is the CPU you are using right now?{{< /highlight >}}<br>
 ➡️Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz - 2.30 GHz
 
 <p></p>
-{{< hl >}}What chipset is on the motherboard? Could there be more options?{{< /hl >}}<br>
+{{< highlight go >}}What chipset is on the motherboard? Could there be more options?{{< /highlight >}}<br>
 ➡️On my motherboard is a SoC (System-on-a-Chip)<br>
 ➡️ Southbridge / Northbridge / System-on-a-Chip
 <p></p>
-{{< hl >}}How many gigabytes of RAM are in the PC you’re using?{{< /hl >}}<br>
+{{< highlight go >}}How many gigabytes of RAM are in the PC you’re using?{{< /highlight >}}<br>
 ➡️16.0 GB (15.8 GB usable)
 <p></p>
-{{< hl >}}What is/are the storage medium/media in your PC?{{< /hl >}}<br>
+{{< highlight go >}}What is/are the storage medium/media in your PC?{{< /highlight >}}<br>
 ➡️500GB SSD
 <p></p>
-{{< hl >}}Where is the PSU in your PC? What about a laptop?{{< /hl >}}<br>
+{{< highlight go >}}Where is the PSU in your PC? What about a laptop?{{< /highlight >}}<br>
 ➡️Inside the PC<br>
 ➡️External Adapter
 <p></p>
-{{< hl >}}Do you have a GPU?{{< /hl >}}<br>
+{{< highlight go >}}Do you have a GPU?{{< /highlight >}}<br>
 ➡️iGPU in the CPU; Intel HD Graphics 620 (GT2)
 <p></p>
-{{< hl >}}How does the cooling work in your device? What about a smartphone?{{< /hl >}}<br>
+{{< highlight go >}}How does the cooling work in your device? What about a smartphone?{{< /highlight >}}<br>
 ➡️My notebook is cooled from below by two fans<br>
 ➡️Smartphones in general; Heatpipe, which transmits the heat to the outside<br>
 <p></p><br>
 
-## {{< hl >}}<b>My future PC</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>My future PC</b>{{< /highlight >}}<br>
 
 {{% callout note %}} 3. <b> This are the parts that i would buy, if i would build my own PC. Link ➔</b>
 [Digitec](https://www.digitec.ch/de/shopList/show/ABB019BA20D90765AFCEC16A2800DF8C)
@@ -152,38 +152,38 @@ slides: ""
 
 <p></p><br>
 
-## {{< hl >}}<b>Bits and Bytes</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>Bits and Bytes</b>{{< /highlight >}}<br>
 
 {{% callout note %}} 4. <b>Task – Bits and bytes</b>
 {{% /callout %}}
-{{< hl >}}Say you have a gigabit internet connection (downstream). How many kilobytes can you download per second?{{< /hl >}}<br>
+{{< highlight go >}}Say you have a gigabit internet connection (downstream). How many kilobytes can you download per second?{{< /highlight >}}<br>
 ➡️1'000'000'000b / 800 = <b>125'000KB</b>
 
 <p></p>
-{{< hl >}}How many bits are in a Mebibyte?{{< /hl >}}<br>
+{{< highlight go >}}How many bits are in a Mebibyte?{{< /highlight >}}<br>
 ➡️1'048'576B * 8 = <b>8’388’608b</b>
 <p></p>
-{{< hl >}}You buy an HDD advertised with 1TB. How much usable space will the Windows operating system report you and why?{{< /hl >}}<br>
+{{< highlight go >}}You buy an HDD advertised with 1TB. How much usable space will the Windows operating system report you and why?{{< /highlight >}}<br>
 ➡️If you have a 1TB HDD in your PC, then you have a real storage of 932GB. This is because the computer is working with binary numbers (1,024 bytes = 1kb).
 <p></p><br>
 
-## {{< hl >}}<b>Binary Digits</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>Binary Digits</b>{{< /highlight >}}<br>
 
 {{% callout note %}} 5. <b>Task – Decode the following binary sequences to text. Each character uses 8-bits.</b>
 {{% /callout %}}
-{{< hl >}}01000001011011010110000101101110011011110111100000100000010101000110010101100001{{< /hl >}}<br>
+{{< highlight go >}}01000001011011010110000101101110011011110111100000100000010101000110010101100001{{< /highlight >}}<br>
 ➡️Amanox Tea<br>
 💡You have to read the binary code from the right to the left side. Then you encode the binary digits.<br>
 Example: 10101 ➔ (1 * 2^1) + (0 *2^2) + (1 *2^3) + (0 *2^4) + (1 _2^5) = <b>42</b> <br>
 After this you can have a look to the ASCII-Table. <b>42</b> corresponds to <b> _ </b>.<br>
 
 <p></p>
-{{< hl >}}"Xavier" in a binary sequence{{< /hl >}}<br>
+{{< highlight go >}}"Xavier" in a binary sequence{{< /highlight >}}<br>
 ➡️01011000 01100001 01110110 01101001 01100101 01110010<br>
 
 <p></p><br>
 
-## {{< hl >}}<b>Johny Simulator</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>Johny Simulator</b>{{< /highlight >}}<br>
 
 {{% callout note %}} 4. <b>Task – Multiplication with basic instructions<br>
 Create a sequence in the Johnny simulator that takes 2 numbers from any 2 registers, multiplies them and writes the result to another register.
@@ -231,7 +231,7 @@ Here is a list of the program commands:<br>
 </p>
 <p>
 
-## {{< hl >}}<b>Transistors and Logic Gates</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>Transistors and Logic Gates</b>{{< /highlight >}}<br>
 
 A transistor can be thought of as a gate that is either open or closed. When a transistor is on, then an electric current can flow through. And when it’s off, then no current flows. The first Transistor came up in 1947. This gates are very small but a lot faster than mechanical relay switches and vaacum tubes. A microprocessor contains more than five million transistors.<br>
 
@@ -245,7 +245,7 @@ A transistor can be thought of as a gate that is either open or closed. When a t
 
 <p>
 
-## {{< hl >}}<b>Cheat in CookieClicker</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>Cheat in CookieClicker</b>{{< /highlight >}}<br>
 
 <pre> Score up faster with CheatEngine ➔ No more words needed  </pre>
 
@@ -253,7 +253,7 @@ A transistor can be thought of as a gate that is either open or closed. When a t
 
 </p>
 
-## {{< hl >}}<b>HDD & SSD in depth</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>HDD & SSD in depth</b>{{< /highlight >}}<br>
 
 > If you ever shopped for HDDs, you probably stumbled across multiple flavors. For example, consumer-grade, NAS-grade and server-grade.<br>
 > ● What are the differences between those grades?<br>
@@ -293,7 +293,7 @@ A transistor can be thought of as a gate that is either open or closed. When a t
 <p></p>
 <p>
 
-## {{< hl >}}<b>Desired interfaces</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>Desired interfaces</b>{{< /highlight >}}<br>
 
 > ● What are your desired interfaces in a consumer PC/laptop?<br>
 
@@ -346,7 +346,7 @@ In a server I would install 2x RJ45 for security reasons (redundancy).<br>
 <p></p>
 <p>
 
-## {{< hl >}}<b>Transferspeed and Bandwidth</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>Transferspeed and Bandwidth</b>{{< /highlight >}}<br>
 
 > ● How much bandwidth is needed to stream a typical 2 hour Netflix 1080p movie (~6GB)?<br>
 
@@ -372,7 +372,7 @@ Upload: `~1.5MBit/s`<br>
 <p></p><br>
 <p>
 
-## {{< hl >}}<b>VR Headsets</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>VR Headsets</b>{{< /highlight >}}<br>
 
 > ● What do you think are problems when placing screens this close to our eyes?<br>
 
@@ -385,7 +385,7 @@ VR glasses trick the brain as well as the eyes. The main problem is, that a VR h
 <p></p><br>
 <p>
 
-## {{< hl >}}<b>Audio Interfaces</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>Audio Interfaces</b>{{< /highlight >}}<br>
 
 > ● What interfaces are used to play surround sound? <br>
 
@@ -411,7 +411,7 @@ VR glasses trick the brain as well as the eyes. The main problem is, that a VR h
 <p></p><br>
 <p>
 
-## {{< hl >}}<b>Display</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>Display</b>{{< /highlight >}}<br>
 
 > ● Why did manufacturers ditch the CRT and plasma technologies?<br>
 
@@ -426,7 +426,7 @@ OLED displays promise higher contrast images than LCD displays. This is because 
 <p></p><br>
 <p>
 
-## {{< hl >}}<b>Office Workplace</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>Office Workplace</b>{{< /highlight >}}<br>
 
 > ● How should the PC perform? Did you choose a laptop or a workstation?<br>
 
@@ -469,7 +469,7 @@ Depending on the notebook I buy, maybe yes.<br>
 <p></p><br>
 <p>
 
-## {{< hl >}}<b>Cooling Systems</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>Cooling Systems</b>{{< /highlight >}}<br>
 
 > ● What metric should be high for a fan on a heatsink?<br>
 

@@ -74,7 +74,7 @@ slides: ""
 
 {{< toc >}}
 
-## {{< hl >}}<b>Get Started with Python</b>{{< /hl >}}<br>
+## {{< highlight go >}}<b>Get Started with Python</b>{{< /highlight >}}<br>
 
 In this module I will learn how to code with Python. You will find several tasks about Python in this publication.<br>
 
@@ -100,7 +100,7 @@ Hello Back
 
 <p></p><br>
 
-### {{< hl >}}<b>Different types of comments</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Different types of comments</b>{{< /highlight >}}<br>
 
 In Python you have the possibility to write single-line comments or multi-line comments.<br>
 
@@ -117,7 +117,7 @@ comment
 
 <p></p><br>
 
-### {{< hl >}}<b>Primitive Types</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Primitive Types</b>{{< /highlight >}}<br>
 
 > Assign each primitive Type to a variable<br>
 
@@ -158,7 +158,7 @@ print(typeOfBooleanVariable)
 
 <p></p><br>
 
-### {{< hl >}}<b>String-Methods</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>String-Methods</b>{{< /highlight >}}<br>
 
 > Use different methods on a string
 
@@ -364,7 +364,7 @@ SPAGHETTI CARBONARA
 
 <p></p><br>
 
-### {{< hl >}}<b>Non-Primitive Types</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Non-Primitive Types</b>{{< /highlight >}}<br>
 
 ### Lists<br>
 
@@ -1255,7 +1255,7 @@ Hello World
 
 <p></p><br>
 
-### {{< hl >}}<b>Arithmetic Operators</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Arithmetic Operators</b>{{< /highlight >}}<br>
 
 > Test all operators on an integer, float, string, boolean <br>
 
@@ -1339,7 +1339,7 @@ lollollollollol
 
 <p></p><br>
 
-### {{< hl >}}<b>Relational Operators</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Relational Operators</b>{{< /highlight >}}<br>
 
 > Demonstrate all relational operators on different data-types<br>
 
@@ -1404,7 +1404,7 @@ False
 
 <p></p><br>
 
-### {{< hl >}}<b>Assignment Operators</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Assignment Operators</b>{{< /highlight >}}<br>
 
 > Demonstrate all assignment operators<br>
 
@@ -1628,7 +1628,7 @@ hahahahaha
 
 <p></p><br>
 
-### {{< hl >}}<b>Assignment Operators</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>Assignment Operators</b>{{< /highlight >}}<br>
 
 > Demonstrate all assignment operators<br>
 
@@ -1738,7 +1738,7 @@ print(x)
 
 <p></p><br>
 
-### {{< hl >}}<b> Logical Operators</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b> Logical Operators</b>{{< /highlight >}}<br>
 
 > Show the difference between 3 != 3 and not 3 == 3<br>
 
@@ -1788,7 +1788,7 @@ True
 
 <p></p><br>
 
-### {{< hl >}}<b>For- & While-Loops</b>{{< /hl >}}<br>
+### {{< highlight go >}}<b>For- & While-Loops</b>{{< /highlight >}}<br>
 
 > Task:<br>
 > -> For-loop that doubles each number beginning from 1 to 100<br>

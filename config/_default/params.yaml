@@ -1,25 +1,36 @@
 # SITE SETUP
-# Guide: https://wowchemy.com/docs/getting-started/
-# Documentation: https://wowchemy.com/docs/
+# Guide: https://docs.hugoblox.com/tutorial/
+# Documentation: https://docs.hugoblox.com/
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Appearance
-
-theme: minimal
-day_night: true
-font: ''
-font_size: L
+appearance:
+  mode: system
+  color: emerald
+  theme: minimal
+  day_night: true
+  font: ''
+  font_size: L
 
 # SEO
-
-site_type: Person
-local_business_type: ''
-org_name: ''
-description: ''
-twitter: ''
+marketing:
+  seo:
+    site_type: Person
+    local_business_type: ''
+    org_name: ''
+    description: ''
+    twitter: ''
+  analytics:
+    google_analytics: ''
+    baidu_tongji: ''
+    plausible: ''
+    fathom: ''
+    pirsch: ''
+  verification:
+    google: ''
+    baidu: ''
 
 # Contact (edit or remove options as required)
-
 email: xavier.jeiziner@axians.com
 phone: +41 31 320 10 80
 address:
@@ -46,37 +57,49 @@ contact_links:
     link: 'https://github.com/JEX-98'
 
 # Site header
+header:
+  navbar:
+    enable: true
+    blox: "navbar"
+    fixed_to_top: true
+    show_search: true
+    show_theme_chooser: true
+    logo:
+      text: "Trainee Diary"
 
-main_menu:
-  enable: true
-  align: l
-  show_logo: true
-  show_language: false
-  show_day_night: true
-  show_search: true
-  highlight_active_link: true
+# Site footer
+footer:
+  copyright:
+    notice: '© {year} Xavier Jeiziner.'
+    license:
+      enable: false
+      allow_derivatives: false
+      share_alike: true
+      allow_commercial: false
 
 # Localization
-
-date_format: 'Jan 2, 2006'
-time_format: '15:04 CET'
-address_format: de
+locale:
+  date_format: 'Jan 2, 2006'
+  time_format: '3:04 PM'
+  address_format: de
 
 # Site features
-
-highlight: true
-highlight_languages:
-  - r
-  - bash
-  - shell
-  - powershell
-  - markdown
-  - css
-  - javascript
-  - yaml
-math: true
-diagram: true
-privacy_pack: false
+features:
+  highlight: true
+  highlight_languages:
+    - r
+    - bash
+    - shell
+    - powershell
+    - markdown
+    - css
+    - javascript
+    - yaml
+  math:
+    enable: true
+  diagram: true
+  privacy_pack:
+    enable: false
 edit_page:
   repo_url: ''
   content_dir: ''
@@ -96,12 +119,6 @@ reading_time: true
 section_pager: false
 docs_section_pager: true
 sharing: true
-copyright_license:
-  enable: false
-  allow_derivatives: false
-  share_alike: true
-  allow_commercial: false
-  notice: 'This work is licensed under {license}'
 abstract_length: 135
 plugins_js: [custom]
 avatar:
@@ -111,9 +128,9 @@ publications:
   date_format: January 2006
   citation_style: apa
 projects:
-  post_view: 2
-  publication_view: 2
-  talk_view: 2
+  post_view: blocks/section
+  publication_view: blocks/section
+  talk_view: blocks/section
 breadcrumb:
   page_types:
     book: true
@@ -131,7 +148,7 @@ comments:
   commento:
     url: ''
 search:
-  provider: wowchemy
+  provider: hugoblox
   algolia:
     app_id: ''
     api_key: ''
@@ -141,15 +158,10 @@ map:
   provider: ''
   api_key: ''
   zoom: 15
-marketing:
-  google_analytics: ''
-  google_tag_manager: ''
-  google_site_verification: ''
-  baidu_site_verification: ''
-  baidu_tongji: ''
 cms:
   branch: master
   local_backend: false
 icon:
   pack:
     ai: true
+    
