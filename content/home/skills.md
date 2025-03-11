@@ -12,19 +12,20 @@ weight: 30
 title: Skills
 subtitle:
 ---
+
 <div class="skills">
 
   <div class="skill">
     <div class="skill-name">Cloud</div>
     <div class="skill-bar">
-      <div class="skill-per" per="5%" style="max-width:5%"></div>
+      <div class="skill-per" per="70%" style="max-width:5%"></div>
     </div>
   </div>
 
   <div class="skill">
     <div class="skill-name">Web Development</div>
     <div class="skill-bar">
-      <div class="skill-per" per="30%" style="max-width:30%"></div>
+      <div class="skill-per" per="60%" style="max-width:30%"></div>
     </div>
   </div>
 
