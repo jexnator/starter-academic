@@ -72,7 +72,9 @@ projects: []
 slides: ""
 ---
 
-## Public Cloud Module 9 – Route 53: DNS Basics, Routing Policies & Experiments
+# Public Cloud Module 9 – Route 53: DNS Basics, Routing Policies & Experiments
+
+## Amazon Route 53
 
 I’ve just wrapped up the first part of our “Public Cloud Module 9” focused entirely on **Amazon Route 53**. Before we move on to CloudFront and the API Gateway, I want to capture the learnings here in my blog. DNS is effectively the phonebook of the internet, translating human-friendly domain names (like `amanox.ch`) into IPs. In the slides, we revisited the standard DNS resolution path with root, TLD, and authoritative name servers. Below is a quick diagram demonstrating the DNS lookup flow (who queries who):
 
@@ -135,6 +137,28 @@ Tokyo is nearly the same, with a different AMI and region. After applying the Te
 
 I already knew DNS was important, but it's great to see how comprehensive AWS makes it with Route 53. The advanced routing policies are quite powerful: failover, weighted, geolocation, and geoproximity all enable me to direct traffic more precisely. Health checks tie in neatly, so Route 53 can react if a certain endpoint goes down. For small-scale personal websites, some of this might be overkill, but for production setups that require high availability or region-based compliance, it’s clutch.
 
-It's great to see how comprehensive AWS makes DNS management with Route 53, especially for custom domain setups or global content distribution. Stay tuned.
+It's great to see how comprehensive AWS makes DNS management with Route 53, especially for custom domain setups or global content distribution.
+
+## Amazon API Gateway
+
+Having completed the basics of Route 53, I moved on to **Amazon API Gateway** for the second part of our module. In theory, API Gateway acts as a “front door” for applications, letting you create and deploy RESTful or WebSocket APIs that serve traffic to backend services such as Lambda, EC2, or DynamoDB. You can protect your endpoints with mechanisms like Amazon Cognito or a custom authorizer Lambda to control who gets access. On top of that, you can enable canary releases—very practical if you want to test a new version of your API on a small percentage of your users before rolling it out to everyone.
+
+### My Setup with Lambda, Terraform, and Cognito
+
+I decided to begin by creating a simple **Lambda function** that returns a plain “Hello World!” string. To accomplish that, I wrote a short Python script, zipped it up, and let Terraform handle the rest. In my Terraform config, I included a **data** block to zip the Python file, then declared the IAM role and policies needed for Lambda to run. Afterwards, I defined the actual Lambda function with a `python3.13` runtime, pointing to my newly created ZIP file. I then assigned a function URL so I could quickly test everything in my browser without any additional configuration.
+
+Once the basic function was running, I set up **API Gateway** in a separate Terraform file. I started by creating a REST API with a descriptive name and then added a new resource called “hello.” For incoming requests on the “GET” method, API Gateway points to my Lambda function, thanks to an AWS proxy integration. I also granted explicit permission for API Gateway to invoke the Lambda via a dedicated resource that references the REST API’s ARN. Next, I created a deployment linked to a stage named “test.” Terraform picks up the final invoke URL from the stage, which is a handy way to reference it in other configurations or outputs.
+
+With the public endpoint available, I switched over to **Amazon Cognito** for securing the API. In my Terraform file dedicated to Cognito, I generated a user pool with a simple schema to auto-verify email addresses. I also created a user pool client, adding redirects back to my “test” stage’s URL when authentication succeeds. Finally, I defined a custom domain for the user pool. Cognito then gave me a hosted UI that end users can log into. To connect Cognito with API Gateway, I introduced a Cognito authorizer resource. Instead of “NONE” or “AWS_IAM,” the API’s “GET” method on the “hello” resource now uses `COGNITO_USER_POOLS` for authentication, pointing to my user pool’s ARN. When clients call the endpoint, they include the required tokens from Cognito, letting them pass the authorizer check in API Gateway.
+
+### Canary Release for a Second Lambda
+
+To explore **canary deployments**, I created a second Lambda function that returns a distinct message—something like “Hello from Canary!”—and then returned to the **test** stage in API Gateway. There’s a dedicated “Canary” section in the stage’s settings that lets you enable this feature. I toggled it on and routed 30% of the incoming requests to my second Lambda. By firing off repeated “/hello” calls, I could see that some of them returned my canary response while others served the original. Once I was comfortable that the second Lambda worked as intended, I promoted the canary release. That pushed the new function to 100% of the traffic, effectively making the canary version the main one.
+
+### My Perspective
+
+Setting up an API in AWS can feel complex because there are multiple moving parts—Lambda code, IAM roles, API Gateway settings, Cognito, and more. But it’s worth it in the end, because you get a tightly integrated system with a lot of control. You can shape your authentication, integrate with any AWS service you like, and employ advanced deployment strategies such as canary releases. In a real-world application, you might fetch data from DynamoDB, store user files in S3, or carry out other backend tasks. Connecting the dots with Terraform is straightforward once you have the building blocks in place, and the final piece—tying everything together with API Gateway—lets you expose a consistent interface to your users or other client applications.
+
+I found the canary release feature especially interesting. It’s a powerful way to test production changes on a small subset of real users. If something goes wrong, you can back out quickly and keep your main API stable. If it’s working fine, the final “promote” step takes it to the whole audience. I can see this being a best practice when rolling out anything that carries a risk of breaking client integrations, especially if your API is widely used.
 
 ---
